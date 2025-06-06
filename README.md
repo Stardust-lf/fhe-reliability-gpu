@@ -65,6 +65,11 @@ This section provides step-by-step instructions to enable NVIDIA GPU overclockin
    sudo reboot
    ```
 
+6. **Set overclocking offset**:
+
+   ```bash
+   nvidia-settings -a "GPUGraphicsClockOffset[4]=100"
+   ```
 ---
 
 ### 📚 References
