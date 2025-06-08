@@ -1,0 +1,725 @@
+[Thread 3 - Run 1] 2025-06-06 17:12:58
+[Thread 3 - Run 1] GPU Frequencies (MHz):
+210, 405, 210
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 2] 2025-06-06 17:12:59
+[Thread 3 - Run 2] GPU Frequencies (MHz):
+3060, 10501, 3060
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 3] 2025-06-06 17:13:01
+[Thread 3 - Run 3] GPU Frequencies (MHz):
+3060, 10501, 3060
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 4] 2025-06-06 17:13:02
+[Thread 3 - Run 4] GPU Frequencies (MHz):
+3060, 10501, 3060
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 5] 2025-06-06 17:13:02
+[Thread 3 - Run 5] GPU Frequencies (MHz):
+3060, 10501, 3060
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 6] 2025-06-06 17:13:03
+[Thread 3 - Run 6] GPU Frequencies (MHz):
+3060, 10501, 3060
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 7] 2025-06-06 17:13:04
+[Thread 3 - Run 7] GPU Frequencies (MHz):
+3060, 10501, 3060
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 8] 2025-06-06 17:13:05
+[Thread 3 - Run 8] GPU Frequencies (MHz):
+3060, 10501, 3060
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 9] 2025-06-06 17:13:06
+[Thread 3 - Run 9] GPU Frequencies (MHz):
+3060, 10501, 3060
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 10] 2025-06-06 17:13:07
+[Thread 3 - Run 10] GPU Frequencies (MHz):
+3060, 10501, 3060
+[FAULT DETECTED] Bit error: 25535/67108864 = 0.000381, Symbol error: 1024/1048576 = 0.000977
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ERROR! Total bitwise Hamming distance = 25535 (bit error rate = 0.000380501)
+       Affected symbols = 1024/1048576 (symbol error rate = 0.000976562)
+
+[Thread 3 - Run 11] 2025-06-06 17:13:08
+[Thread 3 - Run 11] GPU Frequencies (MHz):
+3060, 10501, 3060
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 12] 2025-06-06 17:13:09
+[Thread 3 - Run 12] GPU Frequencies (MHz):
+3060, 10501, 3060
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 13] 2025-06-06 17:13:10
+[Thread 3 - Run 13] GPU Frequencies (MHz):
+3060, 10501, 3060
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 14] 2025-06-06 17:13:11
+[Thread 3 - Run 14] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 15] 2025-06-06 17:13:12
+[Thread 3 - Run 15] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 16] 2025-06-06 17:13:13
+[Thread 3 - Run 16] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 17] 2025-06-06 17:13:14
+[Thread 3 - Run 17] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 18] 2025-06-06 17:13:14
+[Thread 3 - Run 18] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 19] 2025-06-06 17:13:15
+[Thread 3 - Run 19] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 20] 2025-06-06 17:13:16
+[Thread 3 - Run 20] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 21] 2025-06-06 17:13:17
+[Thread 3 - Run 21] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 22] 2025-06-06 17:13:18
+[Thread 3 - Run 22] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 23] 2025-06-06 17:13:19
+[Thread 3 - Run 23] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 24] 2025-06-06 17:13:20
+[Thread 3 - Run 24] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 25] 2025-06-06 17:13:21
+[Thread 3 - Run 25] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 26] 2025-06-06 17:13:21
+[Thread 3 - Run 26] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 27] 2025-06-06 17:13:22
+[Thread 3 - Run 27] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 28] 2025-06-06 17:13:23
+[Thread 3 - Run 28] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 29] 2025-06-06 17:13:24
+[Thread 3 - Run 29] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 30] 2025-06-06 17:13:25
+[Thread 3 - Run 30] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 31] 2025-06-06 17:13:26
+[Thread 3 - Run 31] GPU Frequencies (MHz):
+3045, 10501, 3045
+[FAULT DETECTED] Bit error: 26208186/67108864 = 0.390532, Symbol error: 1048576/1048576 = 1.000000
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ERROR! Total bitwise Hamming distance = 26208186 (bit error rate = 0.390532)
+       Affected symbols = 1048576/1048576 (symbol error rate = 1)
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5bfd315cf180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5bfd315cf180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5bfd315cf180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5bfd315cf180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5bfd315cf180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5bfd315cf180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5bfd315cf180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5bfd315cf180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5bfd315cf180
+Error code: an illegal memory access was encountered
+
+[Thread 3 - Run 32] 2025-06-06 17:13:27
+[Thread 3 - Run 32] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 33] 2025-06-06 17:13:28
+[Thread 3 - Run 33] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 34] 2025-06-06 17:13:29
+[Thread 3 - Run 34] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 35] 2025-06-06 17:13:29
+[Thread 3 - Run 35] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 36] 2025-06-06 17:13:30
+[Thread 3 - Run 36] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 37] 2025-06-06 17:13:31
+[Thread 3 - Run 37] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 38] 2025-06-06 17:13:32
+[Thread 3 - Run 38] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 39] 2025-06-06 17:13:33
+[Thread 3 - Run 39] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 40] 2025-06-06 17:13:34
+[Thread 3 - Run 40] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 41] 2025-06-06 17:13:34
+[Thread 3 - Run 41] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 42] 2025-06-06 17:13:35
+[Thread 3 - Run 42] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 43] 2025-06-06 17:13:36
+[Thread 3 - Run 43] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 44] 2025-06-06 17:13:37
+[Thread 3 - Run 44] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 45] 2025-06-06 17:13:38
+[Thread 3 - Run 45] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 46] 2025-06-06 17:13:39
+[Thread 3 - Run 46] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 47] 2025-06-06 17:13:40
+[Thread 3 - Run 47] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 48] 2025-06-06 17:13:40
+[Thread 3 - Run 48] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 49] 2025-06-06 17:13:41
+[Thread 3 - Run 49] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 50] 2025-06-06 17:13:42
+[Thread 3 - Run 50] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 51] 2025-06-06 17:13:43
+[Thread 3 - Run 51] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 52] 2025-06-06 17:13:44
+[Thread 3 - Run 52] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 53] 2025-06-06 17:13:45
+[Thread 3 - Run 53] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 54] 2025-06-06 17:13:46
+[Thread 3 - Run 54] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 55] 2025-06-06 17:13:47
+[Thread 3 - Run 55] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 56] 2025-06-06 17:13:48
+[Thread 3 - Run 56] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 57] 2025-06-06 17:13:49
+[Thread 3 - Run 57] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 58] 2025-06-06 17:13:50
+[Thread 3 - Run 58] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 59] 2025-06-06 17:13:51
+[Thread 3 - Run 59] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 60] 2025-06-06 17:13:52
+[Thread 3 - Run 60] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 61] 2025-06-06 17:13:53
+[Thread 3 - Run 61] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 62] 2025-06-06 17:13:54
+[Thread 3 - Run 62] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 63] 2025-06-06 17:13:55
+[Thread 3 - Run 63] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 64] 2025-06-06 17:13:56
+[Thread 3 - Run 64] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 65] 2025-06-06 17:13:56
+[Thread 3 - Run 65] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 66] 2025-06-06 17:13:57
+[Thread 3 - Run 66] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 67] 2025-06-06 17:13:58
+[Thread 3 - Run 67] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 68] 2025-06-06 17:13:59
+[Thread 3 - Run 68] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 69] 2025-06-06 17:14:00
+[Thread 3 - Run 69] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 70] 2025-06-06 17:14:01
+[Thread 3 - Run 70] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 71] 2025-06-06 17:14:02
+[Thread 3 - Run 71] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 72] 2025-06-06 17:14:03
+[Thread 3 - Run 72] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 73] 2025-06-06 17:14:04
+[Thread 3 - Run 73] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 74] 2025-06-06 17:14:04
+[Thread 3 - Run 74] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 75] 2025-06-06 17:14:05
+[Thread 3 - Run 75] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 76] 2025-06-06 17:14:06
+[Thread 3 - Run 76] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 77] 2025-06-06 17:14:07
+[Thread 3 - Run 77] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 78] 2025-06-06 17:14:08
+[Thread 3 - Run 78] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 79] 2025-06-06 17:14:09
+[Thread 3 - Run 79] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 80] 2025-06-06 17:14:11
+[Thread 3 - Run 80] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 81] 2025-06-06 17:14:12
+[Thread 3 - Run 81] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 82] 2025-06-06 17:14:13
+[Thread 3 - Run 82] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 83] 2025-06-06 17:14:13
+[Thread 3 - Run 83] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 84] 2025-06-06 17:14:14
+[Thread 3 - Run 84] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 85] 2025-06-06 17:14:15
+[Thread 3 - Run 85] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 86] 2025-06-06 17:14:16
+[Thread 3 - Run 86] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 87] 2025-06-06 17:14:17
+[Thread 3 - Run 87] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 88] 2025-06-06 17:14:18
+[Thread 3 - Run 88] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 89] 2025-06-06 17:14:19
+[Thread 3 - Run 89] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 90] 2025-06-06 17:14:19
+[Thread 3 - Run 90] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 91] 2025-06-06 17:14:20
+[Thread 3 - Run 91] GPU Frequencies (MHz):
+3045, 10501, 3045
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+an illegal memory access was encountered cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 3 - Run 91] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 92] 2025-06-06 17:14:22
+[Thread 3 - Run 92] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 93] 2025-06-06 17:14:23
+[Thread 3 - Run 93] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 94] 2025-06-06 17:14:23
+[Thread 3 - Run 94] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 95] 2025-06-06 17:14:24
+[Thread 3 - Run 95] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 96] 2025-06-06 17:14:25
+[Thread 3 - Run 96] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 97] 2025-06-06 17:14:26
+[Thread 3 - Run 97] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 98] 2025-06-06 17:14:27
+[Thread 3 - Run 98] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 99] 2025-06-06 17:14:28
+[Thread 3 - Run 99] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 3 - Run 100] 2025-06-06 17:14:29
+[Thread 3 - Run 100] GPU Frequencies (MHz):
+3045, 10501, 3045
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+

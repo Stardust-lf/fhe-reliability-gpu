@@ -1,0 +1,800 @@
+[Thread 5 - Run 1] 2025-06-06 13:46:39
+[Thread 5 - Run 1] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 2] 2025-06-06 13:46:41
+[Thread 5 - Run 2] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 3] 2025-06-06 13:46:43
+[Thread 5 - Run 3] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 4] 2025-06-06 13:46:45
+[Thread 5 - Run 4] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 5] 2025-06-06 13:46:47
+[Thread 5 - Run 5] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 6] 2025-06-06 13:46:49
+[Thread 5 - Run 6] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 7] 2025-06-06 13:46:51
+[Thread 5 - Run 7] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 8] 2025-06-06 13:46:53
+[Thread 5 - Run 8] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 9] 2025-06-06 13:46:55
+[Thread 5 - Run 9] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 10] 2025-06-06 13:46:57
+[Thread 5 - Run 10] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 11] 2025-06-06 13:46:59
+[Thread 5 - Run 11] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 12] 2025-06-06 13:47:02
+[Thread 5 - Run 12] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 13] 2025-06-06 13:47:04
+[Thread 5 - Run 13] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 14] 2025-06-06 13:47:06
+[Thread 5 - Run 14] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 15] 2025-06-06 13:47:08
+[Thread 5 - Run 15] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 16] 2025-06-06 13:47:10
+[Thread 5 - Run 16] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 17] 2025-06-06 13:47:12
+[Thread 5 - Run 17] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 18] 2025-06-06 13:47:14
+[Thread 5 - Run 18] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 19] 2025-06-06 13:47:16
+[Thread 5 - Run 19] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 20] 2025-06-06 13:47:18
+[Thread 5 - Run 20] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 21] 2025-06-06 13:47:20
+[Thread 5 - Run 21] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 22] 2025-06-06 13:47:22
+[Thread 5 - Run 22] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 23] 2025-06-06 13:47:24
+[Thread 5 - Run 23] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 24] 2025-06-06 13:47:26
+[Thread 5 - Run 24] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 25] 2025-06-06 13:47:28
+[Thread 5 - Run 25] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 26] 2025-06-06 13:47:29
+[Thread 5 - Run 26] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 27] 2025-06-06 13:47:30
+[Thread 5 - Run 27] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 28] 2025-06-06 13:47:31
+[Thread 5 - Run 28] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 29] 2025-06-06 13:47:32
+[Thread 5 - Run 29] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 30] 2025-06-06 13:47:32
+[Thread 5 - Run 30] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 31] 2025-06-06 13:47:33
+[Thread 5 - Run 31] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 32] 2025-06-06 13:47:34
+[Thread 5 - Run 32] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 33] 2025-06-06 13:47:35
+[Thread 5 - Run 33] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 34] 2025-06-06 13:47:36
+[Thread 5 - Run 34] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 35] 2025-06-06 13:47:37
+[Thread 5 - Run 35] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 36] 2025-06-06 13:47:38
+[Thread 5 - Run 36] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 37] 2025-06-06 13:47:39
+[Thread 5 - Run 37] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 38] 2025-06-06 13:47:40
+[Thread 5 - Run 38] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 39] 2025-06-06 13:47:41
+[Thread 5 - Run 39] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 40] 2025-06-06 13:47:42
+[Thread 5 - Run 40] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 41] 2025-06-06 13:47:43
+[Thread 5 - Run 41] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 42] 2025-06-06 13:47:44
+[Thread 5 - Run 42] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 43] 2025-06-06 13:47:45
+[Thread 5 - Run 43] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 44] 2025-06-06 13:47:46
+[Thread 5 - Run 44] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 45] 2025-06-06 13:47:47
+[Thread 5 - Run 45] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 46] 2025-06-06 13:47:48
+[Thread 5 - Run 46] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 47] 2025-06-06 13:47:49
+[Thread 5 - Run 47] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 48] 2025-06-06 13:47:50
+[Thread 5 - Run 48] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 49] 2025-06-06 13:47:51
+[Thread 5 - Run 49] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 50] 2025-06-06 13:47:51
+[Thread 5 - Run 50] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 51] 2025-06-06 13:47:52
+[Thread 5 - Run 51] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 52] 2025-06-06 13:47:53
+[Thread 5 - Run 52] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 53] 2025-06-06 13:47:54
+[Thread 5 - Run 53] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 54] 2025-06-06 13:47:55
+[Thread 5 - Run 54] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 55] 2025-06-06 13:47:56
+[Thread 5 - Run 55] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 56] 2025-06-06 13:47:57
+[Thread 5 - Run 56] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 57] 2025-06-06 13:47:58
+[Thread 5 - Run 57] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 58] 2025-06-06 13:47:59
+[Thread 5 - Run 58] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 59] 2025-06-06 13:47:59
+[Thread 5 - Run 59] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 60] 2025-06-06 13:48:00
+[Thread 5 - Run 60] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 61] 2025-06-06 13:48:01
+[Thread 5 - Run 61] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 62] 2025-06-06 13:48:02
+[Thread 5 - Run 62] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 63] 2025-06-06 13:48:03
+[Thread 5 - Run 63] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 64] 2025-06-06 13:48:04
+[Thread 5 - Run 64] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 65] 2025-06-06 13:48:05
+[Thread 5 - Run 65] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 66] 2025-06-06 13:48:06
+[Thread 5 - Run 66] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 67] 2025-06-06 13:48:06
+[Thread 5 - Run 67] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 68] 2025-06-06 13:48:07
+[Thread 5 - Run 68] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 69] 2025-06-06 13:48:08
+[Thread 5 - Run 69] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 70] 2025-06-06 13:48:09
+[Thread 5 - Run 70] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 71] 2025-06-06 13:48:10
+[Thread 5 - Run 71] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 72] 2025-06-06 13:48:11
+[Thread 5 - Run 72] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 73] 2025-06-06 13:48:12
+[Thread 5 - Run 73] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 74] 2025-06-06 13:48:13
+[Thread 5 - Run 74] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 75] 2025-06-06 13:48:13
+[Thread 5 - Run 75] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 76] 2025-06-06 13:48:15
+[Thread 5 - Run 76] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 77] 2025-06-06 13:48:15
+[Thread 5 - Run 77] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 78] 2025-06-06 13:48:16
+[Thread 5 - Run 78] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 79] 2025-06-06 13:48:17
+[Thread 5 - Run 79] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 80] 2025-06-06 13:48:18
+[Thread 5 - Run 80] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 81] 2025-06-06 13:48:19
+[Thread 5 - Run 81] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 82] 2025-06-06 13:48:20
+[Thread 5 - Run 82] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 83] 2025-06-06 13:48:21
+[Thread 5 - Run 83] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 84] 2025-06-06 13:48:21
+[Thread 5 - Run 84] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 85] 2025-06-06 13:48:22
+[Thread 5 - Run 85] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 86] 2025-06-06 13:48:23
+[Thread 5 - Run 86] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 87] 2025-06-06 13:48:24
+[Thread 5 - Run 87] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 88] 2025-06-06 13:48:25
+[Thread 5 - Run 88] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 89] 2025-06-06 13:48:26
+[Thread 5 - Run 89] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 90] 2025-06-06 13:48:27
+[Thread 5 - Run 90] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 91] 2025-06-06 13:48:28
+[Thread 5 - Run 91] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 92] 2025-06-06 13:48:29
+[Thread 5 - Run 92] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 93] 2025-06-06 13:48:29
+[Thread 5 - Run 93] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 94] 2025-06-06 13:48:30
+[Thread 5 - Run 94] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 95] 2025-06-06 13:48:31
+[Thread 5 - Run 95] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 96] 2025-06-06 13:48:32
+[Thread 5 - Run 96] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 97] 2025-06-06 13:48:33
+[Thread 5 - Run 97] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 98] 2025-06-06 13:48:34
+[Thread 5 - Run 98] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 99] 2025-06-06 13:48:35
+[Thread 5 - Run 99] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+
+[Thread 5 - Run 100] 2025-06-06 13:48:36
+[Thread 5 - Run 100] GPU Frequencies (MHz):
+2940, 10501, 2940
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+[2D] Comparing clean vs faulty NTT outputs...
+ALL CORRECT
+

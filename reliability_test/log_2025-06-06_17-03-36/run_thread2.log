@@ -1,0 +1,2154 @@
+[Thread 2 - Run 1] 2025-06-06 17:03:36
+[Thread 2 - Run 1] GPU Frequencies (MHz):
+210, 405, 210
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5ac745148130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5ac745148130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5ac745148130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5ac745148130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5ac745148130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5ac745148130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5ac745148130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5ac745148130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5ac745148130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 2] 2025-06-06 17:03:37
+[Thread 2 - Run 2] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5fb25c9d5030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5fb25c9d5030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5fb25c9d5030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5fb25c9d5030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5fb25c9d5030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5fb25c9d5030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5fb25c9d5030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5fb25c9d5030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5fb25c9d5030
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 3] 2025-06-06 17:03:38
+[Thread 2 - Run 3] GPU Frequencies (MHz):
+3090, 10501, 3090
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+an illegal memory access was encountered cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 2 - Run 3] *** ERROR: Exit code 134 ***
+
+[Thread 2 - Run 4] 2025-06-06 17:03:40
+[Thread 2 - Run 4] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x628a98ca5180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x628a98ca5180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x628a98ca5180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x628a98ca5180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x628a98ca5180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x628a98ca5180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x628a98ca5180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x628a98ca5180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x628a98ca5180
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 5] 2025-06-06 17:03:40
+[Thread 2 - Run 5] GPU Frequencies (MHz):
+3090, 10501, 3090
+[FAULT DETECTED] Bit error: 785/67108864 = 0.000012, Symbol error: 32/1048576 = 0.000031
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ERROR! Total bitwise Hamming distance = 785 (bit error rate = 1.16974e-05)
+       Affected symbols = 32/1048576 (symbol error rate = 3.05176e-05)
+
+[Thread 2 - Run 6] 2025-06-06 17:03:41
+[Thread 2 - Run 6] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5cf8e096e130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5cf8e096e130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5cf8e096e130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5cf8e096e130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5cf8e096e130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5cf8e096e130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5cf8e096e130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5cf8e096e130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5cf8e096e130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 7] 2025-06-06 17:03:41
+[Thread 2 - Run 7] GPU Frequencies (MHz):
+3090, 10501, 3090
+[FAULT DETECTED] Bit error: 25163/67108864 = 0.000375, Symbol error: 1024/1048576 = 0.000977
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ERROR! Total bitwise Hamming distance = 25163 (bit error rate = 0.000374958)
+       Affected symbols = 1024/1048576 (symbol error rate = 0.000976562)
+
+[Thread 2 - Run 8] 2025-06-06 17:03:42
+[Thread 2 - Run 8] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 2 - Run 9] 2025-06-06 17:03:43
+[Thread 2 - Run 9] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 2 - Run 10] 2025-06-06 17:03:43
+[Thread 2 - Run 10] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x579173f52070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x579173f52070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x579173f52070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x579173f52070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x579173f52070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x579173f52070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x579173f52070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x579173f52070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x579173f52070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 11] 2025-06-06 17:03:44
+[Thread 2 - Run 11] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5b1b29149030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5b1b29149030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5b1b29149030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5b1b29149030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5b1b29149030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5b1b29149030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5b1b29149030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5b1b29149030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5b1b29149030
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 12] 2025-06-06 17:03:45
+[Thread 2 - Run 12] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x62393efe8130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x62393efe8130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x62393efe8130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x62393efe8130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x62393efe8130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x62393efe8130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x62393efe8130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x62393efe8130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x62393efe8130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 13] 2025-06-06 17:03:46
+[Thread 2 - Run 13] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5aa8d305f0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5aa8d305f0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5aa8d305f0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5aa8d305f0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5aa8d305f0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5aa8d305f0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5aa8d305f0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5aa8d305f0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5aa8d305f0b0
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 14] 2025-06-06 17:03:47
+[Thread 2 - Run 14] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 2 - Run 15] 2025-06-06 17:03:48
+[Thread 2 - Run 15] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 2 - Run 16] 2025-06-06 17:03:49
+[Thread 2 - Run 16] GPU Frequencies (MHz):
+3090, 10501, 3090
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+an illegal memory access was encountered cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 2 - Run 16] *** ERROR: Exit code 134 ***
+
+[Thread 2 - Run 17] 2025-06-06 17:03:56
+[Thread 2 - Run 17] GPU Frequencies (MHz):
+3090, 10501, 3090
+[FAULT DETECTED] Bit error: 26218785/67108864 = 0.390690, Symbol error: 1048576/1048576 = 1.000000
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ERROR! Total bitwise Hamming distance = 26218785 (bit error rate = 0.39069)
+       Affected symbols = 1048576/1048576 (symbol error rate = 1)
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x57f1ac94d030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x57f1ac94d030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x57f1ac94d030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x57f1ac94d030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x57f1ac94d030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x57f1ac94d030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x57f1ac94d030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x57f1ac94d030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x57f1ac94d030
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 18] 2025-06-06 17:03:57
+[Thread 2 - Run 18] GPU Frequencies (MHz):
+3090, 10501, 3090
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+an illegal memory access was encountered cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 2 - Run 18] *** ERROR: Exit code 134 ***
+
+[Thread 2 - Run 19] 2025-06-06 17:04:01
+[Thread 2 - Run 19] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x630167204130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x630167204130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x630167204130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x630167204130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x630167204130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x630167204130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x630167204130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x630167204130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x630167204130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 20] 2025-06-06 17:04:02
+[Thread 2 - Run 20] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5e68f4920070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5e68f4920070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5e68f4920070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5e68f4920070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5e68f4920070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5e68f4920070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5e68f4920070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5e68f4920070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5e68f4920070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 21] 2025-06-06 17:04:03
+[Thread 2 - Run 21] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5a921c2dc130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5a921c2dc130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5a921c2dc130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5a921c2dc130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5a921c2dc130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5a921c2dc130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5a921c2dc130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5a921c2dc130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5a921c2dc130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 22] 2025-06-06 17:04:04
+[Thread 2 - Run 22] GPU Frequencies (MHz):
+3090, 10501, 3090
+[FAULT DETECTED] Bit error: 26211750/67108864 = 0.390586, Symbol error: 1048576/1048576 = 1.000000
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ERROR! Total bitwise Hamming distance = 26211750 (bit error rate = 0.390586)
+       Affected symbols = 1048576/1048576 (symbol error rate = 1)
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5bcc31203180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5bcc31203180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5bcc31203180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5bcc31203180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5bcc31203180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5bcc31203180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5bcc31203180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5bcc31203180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5bcc31203180
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 23] 2025-06-06 17:04:04
+[Thread 2 - Run 23] GPU Frequencies (MHz):
+3090, 10501, 3090
+[FAULT DETECTED] Bit error: 26210049/67108864 = 0.390560, Symbol error: 1048576/1048576 = 1.000000
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ERROR! Total bitwise Hamming distance = 26210049 (bit error rate = 0.39056)
+       Affected symbols = 1048576/1048576 (symbol error rate = 1)
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x637e2449c130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x637e2449c130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x637e2449c130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x637e2449c130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x637e2449c130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x637e2449c130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x637e2449c130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x637e2449c130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x637e2449c130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 24] 2025-06-06 17:04:05
+[Thread 2 - Run 24] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5a9118543030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5a9118543030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5a9118543030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5a9118543030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5a9118543030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5a9118543030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5a9118543030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5a9118543030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5a9118543030
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 25] 2025-06-06 17:04:06
+[Thread 2 - Run 25] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x619588ce90b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x619588ce90b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x619588ce90b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x619588ce90b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x619588ce90b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x619588ce90b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x619588ce90b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x619588ce90b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x619588ce90b0
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 26] 2025-06-06 17:04:07
+[Thread 2 - Run 26] GPU Frequencies (MHz):
+3090, 10501, 3090
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+an illegal memory access was encountered cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 2 - Run 26] *** ERROR: Exit code 134 ***
+
+[Thread 2 - Run 27] 2025-06-06 17:04:10
+[Thread 2 - Run 27] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x640da932c070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x640da932c070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x640da932c070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x640da932c070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x640da932c070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x640da932c070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x640da932c070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x640da932c070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x640da932c070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 28] 2025-06-06 17:04:11
+[Thread 2 - Run 28] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5f8c55a32070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5f8c55a32070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5f8c55a32070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5f8c55a32070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5f8c55a32070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5f8c55a32070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5f8c55a32070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5f8c55a32070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5f8c55a32070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 29] 2025-06-06 17:04:12
+[Thread 2 - Run 29] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x61f16cba1030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x61f16cba1030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x61f16cba1030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x61f16cba1030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x61f16cba1030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x61f16cba1030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x61f16cba1030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x61f16cba1030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x61f16cba1030
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 30] 2025-06-06 17:04:14
+[Thread 2 - Run 30] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5f29da275060
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5f29da275060
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5f29da275060
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5f29da275060
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5f29da275060
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5f29da275060
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5f29da275060
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5f29da275060
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5f29da275060
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 31] 2025-06-06 17:04:15
+[Thread 2 - Run 31] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x58cdd0b40130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x58cdd0b40130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x58cdd0b40130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x58cdd0b40130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x58cdd0b40130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x58cdd0b40130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x58cdd0b40130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x58cdd0b40130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x58cdd0b40130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 32] 2025-06-06 17:04:16
+[Thread 2 - Run 32] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x61daf084a180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x61daf084a180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x61daf084a180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x61daf084a180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x61daf084a180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x61daf084a180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x61daf084a180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x61daf084a180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x61daf084a180
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 33] 2025-06-06 17:04:17
+[Thread 2 - Run 33] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x62cb5f666130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x62cb5f666130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x62cb5f666130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x62cb5f666130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x62cb5f666130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x62cb5f666130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x62cb5f666130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x62cb5f666130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x62cb5f666130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 34] 2025-06-06 17:04:18
+[Thread 2 - Run 34] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x59c5680870b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x59c5680870b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x59c5680870b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x59c5680870b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x59c5680870b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x59c5680870b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x59c5680870b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x59c5680870b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x59c5680870b0
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 35] 2025-06-06 17:04:20
+[Thread 2 - Run 35] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x64c97c6d6070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x64c97c6d6070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x64c97c6d6070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x64c97c6d6070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x64c97c6d6070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x64c97c6d6070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x64c97c6d6070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x64c97c6d6070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x64c97c6d6070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 36] 2025-06-06 17:04:21
+[Thread 2 - Run 36] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5bee75c770b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5bee75c770b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5bee75c770b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5bee75c770b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5bee75c770b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5bee75c770b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5bee75c770b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5bee75c770b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5bee75c770b0
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 37] 2025-06-06 17:04:22
+[Thread 2 - Run 37] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x59a07ff2e180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x59a07ff2e180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x59a07ff2e180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x59a07ff2e180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x59a07ff2e180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x59a07ff2e180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x59a07ff2e180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x59a07ff2e180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x59a07ff2e180
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 38] 2025-06-06 17:04:23
+[Thread 2 - Run 38] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5f5f70920130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5f5f70920130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5f5f70920130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5f5f70920130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5f5f70920130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5f5f70920130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5f5f70920130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5f5f70920130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5f5f70920130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 39] 2025-06-06 17:04:24
+[Thread 2 - Run 39] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x55daf5e94130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x55daf5e94130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x55daf5e94130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x55daf5e94130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x55daf5e94130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x55daf5e94130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x55daf5e94130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x55daf5e94130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x55daf5e94130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 40] 2025-06-06 17:04:25
+[Thread 2 - Run 40] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x599eafcd7180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x599eafcd7180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x599eafcd7180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x599eafcd7180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x599eafcd7180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x599eafcd7180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x599eafcd7180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x599eafcd7180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x599eafcd7180
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 41] 2025-06-06 17:04:26
+[Thread 2 - Run 41] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x58d8be118070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x58d8be118070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x58d8be118070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x58d8be118070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x58d8be118070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x58d8be118070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x58d8be118070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x58d8be118070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x58d8be118070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 42] 2025-06-06 17:04:27
+[Thread 2 - Run 42] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x633bb6bb50b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x633bb6bb50b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x633bb6bb50b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x633bb6bb50b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x633bb6bb50b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x633bb6bb50b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x633bb6bb50b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x633bb6bb50b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x633bb6bb50b0
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 43] 2025-06-06 17:04:28
+[Thread 2 - Run 43] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5bee417bf0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5bee417bf0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5bee417bf0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5bee417bf0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5bee417bf0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5bee417bf0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5bee417bf0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5bee417bf0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5bee417bf0b0
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 44] 2025-06-06 17:04:29
+[Thread 2 - Run 44] GPU Frequencies (MHz):
+3090, 10501, 3090
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+an illegal memory access was encountered cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 2 - Run 44] *** ERROR: Exit code 134 ***
+
+[Thread 2 - Run 45] 2025-06-06 17:04:36
+[Thread 2 - Run 45] GPU Frequencies (MHz):
+3090, 10501, 3090
+[FAULT DETECTED] Bit error: 26207828/67108864 = 0.390527, Symbol error: 1048576/1048576 = 1.000000
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ERROR! Total bitwise Hamming distance = 26207828 (bit error rate = 0.390527)
+       Affected symbols = 1048576/1048576 (symbol error rate = 1)
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x595d59e9b0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x595d59e9b0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x595d59e9b0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x595d59e9b0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x595d59e9b0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x595d59e9b0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x595d59e9b0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x595d59e9b0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x595d59e9b0b0
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 46] 2025-06-06 17:04:36
+[Thread 2 - Run 46] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5a7ae6496130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5a7ae6496130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5a7ae6496130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5a7ae6496130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5a7ae6496130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5a7ae6496130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5a7ae6496130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5a7ae6496130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5a7ae6496130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 47] 2025-06-06 17:04:37
+[Thread 2 - Run 47] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5a287c6ca070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5a287c6ca070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5a287c6ca070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5a287c6ca070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5a287c6ca070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5a287c6ca070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5a287c6ca070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5a287c6ca070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5a287c6ca070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 48] 2025-06-06 17:04:37
+[Thread 2 - Run 48] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5ee32c3ac070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5ee32c3ac070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5ee32c3ac070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5ee32c3ac070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5ee32c3ac070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5ee32c3ac070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5ee32c3ac070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5ee32c3ac070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5ee32c3ac070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 49] 2025-06-06 17:04:38
+[Thread 2 - Run 49] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5e8b62abd030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5e8b62abd030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5e8b62abd030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5e8b62abd030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5e8b62abd030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5e8b62abd030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5e8b62abd030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5e8b62abd030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5e8b62abd030
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 50] 2025-06-06 17:04:38
+[Thread 2 - Run 50] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5af789d64130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5af789d64130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5af789d64130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5af789d64130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5af789d64130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5af789d64130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5af789d64130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5af789d64130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5af789d64130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 51] 2025-06-06 17:04:39
+[Thread 2 - Run 51] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x575e1e2390b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x575e1e2390b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x575e1e2390b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x575e1e2390b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x575e1e2390b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x575e1e2390b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x575e1e2390b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x575e1e2390b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x575e1e2390b0
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 52] 2025-06-06 17:04:40
+[Thread 2 - Run 52] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x64bb6da57030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x64bb6da57030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x64bb6da57030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x64bb6da57030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x64bb6da57030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x64bb6da57030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x64bb6da57030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x64bb6da57030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x64bb6da57030
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 53] 2025-06-06 17:04:40
+[Thread 2 - Run 53] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5742d29b0070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5742d29b0070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5742d29b0070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5742d29b0070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5742d29b0070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5742d29b0070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5742d29b0070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5742d29b0070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5742d29b0070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 54] 2025-06-06 17:04:41
+[Thread 2 - Run 54] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x58acc6322180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x58acc6322180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x58acc6322180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x58acc6322180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x58acc6322180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x58acc6322180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x58acc6322180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x58acc6322180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x58acc6322180
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 55] 2025-06-06 17:04:42
+[Thread 2 - Run 55] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5db8fd46f180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5db8fd46f180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5db8fd46f180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5db8fd46f180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5db8fd46f180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5db8fd46f180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5db8fd46f180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5db8fd46f180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5db8fd46f180
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 56] 2025-06-06 17:04:43
+[Thread 2 - Run 56] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x58478518b030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x58478518b030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x58478518b030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x58478518b030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x58478518b030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x58478518b030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x58478518b030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x58478518b030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x58478518b030
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 57] 2025-06-06 17:04:44
+[Thread 2 - Run 57] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x63e99c550070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x63e99c550070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x63e99c550070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x63e99c550070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x63e99c550070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x63e99c550070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x63e99c550070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x63e99c550070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x63e99c550070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 58] 2025-06-06 17:04:45
+[Thread 2 - Run 58] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5cfe819ca180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5cfe819ca180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5cfe819ca180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5cfe819ca180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5cfe819ca180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5cfe819ca180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5cfe819ca180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5cfe819ca180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5cfe819ca180
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 59] 2025-06-06 17:04:46
+[Thread 2 - Run 59] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5dde80303030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5dde80303030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5dde80303030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5dde80303030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5dde80303030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5dde80303030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5dde80303030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5dde80303030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5dde80303030
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 60] 2025-06-06 17:04:46
+[Thread 2 - Run 60] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5d5ac29f6180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5d5ac29f6180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5d5ac29f6180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5d5ac29f6180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5d5ac29f6180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5d5ac29f6180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5d5ac29f6180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5d5ac29f6180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5d5ac29f6180
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 61] 2025-06-06 17:04:47
+[Thread 2 - Run 61] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5ac9f4945180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5ac9f4945180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5ac9f4945180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5ac9f4945180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5ac9f4945180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5ac9f4945180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5ac9f4945180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5ac9f4945180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5ac9f4945180
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 62] 2025-06-06 17:04:48
+[Thread 2 - Run 62] GPU Frequencies (MHz):
+3090, 10501, 3090
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+an illegal memory access was encountered cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 2 - Run 62] *** ERROR: Exit code 134 ***
+
+[Thread 2 - Run 63] 2025-06-06 17:04:54
+[Thread 2 - Run 63] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x58b4e5a40180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x58b4e5a40180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x58b4e5a40180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x58b4e5a40180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x58b4e5a40180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x58b4e5a40180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x58b4e5a40180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x58b4e5a40180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x58b4e5a40180
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 64] 2025-06-06 17:04:54
+[Thread 2 - Run 64] GPU Frequencies (MHz):
+3090, 10501, 3090
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5cdad9938130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5cdad9938130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5cdad9938130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5cdad9938130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5cdad9938130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5cdad9938130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5cdad9938130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5cdad9938130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5cdad9938130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 65] 2025-06-06 17:04:55
+[Thread 2 - Run 65] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5ef8f186c130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5ef8f186c130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5ef8f186c130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5ef8f186c130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5ef8f186c130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5ef8f186c130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5ef8f186c130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5ef8f186c130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5ef8f186c130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 66] 2025-06-06 17:04:56
+[Thread 2 - Run 66] GPU Frequencies (MHz):
+3075, 10501, 3075
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+an illegal memory access was encountered cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 2 - Run 66] *** ERROR: Exit code 134 ***
+
+[Thread 2 - Run 67] 2025-06-06 17:05:01
+[Thread 2 - Run 67] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x565552d3d0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x565552d3d0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x565552d3d0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x565552d3d0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x565552d3d0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x565552d3d0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x565552d3d0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x565552d3d0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x565552d3d0b0
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 68] 2025-06-06 17:05:02
+[Thread 2 - Run 68] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5e123437b0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5e123437b0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5e123437b0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5e123437b0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5e123437b0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5e123437b0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5e123437b0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5e123437b0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5e123437b0b0
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 69] 2025-06-06 17:05:03
+[Thread 2 - Run 69] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x605a32f8d0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x605a32f8d0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x605a32f8d0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x605a32f8d0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x605a32f8d0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x605a32f8d0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x605a32f8d0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x605a32f8d0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x605a32f8d0b0
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 70] 2025-06-06 17:05:04
+[Thread 2 - Run 70] GPU Frequencies (MHz):
+3075, 10501, 3075
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 2 - Run 70] *** ERROR: Exit code 134 ***
+
+[Thread 2 - Run 71] 2025-06-06 17:05:09
+[Thread 2 - Run 71] GPU Frequencies (MHz):
+2640, 10501, 2640
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 2 - Run 72] 2025-06-06 17:05:09
+[Thread 2 - Run 72] GPU Frequencies (MHz):
+2640, 10501, 2640
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 2 - Run 73] 2025-06-06 17:05:10
+[Thread 2 - Run 73] GPU Frequencies (MHz):
+2640, 10501, 2640
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+
+[Thread 2 - Run 74] 2025-06-06 17:05:10
+[Thread 2 - Run 74] GPU Frequencies (MHz):
+2640, 10501, 2640
+[FAULT DETECTED] Bit error: 776/67108864 = 0.000012, Symbol error: 32/1048576 = 0.000031
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ERROR! Total bitwise Hamming distance = 776 (bit error rate = 1.15633e-05)
+       Affected symbols = 32/1048576 (symbol error rate = 3.05176e-05)
+
+[Thread 2 - Run 75] 2025-06-06 17:05:11
+[Thread 2 - Run 75] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5a312f57a130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5a312f57a130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5a312f57a130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5a312f57a130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5a312f57a130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5a312f57a130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5a312f57a130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5a312f57a130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5a312f57a130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 76] 2025-06-06 17:05:11
+[Thread 2 - Run 76] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x6366d7746130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x6366d7746130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x6366d7746130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x6366d7746130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x6366d7746130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x6366d7746130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x6366d7746130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x6366d7746130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x6366d7746130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 77] 2025-06-06 17:05:12
+[Thread 2 - Run 77] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x63cb54a4b180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x63cb54a4b180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x63cb54a4b180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x63cb54a4b180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x63cb54a4b180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x63cb54a4b180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x63cb54a4b180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x63cb54a4b180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x63cb54a4b180
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 78] 2025-06-06 17:05:13
+[Thread 2 - Run 78] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x56824b68e070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x56824b68e070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x56824b68e070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x56824b68e070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x56824b68e070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x56824b68e070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x56824b68e070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x56824b68e070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x56824b68e070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 79] 2025-06-06 17:05:14
+[Thread 2 - Run 79] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5a9cbb4ac180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5a9cbb4ac180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5a9cbb4ac180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5a9cbb4ac180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5a9cbb4ac180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5a9cbb4ac180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5a9cbb4ac180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5a9cbb4ac180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5a9cbb4ac180
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 80] 2025-06-06 17:05:15
+[Thread 2 - Run 80] GPU Frequencies (MHz):
+3075, 10501, 3075
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+an illegal memory access was encountered cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 2 - Run 80] *** ERROR: Exit code 134 ***
+
+[Thread 2 - Run 81] 2025-06-06 17:05:20
+[Thread 2 - Run 81] GPU Frequencies (MHz):
+2640, 10501, 2640
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 2 - Run 81] *** ERROR: Exit code 134 ***
+
+[Thread 2 - Run 82] 2025-06-06 17:05:27
+[Thread 2 - Run 82] GPU Frequencies (MHz):
+3075, 10501, 3075
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 2 - Run 82] *** ERROR: Exit code 134 ***
+
+[Thread 2 - Run 83] 2025-06-06 17:05:32
+[Thread 2 - Run 83] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x561095bfe070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x561095bfe070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x561095bfe070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x561095bfe070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x561095bfe070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x561095bfe070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x561095bfe070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x561095bfe070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x561095bfe070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 84] 2025-06-06 17:05:33
+[Thread 2 - Run 84] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5e133bda1180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5e133bda1180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5e133bda1180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5e133bda1180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5e133bda1180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5e133bda1180
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5e133bda1180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5e133bda1180
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5e133bda1180
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 85] 2025-06-06 17:05:34
+[Thread 2 - Run 85] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5e4439845030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5e4439845030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5e4439845030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5e4439845030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5e4439845030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5e4439845030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5e4439845030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5e4439845030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5e4439845030
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 86] 2025-06-06 17:05:34
+[Thread 2 - Run 86] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x561223bd3030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x561223bd3030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x561223bd3030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x561223bd3030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x561223bd3030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x561223bd3030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x561223bd3030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x561223bd3030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x561223bd3030
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 87] 2025-06-06 17:05:35
+[Thread 2 - Run 87] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5dae7c04e070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5dae7c04e070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5dae7c04e070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5dae7c04e070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5dae7c04e070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5dae7c04e070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5dae7c04e070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5dae7c04e070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5dae7c04e070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 88] 2025-06-06 17:05:36
+[Thread 2 - Run 88] GPU Frequencies (MHz):
+3075, 10501, 3075
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+an illegal memory access was encountered cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 2 - Run 88] *** ERROR: Exit code 134 ***
+
+[Thread 2 - Run 89] 2025-06-06 17:05:40
+[Thread 2 - Run 89] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x59117c3a1030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x59117c3a1030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x59117c3a1030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x59117c3a1030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x59117c3a1030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x59117c3a1030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x59117c3a1030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x59117c3a1030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x59117c3a1030
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 90] 2025-06-06 17:05:41
+[Thread 2 - Run 90] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5fc1d92950b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5fc1d92950b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5fc1d92950b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5fc1d92950b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5fc1d92950b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5fc1d92950b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5fc1d92950b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5fc1d92950b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5fc1d92950b0
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 91] 2025-06-06 17:05:41
+[Thread 2 - Run 91] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x650a28f7c070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x650a28f7c070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x650a28f7c070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x650a28f7c070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x650a28f7c070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x650a28f7c070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x650a28f7c070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x650a28f7c070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x650a28f7c070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 92] 2025-06-06 17:05:42
+[Thread 2 - Run 92] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x59841f8fa070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x59841f8fa070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x59841f8fa070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x59841f8fa070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x59841f8fa070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x59841f8fa070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x59841f8fa070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x59841f8fa070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x59841f8fa070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 93] 2025-06-06 17:05:43
+[Thread 2 - Run 93] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x58a2a62e2070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x58a2a62e2070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x58a2a62e2070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x58a2a62e2070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x58a2a62e2070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x58a2a62e2070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x58a2a62e2070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x58a2a62e2070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x58a2a62e2070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 94] 2025-06-06 17:05:44
+[Thread 2 - Run 94] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5b1d8eb77030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5b1d8eb77030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5b1d8eb77030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5b1d8eb77030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5b1d8eb77030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5b1d8eb77030
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5b1d8eb77030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5b1d8eb77030
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5b1d8eb77030
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 95] 2025-06-06 17:05:45
+[Thread 2 - Run 95] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5a8fff48c130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5a8fff48c130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5a8fff48c130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5a8fff48c130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5a8fff48c130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5a8fff48c130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5a8fff48c130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5a8fff48c130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5a8fff48c130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 96] 2025-06-06 17:05:46
+[Thread 2 - Run 96] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5c344d3e8070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5c344d3e8070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5c344d3e8070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5c344d3e8070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5c344d3e8070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5c344d3e8070
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5c344d3e8070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5c344d3e8070
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5c344d3e8070
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 97] 2025-06-06 17:05:47
+[Thread 2 - Run 97] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5e0b2e0bd0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5e0b2e0bd0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5e0b2e0bd0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5e0b2e0bd0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5e0b2e0bd0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5e0b2e0bd0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5e0b2e0bd0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5e0b2e0bd0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5e0b2e0bd0b0
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 98] 2025-06-06 17:05:48
+[Thread 2 - Run 98] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x618ce1552130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x618ce1552130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x618ce1552130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x618ce1552130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x618ce1552130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x618ce1552130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x618ce1552130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x618ce1552130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x618ce1552130
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 99] 2025-06-06 17:05:49
+[Thread 2 - Run 99] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x5dcecf17d0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x5dcecf17d0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x5dcecf17d0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x5dcecf17d0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x5dcecf17d0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x5dcecf17d0b0
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x5dcecf17d0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x5dcecf17d0b0
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x5dcecf17d0b0
+Error code: an illegal memory access was encountered
+
+[Thread 2 - Run 100] 2025-06-06 17:05:50
+[Thread 2 - Run 100] GPU Frequencies (MHz):
+3075, 10501, 3075
+Doing NTT 2D RADIX8
+Doing NTT 2D RADIX8
+ALL CORRECT
+Error freeing 1048576 * 8 bytes at 0x304001000 on stream 0x63e05b166130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000e00 on stream 0x63e05b166130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 8 bytes at 0x304000c00 on stream 0x63e05b166130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303800c00 on stream 0x63e05b166130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x303000c00 on stream 0x63e05b166130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302800c00 on stream 0x63e05b166130
+Error code: an illegal memory access was encountered
+Error freeing 1048576 * 8 bytes at 0x302000c00 on stream 0x63e05b166130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000600 on stream 0x63e05b166130
+Error code: an illegal memory access was encountered
+Error freeing 64 * 24 bytes at 0x302000000 on stream 0x63e05b166130
+Error code: an illegal memory access was encountered
+

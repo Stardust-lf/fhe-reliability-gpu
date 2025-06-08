@@ -105,16 +105,16 @@ void test_nwt(size_t log_dim, size_t batch_size, int num_flips) {
         chosen_bits.insert(candidate);
     }
 
-    // 10. 对每个选中的全局比特索引进行翻转
-    std::cout << "[2D] Flipping " << num_flips << " unique random bit"
-              << (num_flips == 1 ? "" : "s") << " in the data buffer...\n";
+    // // 10. 对每个选中的全局比特索引进行翻转
+    // std::cout << "[2D] Flipping " << num_flips << " unique random bit"
+    //           << (num_flips == 1 ? "" : "s") << " in the data buffer...\n";
 
-    for (uint64_t global_bit_idx : chosen_bits) {
-        uint64_t elem_idx = global_bit_idx / 64ULL;         // 第几个 uint64_t
-        int bitpos       = static_cast<int>(global_bit_idx % 64ULL);  // uint64_t 内的哪一位
-        uint64_t mask    = (1ULL << bitpos);
-        h_data.get()[elem_idx] ^= mask;
-    }
+    // for (uint64_t global_bit_idx : chosen_bits) {
+    //     uint64_t elem_idx = global_bit_idx / 64ULL;         // 第几个 uint64_t
+    //     int bitpos       = static_cast<int>(global_bit_idx % 64ULL);  // uint64_t 内的哪一位
+    //     uint64_t mask    = (1ULL << bitpos);
+    //     h_data.get()[elem_idx] ^= mask;
+    // }
 
     // 11. 翻转后拷贝到 Device 并再执行 2D NTT
     cudaMemcpyAsync(
@@ -133,10 +133,8 @@ void test_nwt(size_t log_dim, size_t batch_size, int num_flips) {
     cudaStreamSynchronize(s);
 
     // 12. 比较 clean_ntt vs faulty_ntt，统计 bit-level 汉明距离和受影响的符号个数
-    // 12. 比较 clean_ntt vs faulty_ntt，统计 bit-level 汉明距离和受影响的符号个数
     size_t total_hamming = 0;
     size_t symbol_mismatch_count = 0;
-    std::vector<size_t> error_indices;
 
     for (size_t i = 0; i < total_elements; ++i) {
         uint64_t clean = h_clean_ntt.get()[i];
@@ -144,13 +142,9 @@ void test_nwt(size_t log_dim, size_t batch_size, int num_flips) {
         uint64_t diff  = clean ^ fault;
         if (diff != 0) {
             ++symbol_mismatch_count;
-            if (symbol_mismatch_count <= 128) {
-                error_indices.push_back(i);
-            }
         }
         total_hamming += static_cast<size_t>(__builtin_popcountll(diff));
     }
-
 
     if (total_hamming != 0) {
         // 计算比特错误率和符号错误率
@@ -174,14 +168,6 @@ void test_nwt(size_t log_dim, size_t batch_size, int num_flips) {
     } else {
         std::cout << "ALL CORRECT\n";
     }
-
-    if (symbol_mismatch_count > 0 && symbol_mismatch_count <= 128) {
-        std::cout << "[Debug] Symbol mismatch indices:\n";
-        for (size_t idx : error_indices) {
-            std::cout << "  - Index " << idx << "\n";
-        }
-    }
-
 }
 
 int main(int argc, char* argv[]) {

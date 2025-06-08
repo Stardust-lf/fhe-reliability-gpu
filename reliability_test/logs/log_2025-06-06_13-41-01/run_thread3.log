@@ -1,0 +1,124 @@
+[Thread 3 - Run 1] 2025-06-06 13:41:01
+[Thread 3 - Run 1] GPU Frequencies (MHz):
+210, 405, 210
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 1] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 2] 2025-06-06 13:41:06
+[Thread 3 - Run 2] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 2] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 3] 2025-06-06 13:41:14
+[Thread 3 - Run 3] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 3] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 4] 2025-06-06 13:41:22
+[Thread 3 - Run 4] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 4] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 5] 2025-06-06 13:41:30
+[Thread 3 - Run 5] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 5] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 6] 2025-06-06 13:41:38
+[Thread 3 - Run 6] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 6] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 7] 2025-06-06 13:41:47
+[Thread 3 - Run 7] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 7] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 8] 2025-06-06 13:41:55
+[Thread 3 - Run 8] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 8] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 9] 2025-06-06 13:41:59
+[Thread 3 - Run 9] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 9] *** ERROR: Exit code 137 ***
+
+[Thread 3 - Run 10] 2025-06-06 13:42:03
+[Thread 3 - Run 10] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 10] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 11] 2025-06-06 13:42:08
+[Thread 3 - Run 11] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 11] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 12] 2025-06-06 13:42:16
+[Thread 3 - Run 12] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 12] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 13] 2025-06-06 13:42:24
+[Thread 3 - Run 13] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 13] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 14] 2025-06-06 13:42:32
+[Thread 3 - Run 14] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 14] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 15] 2025-06-06 13:42:41
+[Thread 3 - Run 15] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 15] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 16] 2025-06-06 13:42:49
+[Thread 3 - Run 16] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 16] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 17] 2025-06-06 13:42:57
+[Thread 3 - Run 17] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid
+[Thread 3 - Run 17] *** ERROR: Exit code 134 ***
+
+[Thread 3 - Run 18] 2025-06-06 13:43:05
+[Thread 3 - Run 18] GPU Frequencies (MHz):
+2640, 10501, 2640
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  bit_sizes is invalid

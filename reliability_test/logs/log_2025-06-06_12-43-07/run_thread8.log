@@ -1,0 +1,128 @@
+[Thread 8 - Run 1] 2025-06-06 12:43:07
+[Thread 8 - Run 1] GPU Frequencies (MHz):
+210, 405, 210
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 8 - Run 1] *** ERROR: Exit code 134 ***
+
+[Thread 8 - Run 2] 2025-06-06 12:43:36
+[Thread 8 - Run 2] GPU Frequencies (MHz):
+3225, 10501, 3225
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 8 - Run 2] *** ERROR: Exit code 134 ***
+
+[Thread 8 - Run 3] 2025-06-06 12:43:40
+[Thread 8 - Run 3] GPU Frequencies (MHz):
+3225, 10501, 3225
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 8 - Run 3] *** ERROR: Exit code 134 ***
+
+[Thread 8 - Run 4] 2025-06-06 12:43:46
+[Thread 8 - Run 4] GPU Frequencies (MHz):
+3225, 10501, 3225
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 8 - Run 4] *** ERROR: Exit code 134 ***
+
+[Thread 8 - Run 5] 2025-06-06 12:43:50
+[Thread 8 - Run 5] GPU Frequencies (MHz):
+3225, 10501, 3225
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 8 - Run 5] *** ERROR: Exit code 134 ***
+
+[Thread 8 - Run 6] 2025-06-06 12:43:57
+[Thread 8 - Run 6] GPU Frequencies (MHz):
+3225, 10501, 3225
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 8 - Run 6] *** ERROR: Exit code 134 ***
+
+[Thread 8 - Run 7] 2025-06-06 12:44:03
+[Thread 8 - Run 7] GPU Frequencies (MHz):
+3225, 10501, 3225
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 8 - Run 7] *** ERROR: Exit code 134 ***
+
+[Thread 8 - Run 8] 2025-06-06 12:44:13
+[Thread 8 - Run 8] GPU Frequencies (MHz):
+3225, 10501, 3225
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 8 - Run 8] *** ERROR: Exit code 134 ***
+
+[Thread 8 - Run 9] 2025-06-06 12:44:19
+[Thread 8 - Run 9] GPU Frequencies (MHz):
+3225, 10501, 3225
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 8 - Run 9] *** ERROR: Exit code 134 ***
+
+[Thread 8 - Run 10] 2025-06-06 12:44:24
+[Thread 8 - Run 10] GPU Frequencies (MHz):
+3225, 10501, 3225
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 8 - Run 10] *** ERROR: Exit code 134 ***
+
+[Thread 8 - Run 11] 2025-06-06 12:44:31
+[Thread 8 - Run 11] GPU Frequencies (MHz):
+3225, 10501, 3225
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 8 - Run 11] *** ERROR: Exit code 134 ***
+
+[Thread 8 - Run 12] 2025-06-06 12:44:34
+[Thread 8 - Run 12] GPU Frequencies (MHz):
+3225, 10501, 3225
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error
+[Thread 8 - Run 12] *** ERROR: Exit code 134 ***
+
+[Thread 8 - Run 13] 2025-06-06 12:44:38
+[Thread 8 - Run 13] GPU Frequencies (MHz):
+3225, 10501, 3225
+
+CUDA Runtime Error at: ../phantom-fhe/include/cuda_wrapper.cuh:187
+CUDA-capable device(s) is/are busy or unavailable cudaMallocAsync(&ptr, n * sizeof(T), stream)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA Runtime Error

@@ -1,36 +1,16 @@
 #!/bin/bash
-set -m
-trap "echo 'Caught Ctrl+C, killing all...'; kill 0; exit 1" SIGINT
 
-NUM_THREADS=8
-RUNS=50
+# 如果已存在 exp_log.txt，就先删除
+rm -f exp_log.txt
 
-TIMESTAMP=$(date '+%Y-%m-%d_%H-%M-%S')
-LOGDIR="log_${TIMESTAMP}"
-mkdir -p "$LOGDIR"
-
-for THREAD_ID in $(seq 1 $NUM_THREADS); do
-    LOGFILE="${LOGDIR}/run_thread${THREAD_ID}.log"
-    rm -f "$LOGFILE"
-
-    (
-        for ((i = 1; i <= RUNS; i++)); do
-            echo "[Thread $THREAD_ID - Run $i] $(date '+%F %T')" >> "$LOGFILE"
-
-            echo "[Thread $THREAD_ID - Run $i] GPU Frequencies (MHz):" >> "$LOGFILE"
-            nvidia-smi --query-gpu=clocks.sm,clocks.mem,clocks.gr \
-                       --format=csv,noheader,nounits >> "$LOGFILE"
-
-            ./ntt_test 14 64 8 >> "$LOGFILE" 2>&1
-            RET=$?
-
-            if [ $RET -ne 0 ]; then
-                echo "[Thread $THREAD_ID - Run $i] *** ERROR: Exit code $RET ***" >> "$LOGFILE"
-            fi
-
-            echo "" >> "$LOGFILE"
-        done
-    ) &
+# 遍历 n = 2, 4, 8, …, 2048
+for n in 2 4 8 16 32 64 128 256 512 1024 2048; do
+  # 在日志里写入当前 n 的标识
+  echo "===== Running n=$n (50 runs) =====" >> exp_log.txt
+  # 对于每个 n，执行 50 次
+  for i in $(seq 1 50); do
+    echo "[n=$n | run $i] $(date '+%Y-%m-%d %H:%M:%S')" >> exp_log.txt
+    ./ntt_test 12 32 $n >> exp_log.txt 2>&1
+  done
+  echo "" >> exp_log.txt
 done
-
-wait
