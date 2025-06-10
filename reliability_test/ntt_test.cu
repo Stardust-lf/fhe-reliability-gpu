@@ -3,6 +3,7 @@
 #include <random>
 #include <memory>
 #include <unordered_set>
+#include <vector>
 #include <stdexcept>
 #include <string>
 #include <cstdlib>
@@ -18,16 +19,21 @@ __host__ __device__ inline uint64_t add_mod(uint64_t a, uint64_t b, uint64_t mod
     return (s < a || s >= mod) ? s - mod : s;
 }
 
-void test_nwt(size_t log_dim, size_t batch_size, int num_flips) {
+void test_nwt(size_t log_dim, size_t batch_size, int num_flips, int num_target_symbols) {
     // 1. 计算 dim 和总可翻转比特数
     size_t dim = 1ULL << log_dim;  // N = 2^log_dim
     uint64_t total_elements = batch_size * dim;
     uint64_t total_bits = total_elements * 64ULL;  // 每个 uint64_t 有 64 个比特
 
-    // 2. 检查 num_flips 是否合理
-    if (static_cast<uint64_t>(num_flips) > total_bits) {
+    // 2. 检查参数合理性
+    if (static_cast<uint64_t>(num_flips) > 64ULL) {
         std::cerr << "ERROR: num_flips (" << num_flips
-                  << ") exceeds total possible bits (" << total_bits << ").\n";
+                  << ") exceeds bits per symbol (64).\n";
+        std::exit(1);
+    }
+    if (static_cast<uint64_t>(num_target_symbols) > total_elements) {
+        std::cerr << "ERROR: num_target_symbols (" << num_target_symbols
+                  << ") exceeds total symbols (" << total_elements << ").\n";
         std::exit(1);
     }
 
@@ -38,7 +44,7 @@ void test_nwt(size_t log_dim, size_t batch_size, int num_flips) {
     const auto h_modulus = CoeffModulus::Create(dim, std::vector<int>(batch_size, 50));
 
     // 4. 复制到 Device 端的 DModulus 数组
-    auto modulus = phantom::util::make_cuda_auto_ptr<DModulus>(batch_size, s);
+    auto modulus = make_cuda_auto_ptr<DModulus>(batch_size, s);
     for (size_t i = 0; i < batch_size; ++i) {
         modulus.get()[i].set(
             h_modulus[i].value(),
@@ -78,8 +84,8 @@ void test_nwt(size_t log_dim, size_t batch_size, int num_flips) {
     auto h_clean_ntt  = std::make_unique<uint64_t[]>(total_elements);
     auto h_faulty_ntt = std::make_unique<uint64_t[]>(total_elements);
 
-    // 8. 将干净输入拷贝到 Device 并执行 2D NTT（只是前向部分）
-    auto d_data = phantom::util::make_cuda_auto_ptr<uint64_t>(total_elements, s);
+    // 8. 将干净输入拷贝到 Device 并执行 2D NTT（前向部分）
+    auto d_data = make_cuda_auto_ptr<uint64_t>(total_elements, s);
     cudaMemcpyAsync(
         d_data.get(),
         h_data.get(),
@@ -95,24 +101,36 @@ void test_nwt(size_t log_dim, size_t batch_size, int num_flips) {
     );
     cudaStreamSynchronize(s);
 
-    // 9. 在 Host 端随机选择且“不重复”的 num_flips 个全局比特索引
-    std::uniform_int_distribution<uint64_t> bit_index_dist(0, total_bits - 1);
-    std::unordered_set<uint64_t> chosen_bits;
-    chosen_bits.reserve(static_cast<size_t>(num_flips));
+    // 9. 随机选择 num_target_symbols 个 symbol，并在每个 symbol 中翻转 num_flips 个 bit
+    std::unordered_set<uint64_t> selected_symbols;
+    std::uniform_int_distribution<uint64_t> symbol_dist(0, total_elements - 1);
+    std::uniform_int_distribution<int> bitpos_dist(0, 63);
 
-    while (static_cast<int>(chosen_bits.size()) < num_flips) {
-        uint64_t candidate = bit_index_dist(rng);
-        chosen_bits.insert(candidate);
+    while (static_cast<int>(selected_symbols.size()) < num_target_symbols) {
+        selected_symbols.insert(symbol_dist(rng));
     }
 
-    // 10. 对每个选中的全局比特索引进行翻转
-    std::cout << "[2D] Flipping " << num_flips << " unique random bit"
-              << (num_flips == 1 ? "" : "s") << " in the data buffer...\n";
+    std::unordered_set<uint64_t> flipped_bits;
+    for (uint64_t elem_idx : selected_symbols) {
+        std::unordered_set<int> bit_positions;
+        while (static_cast<int>(bit_positions.size()) < num_flips) {
+            bit_positions.insert(bitpos_dist(rng));
+        }
+        for (int bitpos : bit_positions) {
+            uint64_t global_bit_idx = elem_idx * 64ULL + bitpos;
+            flipped_bits.insert(global_bit_idx);
+        }
+    }
 
-    for (uint64_t global_bit_idx : chosen_bits) {
-        uint64_t elem_idx = global_bit_idx / 64ULL;         // 第几个 uint64_t
-        int bitpos       = static_cast<int>(global_bit_idx % 64ULL);  // uint64_t 内的哪一位
-        uint64_t mask    = (1ULL << bitpos);
+    std::cout << "[2D] Flipping " << flipped_bits.size() 
+              << " bits across " << selected_symbols.size()
+              << " symbols...\n";
+
+    // 10. 进行 bit flip
+    for (uint64_t global_bit_idx : flipped_bits) {
+        uint64_t elem_idx = global_bit_idx / 64ULL;
+        int bitpos = static_cast<int>(global_bit_idx % 64ULL);
+        uint64_t mask = (1ULL << bitpos);
         h_data.get()[elem_idx] ^= mask;
     }
 
@@ -132,8 +150,7 @@ void test_nwt(size_t log_dim, size_t batch_size, int num_flips) {
     );
     cudaStreamSynchronize(s);
 
-    // 12. 比较 clean_ntt vs faulty_ntt，统计 bit-level 汉明距离和受影响的符号个数
-    // 12. 比较 clean_ntt vs faulty_ntt，统计 bit-level 汉明距离和受影响的符号个数
+    // 12. 比较 clean_ntt vs faulty_ntt，统计 Hamming distance 和受影响符号
     size_t total_hamming = 0;
     size_t symbol_mismatch_count = 0;
     std::vector<size_t> error_indices;
@@ -151,9 +168,7 @@ void test_nwt(size_t log_dim, size_t batch_size, int num_flips) {
         total_hamming += static_cast<size_t>(__builtin_popcountll(diff));
     }
 
-
     if (total_hamming != 0) {
-        // 计算比特错误率和符号错误率
         double bit_error_rate = static_cast<double>(total_hamming) / static_cast<double>(total_bits);
         double symbol_error_rate = static_cast<double>(symbol_mismatch_count) / static_cast<double>(total_elements);
 
@@ -181,25 +196,25 @@ void test_nwt(size_t log_dim, size_t batch_size, int num_flips) {
             std::cout << "  - Index " << idx << "\n";
         }
     }
-
 }
 
 int main(int argc, char* argv[]) {
-    if (argc < 4) {
+    if (argc < 5) {
         std::cerr << "Usage: " << argv[0]
-                  << " <log_dim> <batch_size> <num_flips>\n";
+                  << " <log_dim> <batch_size> <num_flips> <num_target_symbols>\n";
         return 1;
     }
 
-    size_t log_dim    = static_cast<size_t>(std::stoul(argv[1]));
-    size_t batch_size = static_cast<size_t>(std::stoul(argv[2]));
-    int num_flips     = std::stoi(argv[3]);
+    size_t log_dim            = static_cast<size_t>(std::stoul(argv[1]));
+    size_t batch_size         = static_cast<size_t>(std::stoul(argv[2]));
+    int num_flips             = std::stoi(argv[3]);
+    int num_target_symbols    = std::stoi(argv[4]);
 
-    if (num_flips < 1) {
-        std::cerr << "Error: <num_flips> must be >= 1\n";
+    if (num_flips < 1 || num_target_symbols < 1) {
+        std::cerr << "Error: <num_flips> and <num_target_symbols> must be >= 1\n";
         return 1;
     }
 
-    test_nwt(log_dim, batch_size, num_flips);
+    test_nwt(log_dim, batch_size, num_flips, num_target_symbols);
     return 0;
 }
