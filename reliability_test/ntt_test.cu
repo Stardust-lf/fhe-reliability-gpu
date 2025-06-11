@@ -214,7 +214,7 @@ int main(int argc, char* argv[]) {
         std::cerr << "Error: <num_flips> and <num_target_symbols> must be >= 1\n";
         return 1;
     }
-
+        
     test_nwt(log_dim, batch_size, num_flips, num_target_symbols);
     return 0;
 }

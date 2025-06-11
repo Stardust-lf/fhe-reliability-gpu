@@ -1,0 +1,4 @@
+CompileFlags:
+  Add:
+    - --no-cuda-version-check
+
