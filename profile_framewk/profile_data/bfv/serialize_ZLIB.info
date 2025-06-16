@@ -1,0 +1,1198 @@
+=== callgrind.out.919371.10 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.10' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 168509742 - 180895722
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 10)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                  
+--------------------------------------------------------------------------------
+52,642,578 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                   file:function
+--------------------------------------------------------------------------------
+37,962,728 (72.11%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 7,504,931 (14.26%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 3,501,826 ( 6.65%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 1,383,284 ( 2.63%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   628,328 ( 1.19%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   468,301 ( 0.89%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   461,319 ( 0.88%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   327,750 ( 0.62%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.11 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.11' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 180895722 - 222617060
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 11)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+189,047,030 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+124,582,633 (65.90%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 32,974,580 (17.44%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 16,159,400 ( 8.55%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  6,891,150 ( 3.65%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  2,717,522 ( 1.44%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,924,337 ( 1.02%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,871,929 ( 0.99%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,250,480 ( 0.66%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.12 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.12' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 222617060 - 264368116
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 12)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+189,149,754 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+124,682,487 (65.92%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 32,978,322 (17.44%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 16,160,546 ( 8.54%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  6,891,226 ( 3.64%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  2,717,542 ( 1.44%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,924,833 ( 1.02%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,871,929 ( 0.99%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,249,825 ( 0.66%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.13 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.13' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 264368116 - 306093273
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 13)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+189,071,703 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+124,593,664 (65.90%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 32,984,216 (17.45%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 16,165,027 ( 8.55%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  6,891,226 ( 3.64%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  2,717,963 ( 1.44%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,925,637 ( 1.02%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,871,929 ( 0.99%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,249,298 ( 0.66%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.14 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.14' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 306093273 - 347792695
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 14)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+188,955,716 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+124,499,216 (65.89%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 32,969,056 (17.45%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 16,156,245 ( 8.55%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  6,891,226 ( 3.65%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  2,717,326 ( 1.44%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,925,438 ( 1.02%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,871,929 ( 0.99%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,250,297 ( 0.66%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.15 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.15' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 347792695 - 389455833
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 15)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+188,852,265 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+124,392,675 (65.87%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 32,970,664 (17.46%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 16,158,949 ( 8.56%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  6,891,188 ( 3.65%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  2,717,501 ( 1.44%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,924,622 ( 1.02%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,871,929 ( 0.99%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,250,492 ( 0.66%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.16 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.16' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 389455833 - 431161612
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 16)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+188,997,457 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+124,536,869 (65.89%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 32,974,515 (17.45%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 16,156,549 ( 8.55%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  6,891,302 ( 3.65%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  2,717,311 ( 1.44%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,925,806 ( 1.02%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,871,929 ( 0.99%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,249,780 ( 0.66%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.17 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.17' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 431161612 - 472860682
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 17)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+188,957,345 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+124,495,164 (65.89%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 32,972,004 (17.45%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 16,159,966 ( 8.55%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  6,891,226 ( 3.65%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  2,717,531 ( 1.44%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,925,098 ( 1.02%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,871,929 ( 0.99%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,250,336 ( 0.66%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.18 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.18' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 472860682 - 514562927
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 18)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+188,977,576 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+124,521,145 (65.89%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 32,971,370 (17.45%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 16,155,439 ( 8.55%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  6,891,226 ( 3.65%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  2,717,085 ( 1.44%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,925,788 ( 1.02%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,871,929 ( 0.99%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,249,335 ( 0.66%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.19 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.19' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 514562927 - 556253816
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 19)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+188,937,854 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+124,482,180 (65.89%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 32,966,753 (17.45%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 16,156,910 ( 8.55%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  6,891,188 ( 3.65%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  2,717,431 ( 1.44%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,927,887 ( 1.02%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,871,929 ( 0.99%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,251,056 ( 0.66%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.2 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.2' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 69421108 - 81787570
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 2)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                  
+--------------------------------------------------------------------------------
+52,581,066 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                   file:function
+--------------------------------------------------------------------------------
+37,897,602 (72.07%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 7,506,246 (14.28%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 3,502,206 ( 6.66%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 1,383,474 ( 2.63%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   628,447 ( 1.20%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   468,301 ( 0.89%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   462,630 ( 0.88%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   327,750 ( 0.62%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.20 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.20' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 556253816 - 597962045
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 20)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+188,996,745 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+124,537,108 (65.89%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 32,973,285 (17.45%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 16,156,559 ( 8.55%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  6,891,112 ( 3.65%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  2,717,307 ( 1.44%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,924,503 ( 1.02%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,871,929 ( 0.99%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  1,250,467 ( 0.66%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.21 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.21' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 597962045 - 732387996
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 21)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+668,750,778 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+392,610,668 (58.71%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+144,560,041 (21.62%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 71,466,709 (10.69%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 28,919,498 ( 4.32%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  8,890,939 ( 1.33%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,486,441 ( 1.12%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,134,624 ( 1.07%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  5,803,722 ( 0.87%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.22 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.22' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 732387996 - 866797831
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 22)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+668,674,648 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+392,552,539 (58.71%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+144,555,332 (21.62%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 71,465,360 (10.69%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 28,919,498 ( 4.32%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  8,886,155 ( 1.33%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,486,441 ( 1.12%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,134,653 ( 1.07%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  5,800,950 ( 0.87%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.23 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.23' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 866797831 - 1001210270
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 23)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+668,727,087 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+392,585,671 (58.71%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+144,580,882 (21.62%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 71,466,796 (10.69%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 28,919,498 ( 4.32%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  8,885,471 ( 1.33%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,486,441 ( 1.12%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,135,079 ( 1.07%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  5,795,686 ( 0.87%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.24 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.24' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 1001210270 - 1135634152
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 24)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+668,747,010 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+392,625,243 (58.71%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+144,562,197 (21.62%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 71,465,425 (10.69%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 28,919,232 ( 4.32%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  8,883,168 ( 1.33%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,486,441 ( 1.12%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,134,506 ( 1.07%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  5,796,920 ( 0.87%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.25 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.25' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 1135634152 - 1270056870
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 25)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+668,708,820 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+392,592,496 (58.71%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+144,543,471 (21.62%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 71,461,583 (10.69%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 28,919,536 ( 4.32%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  8,889,259 ( 1.33%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,486,441 ( 1.12%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,134,320 ( 1.07%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  5,802,271 ( 0.87%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.26 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.26' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 1270056870 - 1404477528
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 26)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+668,742,707 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+392,613,263 (58.71%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+144,565,788 (21.62%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 71,461,456 (10.69%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 28,919,422 ( 4.32%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  8,889,034 ( 1.33%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,486,441 ( 1.12%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,134,867 ( 1.07%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  5,798,272 ( 0.87%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.27 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.27' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 1404477528 - 1538932140
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 27)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+668,840,623 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+392,732,594 (58.72%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+144,552,136 (21.61%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 71,462,812 (10.68%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 28,919,346 ( 4.32%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  8,882,842 ( 1.33%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,486,441 ( 1.12%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,134,771 ( 1.07%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  5,796,283 ( 0.87%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.28 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.28' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 1538932140 - 1673328430
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 28)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+668,639,706 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+392,520,375 (58.70%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+144,554,812 (21.62%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 71,464,485 (10.69%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 28,919,422 ( 4.33%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  8,886,518 ( 1.33%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,486,441 ( 1.12%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,134,849 ( 1.07%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  5,800,902 ( 0.87%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.29 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.29' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 1673328430 - 1807666294
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 29)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+668,463,250 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+392,332,396 (58.69%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+144,566,995 (21.63%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 71,459,879 (10.69%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 28,919,308 ( 4.33%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  8,888,613 ( 1.33%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,486,441 ( 1.12%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,134,167 ( 1.07%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  5,800,980 ( 0.87%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.3 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.3' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 81787570 - 94183650
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 3)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                  
+--------------------------------------------------------------------------------
+52,682,595 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                   file:function
+--------------------------------------------------------------------------------
+37,996,644 (72.12%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 7,507,711 (14.25%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 3,504,480 ( 6.65%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 1,383,284 ( 2.63%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   628,391 ( 1.19%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   468,301 ( 0.89%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   463,096 ( 0.88%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   327,750 ( 0.62%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.30 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.30' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 1807666294 - 1942209472
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 30)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+669,151,506 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+393,026,780 (58.74%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+144,562,943 (21.60%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 71,465,149 (10.68%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 28,919,384 ( 4.32%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  8,882,384 ( 1.33%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,486,441 ( 1.12%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  7,135,060 ( 1.07%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  5,795,823 ( 0.87%)  ???:build_tree [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.4 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.4' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 94183650 - 106563896
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 4)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                  
+--------------------------------------------------------------------------------
+52,620,675 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                   file:function
+--------------------------------------------------------------------------------
+37,939,991 (72.10%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 7,504,025 (14.26%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 3,504,712 ( 6.66%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 1,383,246 ( 2.63%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   628,490 ( 1.19%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   468,301 ( 0.89%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   461,786 ( 0.88%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   327,750 ( 0.62%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.5 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.5' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 106563896 - 118933700
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 5)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                  
+--------------------------------------------------------------------------------
+52,586,158 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                   file:function
+--------------------------------------------------------------------------------
+37,909,599 (72.09%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 7,504,016 (14.27%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 3,501,602 ( 6.66%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 1,383,284 ( 2.63%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   628,340 ( 1.19%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   468,301 ( 0.89%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   460,647 ( 0.88%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   327,750 ( 0.62%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.6 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.6' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 118933700 - 131340390
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 6)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                  
+--------------------------------------------------------------------------------
+52,715,824 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                   file:function
+--------------------------------------------------------------------------------
+38,030,735 (72.14%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 7,506,173 (14.24%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 3,504,335 ( 6.65%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 1,383,322 ( 2.62%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   628,435 ( 1.19%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   468,301 ( 0.89%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   462,763 ( 0.88%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   327,750 ( 0.62%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.7 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.7' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 131340390 - 143738957
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 7)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                  
+--------------------------------------------------------------------------------
+52,686,422 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                   file:function
+--------------------------------------------------------------------------------
+38,005,608 (72.14%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 7,503,718 (14.24%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 3,503,256 ( 6.65%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 1,383,322 ( 2.63%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   628,373 ( 1.19%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   468,301 ( 0.89%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   462,720 ( 0.88%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   327,750 ( 0.62%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.8 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.8' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 143738957 - 156161874
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 8)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                  
+--------------------------------------------------------------------------------
+52,775,975 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                   file:function
+--------------------------------------------------------------------------------
+38,094,323 (72.18%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 7,505,593 (14.22%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 3,501,800 ( 6.64%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 1,383,360 ( 2.62%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   628,231 ( 1.19%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   468,301 ( 0.89%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   462,032 ( 0.88%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   327,750 ( 0.62%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
+=== callgrind.out.919371.9 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bfv/serialize_ZLIB//callgrind.out.919371.9' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 156161874 - 168509742
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 1 (PID 919371, part 9)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                  
+--------------------------------------------------------------------------------
+52,510,033 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                   file:function
+--------------------------------------------------------------------------------
+37,828,406 (72.04%)  ???:longest_match [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 7,506,083 (14.29%)  ???:deflate_slow [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 3,503,724 ( 6.67%)  ???:compress_block [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+ 1,383,246 ( 2.63%)  ???:fill_window [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   628,290 ( 1.20%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   468,301 ( 0.89%)  ???:adler32_z [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   461,886 ( 0.88%)  ???:pqdownheap.constprop.0 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   327,750 ( 0.62%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+

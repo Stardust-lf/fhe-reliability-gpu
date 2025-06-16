@@ -172,9 +172,12 @@ void bfv_performance_test(SEALContext context)
         batch_encoder.encode(vector<uint64_t>(slot_count, i + 1), plain2);
         encryptor.encrypt(plain2, encrypted2);
         time_start = chrono::high_resolution_clock::now();
+        // CALLGRIND_START_INSTRUMENTATION;
         evaluator.add_inplace(encrypted1, encrypted1);
         evaluator.add_inplace(encrypted2, encrypted2);
         evaluator.add_inplace(encrypted1, encrypted2);
+        // CALLGRIND_STOP_INSTRUMENTATION;
+        // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
         time_add_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -186,7 +189,10 @@ void bfv_performance_test(SEALContext context)
         */
         encrypted1.reserve(3);
         time_start = chrono::high_resolution_clock::now();
+        // CALLGRIND_START_INSTRUMENTATION;
         evaluator.multiply_inplace(encrypted1, encrypted2);
+        // CALLGRIND_STOP_INSTRUMENTATION;
+        // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
         time_multiply_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -197,7 +203,10 @@ void bfv_performance_test(SEALContext context)
         encrypted2 here.
         */
         time_start = chrono::high_resolution_clock::now();
+        // CALLGRIND_START_INSTRUMENTATION;
         evaluator.multiply_plain_inplace(encrypted2, plain);
+        // CALLGRIND_STOP_INSTRUMENTATION;
+        // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
         time_multiply_plain_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -207,7 +216,10 @@ void bfv_performance_test(SEALContext context)
         faster than generic homomorphic multiplication.
         */
         time_start = chrono::high_resolution_clock::now();
+        // CALLGRIND_START_INSTRUMENTATION;
         evaluator.square_inplace(encrypted2);
+        // CALLGRIND_STOP_INSTRUMENTATION;
+        // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
         time_square_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -221,7 +233,10 @@ void bfv_performance_test(SEALContext context)
             needed in the process.
             */
             time_start = chrono::high_resolution_clock::now();
+            // CALLGRIND_START_INSTRUMENTATION;
             evaluator.relinearize_inplace(encrypted1, relin_keys);
+            // CALLGRIND_STOP_INSTRUMENTATION;
+            // CALLGRIND_DUMP_STATS;
             time_end = chrono::high_resolution_clock::now();
             time_relinearize_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -230,8 +245,11 @@ void bfv_performance_test(SEALContext context)
             We rotate matrix rows by one step left and measure the time.
             */
             time_start = chrono::high_resolution_clock::now();
+            // CALLGRIND_START_INSTRUMENTATION;
             evaluator.rotate_rows_inplace(encrypted, 1, gal_keys);
             evaluator.rotate_rows_inplace(encrypted, -1, gal_keys);
+            // CALLGRIND_STOP_INSTRUMENTATION;
+            // CALLGRIND_DUMP_STATS;
             time_end = chrono::high_resolution_clock::now();
             time_rotate_rows_one_step_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
             ;
@@ -245,7 +263,10 @@ void bfv_performance_test(SEALContext context)
             // row_size is always a power of 2
             int random_rotation = static_cast<int>(rd() & (row_size - 1));
             time_start = chrono::high_resolution_clock::now();
+            // CALLGRIND_START_INSTRUMENTATION;
             evaluator.rotate_rows_inplace(encrypted, random_rotation, gal_keys);
+            // CALLGRIND_STOP_INSTRUMENTATION;
+            // CALLGRIND_DUMP_STATS;
             time_end = chrono::high_resolution_clock::now();
             time_rotate_rows_random_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -254,7 +275,10 @@ void bfv_performance_test(SEALContext context)
             Nothing surprising here.
             */
             time_start = chrono::high_resolution_clock::now();
+            // CALLGRIND_START_INSTRUMENTATION;
             evaluator.rotate_columns_inplace(encrypted, gal_keys);
+            // CALLGRIND_STOP_INSTRUMENTATION;
+            // CALLGRIND_DUMP_STATS;
             time_end = chrono::high_resolution_clock::now();
             time_rotate_columns_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
         }
@@ -265,7 +289,10 @@ void bfv_performance_test(SEALContext context)
         size_t buf_size = static_cast<size_t>(encrypted.save_size(compr_mode_type::none));
         vector<seal_byte> buf(buf_size);
         time_start = chrono::high_resolution_clock::now();
+        // CALLGRIND_START_INSTRUMENTATION;
         encrypted.save(buf.data(), buf_size, compr_mode_type::none);
+        // CALLGRIND_STOP_INSTRUMENTATION;
+        // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
         time_serialize_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 #ifdef SEAL_USE_ZLIB
@@ -275,7 +302,10 @@ void bfv_performance_test(SEALContext context)
         buf_size = static_cast<size_t>(encrypted.save_size(compr_mode_type::zlib));
         buf.resize(buf_size);
         time_start = chrono::high_resolution_clock::now();
+        // CALLGRIND_START_INSTRUMENTATION;
         encrypted.save(buf.data(), buf_size, compr_mode_type::zlib);
+        // CALLGRIND_STOP_INSTRUMENTATION;
+        // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
         time_serialize_zlib_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 #endif
@@ -286,7 +316,10 @@ void bfv_performance_test(SEALContext context)
         buf_size = static_cast<size_t>(encrypted.save_size(compr_mode_type::zstd));
         buf.resize(buf_size);
         time_start = chrono::high_resolution_clock::now();
+        // CALLGRIND_START_INSTRUMENTATION;
         encrypted.save(buf.data(), buf_size, compr_mode_type::zstd);
+        // CALLGRIND_STOP_INSTRUMENTATION;
+        // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
         time_serialize_zstd_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 #endif
@@ -483,9 +516,12 @@ void ckks_performance_test(SEALContext context)
         ckks_encoder.encode(i + 1, plain2);
         encryptor.encrypt(plain2, encrypted2);
         time_start = chrono::high_resolution_clock::now();
+        // CALLGRIND_START_INSTRUMENTATION;
         evaluator.add_inplace(encrypted1, encrypted1);
         evaluator.add_inplace(encrypted2, encrypted2);
         evaluator.add_inplace(encrypted1, encrypted2);
+        // CALLGRIND_STOP_INSTRUMENTATION;
+        // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
         time_add_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -494,7 +530,10 @@ void ckks_performance_test(SEALContext context)
         */
         encrypted1.reserve(3);
         time_start = chrono::high_resolution_clock::now();
+        // CALLGRIND_START_INSTRUMENTATION;
         evaluator.multiply_inplace(encrypted1, encrypted2);
+        // CALLGRIND_STOP_INSTRUMENTATION;
+        // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
         time_multiply_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -502,7 +541,10 @@ void ckks_performance_test(SEALContext context)
         [Multiply Plain]
         */
         time_start = chrono::high_resolution_clock::now();
+        // CALLGRIND_START_INSTRUMENTATION;
         evaluator.multiply_plain_inplace(encrypted2, plain);
+        // CALLGRIND_STOP_INSTRUMENTATION;
+        // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
         time_multiply_plain_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -510,7 +552,10 @@ void ckks_performance_test(SEALContext context)
         [Square]
         */
         time_start = chrono::high_resolution_clock::now();
+        // CALLGRIND_START_INSTRUMENTATION;
         evaluator.square_inplace(encrypted2);
+        // CALLGRIND_STOP_INSTRUMENTATION;
+        // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
         time_square_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -520,7 +565,10 @@ void ckks_performance_test(SEALContext context)
             [Relinearize]
             */
             time_start = chrono::high_resolution_clock::now();
+            // CALLGRIND_START_INSTRUMENTATION;
             evaluator.relinearize_inplace(encrypted1, relin_keys);
+            // CALLGRIND_STOP_INSTRUMENTATION;
+            // CALLGRIND_DUMP_STATS;
             time_end = chrono::high_resolution_clock::now();
             time_relinearize_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -528,7 +576,10 @@ void ckks_performance_test(SEALContext context)
             [Rescale]
             */
             time_start = chrono::high_resolution_clock::now();
+            // CALLGRIND_START_INSTRUMENTATION;
             evaluator.rescale_to_next_inplace(encrypted1);
+            // CALLGRIND_STOP_INSTRUMENTATION;
+            // CALLGRIND_DUMP_STATS;
             time_end = chrono::high_resolution_clock::now();
             time_rescale_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -536,8 +587,11 @@ void ckks_performance_test(SEALContext context)
             [Rotate Vector]
             */
             time_start = chrono::high_resolution_clock::now();
+            // CALLGRIND_START_INSTRUMENTATION;
             evaluator.rotate_vector_inplace(encrypted, 1, gal_keys);
             evaluator.rotate_vector_inplace(encrypted, -1, gal_keys);
+            // CALLGRIND_STOP_INSTRUMENTATION;
+            // CALLGRIND_DUMP_STATS;
             time_end = chrono::high_resolution_clock::now();
             time_rotate_one_step_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -547,7 +601,10 @@ void ckks_performance_test(SEALContext context)
             // ckks_encoder.slot_count() is always a power of 2.
             int random_rotation = static_cast<int>(rd() & (ckks_encoder.slot_count() - 1));
             time_start = chrono::high_resolution_clock::now();
+            // CALLGRIND_START_INSTRUMENTATION;
             evaluator.rotate_vector_inplace(encrypted, random_rotation, gal_keys);
+            // CALLGRIND_STOP_INSTRUMENTATION;
+            // CALLGRIND_DUMP_STATS;
             time_end = chrono::high_resolution_clock::now();
             time_rotate_random_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -555,7 +612,10 @@ void ckks_performance_test(SEALContext context)
             [Complex Conjugate]
             */
             time_start = chrono::high_resolution_clock::now();
+            // CALLGRIND_START_INSTRUMENTATION;
             evaluator.complex_conjugate_inplace(encrypted, gal_keys);
+            // CALLGRIND_STOP_INSTRUMENTATION;
+            // CALLGRIND_DUMP_STATS;
             time_end = chrono::high_resolution_clock::now();
             time_conjugate_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
         }
@@ -566,7 +626,10 @@ void ckks_performance_test(SEALContext context)
         size_t buf_size = static_cast<size_t>(encrypted.save_size(compr_mode_type::none));
         vector<seal_byte> buf(buf_size);
         time_start = chrono::high_resolution_clock::now();
+        // CALLGRIND_START_INSTRUMENTATION;
         encrypted.save(buf.data(), buf_size, compr_mode_type::none);
+        // CALLGRIND_STOP_INSTRUMENTATION;
+        // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
         time_serialize_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 #ifdef SEAL_USE_ZLIB
@@ -576,7 +639,10 @@ void ckks_performance_test(SEALContext context)
         buf_size = static_cast<size_t>(encrypted.save_size(compr_mode_type::zlib));
         buf.resize(buf_size);
         time_start = chrono::high_resolution_clock::now();
+        // CALLGRIND_START_INSTRUMENTATION;
         encrypted.save(buf.data(), buf_size, compr_mode_type::zlib);
+        // CALLGRIND_STOP_INSTRUMENTATION;
+        // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
         time_serialize_zlib_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 #endif
@@ -587,7 +653,10 @@ void ckks_performance_test(SEALContext context)
         buf_size = static_cast<size_t>(encrypted.save_size(compr_mode_type::zstd));
         buf.resize(buf_size);
         time_start = chrono::high_resolution_clock::now();
+        // CALLGRIND_START_INSTRUMENTATION;
         encrypted.save(buf.data(), buf_size, compr_mode_type::zstd);
+        // CALLGRIND_STOP_INSTRUMENTATION;
+        // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
         time_serialize_zstd_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 #endif

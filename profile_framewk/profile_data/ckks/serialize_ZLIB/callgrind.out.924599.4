@@ -1,0 +1,11085 @@
+# callgrind format
+version: 1
+creator: callgrind-3.22.0
+pid: 924599
+cmd:  ../../build/profile_framewk 3
+part: 4
+
+
+desc: I1 cache: 
+desc: D1 cache: 
+desc: LL cache: 
+
+desc: Timerange: Basic block 90469510 - 102891323
+desc: Trigger: Client Request
+
+positions: instr line
+events: Ir
+summary: 0
+
+
+ob=(8) /home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk
+fl=(210) ???
+fn=(2288) __gnu_cxx::__aligned_buffer<seal::util::MemoryPoolMT>::_M_ptr()
+0x3cc0c 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(2290) __gnu_cxx::__aligned_buffer<seal::util::MemoryPoolMT>::_M_addr()
+calls=2 0x3d5ec 0 
+* 0 14
++5 0 2
++1 0 2
+
+fn=(2296) void std::_Destroy<seal::util::MemoryPoolMT>(seal::util::MemoryPoolMT*)
+0x3def2 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
++3 0 2
++4 0 2
++3 0 2
+cfn=(2298) seal::util::MemoryPoolMT::~MemoryPoolMT()
+calls=2 0x8dac0 0 
+* 0 3590
++2 0 2
++1 0 2
++1 0 2
+
+fn=(2312) std::__new_allocator<std::_Sp_counted_ptr_inplace<seal::util::MemoryPoolMT, std::allocator<void>, (__gnu_cxx::_Lock_policy)2> >::deallocate(std::_Sp_counted_ptr_inplace<seal::util::MemoryPoolMT, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>*, unsigned long)
+0x3d54e 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
++4 0 2
++3 0 2
++4 0 2
++3 0 2
++4 0 2
++3 0 2
++3 0 2
+cob=(4) ???
+cfi=(173) ???
+cfn=(1784) 0x000000000010fb60
+calls=2 0x10fb60 0 
+* 0 190
++5 0 2
++1 0 2
+
+fn=(2314) std::__new_allocator<std::_Sp_counted_ptr_inplace<seal::util::MemoryPoolMT, std::allocator<void>, (__gnu_cxx::_Lock_policy)2> >::~__new_allocator()
+0x3cb56 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++1 0 2
++1 0 2
+
+fn=(3234) std::byte* std::vector<std::byte, std::allocator<std::byte> >::_M_data_ptr<std::byte>(std::byte*) const
+0x35920 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(3250) std::tuple<seal::Ciphertext const*, std::_Placeholder<1> >::tuple<seal::Ciphertext const*, std::_Placeholder<1> const&, true>(seal::Ciphertext const*&&, std::_Placeholder<1> const&)
+0x3794e 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3240) std::_Placeholder<1> const& std::forward<std::_Placeholder<1> const&>(std::remove_reference<std::_Placeholder<1> const&>::type&)
+calls=1 0x32a97 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3242) seal::Ciphertext const*&& std::forward<seal::Ciphertext const*>(std::remove_reference<seal::Ciphertext const*>::type&)
+calls=1 0x3368d 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(3252) std::_Tuple_impl<0ul, seal::Ciphertext const*, std::_Placeholder<1> >::_Tuple_impl<seal::Ciphertext const*, std::_Placeholder<1> const&, void>(seal::Ciphertext const*&&, std::_Placeholder<1> const&)
+calls=1 0x3b41a 0 
+* 0 85
++5 0 1
++1 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(3268) void std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_init_functor<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >(std::_Any_data&, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&)
+0x3373d 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3266) std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&& std::forward<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >(std::remove_reference<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::type&)
+calls=1 -45 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3270) void std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_create<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >(std::_Any_data&, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&, std::integral_constant<bool, false>)
+calls=1 0x37a4a 0 
+* 0 175
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3276) std::_Tuple_impl<0ul, seal::Ciphertext const*, std::_Placeholder<1> >::_Tuple_impl(std::_Tuple_impl<0ul, seal::Ciphertext const*, std::_Placeholder<1> >&&)
+0x379a0 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3278) std::_Tuple_impl<1ul, std::_Placeholder<1> >::_Tuple_impl(std::_Tuple_impl<1ul, std::_Placeholder<1> >&&)
+calls=1 0x3abfe 0 
+* 0 8
++5 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++1 0 1
++1 0 1
+
+fn=(3278)
+0x3abfe 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
++1 0 1
+
+fn=(3294) std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+0x337b4 0 3
++4 0 3
++1 0 3
++3 0 3
++1 0 3
++4 0 3
++4 0 3
++4 0 3
++3 0 3
++3 0 3
++2 0 3
++2 0 3
++3 0 3
++2 0 3
++58 0 3
++3 0 3
++4 0 3
++4 0 3
++3 0 3
++3 0 3
+cfn=(3296) std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+calls=3 0x37b1a 0 
+* 0 512
++5 0 3
++5 0 3
++4 0 3
++1 0 3
+
+fn=(3322) seal::util::ArrayPutBuffer::seekpos(std::fpos<__mbstate_t>, std::_Ios_Openmode)
+0xa3820 0 2
++4 0 2
++3 0 2
++17 0 2
++3 0 2
++2 0 2
++4 0 2
++2 0 2
++4 0 2
++3 0 2
++4 0 2
++3 0 2
+
+fn=(3332) std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_invoke(std::_Any_data const&, std::ostream&)
+0x33772 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3334) std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3298) std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_get_pointer(std::_Any_data const&)
+calls=1 0x37a99 0 
+* 0 28
++5 0 1
++3 0 1
++3 0 1
+cfn=(3336) std::enable_if<is_invocable_r_v<void, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&, std::ostream&>, void>::type std::__invoke_r<void, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&, std::ostream&>(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&, std::ostream&)
+calls=1 0x37aba 0 
+* 0 133732
++5 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(3340) void std::__invoke_impl<void, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&, std::ostream&>(std::__invoke_other, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&, std::ostream&)
+0x3b4a4 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3338) std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>& std::forward<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&>(std::remove_reference<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&>::type&)
+calls=1 -46 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3334)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
+cfn=(3342) void std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::operator()<std::ostream&, void>(std::ostream&)
+calls=1 0x3c6b6 0 
+* 0 133662
++5 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(3342)
+0x3c6b6 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++9 0 1
++4 0 1
++2 0 1
++4 0 1
++3 0 1
+cfn=(3334)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3344) std::tuple<std::ostream&> std::forward_as_tuple<std::ostream&>(std::ostream&)
+calls=1 0x3cc7f 0 
+* 0 63
++5 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3352) void std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::__call<void, std::ostream&, 0ul, 1ul>(std::tuple<std::ostream&>&&, std::_Index_tuple<0ul, 1ul>)
+calls=1 0x3d0fa 0 
+* 0 133564
++5 0 1
++1 0 1
++4 0 1
++9 0 1
++7 0 1
++1 0 1
+
+fn=(3344)
+0x3cc7f 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3334)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3346) std::tuple<std::ostream&>::tuple<true, true>(std::ostream&)
+calls=1 0x3d610 0 
+* 0 39
++5 0 1
++4 0 1
++1 0 1
+
+fn=(3372) std::_Head_base<0ul, std::ostream&, false>::_M_head(std::_Head_base<0ul, std::ostream&, false>&)
+0x3dd0d 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++1 0 1
+
+fn=(3378) std::_Tuple_impl<0ul, seal::Ciphertext const*, std::_Placeholder<1> >::_M_head(std::_Tuple_impl<0ul, seal::Ciphertext const*, std::_Placeholder<1> >&)
+0x3dbac 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3380) std::_Head_base<0ul, seal::Ciphertext const*, false>::_M_head(std::_Head_base<0ul, seal::Ciphertext const*, false>&)
+calls=1 0x3dc8c 0 
+* 0 7
++5 0 1
++1 0 1
+
+fn=(3454) seal::util::SafeByteBuffer::safe_pbump(long)
+0xa3bc0 0 13
++4 0 13
++4 0 13
++3 0 13
++5 0 13
++3 0 13
+0xa3c50 0 13
++3 0 13
++2 0 13
++3 0 13
++4 0 13
+
+fn=(3490) _tr_flush_bits
+0xb5ed0 0 7
++4 0 7
++6 0 7
++3 0 7
++2 0 7
++3 0 7
++2 0 4
++4 0 4
++7 0 4
++4 0 4
++4 0 4
++4 0 4
++3 0 4
++7 0 4
++8 0 4
+* 0 3
+
+fn=(3492) deflate_slow
+0xacda0 0 1
++4 0 1
++2 0 1
++2 0 1
++2 0 1
++3 0 1
++2 0 1
++1 0 1
++1 0 1
++3 0 1
++4 0 1
++6 0 1
++2 0 1
++6 0 1
+-14 0 2
++6 0 2
++2 0 2
++6 0 2
+-6 0 86789
++6 0 86789
++6 0 86623
++7 0 86623
++7 0 86623
++7 0 86623
++4 0 86623
++5 0 86623
++6 0 86623
++4 0 86623
++6 0 86623
++2 0 86623
++3 0 86623
++3 0 86623
++2 0 86623
++4 0 86623
++6 0 86623
++6 0 86623
++4 0 86623
++4 0 86623
++3 0 86623
++4 0 86623
++4 0 86623
++7 0 86623
++7 0 86623
++10 0 86623
++2 0 86623
+-96 0 168
++4 0 168
++5 0 168
++6 0 168
++4 0 168
++6 0 168
++2 0 168
++3 0 168
++3 0 168
++2 0 168
++4 0 168
++6 0 168
++6 0 168
++4 0 168
++4 0 168
++3 0 168
++4 0 168
++4 0 168
++7 0 168
++7 0 168
++10 0 168
++2 0 168
++2 0 60982
++7 0 60982
++6 0 29992
++4 0 29992
++6 0 18
++6 0 18
++6 0 18
++7 0 18
++5 0 18
++3 0 18
++5 0 18
++4 0 18
++4 0 18
++3 0 18
++6 0 18
++3 0 18
++6 0 18
++7 0 18
++3 0 18
++6 0 18
++3 0 18
++6 0 18
++7 0 18
++3 0 18
++6 0 18
++4 0 18
++7 0 18
++4 0 18
++5 0 18
++9 0 18
++6 0 18
+0xace60 0 16380
++6 0 16380
++7 0 16380
++5 0 16380
++3 0 16380
++5 0 16380
++4 0 16380
++4 0 16380
++3 0 16380
++6 0 16380
++3 0 16380
++6 0 16380
++7 0 16380
++3 0 16380
++6 0 16380
++3 0 16380
++6 0 16380
++7 0 16380
++3 0 16380
++6 0 16380
++4 0 16380
++7 0 16380
++4 0 16380
++5 0 16380
++9 0 16380
++6 0 16380
++6 0 4581
++7 0 4581
++4 0 4581
++5 0 4581
++9 0 4581
++6 0 4581
++6 0 4581
++6 0 4581
++3 0 4581
++7 0 4581
++7 0 4581
++2 0 4581
++3 0 4581
++2 0 4581
++6 0 4581
++3 0 4581
++4 0 4581
++6 0 4581
++3 0 4581
++1 0 4581
++6 0 4581
++2 0 4581
+-82 0 11817
++9 0 11817
++6 0 11817
++6 0 11817
++6 0 11817
++3 0 11817
++7 0 11817
++7 0 11817
++2 0 11817
++3 0 11817
++2 0 11817
++6 0 11817
++3 0 11817
++4 0 11817
++6 0 11817
++3 0 11817
++1 0 11817
++6 0 11817
++2 0 11817
+-8 0 27980
++6 0 27980
++2 0 27980
++6 0 44376
++4 0 44376
++3 0 44376
++7 0 44376
++3 0 44376
++4 0 44376
++4 0 44376
++6 0 44376
++3 0 44376
++4 0 44376
++3 0 44376
++6 0 44376
++6 0 44376
++4 0 44376
++4 0 44376
++4 0 44376
++5 0 44376
++3 0 44376
++3 0 44376
++2 0 44376
++3 0 44376
++6 0 44376
++2 0 44376
++2 0 16398
++10 0 16398
++10 0 16398
++6 0 16398
++3 0 16398
++6 0 2
++7 0 2
++2 0 2
++2 0 2
++3 0 2
++3 0 2
++2 0 2
++2 0 2
++4 0 2
++2 0 2
++3 0 2
+cfn=(3500) _tr_flush_block
+calls=2 0xb60b0 0 
+* 0 1976248
++5 0 2
++6 0 2
++3 0 2
++7 0 2
+cfn=(3488) flush_pending
+calls=2 0xac1d0 0 
+* 0 42965
++5 0 2
++3 0 2
++4 0 2
++3 0 2
++34 0 173
++3 0 173
+cfn=(3494) fill_window
+calls=173 0xac870 0 
+* 0 2081027
++5 0 173
++6 0 173
++6 0 173
++6 0 169
++3 0 169
++2 0 169
++7 0 169
++2 0 169
++6 0 168
++7 0 168
++7 0 168
++3 0 168
++40 0 70393
++6 0 70393
++2 0 70393
++6 0 53995
++4 0 53995
++5 0 53995
++7 0 53995
++4 0 53995
++6 0 53995
++3 0 53995
++6 0 53995
++4 0 53995
++6 0 53995
++7 0 53995
++3 0 53995
++6 0 53995
++4 0 53995
++6 0 53995
++7 0 53995
++3 0 53995
++6 0 53995
++3 0 53995
++9 0 53995
++6 0 53995
++6 0 53995
++6 0 53995
++6 0 53995
++7 0 53995
++3 0 53995
++3 0 53995
++6 0 53995
++3 0 53995
++2 0 53995
++16 0 2
++3 0 2
++2 0 2
++3 0 2
++6 0 2
++2 0 2
++6 0 1
++10 0 16398
++4 0 16398
++3 0 16398
++10 0 16398
++7 0 16398
++6 0 16398
++10 0 60982
++3 0 60982
++3 0 60982
++2 0 60982
++5 0 60982
++2 0 60982
++6 0 56866
++3 0 56866
+cfn=(3498) longest_match
+calls=56866 0xabf30 0 
+* 0 38087285
++5 0 56866
++6 0 56866
++3 0 56866
++2 0 56554
++7 0 56554
++6 0 56554
++3 0 56554
++6 0 56799
++4 0 56799
++6 0 16409
++3 0 16409
++6 0 16380
++15 0 2
++7 0 2
++6 0 2
++2 0 2
++3 0 2
++3 0 2
++2 0 2
++2 0 2
++4 0 2
++3 0 2
++2 0 2
+cfn=(3500)
+calls=2 0xb60b0 0 
+* 0 1956734
++5 0 2
++6 0 2
++3 0 2
++7 0 2
+cfn=(3488)
+calls=2 0xac1d0 0 
+* 0 41912
++5 0 2
++12 0 11817
++5 0 11817
++7 0 11817
++6 0 11817
++7 0 11817
++5 0 11817
++5 0 67
++3 0 67
++6 0 67
++5 0 67
++6 0 40
++10 0 40
++7 0 1
++6 0 1
++2 0 1
++6 0 1
++5 0 1
++3 0 1
++4 0 1
++6 0 1
++4 0 1
+0xad38f 0 1
++7 0 1
++3 0 1
++2 0 1
++3 0 1
++3 0 1
++2 0 1
++2 0 1
++4 0 1
++3 0 1
++3 0 1
++5 0 1
+cfn=(3500)
+calls=1 0xb60b0 0 
+* 0 412373
++5 0 1
++6 0 1
++3 0 1
++7 0 1
+cfn=(3488)
+calls=1 0xac1d0 0 
+* 0 673
++5 0 1
++3 0 1
++4 0 1
++2 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
+
+fn=(1754) seal::util::MemoryPoolHeadMT::get()
+0x8e580 0 7
++4 0 7
++2 0 7
++4 0 7
++5 0 7
++2 0 7
++2 0 7
++1 0 7
++1 0 7
++3 0 7
++4 0 7
++9 0 7
++5 0 7
++2 0 7
++2 0 7
++5 0 7
++4 0 7
++2 0 7
++4 0 7
++3 0 7
++18 0 7
++4 0 7
++5 0 7
++9 0 7
++6 0 7
++4 0 7
++1 0 7
++1 0 7
++2 0 7
++2 0 7
++2 0 7
++10 0 7
++4 0 7
++5 0 7
++2 0 5
++5 0 5
+cob=(4)
+cfi=(173)
+cfn=(1316) 0x000000000010fb50
+calls=5 0x10fb50 0 
+* 0 533
++5 0 5
++4 0 5
++8 0 5
++3 0 5
++4 0 5
++5 0 5
++4 0 5
++7 0 2
++9 0 2
++4 0 2
++9 0 2
++9 0 2
++9 0 2
++3 0 2
++6 0 2
++4 0 2
++5 0 2
++8 0 2
++8 0 2
++8 0 2
++4 0 2
++4 0 2
++4 0 2
++2 0 2
++5 0 2
++4 0 2
++4 0 2
++8 0 2
++4 0 2
++5 0 2
++5 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++8 0 2
++4 0 2
++6 0 2
++8 0 2
++4 0 2
++6 0 2
++5 0 2
++4 0 2
++2 0 2
++3 0 2
++6 0 2
++5 0 2
+cob=(4)
+cfi=(173)
+cfn=(1984) 0x000000000010fa40
+calls=2 0x10fa40 0 
+* 0 907
++5 0 2
++3 0 2
++5 0 2
++3 0 2
++6 0 2
++5 0 2
++3 0 2
++5 0 2
++5 0 2
++5 0 2
++4 0 2
++34 0 2
++4 0 2
++5 0 2
++3 0 2
++4 0 2
+cob=(4)
+cfi=(173)
+cfn=(1316)
+calls=2 0x10fb50 0 
+* 0 421
++5 0 2
++3 0 2
++8 0 2
++45 0 2
++3 0 2
++3 0 2
++2 0 2
++3 0 2
++3 0 2
++12 0 2
++4 0 2
++50 0 2
++5 0 2
++4 0 2
++3 0 2
+cfn=(1750) void std::vector<seal::util::MemoryPoolHead::allocation, std::allocator<seal::util::MemoryPoolHead::allocation> >::_M_realloc_insert<seal::util::MemoryPoolHead::allocation const&>(__gnu_cxx::__normal_iterator<seal::util::MemoryPoolHead::allocation*, std::vector<seal::util::MemoryPoolHead::allocation, std::allocator<seal::util::MemoryPoolHead::allocation> > >, seal::util::MemoryPoolHead::allocation const&)
+calls=2 0x8eeb0 0 
+* 0 494
++5 0 2
+
+fn=(1880) std::vector<seal::util::MemoryPoolHead*, std::allocator<seal::util::MemoryPoolHead*> >::insert(__gnu_cxx::__normal_iterator<seal::util::MemoryPoolHead* const*, std::vector<seal::util::MemoryPoolHead*, std::allocator<seal::util::MemoryPoolHead*> > >, seal::util::MemoryPoolHead* const&)
+0x8f1f0 0 2
++4 0 2
++2 0 2
++2 0 2
++3 0 2
++1 0 2
++3 0 2
++1 0 2
++3 0 2
++4 0 2
++3 0 2
++4 0 2
++4 0 2
++94 0 2
++3 0 2
+cfn=(1882) void std::vector<seal::util::MemoryPoolHead*, std::allocator<seal::util::MemoryPoolHead*> >::_M_realloc_insert<seal::util::MemoryPoolHead* const&>(__gnu_cxx::__normal_iterator<seal::util::MemoryPoolHead**, std::vector<seal::util::MemoryPoolHead*, std::allocator<seal::util::MemoryPoolHead*> > >, seal::util::MemoryPoolHead* const&)
+calls=2 0x8f060 0 
+* 0 498
++5 0 2
++3 0 2
++4 0 2
++1 0 2
++1 0 2
++3 0 2
++2 0 2
++2 0 2
+
+fn=(2310) std::__allocated_ptr<std::allocator<std::_Sp_counted_ptr_inplace<seal::util::MemoryPoolMT, std::allocator<void>, (__gnu_cxx::_Lock_policy)2> > >::~__allocated_ptr()
+0x3bfc4 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
++2 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
++4 0 2
++4 0 2
++8 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
++3 0 2
+cfn=(2312)
+calls=2 0x3d54e 0 
+* 0 228
++5 0 2
++1 0 2
++1 0 2
++1 0 2
+
+fn=(3188) seal::Ciphertext::save_size(seal::compr_mode_type) const
+0x43880 0 1
++4 0 1
++2 0 1
++2 0 1
++1 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++9 0 1
++5 0 1
++2 0 1
++3 0 1
++2 0 1
++5 0 1
++3 0 1
++6 0 1
++3 0 1
++4 0 1
++6 0 1
++4 0 1
++4 0 1
++6 0 1
++4 0 1
++15 0 1
++2 0 1
+cfn=(2548) seal::Serialization::ComprSizeEstimate(unsigned long, seal::compr_mode_type)
+calls=1 0x7daf0 0 
+* 0 15
++5 0 1
++3 0 1
++4 0 1
++6 0 1
++4 0 1
++3 0 1
++6 0 1
++5 0 1
++2 0 1
+cfn=(2548)
+calls=1 0x7daf0 0 
+* 0 15
++5 0 1
++4 0 1
++6 0 1
++4 0 1
++6 0 1
++5 0 1
++9 0 1
++6 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++4 0 1
++5 0 1
+
+fn=(3240)
+0x32a97 0 4
++4 0 4
++1 0 4
++3 0 4
++4 0 4
++4 0 4
++1 0 4
+
+fn=(3270)
+0x37a4a 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(1316)
+calls=1 0x10fb50 0 
+* 0 65
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3266)
+calls=1 0x3372b 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
+cfn=(3272) std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::_Bind(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&)
+calls=1 0x37a02 0 
+* 0 62
++5 0 1
++4 0 1
++3 0 1
+cfn=(3280) std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*& std::_Any_data::_M_access<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*>()
+calls=1 0x37afc 0 
+* 0 17
++5 0 1
++3 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(3274) std::tuple<seal::Ciphertext const*, std::_Placeholder<1> >::tuple(std::tuple<seal::Ciphertext const*, std::_Placeholder<1> >&&)
+0x379d8 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3276)
+calls=1 -90 0 
+* 0 26
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3310) seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)
+0x7ee50 0 1
++4 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++1 0 1
++1 0 1
++7 0 1
++9 0 1
++8 0 1
++2 0 1
++5 0 1
++6 0 1
++3 0 1
++4 0 1
++6 0 1
++3 0 1
++3 0 1
++6 0 1
++3 0 1
++3 0 1
++3 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
++7 0 1
++4 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312) 0x000000000010fdf0
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3316) 0x000000000010fad0
+calls=1 0x10fad0 0 
+* 0 107
++5 0 1
++5 0 1
++7 0 1
++9 0 1
++7 0 1
++4 0 1
++4 0 1
++5 0 1
++5 0 1
++10 0 1
++4 0 1
++5 0 1
++5 0 1
++4 0 1
++54 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3316)
+calls=1 0x10fad0 0 
+* 0 107
++5 0 1
++5 0 1
++3 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++8 0 1
++9 0 1
++6 0 1
++7 0 1
++3 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
+0x7f400 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++6 0 1
++3 0 1
++4 0 1
++5 0 1
++10 0 1
++3 0 1
++3 0 1
++3 0 1
++6 0 1
++3 0 1
++3 0 1
++3 0 1
++6 0 1
++3 0 1
++8 0 1
++2 0 1
++3 0 1
+cfn=(3448) seal::util::SafeByteBuffer::SafeByteBuffer(long, bool)
+calls=1 0xa3fb0 0 
+* 0 1392
++5 0 1
++8 0 1
++8 0 1
++3 0 1
++5 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(3290) 0x000000000010f850
+calls=1 0x10f850 0 
+* 0 94
++5 0 1
++7 0 1
++2 0 1
++4 0 1
++7 0 1
++8 0 1
++3 0 1
++4 0 1
++5 0 1
++4 0 1
++8 0 1
++4 0 1
++8 0 1
++8 0 1
++4 0 1
++12 0 1
++8 0 1
++8 0 1
++12 0 1
++4 0 1
++3 0 1
++5 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(3292) 0x000000000010fc80
+calls=1 0x10fc80 0 
+* 0 185
++5 0 1
++4 0 1
++8 0 1
++4 0 1
++8 0 1
++5 0 1
++3 0 1
++3 0 1
++4 0 1
++3 0 1
++5 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3292)
+calls=1 0x10fc80 0 
+* 0 185
++5 0 1
++7 0 1
++6 0 1
++11 0 1
++7 0 1
++5 0 1
++4 0 1
++8 0 1
++8 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++5 0 1
++6 0 1
++3 0 1
++3 0 1
+cfn=(3332)
+calls=1 0x33772 0 
+* 0 133788
++3 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(1316)
+calls=1 0x10fb50 0 
+* 0 65
++5 0 1
++9 0 1
++3 0 1
++4 0 1
++4 0 1
++5 0 1
++7 0 1
++4 0 1
++4 0 1
++7 0 1
++4 0 1
++7 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++7 0 1
++4 0 1
++4 0 1
++4 0 1
++5 0 1
++5 0 1
++4 0 1
++8 0 1
++8 0 1
++4 0 1
++6 0 1
++7 0 1
++3 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(3316)
+calls=1 0x10fad0 0 
+* 0 136
++5 0 1
++3 0 1
++8 0 1
++8 0 1
++8 0 1
++5 0 1
++3 0 1
++3 0 1
++3 0 1
++8 0 1
++8 0 1
++12 0 1
++12 0 1
++8 0 1
+cfn=(3460) seal::DynArray<std::byte>::DynArray(seal::util::Pointer<std::byte, void>&&, unsigned long, unsigned long, bool, seal::MemoryPoolHandle)
+calls=1 0x803a0 0 
+* 0 52
++5 0 1
++8 0 1
++3 0 1
++20 0 1
++5 0 1
++3 0 1
++58 0 1
++12 0 1
++8 0 1
++5 0 1
++6 0 1
++4 0 1
++5 0 1
++3 0 1
++3 0 1
++3 0 1
++8 0 1
+cfn=(3462) seal::util::ztools::zlib_write_header_deflate_buffer(seal::DynArray<std::byte>&, void*, std::ostream&, seal::MemoryPoolHandle)
+calls=1 0xaa460 0 
+* 0 52626395
++5 0 1
++8 0 1
++3 0 1
++60 0 1
++8 0 1
++4 0 1
++8 0 1
++3 0 1
++20 0 1
++8 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
++10 0 1
++3 0 1
++6 0 1
++5 0 1
++6 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++6 0 1
++10 0 1
++4 0 1
++3 0 1
++35 0 1
++5 0 1
++5 0 1
++5 0 1
++8 0 1
++4 0 1
++8 0 1
++5 0 1
++8 0 1
++4 0 1
++8 0 1
++5 0 1
++5 0 1
++12 0 1
++4 0 1
++8 0 1
+cob=(4)
+cfi=(173)
+cfn=(3402) 0x000000000010f880
+calls=1 0x10f880 0 
+* 0 75
++5 0 1
++7 0 1
++4 0 1
++8 0 1
++8 0 1
++4 0 1
++8 0 1
++3 0 1
++6 0 1
++3 0 1
++8 0 1
+cfn=(1772) seal::util::MemoryPoolHeadMT::add(seal::util::MemoryPoolItem*)
+calls=1 0x8edd0 0 
+* 0 20
++3 0 1
++8 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
++10 0 1
++3 0 1
++35 0 1
++7 0 1
++8 0 1
++4 0 1
++8 0 1
+cob=(4)
+cfi=(173)
+cfn=(3418) 0x000000000010fcd0
+calls=1 0x10fcd0 0 
+* 0 14
++5 0 1
+0x7fb30 0 1
++8 0 1
++3 0 1
++6 0 1
++8 0 1
++23 0 1
++8 0 1
++3 0 1
+0x7fc00 0 1
++4 0 1
++3 0 1
++8 0 1
+cfn=(2284) std::_Sp_counted_ptr_inplace<seal::util::MemoryPoolMT, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+calls=1 0x3dd80 0 
+* 0 998
++3 0 1
++4 0 1
++3 0 1
+cfn=(2300) std::_Sp_counted_ptr_inplace<seal::util::MemoryPoolMT, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()
+calls=1 0x3ddcc 0 
+* 0 252
++3 0 1
+0x7fd30 0 1
++4 0 1
++3 0 1
++8 0 1
+cfn=(2284)
+calls=1 0x3dd80 0 
+* 0 2758
++3 0 1
++4 0 1
++3 0 1
+cfn=(2300)
+calls=1 0x3ddcc 0 
+* 0 252
++3 0 1
+
+fn=(3311) seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2
+0x7ee50 0 1
++4 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++1 0 1
++1 0 1
++7 0 1
++9 0 1
++8 0 1
++2 0 1
++5 0 1
++6 0 1
++3 0 1
++4 0 1
++6 0 1
++3 0 1
++3 0 1
++6 0 1
++3 0 1
++3 0 1
++3 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
++7 0 1
++4 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3316)
+calls=1 0x10fad0 0 
+* 0 136
++5 0 1
++5 0 1
++7 0 1
++9 0 1
++7 0 1
++4 0 1
++4 0 1
++5 0 1
++5 0 1
++10 0 1
++4 0 1
++5 0 1
++5 0 1
++4 0 1
++6 0 1
++4 0 1
++6 0 1
++5 0 1
++3 0 1
++5 0 1
+cfn=(3324) seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&)
+calls=1 0x7dbe0 0 
+* 0 180
++5 0 1
++5 0 1
++6 0 1
++3 0 1
++3 0 1
+cfn=(3394) std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::DynArray<unsigned long>::*(seal::DynArray<unsigned long> const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_invoke(std::_Any_data const&, std::ostream&)
+calls=1 0x45a60 0 
+* 0 131424
++3 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3316)
+calls=1 0x10fad0 0 
+* 0 136
++5 0 1
++5 0 1
++3 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++8 0 1
++9 0 1
++6 0 1
++7 0 1
++3 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
+
+fn=(3324)
+0x7dbe0 0 1
++4 0 1
++2 0 1
++1 0 1
++3 0 1
++1 0 1
++3 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++7 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++5 0 1
++3 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326) 0x000000000010fc40
+calls=1 0x10fc40 0 
+* 0 134
++5 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++1 0 1
++5 0 1
++1 0 1
++2 0 1
+
+fn=(3346)
+0x3d610 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3348) std::_Tuple_impl<0ul, std::ostream&>::_Tuple_impl(std::ostream&)
+calls=1 0x3d944 0 
+* 0 25
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3352)
+0x3d0fa 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++9 0 1
++4 0 1
++2 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3354) std::tuple_element<1ul, std::tuple<seal::Ciphertext const*, std::_Placeholder<1> > >::type& std::get<1ul, seal::Ciphertext const*, std::_Placeholder<1> >(std::tuple<seal::Ciphertext const*, std::_Placeholder<1> >&)
+calls=1 0x3d7d0 0 
+* 0 37
++5 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3362) std::enable_if<(0ul)<std::tuple_size<std::tuple<std::ostream&> >::value, std::tuple_element<0ul, std::tuple<std::ostream&> > >::type::type&& std::_Mu<std::_Placeholder<1>, false, true>::operator()<std::tuple<std::ostream&> >(std::_Placeholder<1> const volatile&, std::tuple<std::ostream&>&) const volatile
+calls=1 0x3d63a 0 
+* 0 68
++5 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3374) std::tuple_element<0ul, std::tuple<seal::Ciphertext const*, std::_Placeholder<1> > >::type& std::get<0ul, seal::Ciphertext const*, std::_Placeholder<1> >(std::tuple<seal::Ciphertext const*, std::_Placeholder<1> >&)
+calls=1 0x3d78c 0 
+* 0 37
++5 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3382) seal::Ciphertext const*& std::_Mu<seal::Ciphertext const*, false, false>::operator()<seal::Ciphertext const*&, std::tuple<std::ostream&> >(seal::Ciphertext const*&, std::tuple<std::ostream&>&) const volatile
+calls=1 0x3d7aa 0 
+* 0 19
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(3386) std::__invoke_result<void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&>::type std::__invoke<void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&>(void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&)
+calls=1 0x3d7ee 0 
+* 0 133359
++5 0 1
++1 0 1
++4 0 1
++9 0 1
++7 0 1
++4 0 1
++1 0 1
+
+fn=(3380)
+0x3dc8c 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(3384) seal::Ciphertext const*& std::forward<seal::Ciphertext const*&>(std::remove_reference<seal::Ciphertext const*&>::type&)
+0x3d9f4 0 3
++4 0 3
++1 0 3
++3 0 3
++4 0 3
++4 0 3
++1 0 3
+
+fn=(3392) seal::Ciphertext::save_members(std::ostream&) const
+0x43c70 0 1
++4 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++1 0 1
++3 0 1
++1 0 1
++3 0 1
++7 0 1
++9 0 1
++8 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++7 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++5 0 1
++3 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 135
++5 0 1
++4 0 1
++5 0 1
++5 0 1
++3 0 1
++4 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 121
++5 0 1
++4 0 1
++5 0 1
++5 0 1
++3 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 136
++5 0 1
++4 0 1
++5 0 1
++5 0 1
++3 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 136
++5 0 1
++4 0 1
++5 0 1
++5 0 1
++3 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 136
++5 0 1
++4 0 1
++5 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 136
++5 0 1
++4 0 1
++5 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 136
++5 0 1
++4 0 1
++3 0 1
++15 0 1
++2 0 1
+cfn=(2548)
+calls=1 0x7daf0 0 
+* 0 15
++5 0 1
++3 0 1
++4 0 1
++6 0 1
++4 0 1
++6 0 1
++4 0 1
++5 0 1
++12 0 1
++12 0 1
++8 0 1
+cob=(4)
+cfi=(173)
+cfn=(1316)
+calls=1 0x10fb50 0 
+* 0 65
++5 0 1
++7 0 1
++4 0 1
++3 0 1
++2 0 1
++8 0 1
++8 0 1
++3 0 1
++8 0 1
++3 0 1
++3 0 1
++3 0 1
++7 0 1
++8 0 1
++8 0 1
+cfn=(3311)
+calls=1 0x7ee50 0 
+* 0 131975
++5 0 1
++8 0 1
++3 0 1
++2 0 1
++5 0 1
++3 0 1
++3 0 1
+cfn=(3398) std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::DynArray<unsigned long>::*(seal::DynArray<unsigned long> const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+calls=1 0x45b40 0 
+* 0 119
++2 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++8 0 1
++9 0 1
++6 0 1
++3 0 1
++7 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++5 0 1
++2 0 1
++3 0 1
++4 0 1
++6 0 1
++4 0 1
++4 0 1
++20 0 1
++4 0 1
++4 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++4 0 1
++5 0 1
+0x4444b 0 1
++4 0 1
++4 0 1
+
+fn=(3420) std::function<void (std::ostream&)>::~function()
+0x2a7b2 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3422) std::_Function_base::~_Function_base()
+calls=1 0x2a266 0 
+* 0 211
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3478) deflateResetKeep
+0xadca0 0 1
++4 0 1
++3 0 1
++6 0 1
++1 0 1
++1 0 1
++3 0 1
++4 0 1
++5 0 1
++6 0 1
++5 0 1
++6 0 1
++4 0 1
++5 0 1
++3 0 1
++6 0 1
++4 0 1
++6 0 1
++3 0 1
++3 0 1
++40 0 1
++4 0 1
++8 0 1
++8 0 1
++8 0 1
++7 0 1
++4 0 1
++3 0 1
++8 0 1
++2 0 1
++7 0 1
++3 0 1
++2 0 1
++7 0 1
++2 0 1
++2 0 1
++2 0 1
+cfn=(3480) adler32
+calls=1 0x15e330 0 
+* 0 28
++5 0 1
++4 0 1
++3 0 1
++7 0 1
+cfn=(3484) _tr_init
+calls=1 0xb5c10 0 
+* 0 1212
++5 0 1
++2 0 1
++4 0 1
++1 0 1
++1 0 1
+
+fn=(3510) compress_block
+0xb4b40 0 5
++2 0 5
++3 0 5
++2 0 5
++2 0 5
++2 0 5
++1 0 5
++1 0 5
++7 0 5
++3 0 5
++6 0 5
++7 0 5
++3 0 5
++6 0 5
++3 0 5
++3 0 5
++6 0 5
++7 0 5
++8 0 53995
++4 0 53995
++2 0 53995
++5 0 53995
++3 0 53995
++2 0 53995
++2 0 53995
++3 0 53995
++2 0 53995
++3 0 53995
++7 0 53995
++2 0 53995
++6 0 25837
++3 0 25837
++6 0 25837
++3 0 25837
+-3 0 37724
++3 0 37724
++6 0 70393
++7 0 70393
++3 0 70393
++4 0 70393
++6 0 70393
++4 0 70393
++5 0 70393
++4 0 70393
++5 0 70393
++3 0 70393
++3 0 70393
++2 0 16398
++7 0 16398
++4 0 16398
++5 0 16398
++7 0 16398
++4 0 16398
++4 0 16398
++4 0 16398
++2 0 16398
++3 0 16398
++3 0 16398
++4 0 16398
++3 0 16398
++3 0 16398
++2 0 16398
++2 0 16398
++2 0 3353
++4 0 3353
++4 0 3353
++8 0 3353
++4 0 3353
++4 0 3353
++4 0 3353
++4 0 3353
++4 0 3353
++7 0 3353
++4 0 3353
++4 0 3353
++4 0 3353
++6 0 3353
++3 0 3353
++2 0 3353
++3 0 3353
++4 0 3353
++3 0 3353
++4 0 3353
++6 0 3353
++2 0 3353
+-12 0 13045
++4 0 13045
++6 0 13045
++2 0 13045
+0xb4cfd 0 16398
++3 0 16398
++6 0 16398
++6 0 4581
++7 0 4581
++2 0 4581
++5 0 4581
++4 0 4581
++3 0 4581
++3 0 4581
++5 0 4581
++2 0 4581
++3 0 4581
++4 0 4581
++2 0 4581
++3 0 4581
++3 0 4581
+-32 0 11817
++4 0 11817
++3 0 11817
++3 0 11817
++5 0 11817
++2 0 11817
++3 0 11817
++4 0 11817
++2 0 11817
++3 0 11817
++3 0 11817
++2 0 4316
++4 0 4316
++4 0 4316
++7 0 4316
++4 0 4316
++4 0 4316
++4 0 4316
++4 0 4316
++7 0 4316
++4 0 4316
++4 0 4316
++4 0 4316
++4 0 4316
++6 0 4316
++3 0 4316
++2 0 4316
++5 0 4316
++2 0 4316
++2 0 4316
++7 0 4316
++7 0 4316
++4 0 4316
++6 0 4316
++3 0 4316
+-27 0 12082
++7 0 12082
++7 0 12082
++4 0 12082
++6 0 12082
++3 0 12082
++2 0 16397
++7 0 16397
++4 0 16397
++2 0 16397
++3 0 16397
++3 0 16397
++3 0 16397
++3 0 16397
++3 0 16397
++3 0 16397
++7 0 16397
++2 0 16397
++6 0 6831
++3 0 6831
++6 0 6831
++7 0 6831
++3 0 6831
+-10 0 1
++7 0 1
++3 0 1
++6 0 2
++6 0 2
++8 0 2
++7 0 2
++2 0 2
++3 0 2
++4 0 2
++2 0 2
++5 0 2
++3 0 2
++2 0 2
++3 0 2
++3 0 2
+-42 0 3
++8 0 3
++7 0 3
++2 0 3
++3 0 3
++4 0 3
++2 0 3
++5 0 3
++3 0 3
++2 0 3
++3 0 3
++3 0 3
++2 0 3
++4 0 3
++4 0 3
++7 0 3
++4 0 3
++4 0 3
++4 0 3
++4 0 3
++8 0 3
++4 0 3
++4 0 3
++4 0 3
++4 0 3
++6 0 3
++2 0 3
++5 0 3
++3 0 3
++3 0 3
++1 0 3
++1 0 3
++7 0 3
++2 0 3
++2 0 3
++7 0 3
++2 0 3
++2 0 3
+-24 0 2
++1 0 2
++1 0 2
++7 0 2
++2 0 2
++2 0 2
++7 0 2
++2 0 2
++2 0 2
++2 0 37724
++4 0 37724
++4 0 37724
++4 0 37724
++4 0 37724
++4 0 37724
++4 0 37724
++7 0 37724
++4 0 37724
++4 0 37724
++4 0 37724
++4 0 37724
++6 0 37724
++3 0 37724
++7 0 37724
++2 0 37724
++5 0 37724
++2 0 37724
++6 0 37724
++7 0 37724
++2 0 37724
++9 0 11817
++2 0 11817
++7 0 11817
++3 0 11817
++6 0 11817
++5 0 11817
+
+fn=(3516) seal::util::ztools::(anonymous namespace)::zlib_free_impl(void*, void*)
+0xa88c0 0 5
++4 0 5
++2 0 5
++1 0 5
++1 0 5
++5 0 5
++3 0 5
++80 0 5
++4 0 5
++3 0 5
++2 0 5
++3 0 5
++4 0 5
++4 0 5
++3 0 5
++3 0 5
++8 0 5
++3 0 5
++2 0 5
++3 0 5
++4 0 5
++3 0 5
++42 0 5
++3 0 5
++4 0 5
++4 0 5
++4 0 5
++3 0 5
++3 0 5
++41 0 5
++3 0 5
++4 0 5
+cfn=(1772)
+calls=5 0x8edd0 0 
+* 0 100
++3 0 5
++3 0 5
++5 0 5
+cob=(4)
+cfi=(173)
+cfn=(1784)
+calls=5 0x10fb60 0 
+* 0 475
++5 0 5
++5 0 5
++1 0 5
++1 0 5
++2 0 5
++7 0 5
++3 0 5
++2 0 4
++4 0 4
++2 0 4
++3 0 4
++3 0 4
++2 0 4
++4 0 4
++4 0 4
++3 0 4
+-7 0 1
++4 0 1
++3 0 1
++2 0 5
++7 0 5
++4 0 5
++4 0 5
++3 0 5
++3 0 5
++33 0 5
++4 0 5
+
+fn=(3242)
+0x3368d 0 5
++4 0 5
++1 0 5
++3 0 5
++4 0 5
++4 0 5
++1 0 5
+
+fn=(3300) std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>* const& std::_Any_data::_M_access<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*>() const
+0x3b474 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(3302) std::_Any_data::_M_access() const
+calls=2 0x2a254 0 
+* 0 14
++5 0 2
++1 0 2
+
+fn=(3348)
+0x3d944 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3350) std::_Head_base<0ul, std::ostream&, false>::_Head_base(std::ostream&)
+calls=1 0x3db52 0 
+* 0 11
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3364) std::remove_reference<std::tuple<std::ostream&>&>::type&& std::move<std::tuple<std::ostream&>&>(std::tuple<std::ostream&>&)
+0x3d98c 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(3396) seal::DynArray<unsigned long>::save_members(std::ostream&) const
+0x45cf0 0 1
++4 0 1
++2 0 1
++2 0 1
++2 0 1
++1 0 1
++3 0 1
++1 0 1
++3 0 1
++4 0 1
++9 0 1
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++7 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++4 0 1
++3 0 1
++5 0 1
++3 0 1
++4 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 136
++5 0 1
++4 0 1
++3 0 1
++2 0 1
++3 0 1
++4 0 1
++6 0 1
++4 0 1
++6 0 1
++4 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 131212
++5 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++5 0 1
++9 0 1
++2 0 1
++3 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
+
+fn=(3398)
+0x45b40 0 1
++4 0 1
++1 0 1
++1 0 1
++3 0 1
++4 0 1
++2 0 1
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++3 0 1
++2 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(1784)
+calls=1 0x10fb60 0 
+* 0 95
++5 0 1
++12 0 1
++4 0 1
++2 0 1
++1 0 1
++1 0 1
+
+fn=(3400) std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_destroy(std::_Any_data&, std::integral_constant<bool, false>)
+0x3b51b 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(3280)
+calls=2 0x37afc 0 
+* 0 34
++5 0 2
++3 0 2
++3 0 2
++2 0 2
++5 0 2
++3 0 2
+cob=(4)
+cfi=(173)
+cfn=(1784)
+calls=2 0x10fb60 0 
+* 0 209
++5 0 2
++1 0 2
++1 0 2
+
+fn=(3456) seal::util::SafeByteBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode)
+0xa3cd0 0 3
++4 0 3
++1 0 3
++1 0 3
++4 0 3
++3 0 3
++51 0 3
++3 0 3
++76 0 3
++3 0 3
++2 0 3
+cfn=(3458) seal::util::SafeByteBuffer::seekpos(std::fpos<__mbstate_t>, std::_Ios_Openmode)
+calls=3 0xa3c60 0 
+* 0 90
++5 0 3
++4 0 3
++3 0 3
++2 0 3
++1 0 3
++1 0 3
++4 0 3
++4 0 3
++3 0 3
++1 0 3
++4 0 3
++4 0 3
++4 0 3
++3 0 3
++65 0 3
++3 0 3
++45 0 3
+
+fn=(3476) deflateReset
+0xaddd0 0 1
++4 0 1
++1 0 1
++1 0 1
++3 0 1
++4 0 1
+cfn=(3478)
+calls=1 0xadca0 0 
+* 0 1286
++5 0 1
++2 0 1
++2 0 1
++18 0 1
++4 0 1
++2 0 1
++2 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++6 0 1
++3 0 1
++4 0 1
++4 0 1
+cob=(4)
+cfi=(173)
+cfn=(1768) 0x000000000010f950
+calls=1 0x10f950 0 
+* 0 65553
++5 0 1
++7 0 1
++7 0 1
++11 0 1
++10 0 1
++10 0 1
++4 0 1
++11 0 1
++3 0 1
++10 0 1
++4 0 1
++6 0 1
++3 0 1
++6 0 1
++4 0 1
++4 0 1
++6 0 1
++6 0 1
++7 0 1
++7 0 1
++4 0 1
++2 0 1
++1 0 1
++1 0 1
+
+fn=(3486) deflate
+0xae350 0 1
++4 0 1
++3 0 1
++6 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++5 0 1
++2 0 1
++5 0 1
++2 0 1
++4 0 1
++4 0 1
++3 0 1
++2 0 1
++3 0 1
++7 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++7 0 1
++3 0 1
++3 0 1
++3 0 1
++40 0 1
++4 0 1
++2 0 1
++5 0 1
++6 0 1
++3 0 1
++2 0 1
++2 0 1
++5 0 1
++6 0 1
++4 0 1
++3 0 1
++5 0 1
++10 0 1
++3 0 1
++2 0 1
++6 0 1
++4 0 1
++5 0 1
++3 0 1
++4 0 1
++6 0 1
++2 0 1
++6 0 1
++5 0 1
++6 0 1
++3 0 1
++6 0 1
++4 0 1
++4 0 1
++3 0 1
++13 0 1
++3 0 1
++2 0 1
++44 0 1
++4 0 1
++7 0 1
++2 0 1
++6 0 1
++4 0 1
++6 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++7 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3492)
+calls=1 0xacda0 0 
+* 0 52104688
++4 0 1
++3 0 1
++3 0 1
++86 0 1
++4 0 1
++6 0 1
++4 0 1
++3 0 1
++5 0 1
++2 0 1
++6 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++6 0 1
++4 0 1
++4 0 1
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3488)
+calls=1 0xac1d0 0 
+* 0 59
++5 0 1
++4 0 1
++3 0 1
++2 0 1
++2 0 1
++2 0 1
++3 0 1
++4 0 1
++5 0 1
++3 0 1
++3 0 1
+0xaeb28 0 1
++3 0 1
++3 0 1
++3 0 1
++5 0 1
++7 0 1
++6 0 1
++4 0 1
++7 0 1
++3 0 1
++5 0 1
++2 0 1
++4 0 1
++7 0 1
++4 0 1
++4 0 1
++2 0 1
++2 0 1
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++6 0 1
++2 0 1
++90 0 1
++2 0 1
++2 0 1
++2 0 1
+cfn=(3480)
+calls=1 0x15e330 0 
+* 0 28
++5 0 1
++4 0 1
++3 0 1
++4 0 1
++7 0 1
+cfn=(3488)
+calls=1 0xac1d0 0 
+* 0 62
++5 0 1
++5 0 1
++4 0 1
++6 0 1
++3 0 1
++3 0 1
+0xaf018 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++3 0 1
+0xaf280 0 1
++4 0 1
++7 0 1
++3 0 1
++66 0 1
++6 0 1
++3 0 1
++6 0 1
++3 0 1
+0xaf4f0 0 1
++2 0 1
++2 0 1
++3 0 1
++3 0 1
++3 0 1
+
+fn=(3500)
+0xb60b0 0 5
++4 0 5
++2 0 5
++4 0 5
++3 0 5
++2 0 5
++3 0 5
++2 0 5
++3 0 5
++2 0 5
++3 0 5
++1 0 5
++1 0 5
++4 0 5
++6 0 5
++3 0 5
++4 0 5
++2 0 5
++6 0 5
++3 0 5
++7 0 5
++4 0 5
++6 0 5
++8 0 5
++3 0 5
++4 0 5
++8 0 5
++5 0 5
+cfn=(3502) build_tree
+calls=5 0xb5010 0 
+* 0 701604
++5 0 5
++8 0 5
++3 0 5
+cfn=(3502)
+calls=5 0xb5010 0 
+* 0 42184
++5 0 5
++8 0 5
++3 0 5
++3 0 5
+cfn=(3506) scan_tree
+calls=5 0xb43b0 0 
+* 0 22341
++5 0 5
++8 0 5
++3 0 5
++3 0 5
+cfn=(3506)
+calls=5 0xb43b0 0 
+* 0 2555
++5 0 5
++8 0 5
++3 0 5
+cfn=(3502)
+calls=5 0xb5010 0 
+* 0 18217
++5 0 5
++4 0 5
++6 0 5
++10 0 5
++6 0 5
++10 0 5
++6 0 5
++10 0 5
++6 0 5
++10 0 5
++6 0 5
++10 0 5
++6 0 4
++10 0 4
+0xb6276 0 5
++8 0 5
++8 0 5
++4 0 5
++4 0 5
++8 0 5
++4 0 5
++4 0 5
++4 0 5
++3 0 5
++6 0 5
++9 0 5
++6 0 5
++3 0 5
++11 0 5
++8 0 5
++4 0 5
++9 0 5
++3 0 5
++3 0 5
++97 0 5
++8 0 5
++8 0 5
++8 0 5
++3 0 5
+0xb63ca 0 5
++8 0 5
++3 0 5
++6 0 2
++4 0 2
++2 0 2
++2 0 2
++5 0 2
++2 0 2
++5 0 2
++9 0 2
++4 0 2
++5 0 2
++3 0 2
++5 0 2
++9 0 2
++5 0 2
++4 0 2
++5 0 2
++4 0 2
++8 0 2
++5 0 2
++2 0 2
++2 0 2
++3 0 2
++2 0 2
++3 0 2
++8 0 2
++3 0 2
++3 0 2
+-17 0 3
++3 0 3
++8 0 3
++3 0 3
++3 0 3
++6 0 3
++2 0 3
++2 0 3
++5 0 3
++2 0 3
++5 0 3
++9 0 3
++4 0 3
++5 0 3
++3 0 3
++5 0 3
++9 0 3
++5 0 3
++4 0 3
++5 0 3
++4 0 3
++8 0 3
++5 0 3
++2 0 3
++2 0 3
++3 0 3
++2 0 3
++7 0 3
++8 0 3
++6 0 3
++4 0 3
++5 0 3
+-30 0 2
++7 0 2
++8 0 2
++6 0 2
++4 0 2
++5 0 2
++6 0 12
++5 0 12
++5 0 12
++9 0 12
++4 0 12
++5 0 12
++4 0 12
++5 0 12
++9 0 12
++5 0 12
++4 0 12
++5 0 12
++4 0 12
++8 0 12
++3 0 12
++3 0 12
++2 0 12
++4 0 12
++9 0 12
++2 0 12
++8 0 12
++3 0 12
++2 0 66
++4 0 66
++4 0 66
++9 0 66
++3 0 66
++3 0 66
++3 0 66
++3 0 66
+-21 0 5
++9 0 5
++3 0 5
++3 0 5
++3 0 5
++3 0 5
++6 0 59
++9 0 59
++3 0 59
++8 0 59
++3 0 59
++2 0 5
++3 0 5
++3 0 5
++3 0 5
+cfn=(3508) send_tree
+calls=5 0xb4530 0 
+* 0 42524
++5 0 5
++3 0 5
++3 0 5
++3 0 5
+cfn=(3508)
+calls=5 0xb4530 0 
+* 0 5010
++5 0 5
++3 0 5
++3 0 5
++3 0 5
+cfn=(3510)
+calls=5 0xb4b40 0 
+* 0 3503040
++5 0 5
++5 0 1
++3 0 1
++7 0 1
++5 0 1
++10 0 1
++3 0 1
++2 0 1
++4 0 1
+0xb66df 0 5
++3 0 5
++8 0 5
++6 0 5
++3 0 5
++3 0 5
++4 0 5
++5 0 5
++5 0 5
++3 0 5
+-23 0 710
++3 0 710
++3 0 710
++4 0 710
++5 0 710
++5 0 710
++3 0 710
++2 0 5
++3 0 5
++8 0 5
++4 0 5
++3 0 5
++3 0 5
++4 0 5
++5 0 5
++5 0 5
++3 0 5
+-23 0 70
++3 0 70
++3 0 70
++4 0 70
++5 0 70
++5 0 70
++3 0 70
++2 0 5
++2 0 5
++8 0 5
++8 0 5
++9 0 5
++4 0 5
++2 0 5
++2 0 5
++4 0 5
++4 0 5
++4 0 5
++3 0 5
+-19 0 40
++2 0 40
++2 0 40
++4 0 40
++4 0 40
++4 0 40
++3 0 40
++2 0 5
++5 0 5
++4 0 5
++12 0 5
++9 0 5
++12 0 5
++9 0 5
++3 0 5
++2 0 4
++4 0 4
++1 0 4
++1 0 4
++2 0 4
++2 0 4
++2 0 4
++2 0 4
++59 0 1
++8 0 1
++3 0 1
++15 0 1
++5 0 1
++5 0 1
++4 0 1
++5 0 1
++3 0 1
++12 0 1
++2 0 1
++9 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++1 0 1
++5 0 1
++5 0 1
++9 0 1
++4 0 1
++5 0 1
++3 0 1
++9 0 1
++2 0 2
++2 0 2
++3 0 2
++2 0 2
++5 0 3
++4 0 3
++2 0 3
++3 0 3
++2 0 3
++5 0 5
++7 0 5
++3 0 5
++2 0 5
++2 0 5
++3 0 5
++2 0 5
++5 0 5
++2 0 5
++3 0 5
++2 0 5
++2 0 5
++17 0 1
++2 0 1
++3 0 1
++10 0 5
++3 0 5
++4 0 5
++12 0 1
++5 0 1
++30 0 4
++5 0 4
+
+fn=(1752) void std::vector<seal::util::MemoryPoolHead*, std::allocator<seal::util::MemoryPoolHead*> >::_M_realloc_insert<seal::util::MemoryPoolHead*&>(__gnu_cxx::__normal_iterator<seal::util::MemoryPoolHead**, std::vector<seal::util::MemoryPoolHead*, std::allocator<seal::util::MemoryPoolHead*> > >, seal::util::MemoryPoolHead*&)
+0x8f2a0 0 2
++4 0 2
++2 0 2
++3 0 2
++10 0 2
++2 0 2
++2 0 2
++2 0 2
++1 0 2
++1 0 2
++4 0 2
++4 0 2
++3 0 2
++3 0 2
++3 0 2
++4 0 2
++3 0 2
++6 0 2
++3 0 2
++3 0 2
++3 0 2
++3 0 2
++3 0 2
++28 0 2
++3 0 2
++5 0 2
++3 0 2
++4 0 2
++4 0 2
++3 0 2
++2 0 2
++3 0 2
++24 0 2
++3 0 2
++2 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++1 0 2
++1 0 2
++2 0 2
++2 0 2
++2 0 2
++2 0 2
++20 0 2
++3 0 2
++4 0 2
+cob=(4)
+cfi=(173)
+cfn=(1316)
+calls=2 0x10fb50 0 
+* 0 124
++5 0 2
++4 0 2
++3 0 2
++3 0 2
++64 0 2
++4 0 2
++2 0 2
++10 0 2
++3 0 2
++3 0 2
++4 0 2
++4 0 2
+
+fn=(1776) seal::util::MemoryPoolHeadMT::item_byte_count() const
+0x8ed50 0 12
++4 0 12
++4 0 12
+
+fn=(2284)
+0x3dd80 0 2
++4 0 2
++1 0 2
++3 0 2
++1 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(2286) std::_Sp_counted_ptr_inplace<seal::util::MemoryPoolMT, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_ptr()
+calls=2 0x3c0e8 0 
+* 0 56
++5 0 2
++3 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(2292) std::_Sp_counted_ptr_inplace<seal::util::MemoryPoolMT, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_Impl::_M_alloc()
+calls=2 0x3dec2 0 
+* 0 34
++5 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(2296)
+calls=2 0x3def2 0 
+* 0 3618
++5 0 2
++1 0 2
++1 0 2
++4 0 2
++1 0 2
+
+fn=(2292)
+0x3dec2 0 4
++4 0 4
++1 0 4
++3 0 4
++4 0 4
++4 0 4
++4 0 4
++3 0 4
+cfn=(2294) std::_Sp_ebo_helper<0, std::allocator<void>, true>::_S_get(std::_Sp_ebo_helper<0, std::allocator<void>, true>&)
+calls=4 +7 0 
+* 0 28
++5 0 4
++1 0 4
+
+fn=(2304) std::allocator<std::_Sp_counted_ptr_inplace<seal::util::MemoryPoolMT, std::allocator<void>, (__gnu_cxx::_Lock_policy)2> >* std::__addressof<std::allocator<std::_Sp_counted_ptr_inplace<seal::util::MemoryPoolMT, std::allocator<void>, (__gnu_cxx::_Lock_policy)2> > >(std::allocator<std::_Sp_counted_ptr_inplace<seal::util::MemoryPoolMT, std::allocator<void>, (__gnu_cxx::_Lock_policy)2> >&)
+0x3d53b 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++1 0 2
+
+fn=(2308) std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::~_Sp_counted_base()
+0x32274 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++7 0 2
++4 0 2
++3 0 2
++1 0 2
++1 0 2
+
+fn=(3238) std::_Bind_helper<std::__or_<std::is_integral<std::decay<void (seal::Ciphertext::*)(std::ostream&) const>::type>, std::is_enum<std::decay<void (seal::Ciphertext::*)(std::ostream&) const>::type> >::value, void (seal::Ciphertext::*)(std::ostream&) const, seal::Ciphertext const*, std::_Placeholder<1> const&>::type std::bind<void (seal::Ciphertext::*)(std::ostream&) const, seal::Ciphertext const*, std::_Placeholder<1> const&>(void (seal::Ciphertext::*&&)(std::ostream&) const, seal::Ciphertext const*&&, std::_Placeholder<1> const&)
+0x30e8b 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3240)
+calls=1 0x32a97 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3242)
+calls=1 0x3368d 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3244) void (seal::Ciphertext::*&&std::forward<void (seal::Ciphertext::*)(std::ostream&) const>(std::remove_reference<void (seal::Ciphertext::*)(std::ostream&) const>::type&))(std::ostream&) const
+calls=1 0x3367b 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(3246) std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::_Bind<seal::Ciphertext const*, std::_Placeholder<1> const&>(void (seal::Ciphertext::*&&)(std::ostream&) const, seal::Ciphertext const*&&, std::_Placeholder<1> const&)
+calls=1 0x336a0 0 
+* 0 184
++5 0 1
++4 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(3248) std::remove_reference<void (seal::Ciphertext::*&)(std::ostream&) const>::type&& std::move<void (seal::Ciphertext::*&)(std::ostream&) const>(void (seal::Ciphertext::*&)(std::ostream&) const)
+0x3793c 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(3282) std::_Any_data::_M_access()
+0x2a242 0 4
++4 0 4
++1 0 4
++3 0 4
++4 0 4
++4 0 4
++1 0 4
+
+fn=(3298)
+0x37a99 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(3300)
+calls=2 0x3b474 0 
+* 0 34
++5 0 2
++3 0 2
++1 0 2
+
+fn=(3304) void std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_init_functor<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const&>(std::_Any_data&, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const&)
+0x3b4e6 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3306) std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const& std::forward<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const&>(std::remove_reference<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const&>::type&)
+calls=1 0x3c721 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3308) void std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_create<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const&>(std::_Any_data&, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const&, std::integral_constant<bool, false>)
+calls=1 0x3c733 0 
+* 0 117
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3422)
+0x2a266 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++5 0 1
++3 0 1
++3 0 1
+cfn=(3294)
+calls=1 0x337b4 0 
+* 0 191
++3 0 1
++1 0 1
++1 0 1
+
+fn=(3450) seal::DynArray<char>::resize(unsigned long, bool)
+0xa4740 0 1
++4 0 1
++2 0 1
++2 0 1
++2 0 1
++3 0 1
++1 0 1
++3 0 1
++1 0 1
++3 0 1
++4 0 1
++9 0 1
++5 0 1
++2 0 1
++4 0 1
++23 0 1
++5 0 1
++9 0 1
++6 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++4 0 1
++3 0 1
++3 0 1
++6 0 1
++3 0 1
++5 0 1
++3 0 1
+cfn=(1726) seal::util::MemoryPoolMT::get_for_byte_count(unsigned long)
+calls=1 0x8e840 0 
+* 0 1145
++3 0 1
++5 0 1
++3 0 1
++6 0 1
++5 0 1
++3 0 1
++5 0 1
++5 0 1
++4 0 1
++6 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++14 0 1
++3 0 1
++18 0 1
++4 0 1
++5 0 1
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++96 0 1
++3 0 1
++77 0 1
+
+fn=(3458)
+0xa3c60 0 3
++4 0 3
++3 0 3
++2 0 3
++4 0 3
++19 0 3
++3 0 3
++13 0 3
++3 0 3
++13 0 3
++4 0 3
++4 0 3
++5 0 3
++4 0 3
++4 0 3
+cfn=(3454)
+calls=3 0xa3bc0 0 
+* 0 33
++5 0 3
++5 0 3
++4 0 3
++4 0 3
+
+fn=(3482) adler32_z
+0x15dc40 0 6
++4 0 6
++2 0 6
++3 0 6
++3 0 6
++4 0 6
++2 0 6
++4 0 6
++2 0 6
++3 0 6
++2 0 6
++1 0 6
++1 0 6
++5 0 6
++4 0 6
++6 0 6
++3 0 6
++6 0 4
++3 0 4
++4 0 4
++6 0 4
++7 0 4
++5 0 4
++7 0 4
++6 0 21
++5 0 21
++7 0 21
++5 0 21
++5 0 21
++7 0 21
++6 0 21
++4 0 21
++5 0 21
++4 0 21
++5 0 21
++5 0 21
++3 0 21
++5 0 21
++5 0 21
++3 0 21
++5 0 21
++5 0 21
++3 0 21
++3 0 21
++5 0 21
++5 0 21
++3 0 21
++3 0 21
++5 0 21
++5 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++4 0 21
++5 0 21
++3 0 21
++5 0 21
++5 0 21
++4 0 21
++5 0 21
++5 0 21
++5 0 21
++3 0 21
++5 0 21
++3 0 21
++3 0 21
++5 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++5 0 21
+0x15dcc0 0 7266
++4 0 7266
++5 0 7266
++4 0 7266
++5 0 7266
++5 0 7266
++3 0 7266
++5 0 7266
++5 0 7266
++3 0 7266
++5 0 7266
++5 0 7266
++3 0 7266
++3 0 7266
++5 0 7266
++5 0 7266
++3 0 7266
++3 0 7266
++5 0 7266
++5 0 7266
++3 0 7266
++3 0 7266
++3 0 7266
++3 0 7266
++3 0 7266
++3 0 7266
++4 0 7266
++5 0 7266
++3 0 7266
++5 0 7266
++5 0 7266
++4 0 7266
++5 0 7266
++5 0 7266
++5 0 7266
++3 0 7266
++5 0 7266
++3 0 7266
++3 0 7266
++5 0 7266
++3 0 7266
++3 0 7266
++3 0 7266
++3 0 7266
++3 0 7266
++3 0 7266
++3 0 7266
++3 0 7266
++3 0 7266
++3 0 7266
++3 0 7266
++3 0 7266
++3 0 7266
++5 0 7266
++5 0 7266
++3 0 7266
++3 0 7266
+-6 0 21
++3 0 21
++3 0 21
++6 0 21
++10 0 21
++5 0 21
++5 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++4 0 21
++7 0 21
++3 0 21
++10 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++3 0 21
++4 0 21
++7 0 21
++3 0 21
++7 0 21
++5 0 21
++5 0 21
++7 0 21
++6 0 3
++5 0 3
++3 0 3
++6 0 4
++5 0 4
++1 0 4
++1 0 4
++2 0 4
++4 0 4
++2 0 4
++2 0 4
++3 0 4
++2 0 4
+0x15e028 0 3
++4 0 3
++6 0 4
++4 0 4
++5 0 4
++4 0 4
++3 0 4
++4 0 4
++4 0 4
++5 0 4
++3 0 4
++5 0 4
++3 0 4
++5 0 4
++5 0 4
++5 0 4
++3 0 4
++4 0 4
++4 0 4
++3 0 4
++5 0 4
++5 0 4
++3 0 4
++3 0 4
++5 0 4
++5 0 4
++3 0 4
++3 0 4
++4 0 4
++4 0 4
++3 0 4
++3 0 4
++5 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++4 0 4
++5 0 4
++5 0 4
++3 0 4
++4 0 4
++3 0 4
++5 0 4
++5 0 4
++3 0 4
++4 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
+0x15e057 0 907
++3 0 907
++5 0 907
++5 0 907
++5 0 907
++3 0 907
++4 0 907
++4 0 907
++3 0 907
++5 0 907
++5 0 907
++3 0 907
++3 0 907
++5 0 907
++5 0 907
++3 0 907
++3 0 907
++4 0 907
++4 0 907
++3 0 907
++3 0 907
++5 0 907
++3 0 907
++3 0 907
++3 0 907
++3 0 907
++3 0 907
++3 0 907
++3 0 907
++3 0 907
++3 0 907
++3 0 907
++3 0 907
++3 0 907
++3 0 907
++4 0 907
++5 0 907
++5 0 907
++3 0 907
++4 0 907
++3 0 907
++5 0 907
++5 0 907
++3 0 907
++4 0 907
++3 0 907
++3 0 907
++3 0 907
++3 0 907
++3 0 907
++3 0 907
++3 0 907
++3 0 907
++5 0 907
++5 0 907
++4 0 907
++3 0 907
+-20 0 4
++3 0 4
++5 0 4
++5 0 4
++4 0 4
++3 0 4
++6 0 4
++5 0 4
++5 0 4
++3 0 4
++3 0 4
++4 0 4
++5 0 4
++3 0 4
++6 0 1
++5 0 1
++3 0 1
++3 0 1
++5 0 1
++5 0 1
++3 0 1
+0x15e2a5 0 4
++10 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++4 0 4
++7 0 4
++3 0 4
++5 0 4
++3 0 4
++5 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++4 0 4
++7 0 4
++3 0 4
++5 0 4
++5 0 2
++1 0 2
++5 0 2
++1 0 2
++2 0 2
++2 0 2
++2 0 2
++2 0 2
+
+fn=(3502)
+0xb5010 0 15
++2 0 15
++2 0 15
++2 0 15
++2 0 15
++1 0 15
++1 0 15
++3 0 15
++4 0 15
++3 0 15
++5 0 15
++4 0 15
++9 0 15
++5 0 15
++2 0 15
++3 0 15
++5 0 15
++3 0 15
++2 0 15
++4 0 15
++7 0 15
++7 0 15
++3 0 15
++2 0 15
++6 0 15
++2 0 15
++3 0 15
++5 0 15
++7 0 1489
++4 0 1489
++2 0 1489
++3 0 1489
++7 0 1489
++7 0 1489
++8 0 1489
++4 0 1489
++3 0 1489
++2 0 1675
++6 0 1675
++2 0 186
++3 0 186
++6 0 186
++4 0 186
++3 0 186
++2 0 15
++4 0 15
+0xb5231 0 15
++5 0 15
++5 0 15
++3 0 15
++3 0 15
++5 0 15
++4 0 15
++4 0 15
++2 0 15
++8 0 15
++3 0 15
++3 0 15
++3 0 15
+-17 0 726
++8 0 726
++3 0 726
++3 0 726
++3 0 726
++6 0 741
++3 0 741
++4 0 741
++5 0 741
++6 0 741
++5 0 741
++2 0 977
++3 0 977
++7 0 977
++3 0 977
++6 0 572
++3 0 572
++3 0 572
++8 0 572
++2 0 572
++6 0 572
++3 0 572
++3 0 572
+-25 0 741
++3 0 741
++8 0 741
++2 0 741
++6 0 741
++3 0 741
++3 0 741
++2 0 1297
++3 0 1297
++3 0 1297
++8 0 1297
++6 0 1297
++3 0 1297
++4 0 1297
++6 0 761
++6 0 686
++2 0 686
++6 0 686
++4 0 686
+-4 0 627
++4 0 627
++2 0 1041
++2 0 64
++9 0 64
++3 0 64
++8 0 64
++2 0 336
++4 0 336
++5 0 336
++5 0 336
++7 0 336
++4 0 336
++4 0 336
+-15 0 405
++7 0 405
++4 0 405
++4 0 405
++6 0 15
++6 0 15
++5 0 15
++5 0 15
++5 0 15
++4 0 15
++3 0 15
++5 0 15
++3 0 15
++5 0 15
++5 0 15
++3 0 15
++6 0 15
++7 0 15
++7 0 15
++3 0 15
++3 0 15
++8 0 15
++5 0 15
++6 0 15
+cfn=(3504) pqdownheap.constprop.0
+calls=15 0xb4f10 0 
+* 0 1943
+-39 0 1459
++7 0 1459
++7 0 1459
++3 0 1459
++3 0 1459
++8 0 1459
++5 0 1459
++6 0 1459
+cfn=(3504)
+calls=1459 0xb4f10 0 
+* 0 228486
++5 0 1474
++7 0 1474
++5 0 1474
++7 0 1474
++5 0 1474
++4 0 1474
++4 0 1474
++4 0 1474
++3 0 1474
++4 0 1474
++4 0 1474
++7 0 1474
++9 0 1474
++6 0 1474
++9 0 1474
++9 0 1474
++5 0 1474
++4 0 1474
++5 0 1474
++3 0 1474
++4 0 1474
++4 0 1474
++8 0 1474
++5 0 1474
++3 0 1474
++4 0 1474
++4 0 1474
++3 0 1474
++4 0 1474
++3 0 1474
++7 0 1474
++4 0 1474
+cfn=(3504)
+calls=1474 0xb4f10 0 
+* 0 231597
++5 0 1474
++4 0 1474
++5 0 1474
++5 0 1474
++3 0 1474
++6 0 15
++3 0 15
++5 0 15
++7 0 15
++4 0 15
++4 0 15
++5 0 15
++5 0 15
++4 0 15
++3 0 15
++7 0 15
++3 0 15
++8 0 15
++4 0 15
++2 0 15
++3 0 15
++7 0 15
++7 0 15
++5 0 15
++7 0 15
++6 0 15
++3 0 15
++6 0 15
++5 0 15
++3 0 15
++6 0 10
++9 0 10
++8 0 10
++3 0 10
++4 0 10
++5 0 10
++5 0 10
++5 0 10
++3 0 10
++2 0 10
+-35 0 2828
++8 0 2828
++3 0 2828
++4 0 2828
++5 0 2828
++5 0 2828
++5 0 2828
++3 0 2828
++2 0 2828
++8 0 2838
++5 0 2838
++3 0 2838
++2 0 1429
++3 0 1429
++10 0 1429
++3 0 1429
++3 0 1429
++2 0 144
++3 0 144
++3 0 144
++4 0 144
++3 0 144
++4 0 144
++2 0 144
++4 0 144
++7 0 144
++6 0 144
++3 0 144
++2 0 144
++4 0 144
++7 0 144
++4 0 144
++6 0 144
+-49 0 1285
++4 0 1285
++2 0 1285
++4 0 1285
++7 0 1285
++6 0 1285
++3 0 1285
++2 0 1285
++4 0 1285
++7 0 1285
++4 0 1285
++6 0 1285
+-10 0 1409
++4 0 1409
++6 0 1409
++6 0 10
++3 0 10
+0xb5730 0 110
++8 0 110
++5 0 110
++3 0 110
++5 0 110
++5 0 110
++3 0 110
++2 0 110
++8 0 110
++5 0 110
++2 0 110
++2 0 60
++3 0 60
++10 0 60
++3 0 60
++2 0 60
++3 0 60
++3 0 60
++4 0 60
++4 0 60
++2 0 60
++4 0 60
++7 0 60
++4 0 60
++6 0 60
+-10 0 50
++4 0 50
++6 0 50
++2 0 5
++3 0 5
++6 0 5
++6 0 5
++7 0 5
++7 0 5
++7 0 5
++8 0 5
++4 0 5
++7 0 5
++2 0 5
++8 0 5
++3 0 5
++7 0 5
++7 0 5
++2 0 5
++3 0 5
++4 0 5
++2 0 5
++6 0 5
++3 0 5
++4 0 5
++7 0 5
++3 0 5
++3 0 5
++6 0 5
++2 0 5
++4 0 5
++3 0 5
++4 0 5
++7 0 5
++3 0 5
++3 0 5
++6 0 5
++2 0 5
++2 0 5
++4 0 5
++7 0 5
++2 0 5
++2 0 5
++5 0 5
++7 0 5
++2 0 5
++4 0 5
++2 0 5
++3 0 5
++4 0 5
++2 0 5
++5 0 5
++2 0 5
++3 0 5
++2 0 5
++2 0 5
++3 0 5
++2 0 5
++3 0 5
++4 0 5
++3 0 5
++4 0 5
++3 0 5
++4 0 5
++3 0 5
+0xb57a8 0 10
++7 0 10
++7 0 10
++7 0 10
++8 0 10
++4 0 10
++7 0 10
++2 0 10
++8 0 10
++3 0 10
++7 0 10
++7 0 10
++2 0 10
++3 0 10
++4 0 10
++2 0 10
++6 0 10
++3 0 10
++4 0 10
++7 0 10
++3 0 10
++3 0 10
++6 0 10
++2 0 10
++4 0 10
++3 0 10
++4 0 10
++7 0 10
++3 0 10
++3 0 10
++6 0 10
++2 0 10
++2 0 10
++4 0 10
++7 0 10
++2 0 10
++2 0 10
++5 0 10
++7 0 10
++2 0 10
++4 0 10
++2 0 10
++3 0 10
++4 0 10
++2 0 10
++5 0 10
++2 0 10
++3 0 10
++2 0 10
++2 0 10
++3 0 10
++2 0 10
++3 0 10
++4 0 10
++3 0 10
++4 0 10
++3 0 10
++4 0 10
++3 0 10
++7 0 10
+* 0 5
++5 0 5
++7 0 5
++2 0 5
++2 0 5
++2 0 5
++5 0 5
++2 0 5
++5 0 5
++7 0 5
++2 0 5
++5 0 5
++3 0 5
+-42 0 10
++7 0 10
++2 0 10
++2 0 10
++2 0 10
++5 0 10
++2 0 10
++5 0 10
++7 0 10
++2 0 10
++5 0 10
++3 0 10
++2 0 15
++3 0 15
++5 0 15
++7 0 58
++4 0 58
++3 0 58
++2 0 1547
++4 0 1547
++2 0 1547
++2 0 1489
++3 0 1489
++5 0 1489
++3 0 1489
++5 0 1489
++2 0 1489
++5 0 1489
++2 0 1489
++2 0 1489
++3 0 1489
++2 0 1489
++3 0 1489
++3 0 1489
+-15 0 10433
++2 0 10433
++2 0 10433
++3 0 10433
++2 0 10433
++3 0 10433
++3 0 10433
++2 0 1489
++4 0 1489
++4 0 1489
++3 0 1489
++2 0 15
++5 0 15
++9 0 15
++6 0 15
++4 0 15
++1 0 15
++1 0 15
++2 0 15
++2 0 15
++2 0 15
++2 0 15
++8 0 536
++3 0 536
++3 0 536
++10 0 75
++9 0 75
++8 0 75
++3 0 75
++4 0 75
++8 0 405
++4 0 405
++5 0 405
++3 0 405
++5 0 405
+0xb5b8d 0 15
++3 0 15
++3 0 15
++2 0 15
+
+fn=(1750)
+0x8eeb0 0 6
++4 0 6
++2 0 6
++2 0 6
++2 0 6
++2 0 6
++1 0 6
++1 0 6
++3 0 6
++10 0 6
++4 0 6
++4 0 6
++3 0 6
++3 0 6
++3 0 6
++4 0 6
++3 0 6
++6 0 6
++3 0 6
++3 0 6
++3 0 6
++3 0 6
++3 0 6
++6 0 2
++4 0 2
++3 0 2
++6 0 2
++3 0 2
++37 0 2
++3 0 2
++3 0 2
++3 0 2
++3 0 2
++3 0 2
++6 0 2
++4 0 2
++5 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+-28 0 1
++4 0 1
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++2 0 2
++4 0 2
++3 0 2
+-3 0 4
++3 0 4
++32 0 6
++3 0 6
++2 0 2
++4 0 2
++3 0 2
++5 0 2
++3 0 2
+cob=(4)
+cfi=(173)
+cfn=(1784)
+calls=2 0x10fb60 0 
+* 0 190
++5 0 2
++5 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++1 0 2
++1 0 2
++2 0 2
++2 0 2
++2 0 2
++2 0 2
+-25 0 4
++3 0 4
++4 0 4
++4 0 4
++4 0 4
++1 0 4
++1 0 4
++2 0 4
++2 0 4
++2 0 4
++2 0 4
++14 0 6
++3 0 6
++5 0 6
+cob=(4)
+cfi=(173)
+cfn=(1316)
+calls=6 0x10fb50 0 
+* 0 390
++5 0 6
++4 0 6
++5 0 6
++5 0 6
++3 0 6
++3 0 6
++4 0 6
++4 0 6
++5 0 6
++3 0 6
++6 0 4
++7 0 4
++4 0 4
++2 0 4
++10 0 4
++3 0 4
++4 0 4
++3 0 4
++4 0 4
++2 0 2
++10 0 2
++3 0 2
++4 0 2
++4 0 2
++3 0 2
+
+fn=(1882)
+0x8f060 0 2
++4 0 2
++2 0 2
++3 0 2
++10 0 2
++2 0 2
++2 0 2
++2 0 2
++1 0 2
++1 0 2
++4 0 2
++4 0 2
++3 0 2
++3 0 2
++3 0 2
++4 0 2
++3 0 2
++6 0 2
++3 0 2
++3 0 2
++3 0 2
++3 0 2
++3 0 2
++6 0 2
++4 0 2
++3 0 2
++2 0 2
++3 0 2
++10 0 2
++3 0 2
++5 0 2
++3 0 2
++4 0 2
++4 0 2
++3 0 2
++2 0 2
++3 0 2
++2 0 2
++3 0 2
++3 0 2
++3 0 2
++4 0 2
+cob=(4)
+cfi=(173)
+cfn=(1764) 0x000000000010fab0
+calls=2 0x10fab0 0 
+* 0 28
++5 0 2
++4 0 2
++3 0 2
++2 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++1 0 2
++1 0 2
++2 0 2
++2 0 2
++2 0 2
++2 0 2
++20 0 2
++3 0 2
++4 0 2
+cob=(4)
+cfi=(173)
+cfn=(1316)
+calls=2 0x10fb50 0 
+* 0 130
++5 0 2
++4 0 2
++3 0 2
++3 0 2
++31 0 2
++4 0 2
++3 0 2
++4 0 2
++3 0 2
+cob=(4)
+cfi=(173)
+cfn=(1784)
+calls=2 0x10fb60 0 
+* 0 190
++5 0 2
++4 0 2
++69 0 2
++10 0 2
++3 0 2
++4 0 2
++8 0 2
+
+fn=(2290)
+0x3d5ec 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++1 0 2
+
+fn=(2306) std::_Sp_counted_ptr_inplace<seal::util::MemoryPoolMT, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace()
+0x3dd22 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++7 0 2
++4 0 2
++3 0 2
++4 0 2
++3 0 2
+cfn=(2308)
+calls=2 0x32274 0 
+* 0 20
++5 0 2
++1 0 2
++1 0 2
+
+fn=(3266)
+0x3372b 0 3
++4 0 3
++1 0 3
++3 0 3
++4 0 3
++4 0 3
++1 0 3
+
+fn=(3296)
+0x37b1a 0 3
++4 0 3
++1 0 3
++3 0 3
++1 0 3
++4 0 3
++4 0 3
++4 0 3
++3 0 3
++3 0 3
++3 0 3
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++74 0 1
++4 0 1
++3 0 1
+cfn=(3298)
+calls=1 0x37a99 0 
+* 0 28
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3304)
+calls=1 0x3b4e6 0 
+* 0 141
++5 0 1
++2 0 2
++4 0 2
++3 0 2
+cfn=(3400)
+calls=2 0x3b51b 0 
+* 0 277
++5 0 2
++1 0 2
++5 0 2
++4 0 2
++1 0 2
+-10 0 1
++5 0 1
++4 0 1
++1 0 1
+
+fn=(3302)
+0x2a254 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++1 0 2
+
+fn=(3334)
+0x36f5e 0 8
++4 0 8
++1 0 8
++3 0 8
++4 0 8
++4 0 8
++1 0 8
+
+fn=(3366) std::tuple_element<0ul, std::tuple<std::ostream&> >::type&& std::get<0ul, std::ostream&>(std::tuple<std::ostream&>&&)
+0x3d99e 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3368) std::ostream& std::__get_helper<0ul, std::ostream&>(std::_Tuple_impl<0ul, std::ostream&>&)
+calls=1 0x3db8e 0 
+* 0 28
++5 0 1
++3 0 1
+cfn=(3334)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++1 0 1
+
+fn=(3464) seal::util::ztools::zlib_deflate_array_inplace(seal::DynArray<std::byte>&, seal::MemoryPoolHandle)
+0xa8bc0 0 1
++4 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++1 0 1
++1 0 1
++7 0 1
++5 0 1
++9 0 1
++8 0 1
++3 0 1
++3 0 1
++6 0 1
++4 0 1
++5 0 1
++3 0 1
++11 0 1
++5 0 1
++4 0 1
++3 0 1
++2 0 1
++7 0 1
++3 0 1
++6 0 1
++4 0 1
++8 0 1
++7 0 1
++8 0 1
++5 0 1
++5 0 1
++8 0 1
++5 0 1
++7 0 1
++8 0 1
++7 0 1
++5 0 1
++5 0 1
++8 0 1
++5 0 1
++8 0 1
++4 0 1
++3 0 1
++12 0 1
++12 0 1
++12 0 1
++11 0 1
++12 0 1
++12 0 1
++5 0 1
++8 0 1
+cfn=(3466) deflateInit_
+calls=1 0xaff80 0 
+* 0 73816
++5 0 1
++4 0 1
++2 0 1
++6 0 1
++4 0 1
++3 0 1
++6 0 1
++5 0 1
++6 0 1
++3 0 1
++2 0 1
++7 0 1
++3 0 1
++6 0 1
++4 0 1
++8 0 1
++6 0 1
++4 0 1
++12 0 1
++8 0 1
++8 0 1
++8 0 1
++6 0 1
++5 0 1
++8 0 1
++5 0 1
++5 0 1
++3 0 1
+cfn=(1726)
+calls=1 0x8e840 0 
+* 0 1424
++3 0 1
++5 0 1
++2 0 1
++5 0 1
++3 0 1
++8 0 1
+cob=(4)
+cfi=(173)
+cfn=(1768)
+calls=1 0x10f950 0 
+* 0 262163
++5 0 1
++8 0 1
++4 0 1
++8 0 1
++9 0 1
++9 0 1
++8 0 1
++8 0 1
++8 0 1
++8 0 1
++7 0 1
++5 0 1
++8 0 1
++4 0 1
++4 0 1
++8 0 1
++5 0 1
++8 0 1
++4 0 1
++5 0 1
++5 0 1
++3 0 1
++6 0 1
++5 0 1
++5 0 1
++9 0 1
++8 0 1
++7 0 1
++3 0 1
++3 0 1
+0xa8ef0 0 1
++5 0 1
++4 0 1
++5 0 1
++8 0 1
++3 0 1
++4 0 1
++7 0 1
+cfn=(3486)
+calls=1 0xae350 0 
+* 0 52105041
++5 0 1
++8 0 1
++7 0 1
++3 0 1
++5 0 1
++5 0 1
++5 0 1
++3 0 1
++3 0 1
++3 0 1
++3 0 1
++5 0 1
++3 0 1
++4 0 1
++5 0 1
++4 0 1
++4 0 1
+cfn=(3512) deflatePending
+calls=1 0xadf30 0 
+* 0 34
++5 0 1
++3 0 1
++13 0 1
++7 0 1
++2 0 1
++16 0 1
++6 0 1
++6 0 1
++5 0 1
++4 0 1
++4 0 1
++6 0 1
++8 0 1
++3 0 1
++3 0 1
++4 0 1
++3 0 1
++6 0 1
++4 0 1
++4 0 1
++3 0 1
++14 0 1
++5 0 1
++4 0 1
++7 0 1
++3 0 1
++3 0 1
+0xa92e3 0 1
++8 0 1
++3 0 1
++2 0 1
++73 0 1
++8 0 1
++8 0 1
++2 0 1
++8 0 1
+cob=(4)
+cfi=(173)
+cfn=(1768)
+calls=1 0x10f950 0 
+* 0 21
++5 0 1
++8 0 1
++5 0 1
++12 0 1
++12 0 1
++8 0 1
++3 0 1
++2 0 1
++4 0 1
+cob=(4)
+cfi=(173)
+cfn=(1784)
+calls=1 0x10fb60 0 
+* 0 95
++5 0 1
++8 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
++10 0 1
++3 0 1
++6 0 1
++7 0 1
++3 0 1
++6 0 1
++3 0 1
++3 0 1
++3 0 1
++3 0 1
++6 0 1
++8 0 1
++9 0 1
++6 0 1
++4 0 1
++7 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
+0xa94e7 0 1
++5 0 1
+cfn=(3514) deflateEnd
+calls=1 0xafb30 0 
+* 0 936
++5 0 1
++8 0 1
++4 0 1
++8 0 1
++3 0 1
++6 0 1
++3 0 1
++8 0 1
+cfn=(1772)
+calls=1 0x8edd0 0 
+* 0 20
++3 0 1
++5 0 1
++3 0 1
++6 0 1
++4 0 1
++4 0 1
++10 0 1
++3 0 1
++6 0 1
++7 0 1
++3 0 1
++6 0 1
++5 0 1
++3 0 1
++3 0 1
++3 0 1
++3 0 1
+0xa9668 0 1
++8 0 1
++3 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(1764)
+calls=1 0x10fab0 0 
+* 0 91150
++5 0 1
+
+fn=(3480)
+0x15e330 0 6
++4 0 6
++2 0 6
+cfn=(3482)
+calls=6 0x15dc40 0 
+* 0 468301
+
+fn=(3484)
+0xb5c10 0 1
++4 0 1
++7 0 1
++7 0 1
++3 0 1
++10 0 1
++7 0 1
++7 0 1
++7 0 1
++7 0 1
++7 0 1
++7 0 1
++7 0 1
++7 0 1
++7 0 1
++8 0 1
++7 0 1
++7 0 1
++4 0 1
++3 0 1
++3 0 1
++4 0 1
++5 0 1
++5 0 1
++3 0 1
+-23 0 142
++3 0 142
++3 0 142
++4 0 142
++5 0 142
++5 0 142
++3 0 142
++2 0 1
++3 0 1
++7 0 1
++3 0 1
++3 0 1
++3 0 1
++20 0 15
++2 0 15
++3 0 15
++4 0 15
++4 0 15
++5 0 15
++3 0 15
++2 0 1
++7 0 1
++3 0 1
++3 0 1
++3 0 1
++3 0 1
++2 0 1
++3 0 1
++4 0 1
++5 0 1
++3 0 1
++2 0 1
++3 0 1
++3 0 1
++3 0 1
++4 0 1
++5 0 1
++5 0 1
++3 0 1
+-23 0 8
++3 0 8
++3 0 8
++4 0 8
++5 0 8
++5 0 8
++3 0 8
++2 0 1
++6 0 1
++4 0 1
++10 0 1
++8 0 1
++10 0 1
++7 0 1
+
+fn=(1726)
+0x8e840 0 7
++4 0 7
++2 0 7
++2 0 7
++2 0 7
++2 0 7
++1 0 7
++1 0 7
++4 0 7
++5 0 7
++9 0 7
++5 0 7
++2 0 7
++3 0 7
++6 0 7
++21 0 7
++5 0 7
++9 0 7
++6 0 7
++5 0 7
++4 0 7
++1 0 7
++1 0 7
++2 0 7
++2 0 7
++2 0 7
++2 0 7
++4 0 7
++4 0 7
++3 0 7
++3 0 7
++5 0 7
++1 0 7
++5 0 7
+cob=(4)
+cfi=(173)
+cfn=(1728) 0x000000000010fb10
+calls=7 0x10fb10 0 
+* 0 257
++5 0 7
++3 0 7
++2 0 7
++3 0 7
++6 0 7
++5 0 7
++5 0 7
++3 0 7
++4 0 7
++3 0 7
++2 0 5
++3 0 5
++16 0 4
++5 0 4
++4 0 4
++3 0 4
++4 0 4
++3 0 4
++3 0 4
+cfn=(1776)
+calls=4 0x8ed50 0 
+* 0 12
+-17 0 5
++4 0 5
++3 0 5
++4 0 5
++3 0 5
++3 0 5
+cfn=(1776)
+calls=5 0x8ed50 0 
+* 0 15
++3 0 9
++3 0 9
++2 0 9
++3 0 9
++6 0 6
++3 0 6
++3 0 6
++2 0 4
++5 0 4
++3 0 4
+cob=(4)
+cfi=(173)
+cfn=(1734) 0x000000000010fc50
+calls=4 0x10fc50 0 
+* 0 172
++5 0 4
++3 0 4
+cob=(4)
+cfi=(173)
+cfn=(1740) 0x000000000010fd40
+calls=4 0x10fd40 0 
+* 0 272
++5 0 4
++3 0 4
++6 0 4
++5 0 4
++5 0 4
++3 0 4
++3 0 4
++4 0 4
++2 0 2
++31 0 3
++4 0 3
++5 0 3
++3 0 3
++4 0 3
++3 0 3
++3 0 3
+cfn=(1776)
+calls=3 0x8ed50 0 
+* 0 9
++3 0 3
++3 0 3
++2 0 3
++3 0 3
++6 0 3
++3 0 3
++5 0 3
++3 0 3
++2 0 2
++5 0 2
++3 0 2
++4 0 2
++6 0 4
++5 0 4
+cob=(4)
+cfi=(173)
+cfn=(1316)
+calls=4 0x10fb50 0 
+* 0 260
++5 0 4
++6 0 4
++3 0 4
++3 0 4
++3 0 4
+cfn=(1746) seal::util::MemoryPoolHeadMT::MemoryPoolHeadMT(unsigned long, bool)
+calls=4 0x8e480 0 
+* 0 2492
++5 0 4
++5 0 4
++5 0 4
++5 0 4
++3 0 4
++6 0 2
++4 0 2
++5 0 2
++5 0 2
+cfn=(1880)
+calls=2 0x8f1f0 0 
+* 0 544
++5 0 4
++5 0 4
++3 0 4
++3 0 4
++7 0 4
++8 0 4
++5 0 4
++4 0 4
+cfn=(1754)
+calls=4 0x8e580 0 
+* 0 432
++3 0 4
++4 0 4
++3 0 4
++3 0 4
++5 0 4
+cob=(4)
+cfi=(173)
+cfn=(1734)
+calls=4 0x10fc50 0 
+* 0 180
++5 0 4
++12 0 3
++5 0 3
++3 0 3
++3 0 3
++7 0 3
++8 0 3
++4 0 3
++4 0 3
+cfn=(1754)
+calls=3 0x8e580 0 
+* 0 2350
++3 0 3
++4 0 3
++3 0 3
++5 0 3
++3 0 3
+cob=(4)
+cfi=(173)
+cfn=(1734)
+calls=3 0x10fc50 0 
+* 0 129
++5 0 3
++71 0 2
++5 0 2
++19 0 2
++5 0 2
++5 0 2
+cfn=(1752)
+calls=2 0x8f2a0 0 
+* 0 244
++5 0 2
+
+fn=(2294)
+0x3dee0 0 4
++4 0 4
++1 0 4
++3 0 4
++4 0 4
++4 0 4
++1 0 4
+
+fn=(2300)
+0x3ddcc 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++9 0 2
++4 0 2
++2 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(2292)
+calls=2 0x3dec2 0 
+* 0 34
++5 0 2
++4 0 2
++4 0 2
++4 0 2
++1 0 2
++1 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
++3 0 2
+cfn=(2302) std::__allocated_ptr<std::allocator<std::_Sp_counted_ptr_inplace<seal::util::MemoryPoolMT, std::allocator<void>, (__gnu_cxx::_Lock_policy)2> > >::__allocated_ptr(std::allocator<std::_Sp_counted_ptr_inplace<seal::util::MemoryPoolMT, std::allocator<void>, (__gnu_cxx::_Lock_policy)2> >&, std::_Sp_counted_ptr_inplace<seal::util::MemoryPoolMT, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>*)
+calls=2 0x3cb66 0 
+* 0 50
++5 0 2
++4 0 2
++3 0 2
+cfn=(2306)
+calls=2 0x3dd22 0 
+* 0 48
++5 0 2
++4 0 2
++3 0 2
+cfn=(2310)
+calls=2 0x3bfc4 0 
+* 0 280
++5 0 2
++4 0 2
++3 0 2
+cfn=(2314)
+calls=2 0x3cb56 0 
+* 0 14
++5 0 2
++1 0 2
++1 0 2
++4 0 2
++9 0 2
++7 0 2
++1 0 2
+
+fn=(2302)
+0x3cb66 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(2304)
+calls=2 0x3d53b 0 
+* 0 14
++5 0 2
++4 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++1 0 2
++1 0 2
+
+fn=(2548)
+0x7daf0 0 3
++4 0 3
++1 0 3
++1 0 3
++4 0 3
++4 0 3
++6 0 3
++4 0 3
++2 0 3
++4 0 3
++2 0 3
++4 0 3
++3 0 3
++1 0 3
++1 0 3
+
+fn=(3254) std::_Tuple_impl<1ul, std::_Placeholder<1> >::_Tuple_impl(std::_Placeholder<1> const&)
+0x3c174 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3256) std::_Head_base<1ul, std::_Placeholder<1>, true>::_Head_base(std::_Placeholder<1> const&)
+calls=1 0x3cc6c 0 
+* 0 8
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3264) bool std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_not_empty_function<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const&)
+0x33718 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++5 0 1
++1 0 1
+
+fn=(3272)
+0x37a02 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3274)
+calls=1 0x379d8 0 
+* 0 40
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3280)
+0x37afc 0 4
++4 0 4
++1 0 4
++3 0 4
++4 0 4
++4 0 4
++4 0 4
++3 0 4
+cfn=(3282)
+calls=4 0x2a242 0 
+* 0 28
++5 0 4
++1 0 4
+
+fn=(3286) seal::util::ArrayPutBuffer::ArrayPutBuffer(char*, long)
+0xa3f00 0 1
++4 0 1
++2 0 1
++7 0 1
++2 0 1
++4 0 1
++4 0 1
++2 0 1
++3 0 1
++1 0 1
++3 0 1
++1 0 1
++3 0 1
++3 0 1
++8 0 1
++8 0 1
++8 0 1
++8 0 1
++8 0 1
++8 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3288) 0x000000000010fef0
+calls=1 0x10fef0 0 
+* 0 32
++5 0 1
++7 0 1
++4 0 1
++4 0 1
++4 0 1
++7 0 1
++3 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
+
+fn=(3306)
+0x3c721 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++1 0 2
+
+fn=(3308)
+0x3c733 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(1316)
+calls=1 0x10fb50 0 
+* 0 65
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3306)
+calls=1 -59 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3280)
+calls=1 0x37afc 0 
+* 0 17
++5 0 1
++3 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(3360) std::_Head_base<1ul, std::_Placeholder<1>, true>::_M_head(std::_Head_base<1ul, std::_Placeholder<1>, true>&)
+0x3dc5c 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(3368)
+0x3db8e 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3370) std::_Tuple_impl<0ul, std::ostream&>::_M_head(std::_Tuple_impl<0ul, std::ostream&>&)
+calls=1 0x3dc6e 0 
+* 0 18
++5 0 1
++1 0 1
+
+fn=(3376) seal::Ciphertext const*& std::__get_helper<0ul, seal::Ciphertext const*, std::_Placeholder<1> >(std::_Tuple_impl<0ul, seal::Ciphertext const*, std::_Placeholder<1> >&)
+0x3d9d6 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3378)
+calls=1 0x3dbac 0 
+* 0 17
++5 0 1
++1 0 1
+
+fn=(3388) void (seal::Ciphertext::*&std::forward<void (seal::Ciphertext::*&)(std::ostream&) const>(std::remove_reference<void (seal::Ciphertext::*&)(std::ostream&) const>::type&))(std::ostream&) const
+0x3da06 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(3390) void std::__invoke_impl<void, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&>(std::__invoke_memfun_deref, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&)
+0x3da18 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3384)
+calls=1 -70 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
++35 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3334)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
+cfn=(3392)
+calls=1 0x43c70 0 
+* 0 133259
++2 0 1
++1 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(3474) std::_Hashtable<void*, std::pair<void* const, seal::util::Pointer<std::byte, void> >, std::allocator<std::pair<void* const, seal::util::Pointer<std::byte, void> > >, std::__detail::_Select1st, std::equal_to<void*>, std::hash<void*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash(unsigned long, unsigned long const&)
+0xabc00 0 1
++4 0 1
++2 0 1
++2 0 1
++1 0 1
++3 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++6 0 1
++3 0 1
++3 0 1
++4 0 1
++6 0 1
++8 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(1316)
+calls=1 0x10fb50 0 
+* 0 65
++5 0 1
++3 0 1
++2 0 1
++3 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(1768)
+calls=1 0x10f950 0 
+* 0 21
++5 0 1
++4 0 1
++4 0 1
++8 0 1
++3 0 1
++91 0 1
++4 0 1
++4 0 1
++3 0 1
++11 0 1
++4 0 1
++4 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
+
+fn=(3494)
+0xac870 0 173
++2 0 173
++2 0 173
++2 0 173
++2 0 173
++1 0 173
++2 0 173
++1 0 173
++3 0 173
++4 0 173
++4 0 173
++6 0 173
++3 0 173
++7 0 173
++9 0 170
++3 0 170
++4 0 170
++3 0 170
++6 0 4
++6 0 4
++3 0 4
++3 0 4
++4 0 4
+cfn=(3496) read_buf
+calls=4 0xac140 0 
+* 0 599605
++5 0 4
++6 0 4
++6 0 4
++6 0 4
++2 0 4
++3 0 4
++3 0 4
++6 0 4
++6 0 4
++25 0 173
++4 0 173
++6 0 173
++3 0 173
++3 0 173
++3 0 173
++3 0 173
++2 0 173
++2 0 3
++4 0 3
++3 0 3
++3 0 3
++2 0 3
++3 0 3
++4 0 3
+cob=(4)
+cfi=(173)
+cfn=(1764)
+calls=3 0x10fab0 0 
+* 0 98214
++5 0 3
++6 0 3
++7 0 3
++4 0 3
++8 0 3
++7 0 3
++3 0 3
++6 0 3
++6 0 3
++8 0 3
++6 0 3
++4 0 3
++3 0 3
++3 0 3
++3 0 3
++4 0 3
++4 0 3
++3 0 3
++6 0 3
++4 0 3
++4 0 3
++5 0 3
++2 0 3
++5 0 3
++3 0 3
++6 0 3
++4 0 3
++4 0 3
++3 0 3
++7 0 3
++4 0 3
++4 0 3
++3 0 3
++4 0 3
++5 0 3
++4 0 3
++4 0 3
++5 0 3
++4 0 3
++4 0 3
++4 0 3
++5 0 3
++4 0 3
++4 0 3
++4 0 3
++4 0 3
++4 0 3
++4 0 3
++4 0 3
++4 0 3
++4 0 3
++5 0 3
++4 0 3
++4 0 3
++5 0 3
++5 0 3
++2 0 3
+0xac9c0 0 24573
++4 0 24573
++4 0 24573
++3 0 24573
++4 0 24573
++5 0 24573
++4 0 24573
++4 0 24573
++5 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++5 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++5 0 24573
++4 0 24573
++4 0 24573
++5 0 24573
++5 0 24573
++2 0 24573
++2 0 3
++7 0 3
++3 0 3
++3 0 3
++2 0 3
++3 0 3
++4 0 3
++3 0 3
++69 0 3
++4 0 3
++2 0 3
++3 0 3
++3 0 3
++4 0 3
++3 0 3
++6 0 3
++4 0 3
++3 0 3
++5 0 3
++2 0 3
++5 0 3
++3 0 3
++6 0 3
++4 0 3
++4 0 3
++3 0 3
++1 0 3
++4 0 3
++4 0 3
++3 0 3
++4 0 3
++5 0 3
++4 0 3
++4 0 3
++5 0 3
++4 0 3
++4 0 3
++4 0 3
++5 0 3
++4 0 3
++4 0 3
++4 0 3
++4 0 3
++4 0 3
++4 0 3
++4 0 3
++4 0 3
++4 0 3
++5 0 3
++4 0 3
++4 0 3
++5 0 3
++5 0 3
++2 0 3
+0xacad0 0 24573
++4 0 24573
++4 0 24573
++3 0 24573
++4 0 24573
++5 0 24573
++4 0 24573
++4 0 24573
++5 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++5 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++4 0 24573
++5 0 24573
++4 0 24573
++4 0 24573
++5 0 24573
++5 0 24573
++2 0 24573
++2 0 3
++7 0 3
++2 0 3
++3 0 3
++2 0 3
++3 0 3
++4 0 3
++2 0 3
++69 0 3
++3 0 3
++3 0 3
++4 0 3
++3 0 3
++6 0 173
++7 0 173
++4 0 173
++3 0 173
++2 0 1
++6 0 1
++6 0 1
++3 0 1
++3 0 1
++22 0 172
++4 0 172
++1 0 172
++1 0 172
++2 0 172
++2 0 172
++2 0 172
++2 0 172
++10 0 4
++7 0 4
++4 0 4
++4 0 4
++6 0 4
++7 0 4
++3 0 4
++4 0 4
++2 0 4
++2 0 4
++5 0 4
++3 0 4
++6 0 4
++5 0 4
++2 0 4
++2 0 4
++3 0 4
++6 0 4
++89 0 4
++3 0 4
++2 0 4
++4 0 4
++31 0 1
++3 0 1
++4 0 1
++3 0 1
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++6 0 1
++2 0 1
++16 0 1
++4 0 1
++7 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
+
+fn=(3504)
+0xb4f10 0 2948
++2 0 2948
++3 0 2948
++2 0 2948
++2 0 2948
++2 0 2948
++1 0 2948
++1 0 2948
++7 0 2948
++7 0 2948
++4 0 2948
++6 0 2918
++3 0 2918
++3 0 2918
++5 0 2918
++5 0 2918
++5 0 2918
++6 0 14868
++3 0 14868
++8 0 14868
++3 0 14868
++3 0 14868
++2 0 15297
++3 0 15297
++8 0 15297
++2 0 15297
++5 0 15297
++3 0 15297
++3 0 15297
++2 0 15114
++3 0 15114
++3 0 15114
++8 0 15114
++5 0 15114
++3 0 15114
++4 0 15114
++2 0 11086
++2 0 7728
++2 0 7728
++3 0 7728
++3 0 7728
+-3 0 7569
++3 0 7569
++2 0 14927
++2 0 73
++9 0 73
++3 0 73
++8 0 73
++2 0 2948
++8 0 2948
++1 0 2948
++1 0 2948
++2 0 2948
++2 0 2948
++2 0 2948
++2 0 2948
++1 0 4028
++3 0 4028
++3 0 4028
++10 0 3358
++9 0 3358
++8 0 3358
++3 0 3358
++4 0 3358
++2 0 30
++5 0 30
+
+fn=(3506)
+0xb43b0 0 10
++4 0 10
++3 0 10
++3 0 10
++6 0 10
++6 0 10
++3 0 10
++3 0 10
++4 0 10
++3 0 10
++2 0 10
++6 0 10
++3 0 10
++2 0 10
++6 0 10
++5 0 10
++4 0 10
++2 0 10
++6 0 10
++9 0 1441
++2 0 1441
++2 0 733
++3 0 733
++2 0 658
++3 0 658
++3 0 658
++9 0 658
++2 0 658
++3 0 658
++3 0 658
++4 0 658
++3 0 658
++2 0 658
++6 0 658
++3 0 658
++4 0 658
++3 0 658
+-7 0 791
++4 0 791
++3 0 791
++2 0 1457
++3 0 1457
++2 0 1457
++3 0 1457
++2 0 1457
++2 0 16
++3 0 16
++18 0 86
++2 0 86
++6 0 8
++4 0 8
++3 0 8
++6 0 8
++2 0 8
++5 0 8
++3 0 8
++2 0 10
++3 0 91
++2 0 91
++2 0 86
++3 0 86
++2 0 83
++3 0 83
++10 0 83
++9 0 83
++2 0 83
+-11 0 3
++9 0 3
++2 0 3
++31 0 5
++3 0 5
++2 0 5
++9 0 5
++2 0 5
++45 0 5
++2 0 5
++3 0 5
++6 0 5
++5 0 5
++11 0 78
++3 0 78
++6 0 78
++5 0 78
++2 0 78
+
+fn=(3512)
+0xadf30 0 1
++4 0 1
++3 0 1
++2 0 1
++5 0 1
++2 0 1
++5 0 1
++2 0 1
++4 0 1
++5 0 1
++3 0 1
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++3 0 1
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++26 0 1
++3 0 1
++2 0 1
++4 0 1
++2 0 1
++3 0 1
++2 0 1
++6 0 1
++2 0 1
++2 0 1
++2 0 1
++16 0 1
++6 0 1
++2 0 1
+
+fn=(1746)
+0x8e480 0 4
++4 0 4
++2 0 4
++4 0 4
++1 0 4
++1 0 4
++4 0 4
++4 0 4
++9 0 4
++5 0 4
++7 0 4
++8 0 4
++3 0 4
++4 0 4
++4 0 4
++8 0 4
++8 0 4
++4 0 4
++4 0 4
++3 0 4
++3 0 4
++6 0 4
++8 0 4
++9 0 4
++9 0 4
++9 0 4
++4 0 4
++2 0 3
++5 0 3
+cob=(4)
+cfi=(173)
+cfn=(1984)
+calls=3 0x10fa40 0 
+* 0 1405
++5 0 4
++5 0 4
++3 0 4
++6 0 4
++3 0 4
++2 0 4
++3 0 4
++8 0 4
++9 0 4
++5 0 4
+cfn=(1750)
+calls=4 0x8eeb0 0 
+* 0 500
++5 0 4
++5 0 4
++9 0 4
++2 0 4
++4 0 4
++1 0 4
++1 0 4
++2 0 4
++4 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(1748) 0x000000000010fc70
+calls=1 0x10fc70 0 
+* 0 398
++5 0 1
+
+fn=(1772)
+0x8edd0 0 7
++4 0 7
++4 0 7
++4 0 7
++5 0 7
++9 0 7
++5 0 7
++2 0 7
++2 0 7
++5 0 7
++4 0 7
++2 0 7
++4 0 7
++4 0 7
++4 0 7
++4 0 7
++5 0 7
++9 0 7
++2 0 7
++4 0 7
+
+fn=(2081) ckks_performance_test(seal::SEALContext)'2
+0x24791 0 1
++3 0 1
++7 0 1
++7 0 1
++7 0 1
++3 0 1
+cfn=(3232) std::vector<std::byte, std::allocator<std::byte> >::data()
+calls=1 0x31dd8 0 
+* 0 21
++5 0 1
++3 0 1
++7 0 1
++7 0 1
++5 0 1
++3 0 1
+cfn=(3236) seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const
+calls=1 0x2c290 0 
+* 0 52769019
+
+fn=(3232)
+0x31dd8 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3234)
+calls=1 0x35920 0 
+* 0 8
++5 0 1
++1 0 1
+
+fn=(3236)
+0x2c290 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++2 0 1
++1 0 1
++7 0 1
++7 0 1
++7 0 1
++7 0 1
++2 0 1
++6 0 1
++9 0 1
++4 0 1
++2 0 1
++7 0 1
++5 0 1
++3 0 1
+cfn=(3188)
+calls=1 0x43880 0 
+* 0 89
++5 0 1
++3 0 1
++7 0 1
++7 0 1
++7 0 1
++3 0 1
++6 0 1
++4 0 1
++4 0 1
++4 0 1
++7 0 1
++4 0 1
++7 0 1
++3 0 1
+cfn=(3238)
+calls=1 0x30e8b 0 
+* 0 238
++5 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3260) std::function<void (std::ostream&)>::function<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>, void>(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&)
+calls=1 0x30ef6 0 
+* 0 265
++5 0 1
++7 0 1
++7 0 1
++7 0 1
++4 0 1
++6 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(3284) seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool)
+calls=1 0x800e0 0 
+* 0 52768143
++5 0 1
++3 0 1
++1 0 1
++4 0 1
++3 0 1
+cfn=(3420)
+calls=1 0x2a7b2 0 
+* 0 222
++5 0 1
++3 0 1
++4 0 1
++9 0 1
++59 0 1
++7 0 1
++1 0 1
++2 0 1
++2 0 1
++1 0 1
+
+fn=(3246)
+0x336a0 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3248)
+calls=1 0x3793c 0 
+* 0 7
++5 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3240)
+calls=1 0x32a97 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3242)
+calls=1 0x3368d 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(3250)
+calls=1 0x3794e 0 
+* 0 126
++5 0 1
++1 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(3258) std::_Head_base<0ul, seal::Ciphertext const*, false>::_Head_base<seal::Ciphertext const*>(seal::Ciphertext const*&&)
+0x3c688 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3242)
+calls=1 0x3368d 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++1 0 1
++1 0 1
+
+fn=(3262) std::_Function_base::_Function_base()
+0x2f600 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++7 0 1
++8 0 1
++4 0 1
++8 0 1
++1 0 1
++1 0 1
+
+fn=(3320) seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode)
+0xa3980 0 2
++4 0 2
++1 0 2
++1 0 2
++4 0 2
++3 0 2
++83 0 2
++4 0 2
++4 0 2
++3 0 2
++24 0 2
++4 0 2
++3 0 2
++2 0 2
++1 0 2
++1 0 2
+cfn=(3322)
+calls=2 0xa3820 0 
+* 0 24
++42 0 2
+
+fn=(3330) seal::util::ArrayPutBuffer::xsputn(char const*, long)
+0xa37b0 0 2
++4 0 2
++1 0 2
++3 0 2
++1 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
++3 0 2
++4 0 2
++3 0 2
++22 0 2
++4 0 2
++2 0 2
++3 0 2
+cob=(4)
+cfi=(173)
+cfn=(1936) 0x000000000010fd90
+calls=2 0x10fd90 0 
+* 0 91163
++5 0 2
++4 0 2
++3 0 2
++3 0 2
++4 0 2
++4 0 2
++1 0 2
++1 0 2
+
+fn=(3336)
+0x37aba 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3334)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3338)
+calls=1 0x3b492 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
+cfn=(3340)
+calls=1 0x3b4a4 0 
+* 0 133697
++5 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(3356) std::_Placeholder<1>& std::__get_helper<1ul, std::_Placeholder<1>>(std::_Tuple_impl<1ul, std::_Placeholder<1>>&)
+0x3d96e 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3358) std::_Tuple_impl<1ul, std::_Placeholder<1> >::_M_head(std::_Tuple_impl<1ul, std::_Placeholder<1> >&)
+calls=1 0x3db70 0 
+* 0 17
++5 0 1
++1 0 1
+
+fn=(3362)
+0x3d63a 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3364)
+calls=1 0x3d98c 0 
+* 0 7
++5 0 1
++3 0 1
+cfn=(3366)
+calls=1 0x3d99e 0 
+* 0 47
++5 0 1
++1 0 1
+
+fn=(3382)
+0x3d7aa 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3384)
+calls=1 0x3d9f4 0 
+* 0 7
++5 0 1
++1 0 1
+
+fn=(3394)
+0x45a60 0 1
++4 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++2 0 1
++10 0 1
+cfn=(3396)
+calls=1 0x45cf0 0 
+* 0 131416
+
+fn=(3452) seal::util::SafeByteBuffer::xsputn(char const*, long)
+0xa43e0 0 10
++4 0 10
++2 0 10
++3 0 10
++2 0 10
++3 0 10
++2 0 10
++3 0 10
++1 0 10
++3 0 10
++1 0 10
++3 0 10
++6 0 10
++4 0 10
++4 0 10
++3 0 10
++2 0 10
++3 0 10
++3 0 10
++4 0 10
++3 0 10
++61 0 10
++4 0 10
++2 0 9
++3 0 9
++3 0 9
+cob=(4)
+cfi=(173)
+cfn=(1936)
+calls=9 0x10fd90 0 
+* 0 131208
++5 0 10
++3 0 10
++3 0 10
++3 0 10
+cfn=(3454)
+calls=10 0xa3bc0 0 
+* 0 110
++5 0 10
++3 0 10
++14 0 10
++1 0 10
++3 0 10
++1 0 10
++2 0 10
++2 0 10
++2 0 10
++5 0 1
++5 0 1
++2 0 1
+
+fn=(3488)
+0xac1d0 0 7
++2 0 7
++2 0 7
++1 0 7
++1 0 7
++3 0 7
++4 0 7
++4 0 7
++3 0 7
+cfn=(3490)
+calls=7 0xb5ed0 0 
+* 0 81
++5 0 7
++3 0 7
++5 0 7
++2 0 7
++3 0 7
++2 0 7
++16 0 7
++3 0 7
++4 0 7
++5 0 7
++2 0 7
++3 0 7
+cob=(4)
+cfi=(173)
+cfn=(1764)
+calls=7 0x10fab0 0 
+* 0 85345
++5 0 7
++4 0 7
++5 0 7
++4 0 7
++3 0 7
++5 0 7
++2 0 7
++5 0 7
++5 0 7
++4 0 7
++1 0 7
++1 0 7
++2 0 7
++2 0 7
+
+fn=(3514)
+0xafb30 0 1
++4 0 1
++3 0 1
++6 0 1
++1 0 1
++1 0 1
++3 0 1
++4 0 1
++5 0 1
++6 0 1
++4 0 1
++3 0 1
++6 0 1
++4 0 1
++5 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++3 0 1
++3 0 1
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++38 0 1
++4 0 1
++3 0 1
++2 0 1
++3 0 1
++4 0 1
+cfn=(3516)
+calls=1 0xa88c0 0 
+* 0 174
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++2 0 1
++3 0 1
++4 0 1
+cfn=(3516)
+calls=1 0xa88c0 0 
+* 0 174
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++2 0 1
++3 0 1
++4 0 1
+cfn=(3516)
+calls=1 0xa88c0 0 
+* 0 174
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++2 0 1
++3 0 1
++4 0 1
+cfn=(3516)
+calls=1 0xa88c0 0 
+* 0 174
++2 0 1
++4 0 1
++4 0 1
++4 0 1
+cfn=(3516)
+calls=1 0xa88c0 0 
+* 0 168
++2 0 1
++2 0 1
++8 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++2 0 1
++1 0 1
++1 0 1
++39 0 1
++6 0 1
++2 0 1
+
+fn=(2418) seal::util::MemoryPoolHeadMT::~MemoryPoolHeadMT()
+0x8e0b0 0 4
++4 0 4
++1 0 4
++3 0 4
+cfn=(2419) seal::util::MemoryPoolHeadMT::~MemoryPoolHeadMT()'2
+calls=4 0x8df40 0 
+* 0 2687
++5 0 4
++3 0 4
++5 0 4
++1 0 4
+cob=(4)
+cfi=(173)
+cfn=(1784)
+calls=4 0x10fb60 0 
+* 0 380
+
+fn=(2419)
+0x8df40 0 4
++4 0 4
++2 0 4
++5 0 4
++1 0 4
++3 0 4
++1 0 4
++4 0 4
++9 0 4
++5 0 4
++7 0 4
++4 0 4
++3 0 4
++2 0 4
++5 0 4
++5 0 4
++2 0 4
++4 0 4
++3 0 4
++2 0 4
++9 0 4
++3 0 4
++4 0 4
++5 0 4
+cob=(4)
+cfi=(173)
+cfn=(1784)
+calls=4 0x10fb60 0 
+* 0 380
+-12 0 3
++3 0 3
++4 0 3
++5 0 3
+cob=(4)
+cfi=(173)
+cfn=(1784)
+calls=3 0x10fb60 0 
+* 0 285
++5 0 7
++3 0 7
++2 0 4
++4 0 4
++4 0 4
++8 0 4
++4 0 4
++69 0 4
++4 0 4
++4 0 4
++3 0 4
++2 0 4
++4 0 4
++3 0 4
++2 0 4
++5 0 4
++9 0 4
++2 0 4
++4 0 4
++4 0 4
++3 0 4
++3 0 4
++1 0 4
++1 0 4
++2 0 4
+cob=(4)
+cfi=(173)
+cfn=(1784)
+calls=4 0x10fb60 0 
+* 0 399
++9 0 4
++3 0 4
++2 0 4
++3 0 4
++4 0 4
++4 0 4
+cob=(4)
+cfi=(173)
+cfn=(2428) 0x000000000010fbf0
+calls=4 0x10fbf0 0 
+* 0 925
+-8 0 2
++4 0 2
++4 0 2
+cob=(4)
+cfi=(173)
+cfn=(2428)
+calls=2 0x10fbf0 0 
+* 0 438
++5 0 6
++3 0 6
++2 0 4
+
+fn=(3256)
+0x3cc6c 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
++1 0 1
+
+fn=(3350)
+0x3db52 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++1 0 1
++1 0 1
+
+fn=(3358)
+0x3db70 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3360)
+calls=1 0x3dc5c 0 
+* 0 7
++5 0 1
++1 0 1
+
+fn=(3370)
+0x3dc6e 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3372)
+calls=1 0x3dd0d 0 
+* 0 8
++5 0 1
++1 0 1
+
+fn=(3374)
+0x3d78c 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3376)
+calls=1 0x3d9d6 0 
+* 0 27
++5 0 1
++1 0 1
+
+fn=(3386)
+0x3d7ee 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3334)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3384)
+calls=1 0x3d9f4 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3388)
+calls=1 0x3da06 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(3390)
+calls=1 0x3da18 0 
+* 0 133308
++5 0 1
++1 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(3468) deflateInit2_
+0xafc70 0 1
++4 0 1
++2 0 1
++3 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++1 0 1
++1 0 1
++4 0 1
++5 0 1
++4 0 1
++3 0 1
++6 0 1
++3 0 1
++3 0 1
++3 0 1
++3 0 1
++2 0 1
++6 0 1
++3 0 1
++3 0 1
++6 0 1
++4 0 1
++8 0 1
++3 0 1
++3 0 1
++3 0 1
++6 0 1
++5 0 1
++6 0 1
++4 0 1
++5 0 1
++4 0 1
++2 0 1
++6 0 1
++6 0 1
++3 0 1
++6 0 1
++4 0 1
++3 0 1
++6 0 1
++3 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++4 0 1
++6 0 1
++4 0 1
++6 0 1
++3 0 1
++10 0 1
++3 0 1
++5 0 1
++5 0 1
++4 0 1
++3 0 1
++5 0 1
++3 0 1
++5 0 1
+cfn=(3470) seal::util::ztools::(anonymous namespace)::zlib_alloc_impl(void*, unsigned int, unsigned int)
+calls=1 0xab8f0 0 
+* 0 1672
++2 0 1
++5 0 1
++3 0 1
++3 0 1
++6 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++6 0 1
++3 0 1
++3 0 1
++2 0 1
++7 0 1
++4 0 1
++3 0 1
++4 0 1
++8 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
++2 0 1
++3 0 1
++4 0 1
++4 0 1
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++5 0 1
++4 0 1
++4 0 1
++7 0 1
+cfn=(3470)
+calls=1 0xab8f0 0 
+* 0 1603
++3 0 1
++3 0 1
++4 0 1
++5 0 1
++4 0 1
+cfn=(3470)
+calls=1 0xab8f0 0 
+* 0 1339
++3 0 1
++6 0 1
++4 0 1
++5 0 1
++4 0 1
+cfn=(3470)
+calls=1 0xab8f0 0 
+* 0 695
++3 0 1
++4 0 1
++5 0 1
++4 0 1
++2 0 1
++4 0 1
++5 0 1
++6 0 1
++11 0 1
+cfn=(3470)
+calls=1 0xab8f0 0 
+* 0 1466
++3 0 1
++6 0 1
++5 0 1
++4 0 1
++8 0 1
++4 0 1
++6 0 1
++5 0 1
++6 0 1
++5 0 1
++6 0 1
++3 0 1
++6 0 1
++3 0 1
++7 0 1
++3 0 1
++7 0 1
++4 0 1
++6 0 1
++7 0 1
++4 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
+cfn=(3476)
+calls=1 0xaddd0 0 
+* 0 66884
+
+fn=(3470)
+0xab8f0 0 5
++4 0 5
++2 0 5
++1 0 5
++1 0 5
++3 0 5
++4 0 5
++9 0 5
++5 0 5
++2 0 5
++2 0 5
++2 0 5
++2 0 5
++2 0 5
++6 0 5
++3 0 5
++2 0 5
++3 0 5
++6 0 5
++3 0 5
++4 0 5
++27 0 5
++5 0 5
++3 0 5
+cfn=(1726)
+calls=5 0x8e840 0 
+* 0 5502
++2 0 5
++5 0 5
++5 0 5
++4 0 5
++5 0 5
+cfn=(3472) std::__detail::_Map_base<void*, std::pair<void* const, seal::util::Pointer<std::byte, void> >, std::allocator<std::pair<void* const, seal::util::Pointer<std::byte, void> > >, std::__detail::_Select1st, std::equal_to<void*>, std::hash<void*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](void* const&)
+calls=5 0xabd40 0 
+* 0 983
++5 0 5
++3 0 5
++3 0 5
++2 0 5
++4 0 5
++3 0 5
++12 0 5
++4 0 5
++8 0 5
++3 0 5
++6 0 5
++4 0 5
++3 0 5
++5 0 5
++4 0 5
++5 0 5
++3 0 5
++30 0 5
++5 0 5
++9 0 5
++2 0 5
++4 0 5
++3 0 5
++1 0 5
++1 0 5
++2 0 5
++8 0 5
++3 0 5
++3 0 5
+
+fn=(3472)
+0xabd40 0 5
++4 0 5
++2 0 5
++2 0 5
++3 0 5
++2 0 5
++2 0 5
++1 0 5
++1 0 5
++3 0 5
++4 0 5
++3 0 5
++4 0 5
++9 0 5
++5 0 5
++2 0 5
++3 0 5
++3 0 5
++3 0 5
++4 0 5
++8 0 5
++3 0 5
++65 0 5
++5 0 5
++9 0 5
++6 0 5
++4 0 5
++1 0 5
++1 0 5
++2 0 5
++2 0 5
++2 0 5
++8 0 5
++5 0 5
+cob=(4)
+cfi=(173)
+cfn=(1316)
+calls=5 0x10fb50 0 
+* 0 325
++5 0 5
++4 0 5
++4 0 5
++4 0 5
++7 0 5
++3 0 5
++3 0 5
++5 0 5
++8 0 5
++4 0 5
++4 0 5
++8 0 5
++8 0 5
++4 0 5
++4 0 5
+cob=(4)
+cfi=(173)
+cfn=(2056) 0x000000000010fc60
+calls=5 0x10fc60 0 
+* 0 170
++5 0 5
++3 0 5
++2 0 5
++2 0 4
++3 0 4
++3 0 4
++4 0 4
++3 0 4
++16 0 5
++5 0 5
++4 0 5
++14 0 1
++3 0 1
++3 0 1
+cfn=(3474)
+calls=1 0xabc00 0 
+* 0 125
++5 0 1
++3 0 1
++2 0 1
++3 0 1
++4 0 1
++8 0 1
++3 0 1
++4 0 1
++3 0 1
++2 0 5
++4 0 5
++4 0 5
++4 0 5
++3 0 5
++2 0 4
++4 0 4
++2 0 4
++4 0 4
++4 0 4
++4 0 4
++4 0 4
+-8 0 1
++4 0 1
++4 0 1
+
+fn=(3496)
+0xac140 0 4
++2 0 4
++1 0 4
++1 0 4
++3 0 4
++2 0 4
++3 0 4
++2 0 4
++2 0 4
++16 0 4
++2 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
++3 0 4
+cob=(4)
+cfi=(173)
+cfn=(1764)
+calls=4 0x10fab0 0 
+* 0 131198
++5 0 4
++3 0 4
++4 0 4
++3 0 4
++3 0 4
++7 0 4
++3 0 4
++2 0 4
++4 0 4
++1 0 4
++1 0 4
++2 0 4
++3 0 4
++4 0 4
++2 0 4
++3 0 4
+cfn=(3480)
+calls=4 0x15e330 0 
+* 0 468263
++5 0 4
++4 0 4
+
+fn=(3498)
+0xabf30 0 56866
++2 0 56866
++2 0 56866
++2 0 56866
++2 0 56866
++2 0 56866
++2 0 56866
++1 0 56866
++3 0 56866
++1 0 56866
++4 0 56866
++4 0 56866
++6 0 56866
++6 0 56866
++6 0 56866
++7 0 56866
++6 0 56866
++7 0 56866
++4 0 56866
++3 0 56866
++3 0 56866
++4 0 56866
++4 0 56866
++4 0 56866
++3 0 56866
++3 0 56866
++8 0 56866
++6 0 56866
++5 0 56866
++6 0 56866
++2 0 2
++3 0 2
++4 0 2
++7 0 2
++3 0 2
++4 0 2
++4 0 2
+-22 0 56864
++4 0 56864
++7 0 56864
++3 0 56864
++4 0 56864
++4 0 56864
++9 0 3101135
++2 0 3101135
++5 0 3101135
++3 0 3101135
++6 0 3085779
++3 0 3085779
++6 0 3120512
++2 0 3120512
++3 0 3120512
++3 0 3120512
++4 0 3120512
++2 0 153000
++5 0 153000
++2 0 130116
++5 0 130116
++3 0 130116
++2 0 19386
++6 0 19386
++4 0 19386
++2 0 19386
++4 0 19386
++5 0 19386
++4 0 19386
++7 0 18764
++4 0 18764
++3 0 18764
++6 0 11480
++4 0 11480
++3 0 11480
++6 0 158
++4 0 158
++3 0 158
++6 0 5
++4 0 5
++3 0 5
++6 0 2
++4 0 2
++3 0 2
++39 0 19386
++4 0 19386
++3 0 19386
++2 0 622
++4 0 622
++4 0 622
++5 0 622
++3 0 622
++6 0 622
++2 0 622
+-11 0 18764
++3 0 18764
++6 0 18764
++2 0 18764
++6 0 19377
++4 0 19377
++6 0 19377
++2 0 19377
++2 0 19376
++2 0 19376
++3 0 19376
++5 0 19376
++6 0 19376
++5 0 19376
++2 0 19376
++3 0 19376
++6 0 56866
++3 0 56866
++1 0 56866
++1 0 56866
++4 0 56866
++2 0 56866
++2 0 56866
++2 0 56866
++2 0 56866
++7 0 7284
++4 0 7284
++4 0 7284
++2 0 11322
++4 0 11322
++4 0 11322
++2 0 153
++4 0 153
++4 0 153
++2 0 2
++4 0 2
++4 0 2
++2 0 3
++4 0 3
++4 0 3
++18 0 1
++2 0 1
+
+fn=(2286)
+0x3c0e8 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(2288)
+calls=2 0x3cc0c 0 
+* 0 34
++5 0 2
++1 0 2
+
+fn=(2298)
+0x8dac0 0 2
++4 0 2
++2 0 2
++4 0 2
++2 0 2
++1 0 2
++3 0 2
++1 0 2
++4 0 2
++7 0 2
++4 0 2
++3 0 2
++3 0 2
+cob=(4)
+cfi=(173)
+cfn=(1740)
+calls=2 0x10fd40 0 
+* 0 86
++5 0 2
++3 0 2
++2 0 2
++4 0 2
++4 0 2
++3 0 2
++2 0 2
++3 0 2
++3 0 2
++3 0 2
+-6 0 2
++3 0 2
++3 0 2
++2 0 4
++3 0 4
+cfn=(2418)
+calls=4 0x8e0b0 0 
+* 0 3099
++3 0 4
++4 0 4
++3 0 4
++2 0 2
++4 0 2
++4 0 2
++2 0 2
++4 0 2
++3 0 2
+cob=(4)
+cfi=(173)
+cfn=(1734)
+calls=2 0x10fc50 0 
+* 0 90
++5 0 2
++4 0 2
++3 0 2
++2 0 2
++4 0 2
++4 0 2
++1 0 2
++1 0 2
++3 0 2
++2 0 2
++2 0 2
+cob=(4)
+cfi=(173)
+cfn=(1784)
+calls=2 0x10fb60 0 
+* 0 209
+
+fn=(3244)
+0x3367b 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(3252)
+0x3b41a 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3240)
+calls=1 0x32a97 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3254)
+calls=1 0x3c174 0 
+* 0 22
++5 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3242)
+calls=1 0x3368d 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
+cfn=(3258)
+calls=1 0x3c688 0 
+* 0 22
++5 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(3260)
+0x30ef6 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++5 0 1
++4 0 1
++3 0 1
+cfn=(3262)
+calls=1 0x2f600 0 
+* 0 12
++5 0 1
++4 0 1
++8 0 1
++4 0 1
++3 0 1
+cfn=(3264)
+calls=1 0x33718 0 
+* 0 7
++5 0 1
++2 0 1
++2 0 1
++4 0 1
++3 0 1
+cfn=(3266)
+calls=1 0x3372b 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3268)
+calls=1 0x3373d 0 
+* 0 199
++5 0 1
++4 0 1
++7 0 1
++4 0 1
++4 0 1
++7 0 1
++4 0 1
++32 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(3284)
+0x800e0 0 1
++4 0 1
++2 0 1
++2 0 1
++3 0 1
++3 0 1
++3 0 1
++2 0 1
++2 0 1
++1 0 1
++1 0 1
++7 0 1
++9 0 1
++8 0 1
++7 0 1
++4 0 1
++4 0 1
++5 0 1
++5 0 1
++4 0 1
++4 0 1
++3 0 1
++6 0 1
++4 0 1
++6 0 1
++3 0 1
++6 0 1
++5 0 1
++3 0 1
++5 0 1
++3 0 1
++3 0 1
++8 0 1
++3 0 1
+cfn=(3286)
+calls=1 0xa3f00 0 
+* 0 73
++5 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3290)
+calls=1 0x10f850 0 
+* 0 94
++5 0 1
++6 0 1
++2 0 1
++3 0 1
++4 0 1
++3 0 1
++12 0 1
++8 0 1
++8 0 1
++8 0 1
++8 0 1
+cob=(4)
+cfi=(173)
+cfn=(3292)
+calls=1 0x10fc80 0 
+* 0 185
++5 0 1
++4 0 1
++4 0 1
++12 0 1
++3 0 1
++8 0 1
++8 0 1
++12 0 1
++3 0 1
++2 0 1
++5 0 1
++3 0 1
++3 0 1
+cfn=(3294)
+calls=1 0x337b4 0 
+* 0 221
++2 0 1
++5 0 1
++8 0 1
++3 0 1
++3 0 1
++3 0 1
++3 0 1
++8 0 1
+cfn=(3310)
+calls=1 0x7ee50 0 
+* 0 52767206
++5 0 1
++3 0 1
++7 0 1
++5 0 1
++4 0 1
++5 0 1
++8 0 1
++4 0 1
++3 0 1
++2 0 1
++4 0 1
++5 0 1
++3 0 1
++3 0 1
+cfn=(3294)
+calls=1 0x337b4 0 
+* 0 172
++2 0 1
++5 0 1
++3 0 1
++8 0 1
+cob=(4)
+cfi=(173)
+cfn=(3402)
+calls=1 0x10f880 0 
+* 0 75
++5 0 1
++7 0 1
++5 0 1
++4 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(3418)
+calls=1 0x10fcd0 0 
+* 0 14
++5 0 1
++8 0 1
++9 0 1
++2 0 1
++7 0 1
++3 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
+
+fn=(3338)
+0x3b492 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++1 0 2
+
+fn=(3354)
+0x3d7d0 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3356)
+calls=1 0x3d96e 0 
+* 0 27
++5 0 1
++1 0 1
+
+fn=(3448)
+0xa3fb0 0 1
++4 0 1
++2 0 1
++2 0 1
++2 0 1
++3 0 1
++2 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
++3 0 1
++4 0 1
++7 0 1
++8 0 1
++8 0 1
++4 0 1
++8 0 1
++3 0 1
++8 0 1
++8 0 1
++8 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3288)
+calls=1 0x10fef0 0 
+* 0 32
++5 0 1
++7 0 1
++4 0 1
++5 0 1
++4 0 1
++4 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(1316)
+calls=1 0x10fb50 0 
+* 0 65
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++7 0 1
++4 0 1
++4 0 1
++4 0 1
++7 0 1
++4 0 1
++4 0 1
++4 0 1
++8 0 1
++3 0 1
++7 0 1
++8 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++11 0 1
++7 0 1
++10 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++2 0 1
++10 0 1
++3 0 1
++6 0 1
++4 0 1
++2 0 1
++3 0 1
+cfn=(3450)
+calls=1 0xa4740 0 
+* 0 1209
++5 0 1
++5 0 1
++5 0 1
++4 0 1
++4 0 1
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
+
+fn=(3460)
+0x803a0 0 1
++4 0 1
++2 0 1
++4 0 1
++3 0 1
++2 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++3 0 1
++4 0 1
++3 0 1
++5 0 1
++4 0 1
++4 0 1
++5 0 1
++8 0 1
++8 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++11 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++3 0 1
++2 0 1
++4 0 1
++5 0 1
++8 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++2 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
+
+fn=(3462)
+0xaa460 0 1
++4 0 1
++2 0 1
++4 0 1
++2 0 1
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++1 0 1
++3 0 1
++1 0 1
++7 0 1
++4 0 1
++9 0 1
++8 0 1
++2 0 1
++5 0 1
++3 0 1
++5 0 1
+cfn=(3464)
+calls=1 0xa8bc0 0 
+* 0 52534946
++5 0 1
++5 0 1
++2 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
++10 0 1
++3 0 1
++6 0 1
++7 0 1
++3 0 1
++6 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++6 0 1
++2 0 1
+0xaa6c0 0 1
++5 0 1
++5 0 1
++4 0 1
++6 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
++7 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++5 0 1
++3 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 108
++5 0 1
++5 0 1
++3 0 1
++6 0 1
++5 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 91245
++5 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++8 0 1
++9 0 1
++2 0 1
++3 0 1
++7 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
+
+fn=(3466)
+0xaff80 0 1
++4 0 1
++4 0 1
++3 0 1
++6 0 1
++1 0 1
++5 0 1
++1 0 1
++5 0 1
+cfn=(3468)
+calls=1 0xafc70 0 
+* 0 73805
++5 0 1
++4 0 1
+
+fn=(3508)
+0xb4530 0 10
++5 0 10
++4 0 10
++3 0 10
++4 0 10
++4 0 10
++2 0 10
++6 0 10
++3 0 10
++2 0 10
++6 0 10
++3 0 10
++2 0 10
++3 0 10
++6 0 10
++2 0 10
++2 0 10
++5 0 10
++6 0 10
++2 0 10
++4 0 10
++1 0 10
++1 0 10
++12 0 86
++3 0 86
++6 0 83
++3 0 83
++9 0 83
++9 0 83
++3 0 83
++3 0 83
++3 0 83
++3 0 83
++3 0 83
++3 0 83
++6 0 9
++4 0 9
++4 0 9
++7 0 9
++4 0 9
++4 0 9
++4 0 9
++4 0 9
++8 0 9
++4 0 9
++4 0 9
++4 0 9
++4 0 9
++7 0 9
++3 0 9
++3 0 9
++3 0 9
++5 0 9
++2 0 9
++6 0 9
++3 0 9
++8 0 9
++8 0 9
++3 0 9
++3 0 9
++3 0 9
++2 0 9
++2 0 9
++4 0 9
++2 0 9
+-35 0 77
++8 0 77
++8 0 77
++3 0 77
++3 0 77
++3 0 77
++2 0 77
++2 0 77
++4 0 77
++2 0 77
++2 0 13
++4 0 13
++4 0 13
++7 0 13
++4 0 13
++4 0 13
++4 0 13
++4 0 13
++7 0 13
++4 0 13
++4 0 13
++4 0 13
++4 0 13
++6 0 13
++3 0 13
++2 0 13
++5 0 13
++3 0 13
++3 0 13
++3 0 13
++6 0 13
++3 0 13
++3 0 13
+-15 0 73
++3 0 73
++6 0 73
++3 0 73
++3 0 73
++6 0 14
++2 0 14
++2 0 14
++4 0 14
++2 0 14
++2 0 14
++2 0 14
++4 0 14
++7 0 14
++4 0 14
++4 0 14
++3 0 14
++4 0 14
++7 0 14
++4 0 14
++4 0 14
++4 0 14
++4 0 14
++6 0 14
++3 0 14
++2 0 14
++3 0 14
++2 0 14
++6 0 14
++7 0 14
++3 0 14
+-3 0 730
++3 0 730
++6 0 739
++3 0 739
++6 0 8
++3 0 8
++6 0 8
++5 0 8
++2 0 8
++7 0 8
++4 0 8
++3 0 8
+-7 0 1449
++4 0 1449
++3 0 1449
++6 0 1457
++3 0 1457
++5 0 1457
++3 0 1457
++3 0 1457
++2 0 716
++2 0 716
++6 0 749
++6 0 749
++7 0 749
++3 0 749
++6 0 91
++2 0 91
++6 0 5
++3 0 5
++6 0 5
++8 0 5
++3 0 5
++8 0 5
++3 0 5
++2 0 5
++6 0 3
++3 0 3
++2 0 3
++2 0 3
++4 0 3
++2 0 3
++4 0 3
++7 0 3
++4 0 3
++4 0 3
++3 0 3
++4 0 3
++4 0 3
++7 0 3
++4 0 3
++4 0 3
++3 0 3
++6 0 3
++3 0 3
++2 0 3
++3 0 3
++5 0 3
++6 0 3
++3 0 3
+-9 0 2
++6 0 2
++3 0 2
+0xb4870 0 10
++1 0 10
++1 0 10
++2 0 10
++2 0 10
++2 0 10
+0xb4970 0 5
++2 0 5
++3 0 5
++6 0 5
++5 0 5
++8 0 5
++2 0 5
++3 0 5
++6 0 5
++5 0 5
++8 0 658
++3 0 658
++7 0 658
++6 0 658
++6 0 658
++6 0 658
++2 0 658
++2 0 658
++2 0 658
++3 0 658
++3 0 658
++2 0 658
+-26 0 349
++6 0 349
++6 0 349
++2 0 349
++2 0 349
++2 0 349
++3 0 349
++3 0 349
++2 0 349
++2 0 124
++4 0 124
++4 0 124
++7 0 124
++4 0 124
++4 0 124
++4 0 124
++4 0 124
++7 0 124
++4 0 124
++4 0 124
++4 0 124
++3 0 124
++6 0 124
++3 0 124
++2 0 124
++2 0 124
++5 0 124
++7 0 124
++2 0 124
++6 0 124
++3 0 124
++2 0 83
++9 0 883
++3 0 883
++7 0 883
++6 0 883
++3 0 883
++6 0 575
++7 0 72
++2 0 72
++2 0 72
++3 0 72
++2 0 72
++6 0 72
++7 0 72
++10 0 731
++3 0 731
++6 0 731
++5 0 731
++2 0 731
++8 0 74
++2 0 74
++2 0 74
++6 0 74
++14 0 708
++2 0 708
++78 0 5
++3 0 5
++3 0 5
++2 0 5
++3 0 5
++3 0 5
++6 0 5
++8 0 5
++3 0 5
++33 0 2
++3 0 2
++3 0 2
++3 0 2
+
+ob=(7) /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33
+fl=(184) ???
+fn=(3314) std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate)
+0x133eb0 0 13
++4 0 13
++8 0 13
++2 0 13
++3 0 13
++3 0 13
++2 0 13
+
+fn=(3404) std::ios_base::~ios_base()
+0xe84f0 0 2
++4 0 2
++1 0 2
++2 0 2
++3 0 2
++1 0 2
++3 0 2
++4 0 2
++7 0 2
++4 0 2
++3 0 2
+cob=(4)
+cfi=(173)
+cfn=(3406) 0x00000000048e44d0
+calls=2 0x48e44d0 0 
+* 0 36
++5 0 2
++3 0 2
+cob=(4)
+cfi=(173)
+cfn=(3412) 0x00000000048e2870
+calls=2 0x48e2870 0 
+* 0 40
++5 0 2
++7 0 2
++4 0 2
++3 0 2
++23 0 2
++7 0 2
++4 0 2
++1 0 2
+cob=(4)
+cfi=(173)
+cfn=(1044) 0x00000000048e4ea0
+calls=2 0x48e4ea0 0 
+* 0 28
+
+fn=(650) 0x00000000000e98b0
+0xe98b0 0 7
++4 0 7
++7 0 7
++3 0 7
++2 0 7
++7 0 7
++4 0 7
++2 0 7
+
+fn=(2058) std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const
+0xe7f20 0 5
++4 0 5
++1 0 5
++3 0 5
++4 0 5
++3 0 5
++3 0 5
++6 0 1
++3 0 1
++3 0 1
++6 0 1
++8 0 1
++4 0 1
++6 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++6 0 1
++4 0 1
++5 0 1
++4 0 1
++81 0 4
++2 0 4
++2 0 4
++2 0 4
++1 0 4
++3 0 4
++3 0 4
++3 0 4
++2 0 4
++82 0 1
++8 0 1
++8 0 1
++4 0 1
++4 0 1
++4 0 1
++8 0 1
++2 0 1
++5 0 1
++4 0 1
++4 0 1
++5 0 1
++4 0 1
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++8 0 1
++4 0 1
++6 0 1
++5 0 1
++3 0 1
++3 0 1
++4 0 1
+cob=(4)
+cfi=(173)
+cfn=(2060) 0x00000000048e3610
+calls=1 0x48e3610 0 
+* 0 40
++5 0 1
++5 0 1
++2 0 1
++1 0 1
++3 0 1
++3 0 1
++3 0 1
++2 0 1
+
+fn=(1030) std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)
+0x1343e0 0 3
++4 0 3
++1 0 3
++3 0 3
++2 0 3
++3 0 3
++1 0 3
++3 0 3
+cob=(4)
+cfi=(173)
+cfn=(1032) 0x00000000048e5780
+calls=3 0x48e5780 0 
+* 0 303
++5 0 3
++7 0 3
++3 0 3
+cob=(4)
+cfi=(173)
+cfn=(1050) 0x00000000048e5920
+calls=3 0x48e5920 0 
+* 0 174
++5 0 3
++2 0 3
++11 0 3
++7 0 3
++2 0 3
++3 0 3
++3 0 3
++7 0 3
++7 0 3
++3 0 3
++1 0 3
++2 0 3
++1 0 3
+
+fn=(1786) operator delete(void*, unsigned long)
+0xb98b0 0 32
++4 0 32
+cob=(4)
+cfi=(173)
+cfn=(1442) 0x00000000048e3430
+calls=32 0x48e3430 0 
+* 0 2969
+
+fn=(724) std::locale::id::_M_id() const
+0xd0f20 0 9
++4 0 9
++3 0 9
++3 0 9
++33 0 9
++4 0 9
+
+fn=(648) std::locale::locale()
+0xe9910 0 7
++4 0 7
++1 0 7
++3 0 7
++2 0 7
++2 0 7
++1 0 7
++3 0 7
++4 0 7
++7 0 7
+cfn=(650)
+calls=7 0xe98b0 0 
+* 0 56
++5 0 7
++7 0 7
++7 0 7
++4 0 7
++3 0 7
++3 0 7
++74 0 7
++4 0 7
++1 0 7
++2 0 7
++2 0 7
++1 0 7
+
+fn=(1036) std::ios_base::_M_init()
+0xcfcf0 0 3
++4 0 3
++1 0 3
++3 0 3
++2 0 3
++1 0 3
++4 0 3
++4 0 3
++8 0 3
++9 0 3
++4 0 3
++3 0 3
++7 0 3
++4 0 3
++3 0 3
+cob=(4)
+cfi=(173)
+cfn=(644) 0x00000000048e38d0
+calls=3 0x48e38d0 0 
+* 0 96
++5 0 3
++3 0 3
++7 0 3
+cob=(4)
+cfi=(173)
+cfn=(1038) 0x00000000048e49c0
+calls=3 0x48e49c0 0 
+* 0 75
++5 0 3
++3 0 3
+cob=(4)
+cfi=(173)
+cfn=(1044)
+calls=3 0x48e4ea0 0 
+* 0 42
++5 0 3
++4 0 3
++9 0 3
++2 0 3
++4 0 3
++1 0 3
++2 0 3
++1 0 3
+
+fn=(3318) std::ostream::tellp()
+0x156640 0 5
++4 0 5
++1 0 5
++3 0 5
++3 0 5
++2 0 5
++2 0 5
++1 0 5
++4 0 5
++4 0 5
++9 0 5
++4 0 5
++3 0 5
++3 0 5
+cob=(4)
+cfi=(173)
+cfn=(1524) 0x00000000048e6360
+calls=5 0x48e6360 0 
+* 0 120
++5 0 5
++4 0 5
++4 0 5
++6 0 5
++6 0 5
++8 0 5
++5 0 5
++5 0 5
++2 0 5
++3 0 5
+cob=(8)
+cfi=(210)
+cfn=(3456)
+calls=3 0xa3cd0 0 
+* 0 174
+cob=(8)
+cfi=(210)
+cfn=(3320)
+calls=2 0xa3980 0 
+* 0 58
++3 0 5
++2 0 5
++4 0 5
++3 0 5
++2 0 5
++4 0 5
++10 0 5
++3 0 5
++3 0 5
++2 0 5
++3 0 5
++3 0 5
++4 0 5
++3 0 5
++4 0 5
++3 0 5
++4 0 5
++11 0 5
++4 0 5
++9 0 5
++2 0 5
++4 0 5
++3 0 5
++3 0 5
++1 0 5
++2 0 5
++2 0 5
++1 0 5
+
+fn=(1024) std::ios_base::ios_base()
+0xe8160 0 2
++4 0 2
++7 0 2
++4 0 2
++4 0 2
++8 0 2
++7 0 2
++7 0 2
++8 0 2
++4 0 2
++3 0 2
++3 0 2
++4 0 2
++4 0 2
++11 0 2
++11 0 2
++7 0 2
++7 0 2
++4 0 2
++8 0 2
++3 0 2
+-22 0 14
++7 0 14
++4 0 14
++8 0 14
++3 0 14
++2 0 2
++7 0 2
++7 0 2
++7 0 2
+cob=(4)
+cfi=(173)
+cfn=(644)
+calls=2 0x48e38d0 0 
+* 0 64
+
+fn=(1042) std::locale::operator=(std::locale const&)
+0xd0c10 0 3
++4 0 3
++1 0 3
++3 0 3
++3 0 3
++2 0 3
++1 0 3
++3 0 3
++4 0 3
++3 0 3
++7 0 3
++3 0 3
++3 0 3
++41 0 3
++3 0 3
++3 0 3
++4 0 3
++1 0 3
++2 0 3
++1 0 3
++11 0 3
++3 0 3
++3 0 3
+
+fn=(1054) std::basic_ios<char, std::char_traits<char> >::_M_cache_locale(std::locale const&)
+0x134260 0 3
++4 0 3
++1 0 3
++3 0 3
++2 0 3
++3 0 3
++1 0 3
++3 0 3
++7 0 3
+cob=(4)
+cfi=(173)
+cfn=(720) 0x00000000048e3800
+calls=3 0x48e3800 0 
+* 0 24
++5 0 3
++7 0 3
++3 0 3
++4 0 3
++4 0 3
++4 0 3
++7 0 3
+cob=(4)
+cfi=(173)
+cfn=(720)
+calls=3 0x48e3800 0 
+* 0 24
++5 0 3
++7 0 3
++3 0 3
++4 0 3
++4 0 3
++4 0 3
++7 0 3
+cob=(4)
+cfi=(173)
+cfn=(720)
+calls=3 0x48e3800 0 
+* 0 24
++5 0 3
++3 0 3
++4 0 3
++4 0 3
++4 0 3
++7 0 3
++1 0 3
++2 0 3
++1 0 3
+
+fn=(1446) operator delete(void*)
+0xb98a0 0 32
++4 0 32
+cob=(4)
+cfi=(173)
+cfn=(1448) 0x00000000048e3c60
+calls=32 0x48e3c60 0 
+* 0 2841
+
+fn=(2064) std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const
+0xe7cf0 0 1
++4 0 1
++3 0 1
++4 0 1
++2 0 1
++5 0 1
++3 0 1
+0xe7de0 0 1
++7 0 1
++4 0 1
++4 0 1
++8 0 1
++4 0 1
++4 0 1
++8 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
+0xe7eb0 0 1
++5 0 1
++4 0 1
++8 0 1
++4 0 1
++5 0 1
++4 0 1
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++8 0 1
++4 0 1
++4 0 1
++6 0 1
++5 0 1
++4 0 1
+
+fn=(1318) operator new(unsigned long)
+0xbb8e0 0 32
++4 0 32
++1 0 32
++5 0 32
++3 0 32
++1 0 32
++4 0 32
++3 0 32
++4 0 32
++3 0 32
++3 0 32
+cob=(4)
+cfi=(173)
+cfn=(1130) 0x00000000048e3210
+calls=32 0x48e3210 0 
+* 0 1997
++5 0 32
++3 0 32
++2 0 32
++4 0 32
++1 0 32
+
+fn=(1048) std::locale::~locale()
+0xd0cd0 0 7
++4 0 7
++1 0 7
++3 0 7
++1 0 7
++4 0 7
++7 0 7
++3 0 7
++3 0 7
++26 0 7
++4 0 7
++1 0 7
+
+fn=(1528) std::ostream::sentry::sentry(std::ostream&)
+0x1560a0 0 17
++4 0 17
++1 0 17
++3 0 17
++2 0 17
++3 0 17
++1 0 17
++3 0 17
++3 0 17
++4 0 17
++4 0 17
++3 0 17
++7 0 17
++3 0 17
++41 0 17
++3 0 17
++2 0 17
++2 0 17
++5 0 17
++1 0 17
++2 0 17
++1 0 17
+
+fn=(3328) std::ostream::write(char const*, long)
+0x1564a0 0 12
++4 0 12
++1 0 12
++3 0 12
++2 0 12
++2 0 12
++4 0 12
++3 0 12
++3 0 12
++2 0 12
++1 0 12
++3 0 12
++3 0 12
++4 0 12
++9 0 12
++4 0 12
++3 0 12
+cob=(4)
+cfi=(173)
+cfn=(1524)
+calls=12 0x48e6360 0 
+* 0 288
++5 0 12
++4 0 12
++2 0 12
++3 0 12
++3 0 12
++3 0 12
++4 0 12
++8 0 12
++3 0 12
+cob=(8)
+cfi=(210)
+cfn=(3330)
+calls=2 0xa37b0 0 
+* 0 91211
+cob=(8)
+cfi=(210)
+cfn=(3452)
+calls=10 0xa43e0 0 
+* 0 131708
++3 0 12
++3 0 12
++2 0 12
++4 0 12
++3 0 12
++4 0 12
++3 0 12
++4 0 12
++11 0 12
++4 0 12
++9 0 12
++6 0 12
++4 0 12
++3 0 12
++1 0 12
++2 0 12
++2 0 12
++2 0 12
++1 0 12
+
+fn=(3410) std::ios_base::_M_call_callbacks(std::ios_base::event)
+0xe8420 0 2
++4 0 2
++1 0 2
++3 0 2
++2 0 2
++2 0 2
++1 0 2
++4 0 2
++4 0 2
++3 0 2
++28 0 2
++4 0 2
++1 0 2
++2 0 2
++2 0 2
++1 0 2
+
+fn=(3416) std::ios_base::_M_dispose_callbacks()
+0xe8470 0 2
++4 0 2
++1 0 2
++3 0 2
++2 0 2
++2 0 2
++3 0 2
++1 0 2
++4 0 2
++4 0 2
++3 0 2
++69 0 2
++9 0 2
++4 0 2
++1 0 2
++2 0 2
++2 0 2
++1 0 2
+
+ob=(2) /usr/lib/x86_64-linux-gnu/libc.so.6
+fl=(233) ./nptl/./nptl/pthread_rwlock_unlock.c
+fn=(1736) pthread_rwlock_unlock@@GLIBC_2.34
+0xa3060 30 13
++4 * 13
++1 * 13
++3 * 13
++3 * 13
++2 * 13
++1 +1 13
++1 +7 13
++3 +1 13
++8 -1 13
++2 * 13
+fi=(232) ./nptl/./nptl/pthread_rwlock_common.c
++6 221 7
++3 * 7
++2 * 7
++2 +11 7
++2 -11 7
++4 * 7
++3 * 7
++3 +15 7
++4 +4 7
++3 * 7
++3 * 7
++2 +14 7
++5 * 7
++2 * 7
++2 +5 7
++4 * 7
++2 +16 7
++3 * 7
++4 * 7
+fe=(233)
++39 44 13
++1 * 13
++2 * 13
++2 * 13
++1 * 13
+fi=(232)
++4 243 7
++3 * 7
++3 * 7
++4 * 7
++4 +1 7
++4 * 7
++70 -23 6
++3 * 6
++3 535 6
++4 -4 6
++7 221 6
++2 * 6
++4 535 6
++2 221 6
++4 535 6
++2 +3 6
++3 -2 6
++3 * 6
++3 +2 6
++2 * 6
++2 +21 6
++3 +2 6
++2 * 6
++2 * 6
++3 * 6
++3 * 6
++2 * 6
++3 * 6
++5 * 6
++2 +8 6
++3 * 6
++2 +13 6
++3 * 6
+fe=(233)
+
+fl=(203) ./malloc/./malloc/malloc.c
+fn=(1154) alloc_perturb
+0xa91f0 1985 5
++6 * 5
++2 * 5
++2 +2 5
+
+fn=(1452) free
+0xadd30 3359 38
++4 +4 38
++3 * 38
++6 -4 38
++1 * 38
++3 * 38
++2 +14 38
++4 -14 38
++2 * 38
++1 * 38
++4 +12 38
++7 +4 38
++4 -4 38
++4 +4 38
++2 * 38
++2 +17 38
++7 * 38
++5 * 38
+fi=(204) ./malloc/./malloc/arena.c
++6 153 38
++7 * 38
++2 * 38
+fe=(203)
++40 3398 38
++3 * 38
++2 * 38
+cfn=(1456) _int_free
+calls=38 0xab170 4495 
+* * 2950
++5 +3 38
++4 +1 38
++4 * 38
++1 * 38
++2 * 38
++2 * 38
++1 * 38
+
+fn=(1998) _int_free_merge_chunk
+0xaaf90 4665 9
++1 * 9
++3 * 9
++2 * 9
++2 * 9
++2 +1 9
++4 -1 9
++2 * 9
++1 * 9
++4 +5 9
++4 * 9
++3 * 9
++6 * 9
++3 * 9
++3 * 9
++3 +3 9
++4 * 9
++6 +5 9
++4 * 9
++2 * 9
++6 +3 9
++3 * 9
++4 +1 9
++4 * 9
++6 +1 9
++7 * 9
++6 1992 9
++6 * 9
++2 * 9
++6 4689 9
++4 * 9
++2 +2 3
++3 +2 3
++3 -1 3
++3 +2 3
++4 * 3
++4 * 3
++3 * 3
++6 +2 3
++3 * 3
+cfn=(2024) unlink_chunk.isra.0
+calls=3 0xa9ad0 1608 
+* * 69
++5 +18 9
++4 * 9
++6 +6 7
++6 * 7
++6 +4 4
++5 +9 4
++4 -1 4
++4 +1 4
++5 * 4
++5 * 4
++4 +1 4
++4 * 4
+-26 -1 3
++4 -1 3
++4 +1 3
++5 * 3
++5 * 3
++4 +1 3
++4 * 3
++6 +2 7
++4 +2 7
++7 * 7
++2 +5 7
++4 +1 7
++4 +2 7
++3 * 7
++4 * 7
++4 +1 7
++4 -45 7
++4 -1 7
++3 * 7
++3 +1 7
++1 * 7
++2 * 7
++2 * 7
++2 * 7
++2 * 7
++1 -1 7
+cfn=(1992) _int_free_maybe_consolidate
+calls=7 0xaab00 +69 
+* * 339
+-20 +1 2
++4 -1 2
++3 * 2
++3 +1 2
++1 * 2
++2 * 2
++2 * 2
++2 * 2
++2 * 2
++1 -1 2
+cfn=(1992)
+calls=2 0xaab00 +69 
+* * 72
++8 +39 4
++4 * 4
++4 * 4
++8 +16 2
++3 +1 2
++3 * 2
++4 * 2
++4 +1 2
++4 * 2
++22 -37 3
++3 +1 3
++3 -1 3
+cfn=(2024)
+calls=3 0xa9ad0 1608 
+* * 75
++5 +1 3
++29 -47 9
++4 * 9
++4 * 9
++3 -2 9
++3 * 9
+
+fn=(1134) malloc
+0xad650 3294 33
++4 * 33
++1 * 33
++3 * 33
++2 * 33
++2 * 33
++1 * 33
++3 * 33
++4 +7 33
++7 * 33
++6 1326 33
++3 * 33
++6 +19 33
++4 * 33
++3 * 33
++4 * 33
++2 * 31
++4 3311 31
++4 * 31
++4 +2 31
++7 * 31
++5 * 31
++3 * 31
+-15 * 2
++7 * 2
++5 * 2
++3 * 2
++6 +3 33
++7 * 33
++6 +10 4
++7 * 4
+0xad754 +28 4
++4 * 4
++1 * 4
++2 * 4
++2 * 4
++1 * 4
++58 -36 32
++5 * 32
++3 * 32
++6 3178 29
++5 * 29
++4 +4 29
++2 * 29
++6 +4 29
++3 +4 29
++3 -4 29
++4 * 29
++3 * 29
++4 +4 29
++5 +1 29
++8 3354 29
++4 * 29
++1 * 29
++2 * 29
++2 * 29
++1 * 29
++1 -26 4
++3 * 4
++7 * 4
++3 * 4
+cfn=(1146) _int_malloc
+calls=4 0xab570 3846 
+* * 845
++5 +1 4
++3 * 4
++6 * 4
++4 * 4
++3 * 4
+fi=(204)
++6 153 4
++3 * 4
+fe=(203)
+
+fn=(1146)
+0xab570 3846 9
++1 * 9
++3 * 9
++2 * 9
++2 * 9
++2 * 9
++2 * 9
++1 * 9
++4 * 9
++9 * 9
++4 * 9
++2 1326 9
++3 * 9
++6 +19 9
++4 * 9
++3 * 9
++3 * 9
++4 * 9
++6 * 9
++4 3887 9
++3 * 9
++6 1794 9
++7 3914 9
++3 * 9
++6 +65 3
++3 * 3
++4 -63 3
++4 * 3
++3 * 3
++4 * 3
++4 +3 3
++4 +2 3
++3 * 3
+0xab6d8 +56 6
++7 * 6
++6 +62 6
++3 * 6
++4 * 6
++4 * 6
++7 * 6
++2 * 6
++3 * 6
++4 * 6
++4 * 6
++7 * 6
++2 * 5
++3 * 5
++4 * 5
++4 * 5
++7 * 5
++2 * 5
++3 * 5
++4 * 5
++4 * 5
++7 * 5
++2 * 2
++3 * 2
++5 * 2
++4 * 2
++3 * 2
++4 * 2
++4 * 2
++4 +1 2
++5 * 2
++2 * 2
+-7 * 4
++5 * 4
++2 * 4
++6 +20 8
++7 -1 8
++4 -1 8
++3 +1 8
++4 * 8
++4 +1 8
++5 * 8
++2 -2 8
++7 * 8
++4 +12 8
++5 * 8
++5 * 8
++8 * 8
++3 * 8
++6 -1 5
++7 * 5
++3 +4 5
++4 * 5
++4 +1 5
++4 +2 5
++4 * 5
+-16 -3 1
++4 * 1
++4 +1 1
++4 +2 1
++4 * 1
++6 +1 6
++8 * 6
++3 * 6
++6 +2 6
++4 +1 6
++3 * 6
++6 * 6
++4 * 6
++6 +2 6
++3 * 6
++4 * 6
++3 * 6
++6 -10 6
++4 +12 6
++4 * 6
++6 +1 6
++4 * 6
++6 +2 6
++3 * 6
++6 +11 6
++3 * 6
++2 * 5
++7 * 5
++6 +29 6
++5 +1 6
++4 +4 6
++3 * 6
++6 +29 6
++6 * 6
++6 +8 3
++3 * 3
++4 * 3
++6 * 3
++6 * 3
++3 * 3
++4 * 3
++6 * 3
++6 * 1
++3 * 1
++8 * 1
++3 * 1
++3 * 1
++4 +1 1
++3 +1 1
++3 -1 1
++4 +4 1
++3 * 1
+-13 -4 2
++3 +1 2
++3 -1 2
++4 +4 2
++3 * 2
+0xab95e 3980 3
++3 +2 3
++4 -2 3
++4 +2 3
++3 * 3
++6 +2 1
++4 +1 1
++4 * 1
++6 +6 1
++7 -4 1
++6 +1 1
++4 +1 1
++4 +2 1
++3 * 1
++7 +7 1
++7 * 1
++4 * 1
++3 * 1
++6 -1 1
++4 * 1
++4 +1 1
++7 * 1
++6 +5 1
++7 * 1
++5 * 1
++4 * 1
++3 * 1
++6 +1 1
++3 * 1
+0xaba73 -74 3
++5 * 3
++4 * 3
+0xabaea 4487 9
++4 * 9
++9 * 9
++6 * 9
++4 * 9
++3 * 9
++1 * 9
++2 * 9
++2 * 9
++2 * 9
++2 * 9
++1 * 9
++2 1985 1
++6 4020 1
++4 1985 1
++2 * 1
+0xabbc8 4163 3
++3 * 3
++3 +1 3
++4 * 3
++2 * 3
++4 +1 3
++3 -1 3
++4 +57 3
++3 * 3
++6 +9 3
++5 -9 3
++2 * 3
++3 +9 3
++4 -9 3
++3 * 3
++2 * 3
++8 +1 3
++4 +1 3
++4 +1 3
++4 +1 3
++4 +6 3
++3 * 3
+-55 -10 3
++3 * 3
++6 +9 3
++5 -9 3
++2 * 3
++3 +9 3
++4 -9 3
++3 * 3
++2 * 3
++8 +1 3
++4 +1 3
++4 +1 3
++4 +1 3
++4 +6 3
++3 * 3
+0xabc82 4070 6
++5 * 6
++3 * 6
++6 4246 5
++3 * 5
++6 +11 8
++4 * 8
++7 * 8
++2 +2 6
++4 * 6
++3 * 6
++4 +3 6
++3 -3 6
++4 +3 6
++3 * 6
++2 +1 2
++4 * 2
++6 * 7
++3 +71 7
++6 * 7
++3 * 7
++3 -4 7
++3 +1 7
++3 +1 7
++3 -1 7
++5 +1 7
++4 +1 7
++3 * 7
++8 +1 7
++3 * 7
++2 * 7
++8 +5 7
++3 * 7
++2 * 7
+-5 * 3
++3 * 3
++2 * 3
++2 * 4
++9 +16 9
++4 +2 9
++2 * 9
++6 -4 15
++2 * 15
++2 +8 6
++4 +3 6
++3 * 6
++6 +2 3
++2 +1 3
++4 +1 3
++2 -2 3
++2 * 3
++2 * 3
++3 * 3
++8 -27 3
++12 -99 6
++4 * 6
++3 * 6
++5 * 6
+0xabde8 4099 2
++5 * 2
+0xabf00 4218 3
++5 -48 3
++3 +48 3
++4 * 3
++4 * 3
++8 4343 4
++4 * 4
++3 * 4
++97 4443 4
++5 +1 4
++4 * 4
++4 +2 4
++8 * 4
++6 +3 4
++4 * 4
++3 * 4
+0xac050 4169 2
++3 * 2
++4 * 2
++6 * 2
+0xac0f8 * 2
++3 * 2
++4 * 2
++6 * 2
++2 * 2
++8 * 2
++3 * 2
++3 * 2
++3 * 2
++4 * 2
+0xac1a8 4373 3
++4 * 3
++3 * 3
++3 * 3
++4 +3 3
++3 * 3
++6 +2 3
++3 +3 3
++3 * 3
++4 -3 3
++3 * 3
++4 +3 3
+cfn=(2024)
+calls=3 0xa9ad0 1608 
+* * 75
++5 +3 3
++4 * 3
++4 * 3
++4 * 3
++6 +15 1
++5 * 1
++5 -5 1
++4 +5 1
++5 * 1
++4 +1 1
++4 * 1
++6 +3 1
++4 +1 1
++5 +1 1
++4 +3 1
++7 * 1
++7 +2 1
++7 * 1
++2 +2 1
++4 * 1
++4 +3 1
++7 * 1
++3 * 1
++3 * 1
++3 * 1
++4 * 1
++3 * 1
++4 * 1
++4 +2 1
++3 * 1
++4 * 1
++4 +1 1
++4 1985 1
++6 4421 1
++4 1985 1
++2 * 1
+-12 * 2
++6 4421 2
++4 1985 2
++2 * 2
+0xac308 4387 2
++7 -1 2
++6 +1 2
++3 * 2
+0xac4d3 +73 5
++3 * 5
++3 * 5
+cfn=(1154)
+calls=5 0xa91f0 1985 
+* * 20
++5 +1 5
++10 -9 4
++4 * 4
++3 +2 4
++7 * 4
++3 -1 4
++5 +1 4
++3 -3 4
++3 +3 4
++3 +2 4
++4 -2 4
++4 * 4
++3 * 4
++4 * 4
++4 +2 4
++4 +3 4
++4 * 4
+-4 * 1
++4 * 1
++2 4266 1
++4 +1 1
++6 * 1
++4 * 1
++3 * 1
++4 * 1
++3 * 1
++2 +6 1
++4 * 1
++14 +5 1
++3 +1 1
++3 * 1
++4 -1 1
++3 * 1
++4 +1 1
+cfn=(2024)
+calls=1 0xa9ad0 1608 
+* * 33
++5 +3 1
++4 * 1
++4 * 1
++4 * 1
++6 +13 1
++5 * 1
++5 -4 1
++4 +4 1
++5 * 1
++4 +1 1
++4 * 1
++6 +3 1
++4 +1 1
++5 +1 1
++4 +1 1
++7 * 1
++10 +5 1
++7 * 1
++3 * 1
++3 * 1
++3 * 1
++4 * 1
++3 * 1
++4 * 1
++4 +2 1
++3 * 1
++4 * 1
++4 +1 1
++4 +3 1
+
+fn=(1456)
+0xab170 4495 38
++1 * 38
++3 * 38
++2 * 38
++2 * 38
++3 * 38
++1 * 38
++4 +4 38
++4 * 38
++3 * 38
++4 +6 38
++3 * 38
++3 * 38
++3 * 38
++6 +1 38
++4 * 38
++6 +4 38
++4 * 38
++6 * 38
++3 * 38
++6 * 38
++3 +8 38
++7 * 38
++4 * 38
++3 * 38
++2 -1 38
++4 * 38
++4 +1 38
++7 * 38
++2 +29 32
++7 -20 32
++7 -6 32
++4 +6 32
++4 * 32
++6 +20 32
++5 * 32
++3 * 32
++3 * 32
++6 1792 9
++7 4561 9
++3 * 9
++6 +11 3
++4 * 3
++4 * 3
++4 * 3
++6 +2 3
++4 * 3
++7 * 3
++6 1992 3
++6 4593 3
++4 1992 3
++2 * 3
++6 4595 3
++7 +1 3
++3 +4 3
++3 * 3
++4 +2 3
++7 -2 3
++4 +2 3
++2 +4 3
++3 * 3
++6 +2 3
++4 * 3
++3 * 3
++4 +1 3
++4 +19 3
++3 * 3
++23 +30 32
++4 * 32
++1 * 32
++2 * 32
++2 * 32
++1 * 32
++9 -21 6
++4 * 6
++2 +3 6
++7 * 6
++11 +18 6
++4 -12 6
++3 +12 6
++1 * 6
++2 * 6
++2 * 6
++1 -12 6
+cfn=(1998)
+calls=6 0xaaf90 +19 
+* * 907
+0xab348 3163 29
++7 +4 29
++3 -4 29
++4 +2 29
++3 * 29
++4 * 29
++8 * 29
++4 +1 29
++8 +1 29
++5 4550 29
+
+fn=(1986) aligned_alloc
+0xae690 3556 5
++4 * 5
++1 +1 5
++7 -1 5
++3 * 5
++2 * 5
++3 * 5
++1 * 5
++3 +1 5
++2 +7 5
++4 * 5
++3 * 5
++2 * 5
++3 * 5
++2 +7 5
++3 * 5
++3 +1 5
++1 * 5
++2 * 5
++1 -1 5
+cfn=(1988) _mid_memalign.isra.0
+calls=5 0xad970 +4 
+* * 2202
+
+fn=(1990) _int_memalign
+0xad1d0 5039 5
++1 * 5
++3 * 5
++2 * 5
++2 * 5
++2 * 5
++2 * 5
++1 * 5
++4 1326 5
++3 * 5
++6 +19 5
++4 * 5
++5 * 5
++3 * 5
++3 * 5
++3 * 5
++4 * 5
++4 * 5
++4 5069 5
++5 * 5
++4 * 5
+cfn=(1146)
+calls=5 0xab570 3846 
+* * 989
++5 +2 5
++4 * 5
++3 -2 5
++3 +2 5
++6 +5 5
++2 -2 5
++4 +2 5
++3 * 5
++3 * 5
++6 +7 3
++3 * 3
++5 * 3
++3 * 3
++3 * 3
++4 +2 3
++3 * 3
++3 * 3
++4 * 3
++11 +5 3
++4 * 3
++3 * 3
++4 * 3
++3 +3 3
++2 * 3
++6 +8 3
++7 * 3
++2 * 3
++4 * 3
++3 * 3
++3 * 3
++4 * 3
++4 * 3
++3 * 3
++4 * 3
++4 +2 3
++6 +1 3
++4 * 3
++3 * 3
++3 +1 3
++3 -1 3
++3 * 3
++4 +1 3
+cfn=(1998)
+calls=3 0xaaf90 4665 
+* * 273
++5 +3 3
++4 * 3
++3 * 3
++6 * 3
++4 * 3
++2 * 3
++3 * 3
++3 * 3
++3 * 3
++6 -2 3
++3 +7 3
++4 * 3
++2 * 3
+-6 * 2
++4 * 2
++2 * 2
++2 +2 5
++3 * 5
++4 +1 5
++4 +1 5
++4 +1 5
++3 * 5
++2 +2 5
++3 +2 5
++4 -5 5
++4 +4 5
++4 * 5
++58 +20 5
++4 * 5
++3 * 5
++1 * 5
++2 * 5
++2 * 5
++2 * 5
++2 * 5
++1 * 5
++35 -11 5
++3 -1 5
++4 +1 5
++3 * 5
++4 4714 5
++3 * 5
++6 5123 1
++4 4720 1
++4 * 1
++11 +13 1
++4 -1 1
++4 +1 1
++5 * 1
++5 * 1
++4 +1 1
++4 * 1
++2 +2 1
++5 +2 1
++7 * 1
++2 +5 1
++4 +1 1
++4 +2 1
++3 * 1
++4 * 1
++4 +1 1
++4 5134 1
++3 * 1
++3 * 1
+cfn=(1992)
+calls=1 0xaab00 4770 
+* * 24
+-6 * 4
++3 * 4
++3 * 4
+cfn=(1992)
+calls=4 0xaab00 4770 
+* * 144
++5 +6 5
++10 4740 1
++4 * 1
++5 * 1
++21 +16 4
++3 +1 4
++3 * 4
++4 * 4
++4 +1 4
++4 * 4
++8 -37 1
+cfn=(2024)
+calls=1 0xa9ad0 1608 
+* * 24
++5 +1 1
++3 * 1
+
+fn=(1992)
+0xaab00 4770 14
++1 * 14
++3 * 14
++2 * 14
++2 * 14
++2 * 14
++2 * 14
++1 * 14
++4 * 14
++9 * 14
++4 * 14
++2 +6 14
++7 * 14
++2 +22 14
++4 * 14
++9 * 14
++6 * 14
++4 * 14
++1 * 14
++2 * 14
++2 * 14
++2 * 14
++2 * 14
++1 * 14
++6 -20 9
++3 * 9
++3 * 9
++2 * 9
++6 +3 9
++7 * 9
++3 * 9
+0xaada0 -2 1
+cfn=(2562) malloc_consolidate
+calls=1 0xa9bb0 +32 
+* * 133
++5 * 1
++11 +5 9
++4 * 9
++4 * 9
++4 * 9
++7 * 9
+
+fn=(2024)
+0xa9ad0 1608 11
++1 +2 11
++4 * 11
++3 * 11
++4 -2 11
++3 +2 11
++4 * 11
++6 +3 11
++5 +1 11
++4 * 11
++5 +2 11
++4 * 11
++2 * 11
++4 * 11
++2 -3 11
++4 +6 11
++4 +1 11
++5 +1 11
++7 * 11
++2 * 6
++4 * 6
++3 * 6
++2 +2 3
++4 * 3
++2 +1 3
++4 * 3
++4 * 3
++2 +3 3
++5 * 3
++2 +14 3
++4 +1 3
++4 +3 3
++1 * 3
+-1 * 8
++1 * 8
+
+fn=(1988)
+0xad970 3575 5
++1 * 5
++3 * 5
++2 * 5
++2 * 5
++3 * 5
++1 * 5
++4 +6 5
++4 * 5
++6 +4 5
++4 * 5
++11 1326 5
++3 * 5
++6 +19 5
++5 * 5
++2 * 5
++4 * 5
++2 * 5
++4 3615 5
++4 * 5
++4 * 5
++3 +2 5
++7 * 5
++43 +21 5
++7 * 5
+0xada9b +24 5
++4 * 5
++1 * 5
++2 * 5
++2 * 5
++1 * 5
++11 -72 5
++10 * 5
++3 * 5
++6 +8 5
++4 * 5
++3 * 5
+0xadb60 +42 5
++3 * 5
++7 * 5
++3 * 5
++3 * 5
+cfn=(1990)
+calls=5 0xad1d0 5039 
+* * 1947
++5 +1 5
++3 * 5
++2 * 5
++4 * 5
++3 * 5
+fi=(204)
++6 153 5
++3 * 5
+fe=(203)
+0xadcc0 3643 5
++3 * 5
+
+fn=(2562)
+0xa9bb0 4811 1
++1 +17 1
++4 -17 1
++3 * 1
++2 * 1
++2 * 1
++3 * 1
++2 +28 1
++4 -28 1
++2 * 1
++1 * 1
++4 +15 1
++7 +2 1
++4 +13 1
++2 * 1
++4 +1 1
++3 * 1
+-9 -1 9
++2 * 9
++4 +1 9
++3 * 9
++2 +62 10
++4 * 10
++4 * 10
++2 +1 1
++4 * 1
++1 * 1
++2 * 1
++2 * 1
++2 * 1
++2 * 1
++1 * 1
++6 -31 1
++6 * 1
++6 +4 1
++4 * 1
++4 +2 1
++4 +1 1
++4 * 1
++5 +1 1
++4 * 1
++4 +2 1
++7 * 1
++10 +5 1
++3 +2 1
++4 -2 1
++4 * 1
++4 +3 1
++3 +9 1
++3 * 1
++5 -56 1
++3 * 1
++6 +4 1
++4 * 1
++2 * 1
++3 +1 1
++3 * 1
++5 * 1
++3 * 1
++6 +8 1
++3 -3 1
++4 * 1
++4 +3 1
++4 -3 1
++4 +4 1
++4 -4 1
++3 +5 1
++4 -5 1
++3 +5 1
++3 * 1
++4 +2 1
++3 * 1
++76 +9 1
++4 * 1
+
+fl=(231) ./nptl/./nptl/pthread_rwlock_rdlock.c
+fn=(1730) pthread_rwlock_rdlock@@GLIBC_2.34
+0xa26d0 23 7
++4 * 7
++1 * 7
++3 * 7
++2 * 7
++2 * 7
++1 * 7
++3 * 7
++4 +1 7
+fi=(232)
++1 298 7
++3 * 7
++8 * 7
++2 * 7
++6 +12 7
++4 * 7
++2 +43 7
++5 * 7
++4 * 7
++3 +17 7
++2 * 7
++6 +20 7
++2 * 7
++2 +1 7
+fe=(231)
++2 27 7
++1 +2 7
++4 * 7
++2 * 7
++1 * 7
++2 * 7
++2 * 7
++1 * 7
+fi=(232)
+0xa2790 396 2
++2 * 2
++3 * 2
++3 * 2
++6 +6 2
++2 * 2
++3 * 2
++4 * 2
++2 +11 2
++4 * 2
++2 * 2
++2 * 2
++2 * 2
+fe=(231)
+
+fl=(217) ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+fn=(1386) __memcpy_avx_unaligned_erms
+0x188a00 255 28
++4 +1 28
++3 +6 28
++4 +1 28
++2 +2 16
++4 +1 16
++4 +1 16
++6 +3 1
++6 +1 1
++4 +1 1
++6 +3 1
++3 * 1
++2 +30 12
++3 +1 12
++2 +2 9
++3 +1 9
++2 +2 2
++3 +4 2
++2 +1 1
++3 +1 1
++2 +1 1
++2 +1 1
++2 +1 1
++5 +1 1
++5 +2 1
++2 +2 1
++1 +6 1
++4 +1 1
++2 +1 1
++4 +1 1
++2 +1 1
++1 +7 3
++4 +1 3
++6 +1 3
++4 +1 3
++6 +2 3
++10 +17 7
++5 +1 7
++3 +1 7
++3 +1 7
++5 +1 7
++1 +7 1
++6 +1 1
++6 +1 1
++4 +1 1
++5 +1 1
++6 +1 1
++6 +1 1
++3 * 1
++11 +5 15
++7 +1 15
++6 +5 2
++7 +1 2
++2 +2 1
++5 +1 1
++7 +1 1
++83 +20 1
++3 +1 1
++3 +4 1
++3 +2 1
++6 +4 1
++7 +1 1
++6 +11 1
++4 +3 1
++3 +2 1
++4 +2 1
++6 +4 1
++3 +1 1
++6 +9 1
++6 +1 1
++6 +2 1
++3 +2 1
++4 +1 1
++6 +1 1
++6 +3 1
++3 +2 1
++3 +2 1
++3 +2 1
++5 * 1
++8 +6 1
++4 +1 1
++5 +1 1
++5 +1 1
++5 +1 1
++4 +1 1
++4 +1 1
++5 +1 1
++5 +1 1
++5 +1 1
++4 +1 1
++3 +1 1
+-49 -11 48
++4 +1 48
++5 +1 48
++5 +1 48
++5 +1 48
++4 +1 48
++4 +1 48
++5 +1 48
++5 +1 48
++5 +1 48
++4 +1 48
++3 +1 48
++2 +2 1
++5 +1 1
++5 +1 1
++5 +1 1
++4 +2 1
++4 +4 1
++3 * 1
+0x188c80 +58 13
++5 +7 13
++6 +1 13
++2 +6 6
++3 +3 6
++5 +2 6
++4 +3 6
++5 +1 6
++3 +2 6
++3 +2 6
+* * 230972
++2 +2 6
++5 +2 6
++6 +2 6
++3 * 6
++12 +5 13
++3 +1 13
++3 +4 13
++3 +2 13
++6 +3 13
++3 +4 13
++7 +1 13
++2 +4 13
++7 +4 13
++16 +24 7
++3 +2 7
++4 +2 7
++4 +2 7
++4 +3 7
++3 +1 7
++3 +2 7
+* * 396042
++2 +3 7
++5 +2 7
++6 +2 7
++3 * 7
+
+fl=(218) ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+fn=(1418) __memset_avx2_unaligned_erms
+0x189400 158 4
++4 +1 4
++4 * 4
++3 +5 4
++4 +1 4
++6 +1 4
++5 +1 4
++4 +1 4
++18 +13 2
++5 +1 2
++5 +2 2
++3 * 2
++3 +53 4
++7 +1 4
++2 +6 2
++4 +1 2
++5 +12 2
++3 +3 2
++7 +1 2
+0x1894c0 +64 2
++4 +1 2
++3 +1 2
++3 +1 2
+* * 327678
++2 +1 2
++3 +1 2
++3 * 2
+
+fl=(234) ./nptl/./nptl/pthread_rwlock_wrlock.c
+fn=(1742) pthread_rwlock_wrlock@@GLIBC_2.34
+0xa3230 23 6
++4 * 6
++1 * 6
++3 * 6
++2 * 6
++2 * 6
++2 * 6
++2 * 6
++1 * 6
++3 * 6
++4 +1 6
+fi=(232)
++1 603 6
++3 * 6
++8 * 6
++2 * 6
++2 +19 6
++2 * 6
++2 * 6
++2 * 6
++3 * 6
++4 * 6
++2 778 6
++5 * 6
++4 624 6
++3 * 6
++2 778 6
++3 +5 6
++3 * 6
++2 +5 8
++2 +1 8
++2 -1 8
++3 +1 8
++3 * 8
++2 * 8
++6 +6 8
++2 * 8
++2 * 8
++3 * 8
++4 * 8
++2 * 8
++2 +7 4
++7 947 4
++8 * 4
++3 +2 4
+fe=(234)
++3 27 4
++1 +2 4
++4 * 4
++3 * 4
++1 * 4
++2 * 4
++2 * 4
++2 * 4
++2 * 4
++1 * 4
+fi=(232)
+-32 947 2
++8 * 2
++3 +2 2
+fe=(234)
++3 27 2
++1 +2 2
++4 * 2
++3 * 2
++1 * 2
++2 * 2
++2 * 2
++2 * 2
++2 * 2
++1 * 2
+
+ob=(4)
+fl=(173)
+fn=(720)
+0x48e3800 0 9
++4 0 9
+cob=(7)
+cfi=(184)
+cfn=(724)
+calls=9 0xd0f20 0 
+* 0 54
+
+fn=(1032)
+0x48e5780 0 3
++4 0 3
+cob=(7)
+cfi=(184)
+cfn=(1036)
+calls=3 0xcfcf0 0 
+* 0 297
+
+fn=(1044)
+0x48e4ea0 0 5
++4 0 5
+cob=(7)
+cfi=(184)
+cfn=(1048)
+calls=5 0xd0cd0 0 
+* 0 60
+
+fn=(1130)
+0x48e3210 0 32
++4 0 32
+cob=(2)
+cfi=(203)
+cfn=(1134)
+calls=32 0xad650 3294 
+* 0 1933
+
+fn=(1728)
+0x10fb10 0 7
++4 0 7
+cob=(2)
+cfi=(231)
+cfn=(1730)
+calls=7 0xa26d0 23 
+* 0 243
+
+fn=(1740)
+0x10fd40 0 6
++4 0 6
+cob=(2)
+cfi=(234)
+cfn=(1742)
+calls=6 0xa3230 23 
+* 0 346
+
+fn=(644)
+0x48e38d0 0 5
++4 0 5
+cob=(7)
+cfi=(184)
+cfn=(648)
+calls=5 0xe9910 0 
+* 0 150
+
+fn=(3290)
+0x10f850 0 2
++4 0 2
+cob=(7)
+cfi=(184)
+cfn=(1024)
+calls=2 0xe8160 0 
+* 0 184
+
+fn=(3316)
+0x10fad0 0 5
++4 0 5
+cob=(7)
+cfi=(184)
+cfn=(3318)
+calls=5 0x156640 0 
+* 0 612
+
+fn=(1038)
+0x48e49c0 0 3
++4 0 3
+cob=(7)
+cfi=(184)
+cfn=(1042)
+calls=3 0xd0c10 0 
+* 0 69
+
+fn=(2056)
+0x10fc60 0 5
++4 0 5
+cob=(7)
+cfi=(184)
+cfn=(2058)
+calls=5 0xe7f20 0 
+* 0 160
+
+fn=(3288)
+0x10fef0 0 2
++4 0 2
+cob=(7)
+cfi=(184)
+cfn=(648)
+calls=2 0xe9910 0 
+* 0 60
+
+fn=(1050)
+0x48e5920 0 3
++4 0 3
+cob=(7)
+cfi=(184)
+cfn=(1054)
+calls=3 0x134260 0 
+* 0 168
+
+fn=(1448)
+0x48e3c60 0 32
++4 0 32
+cob=(2)
+cfi=(203)
+cfn=(1452)
+calls=32 0xadd30 3359 
+* 0 2777
+
+fn=(1734)
+0x10fc50 0 13
++4 0 13
+cob=(2)
+cfi=(233)
+cfn=(1736)
+calls=13 0xa3060 30 
+* 0 545
+
+fn=(1764)
+0x10fab0 0 17
++4 0 17
+cob=(2)
+cfi=(217)
+cfn=(1386)
+calls=17 0x188a00 255 
+* 0 405901
+
+fn=(1984)
+0x10fa40 0 5
++4 0 5
+cob=(2)
+cfi=(203)
+cfn=(1986)
+calls=5 0xae690 3556 
+* 0 2302
+
+fn=(2060)
+0x48e3610 0 1
++4 0 1
+cob=(7)
+cfi=(184)
+cfn=(2064)
+calls=1 0xe7cf0 0 
+* 0 38
+
+fn=(2428)
+0x10fbf0 0 6
++4 0 6
+cob=(2)
+cfi=(203)
+cfn=(1452)
+calls=6 0xadd30 3359 
+* 0 1351
+
+fn=(3418)
+0x10fcd0 0 2
++4 0 2
+cob=(7)
+cfi=(184)
+cfn=(1048)
+calls=2 0xd0cd0 0 
+* 0 24
+
+fn=(1748)
+0x10fc70 0 1
++4 0 1
+cob=(2)
+cfi=(203)
+cfn=(1134)
+calls=1 0xad650 3294 
+* 0 396
+
+fn=(1936)
+0x10fd90 0 11
++4 0 11
+cob=(2)
+cfi=(217)
+cfn=(1386)
+calls=11 0x188a00 255 
+* 0 222349
+
+fn=(3406)
+0x48e44d0 0 2
++4 0 2
+cob=(7)
+cfi=(184)
+cfn=(3410)
+calls=2 0xe8420 0 
+* 0 32
+
+fn=(3292)
+0x10fc80 0 3
++4 0 3
+cob=(7)
+cfi=(184)
+cfn=(1030)
+calls=3 0x1343e0 0 
+* 0 549
+
+fn=(3412)
+0x48e2870 0 2
++4 0 2
+cob=(7)
+cfi=(184)
+cfn=(3416)
+calls=2 0xe8470 0 
+* 0 36
+
+fn=(1316)
+0x10fb50 0 32
++4 0 32
+cob=(7)
+cfi=(184)
+cfn=(1318)
+calls=32 0xbb8e0 0 
+* 0 2509
+
+fn=(1442)
+0x48e3430 0 32
++4 0 32
+cob=(7)
+cfi=(184)
+cfn=(1446)
+calls=32 0xb98a0 0 
+* 0 2905
+
+fn=(3312)
+0x10fdf0 0 13
++4 0 13
+cob=(7)
+cfi=(184)
+cfn=(3314)
+calls=13 0x133eb0 0 
+* 0 91
+
+fn=(3326)
+0x10fc40 0 12
++4 0 12
+cob=(7)
+cfi=(184)
+cfn=(3328)
+calls=12 0x1564a0 0 
+* 0 223747
+
+fn=(1524)
+0x48e6360 0 17
++4 0 17
+cob=(7)
+cfi=(184)
+cfn=(1528)
+calls=17 0x1560a0 0 
+* 0 374
+
+fn=(1768)
+0x10f950 0 4
++4 0 4
+cob=(2)
+cfi=(218)
+cfn=(1418)
+calls=4 0x189400 158 
+* 0 327750
+
+fn=(1784)
+0x10fb60 0 32
++4 0 32
+cob=(7)
+cfi=(184)
+cfn=(1786)
+calls=32 0xb98b0 0 
+* 0 3033
+
+fn=(3402)
+0x10f880 0 2
++4 0 2
+cob=(7)
+cfi=(184)
+cfn=(3404)
+calls=2 0xe84f0 0 
+* 0 146
+
+totals: 52769052

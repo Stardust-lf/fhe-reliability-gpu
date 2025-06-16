@@ -1,0 +1,3867 @@
+# callgrind format
+version: 1
+creator: callgrind-3.22.0
+pid: 920815
+cmd:  ../../build/profile_framewk 3
+part: 2
+
+
+desc: I1 cache: 
+desc: D1 cache: 
+desc: LL cache: 
+
+desc: Timerange: Basic block 43320804 - 43404268
+desc: Trigger: Client Request
+
+positions: instr line
+events: Ir
+summary: 0
+
+
+ob=(8) /home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk
+fl=(210) ???
+fn=(1682) std::__shared_ptr<seal::util::MemoryPool, (__gnu_cxx::_Lock_policy)2>::__shared_ptr(std::__shared_ptr<seal::util::MemoryPool, (__gnu_cxx::_Lock_policy)2> const&)
+0x29ce0 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(1684) std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count(std::__shared_count<(__gnu_cxx::_Lock_policy)2> const&)
+calls=1 0x2ef36 0 
+* 0 49
++5 0 1
++1 0 1
++1 0 1
+
+fn=(1686) std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_add_ref_copy()
+0x325e6 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++7 0 2
++7 0 2
++2 0 2
++3 0 2
++2 0 2
++2 0 2
++4 0 2
++4 0 2
++3 0 2
++3 0 2
++4 0 2
++2 0 2
++3 0 2
++2 0 2
++4 0 2
++2 0 2
++27 0 2
++1 0 2
++1 0 2
++1 0 2
+
+fn=(1692) std::shared_ptr<seal::util::MemoryPool>::shared_ptr(std::shared_ptr<seal::util::MemoryPool>&&)
+0x2ee46 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(1690) std::remove_reference<std::shared_ptr<seal::util::MemoryPool>&>::type&& std::move<std::shared_ptr<seal::util::MemoryPool>&>(std::shared_ptr<seal::util::MemoryPool>&)
+calls=1 -50 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
+cfn=(1694) std::__shared_ptr<seal::util::MemoryPool, (__gnu_cxx::_Lock_policy)2>::__shared_ptr(std::__shared_ptr<seal::util::MemoryPool, (__gnu_cxx::_Lock_policy)2>&&)
+calls=1 0x3258a 0 
+* 0 53
++5 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(1776) seal::util::MemoryPoolHeadMT::item_byte_count() const
+0x8ed50 0 5
++4 0 5
++4 0 5
+
+fn=(1968) seal::util::Pointer<unsigned long, void>::release()
+0x32916 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(1772) seal::util::MemoryPoolHeadMT::add(seal::util::MemoryPoolItem*)
+calls=1 0x8edd0 0 
+* 0 20
++2 0 1
++56 0 1
++4 0 1
++7 0 1
++4 0 1
++8 0 1
++4 0 1
++8 0 1
++4 0 1
++4 0 1
++1 0 1
++1 0 1
+
+fn=(2028) std::__shared_count<(__gnu_cxx::_Lock_policy)2>::operator=(std::__shared_count<(__gnu_cxx::_Lock_policy)2> const&) [clone .constprop.0] [clone .isra.0]
+0x61d10 0 1
++3 0 1
++2 0 1
++7 0 1
++2 0 1
++1 0 1
++3 0 1
++1 0 1
++3 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
++3 0 1
++50 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
+
+fn=(2030) std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()
+0x2964e 0 4
++4 0 4
++1 0 4
++3 0 4
++4 0 4
++4 0 4
++4 0 4
++4 0 4
++4 0 4
++7 0 4
++7 0 4
++10 0 4
++4 0 4
++4 0 4
++4 0 4
++4 0 4
++4 0 4
++3 0 4
++10 0 4
++3 0 4
++3 0 4
++2 0 4
++78 0 4
++4 0 4
++4 0 4
++4 0 4
++7 0 4
++7 0 4
++2 0 4
++3 0 4
++2 0 4
++2 0 4
++4 0 4
++4 0 4
++3 0 4
++3 0 4
++4 0 4
++2 0 4
++3 0 4
++4 0 4
++2 0 4
++3 0 4
++2 0 4
++4 0 4
++2 0 4
++3 0 4
++30 0 4
++3 0 4
++3 0 4
++2 0 4
++15 0 4
++1 0 4
+
+fn=(2086) std::unordered_map<std::array<unsigned long, 4ul>, std::shared_ptr<seal::SEALContext::ContextData const>, std::hash<std::array<unsigned long, 4ul> >, std::equal_to<std::array<unsigned long, 4ul> >, std::allocator<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > > >::find(std::array<unsigned long, 4ul> const&) const
+0x30420 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2088) std::_Hashtable<std::array<unsigned long, 4ul>, std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, std::allocator<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > >, std::__detail::_Select1st, std::equal_to<std::array<unsigned long, 4ul> >, std::hash<std::array<unsigned long, 4ul> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::find(std::array<unsigned long, 4ul> const&) const
+calls=1 0x33174 0 
+* 0 699
++5 0 1
++1 0 1
+
+fn=(2118) std::__detail::_Hashtable_base<std::array<unsigned long, 4ul>, std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, std::__detail::_Select1st, std::equal_to<std::array<unsigned long, 4ul> >, std::hash<std::array<unsigned long, 4ul> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, false, true> >::_S_equals(unsigned long, std::__detail::_Hash_node_code_cache<true> const&)
+0x3d082 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++1 0 1
+
+fn=(2130) std::__detail::_Select1st::__1st_type<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > const&>::type&& std::__detail::_Select1st::operator()<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > const&>(std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > const&) const
+0x3b008 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2132) std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > const& std::forward<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > const&>(std::remove_reference<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > const&>::type&)
+calls=1 0x3c578 0 
+* 0 7
++5 0 1
++1 0 1
+
+fn=(2138) std::array<unsigned long, 4ul>::begin() const
+0x32f90 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(2140) std::array<unsigned long, 4ul>::data() const
+calls=2 0x3733c 0 
+* 0 14
++5 0 2
++1 0 2
+
+fn=(2140)
+0x3733c 0 3
++4 0 3
++1 0 3
++3 0 3
++4 0 3
++4 0 3
++1 0 3
+
+fn=(2146) bool std::__equal_aux<unsigned long const*, unsigned long const*>(unsigned long const*, unsigned long const*, unsigned long const*)
+0x36fb8 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2148) unsigned long const* std::__niter_base<unsigned long const*>(unsigned long const*)
+calls=1 +58 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(2148)
+calls=1 +43 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(2148)
+calls=1 +28 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(2150) bool std::__equal_aux1<unsigned long const*, unsigned long const*>(unsigned long const*, unsigned long const*, unsigned long const*)
+calls=1 0x3ac24 0 
+* 0 75
++5 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(2316) seal::DynArray<unsigned long>::resize(unsigned long, bool)
+0x30a8a 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++2 0 1
++3 0 1
++9 0 1
++4 0 1
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++2 0 1
++4 0 1
++2 0 1
++8 0 1
++4 0 1
++3 0 1
+cfn=(2536) seal::DynArray<unsigned long>::begin()
+calls=1 0x2f7b6 0 
+* 0 19
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2968) seal::DynArray<unsigned long>::end()
+calls=1 0x30c64 0 
+* 0 33
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(2340) void std::fill<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&)
+calls=1 0x2f5bb 0 
+* 0 57393
++5 0 1
++4 0 1
++4 0 1
++4 0 1
+0x30c46 0 1
++4 0 1
++9 0 1
++7 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(2318) seal::util::Pointer<unsigned long, void>::get() const
+0x2f4da 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++3 0 2
++1 0 2
+
+fn=(2742) seal::is_metadata_valid_for(seal::Ciphertext const&, seal::SEALContext const&, bool)
+0x81910 0 2
++4 0 2
++2 0 2
++2 0 2
++4 0 2
++2 0 2
++3 0 2
++2 0 2
++3 0 2
++1 0 2
++4 0 2
++1 0 2
++2 0 2
++4 0 2
++9 0 2
++5 0 2
++2 0 2
++8 0 2
+0x819b5 0 2
++7 0 2
++3 0 2
++6 0 2
++5 0 2
++2 0 2
++3 0 2
++6 0 2
++4 0 2
++4 0 2
++10 0 2
++3 0 2
++6 0 2
++7 0 2
++3 0 2
++6 0 2
++4 0 2
++3 0 2
++4 0 2
++3 0 2
++6 0 2
++2 0 2
++6 0 2
++6 0 2
++6 0 2
++8 0 2
++5 0 2
++5 0 2
++3 0 2
++88 0 2
++4 0 2
++4 0 2
++3 0 2
++6 0 2
++7 0 2
++3 0 2
++6 0 2
++5 0 2
++3 0 2
++6 0 2
++8 0 2
++7 0 2
++3 0 2
++94 0 2
++4 0 2
++4 0 2
++3 0 2
++6 0 2
++7 0 2
++4 0 2
++3 0 2
++6 0 2
++4 0 2
++7 0 2
++4 0 2
++10 0 2
++3 0 2
++6 0 2
++3 0 2
++6 0 2
++3 0 2
++3 0 2
++3 0 2
++3 0 2
++6 0 2
++3 0 2
++3 0 2
++3 0 2
++2 0 2
++2 0 2
++6 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++10 0 2
++4 0 2
++4 0 2
++6 0 2
++4 0 2
++6 0 2
++4 0 2
++4 0 2
++6 0 2
++4 0 2
++6 0 2
++9 0 2
++6 0 2
++90 0 2
++4 0 2
++4 0 2
++3 0 2
++6 0 2
++7 0 2
++4 0 2
++3 0 2
++6 0 2
++4 0 2
++4 0 2
++4 0 2
++10 0 2
++3 0 2
++6 0 2
++3 0 2
++6 0 2
++3 0 2
++3 0 2
++3 0 2
++3 0 2
++6 0 2
++8 0 2
++6 0 2
++6 0 2
++9 0 2
++4 0 2
++84 0 2
++4 0 2
++4 0 2
++3 0 2
++6 0 2
++7 0 2
++5 0 2
++3 0 2
++6 0 2
++6 0 2
++10 0 2
++4 0 2
++5 0 2
++3 0 2
++6 0 2
++3 0 2
++6 0 2
++5 0 2
++3 0 2
++5 0 2
++3 0 2
++6 0 2
++4 0 2
++13 0 2
++3 0 2
++3 0 2
++3 0 2
++3 0 2
++2 0 2
++3 0 2
++3 0 2
++2 0 2
++3 0 2
++15 0 2
++5 0 2
++3 0 2
++4 0 2
+cfn=(2280) std::_Hashtable<std::array<unsigned long, 4ul>, std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, std::allocator<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > >, std::__detail::_Select1st, std::equal_to<std::array<unsigned long, 4ul> >, std::hash<std::array<unsigned long, 4ul> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::find(std::array<unsigned long, 4ul> const&) const [clone .part.0]
+calls=2 0x80620 0 
+* 0 90
++5 0 2
++4 0 2
++3 0 2
++10 0 2
++5 0 2
++9 0 2
++6 0 2
++4 0 2
++1 0 2
++1 0 2
++2 0 2
++2 0 2
++2 0 2
++2 0 2
++4 0 2
++9 0 2
++91 0 2
++4 0 2
++4 0 2
++3 0 2
++6 0 2
++7 0 2
++4 0 2
++3 0 2
++6 0 2
++4 0 2
++6 0 2
++4 0 2
++10 0 2
++3 0 2
++6 0 2
++3 0 2
++6 0 2
++3 0 2
++3 0 2
++3 0 2
++3 0 2
++6 0 2
++2 0 2
++3 0 2
++3 0 2
++11 0 2
++3 0 2
++3 0 2
+cfn=(2280)
+calls=2 0x80620 0 
+* 0 90
++5 0 2
++3 0 2
++6 0 2
++4 0 2
++4 0 2
++3 0 2
++15 0 2
++3 0 2
++3 0 2
+cfn=(2280)
+calls=2 0x80620 0 
+* 0 90
++5 0 2
++3 0 2
++3 0 2
+0x81fa2 0 2
++3 0 2
++6 0 2
++4 0 2
++4 0 2
++10 0 2
++3 0 2
++6 0 2
++7 0 2
++3 0 2
++6 0 2
++4 0 2
++3 0 2
++4 0 2
++3 0 2
++28 0 2
++3 0 2
++3 0 2
++5 0 2
++4 0 2
+cfn=(2280)
+calls=2 0x80620 0 
+* 0 90
++5 0 2
++4 0 2
++5 0 2
++3 0 2
++3 0 2
+0x821d1 0 2
++3 0 2
++3 0 2
+cfn=(2280)
+calls=2 0x80620 0 
+* 0 90
++5 0 2
++3 0 2
++3 0 2
++16 0 2
++3 0 2
++3 0 2
+cfn=(2280)
+calls=2 0x80620 0 
+* 0 90
++5 0 2
++3 0 2
++3 0 2
+
+fn=(1952) seal::util::Pointer<std::byte, void>::~Pointer()
+0x2a352 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(1954) seal::util::Pointer<std::byte, void>::release()
+calls=1 0x2a2a4 0 
+* 0 24
++5 0 1
++1 0 1
++1 0 1
+
+fn=(2102) std::hash<std::array<unsigned long, 4ul> >::operator()(std::array<unsigned long, 4ul> const&) const
+0x2ae06 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++8 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++4 0 1
++5 0 1
++3 0 1
+cfn=(2104) std::array<unsigned long, 4ul>::operator[](unsigned long) const
+calls=1 0x2fec6 0 
+* 0 11
++5 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++4 0 1
++5 0 1
++3 0 1
+cfn=(2104)
+calls=1 0x2fec6 0 
+* 0 11
++5 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++4 0 1
++5 0 1
++3 0 1
+cfn=(2104)
+calls=1 0x2fec6 0 
+* 0 11
++5 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++4 0 1
++5 0 1
++3 0 1
+cfn=(2104)
+calls=1 0x2fec6 0 
+* 0 11
++5 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(2110) std::__detail::_Mod_range_hashing::operator()(unsigned long, unsigned long) const
+0x29ab4 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++5 0 1
++4 0 1
++3 0 1
++1 0 1
+
+fn=(2126) __gnu_cxx::__aligned_buffer<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > >::_M_ptr() const
+0x3d064 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2128) __gnu_cxx::__aligned_buffer<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > >::_M_addr() const
+calls=1 0x3d77a 0 
+* 0 7
++5 0 1
++1 0 1
+
+fn=(2162) std::unordered_map<std::array<unsigned long, 4ul>, std::shared_ptr<seal::SEALContext::ContextData const>, std::hash<std::array<unsigned long, 4ul> >, std::equal_to<std::array<unsigned long, 4ul> >, std::allocator<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > > >::end() const
+0x3044a 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2164) std::_Hashtable<std::array<unsigned long, 4ul>, std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, std::allocator<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > >, std::__detail::_Select1st, std::equal_to<std::array<unsigned long, 4ul> >, std::hash<std::array<unsigned long, 4ul> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::end() const
+calls=1 0x332a8 0 
+* 0 43
++5 0 1
++1 0 1
+
+fn=(2550) seal::Ciphertext::resize(seal::SEALContext const&, std::array<unsigned long, 4ul>, unsigned long)
+0x43340 0 1
++4 0 1
++2 0 1
++2 0 1
++4 0 1
++2 0 1
++4 0 1
++2 0 1
++3 0 1
++1 0 1
++3 0 1
++1 0 1
++3 0 1
++4 0 1
++9 0 1
++5 0 1
++2 0 1
++8 0 1
++89 0 1
++4 0 1
++4 0 1
++3 0 1
++6 0 1
++7 0 1
++3 0 1
++6 0 1
++5 0 1
++3 0 1
++6 0 1
++9 0 1
++88 0 1
++4 0 1
++4 0 1
++3 0 1
++6 0 1
++7 0 1
++4 0 1
++3 0 1
++6 0 1
++5 0 1
++6 0 1
++4 0 1
++10 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++6 0 1
++2 0 1
++4 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
++10 0 1
++3 0 1
++6 0 1
++7 0 1
++3 0 1
++6 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++9 0 1
++9 0 1
++9 0 1
++5 0 1
++5 0 1
++85 0 1
++4 0 1
++4 0 1
++3 0 1
++2 0 1
++7 0 1
++3 0 1
++6 0 1
++6 0 1
++3 0 1
++6 0 1
++8 0 1
++4 0 1
++3 0 1
++3 0 1
++10 0 1
++4 0 1
++4 0 1
++4 0 1
++8 0 1
++4 0 1
++4 0 1
++4 0 1
+cfn=(2552) seal::Ciphertext::resize_internal(unsigned long, unsigned long, unsigned long)
+calls=1 0x431e0 0 
+* 0 57533
++5 0 1
++3 0 1
++2 0 1
++5 0 1
++5 0 1
++10 0 1
++3 0 1
++6 0 1
++7 0 1
++3 0 1
++6 0 1
++5 0 1
++3 0 1
++5 0 1
++3 0 1
++6 0 1
++5 0 1
++9 0 1
++6 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2280)
+calls=1 0x422c0 0 
+* 0 45
++5 0 1
++3 0 1
++3 0 1
++47 0 1
++3 0 1
++3 0 1
+cfn=(2280)
+calls=1 0x422c0 0 
+* 0 45
++5 0 1
++3 0 1
++3 0 1
++79 0 1
++5 0 1
++3 0 1
+cfn=(2280)
+calls=1 0x422c0 0 
+* 0 45
++5 0 1
++3 0 1
+
+fn=(1620) seal::MemoryPoolHandle seal::MemoryManager::GetPool<>(unsigned long)
+0x2f0bc 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++9 0 1
++4 0 1
++2 0 1
++5 0 1
++2 0 1
++5 0 1
++2 0 1
++5 0 1
++2 0 1
++5 0 1
++2 0 1
++49 0 1
+cfn=(1622) seal::MemoryManager::GetMMProf()
+calls=1 0x2a17b 0 
+* 0 16
++5 0 1
++3 0 1
+cfn=(1662) std::unique_ptr<seal::MMProf, std::default_delete<seal::MMProf> >::operator->() const
+calls=1 0x327fc 0 
+* 0 68
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(1676) seal::MMProfGlobal::get_pool(unsigned long)
+calls=1 0x2a098 0 
+* 0 267
++3 0 1
++4 0 1
++9 0 1
++7 0 1
++4 0 1
++1 0 1
+
+fn=(1690)
+0x2ee34 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++1 0 2
+
+fn=(1726) seal::util::MemoryPoolMT::get_for_byte_count(unsigned long)
+0x8e840 0 1
++4 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++1 0 1
++1 0 1
++4 0 1
++5 0 1
++9 0 1
++5 0 1
++2 0 1
++3 0 1
++6 0 1
++21 0 1
++5 0 1
++9 0 1
++6 0 1
++5 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++5 0 1
++1 0 1
++5 0 1
+cob=(4) ???
+cfi=(173) ???
+cfn=(1728) 0x000000000010fb10
+calls=1 0x10fb10 0 
+* 0 33
++5 0 1
++3 0 1
++2 0 1
++3 0 1
++6 0 1
++5 0 1
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++2 0 1
++3 0 1
++7 0 2
++4 0 2
++3 0 2
++2 0 4
++5 0 4
++4 0 4
++3 0 4
++4 0 4
++3 0 4
++3 0 4
+cfn=(1776)
+calls=4 0x8ed50 0 
+* 0 12
+-17 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(1776)
+calls=1 0x8ed50 0 
+* 0 3
++3 0 5
++3 0 5
++2 0 3
++3 0 3
++6 0 2
++3 0 2
++3 0 2
+0x8ea58 0 1
++5 0 1
++3 0 1
++3 0 1
++7 0 1
++8 0 1
++4 0 1
++4 0 1
+cfn=(1754) seal::util::MemoryPoolHeadMT::get()
+calls=1 0x8e580 0 
+* 0 34
++3 0 1
++4 0 1
++3 0 1
++5 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(1734) 0x000000000010fc50
+calls=1 0x10fc50 0 
+* 0 43
++5 0 1
+
+fn=(1950) seal::util::MemoryPoolItem::data()
+0x299aa 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++1 0 1
+
+fn=(2108) std::__detail::_Hash_code_base<std::array<unsigned long, 4ul>, std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, std::__detail::_Select1st, std::hash<std::array<unsigned long, 4ul> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, true>::_M_bucket_index(unsigned long, unsigned long) const
+0x3b076 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++9 0 1
++4 0 1
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2110)
+calls=1 0x29ab4 0 
+* 0 12
++5 0 1
++4 0 1
++9 0 1
++7 0 1
++1 0 1
+
+fn=(2112) std::_Hashtable<std::array<unsigned long, 4ul>, std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, std::allocator<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > >, std::__detail::_Select1st, std::equal_to<std::array<unsigned long, 4ul> >, std::hash<std::array<unsigned long, 4ul> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_find_node(unsigned long, std::array<unsigned long, 4ul> const&, unsigned long) const
+0x3767a 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2114) std::_Hashtable<std::array<unsigned long, 4ul>, std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, std::allocator<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > >, std::__detail::_Select1st, std::equal_to<std::array<unsigned long, 4ul> >, std::hash<std::array<unsigned long, 4ul> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_find_before_node(unsigned long, std::array<unsigned long, 4ul> const&, unsigned long) const
+calls=1 0x3b0ca 0 
+* 0 398
++5 0 1
++4 0 1
++5 0 1
++2 0 1
++4 0 1
++3 0 1
++7 0 1
++1 0 1
+
+fn=(2114)
+0x3b0ca 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++4 0 1
++5 0 1
++12 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2116) std::__detail::_Hashtable_base<std::array<unsigned long, 4ul>, std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, std::__detail::_Select1st, std::equal_to<std::array<unsigned long, 4ul> >, std::hash<std::array<unsigned long, 4ul> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, false, true> >::_M_equals(std::array<unsigned long, 4ul> const&, unsigned long, std::__detail::_Hash_node_value<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, true> const&) const
+calls=1 0x3c59c 0 
+* 0 365
++5 0 1
++2 0 1
++2 0 1
++4 0 1
+0x3b1a5 0 1
++1 0 1
+
+fn=(2124) std::__detail::_Hashtable_ebo_helper<0, std::equal_to<std::array<unsigned long, 4ul> >, true>::_M_cget() const
+0x3c566 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(2128)
+0x3d77a 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(2144) bool std::equal<unsigned long const*, unsigned long const*>(unsigned long const*, unsigned long const*, unsigned long const*)
+0x32abc 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2146)
+calls=1 0x36fb8 0 
+* 0 125
++5 0 1
++1 0 1
+
+fn=(2552)
+0x431e0 0 1
++4 0 1
++2 0 1
++2 0 1
++1 0 1
++1 0 1
++4 0 1
++4 0 1
++6 0 1
++3 0 1
++4 0 1
++6 0 1
++3 0 1
++3 0 1
++3 0 1
++3 0 1
++2 0 1
++3 0 1
++3 0 1
++2 0 1
++3 0 1
++3 0 1
++2 0 1
++3 0 1
++3 0 1
++41 0 1
++4 0 1
++5 0 1
+cfn=(2316)
+calls=1 0x30a8a 0 
+* 0 57496
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
+
+fn=(2968)
+0x30c64 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2536)
+calls=1 0x2f7b6 0 
+* 0 19
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++1 0 1
+
+fn=(2620) seal::util::PolyIter::PolyIter(seal::Ciphertext&)
+0x8d9e0 0 1
++4 0 1
++5 0 1
++4 0 1
++3 0 1
++5 0 1
++4 0 1
++5 0 1
++4 0 1
++3 0 1
++2 0 1
++3 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
+
+fn=(1672) std::_Tuple_impl<0ul, seal::MMProf*, std::default_delete<seal::MMProf> >::_M_head(std::_Tuple_impl<0ul, seal::MMProf*, std::default_delete<seal::MMProf> > const&)
+0x3cc3c 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(1674) std::_Head_base<0ul, seal::MMProf*, false>::_M_head(std::_Head_base<0ul, seal::MMProf*, false> const&)
+calls=1 0x3d5fe 0 
+* 0 7
++5 0 1
++1 0 1
+
+fn=(1702) std::__shared_ptr<seal::util::MemoryPool, (__gnu_cxx::_Lock_policy)2>::~__shared_ptr()
+0x29b0a 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(1704) std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count()
+calls=2 0x2ee06 0 
+* 0 80
++5 0 2
++1 0 2
++1 0 2
+
+fn=(1772)
+0x8edd0 0 1
++4 0 1
++4 0 1
++4 0 1
++5 0 1
++9 0 1
++5 0 1
++2 0 1
++2 0 1
++5 0 1
++4 0 1
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++5 0 1
++9 0 1
++2 0 1
++4 0 1
+
+fn=(1944) unsigned long seal::util::mul_safe<unsigned long, void>(unsigned long, unsigned long)
+0x2f299 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++5 0 1
++2 0 1
+cfn=(1946) std::numeric_limits<unsigned long>::max()
+calls=1 0x297c3 0 
+* 0 6
++5 0 1
++5 0 1
++4 0 1
++4 0 1
++9 0 1
++5 0 1
++2 0 1
++61 0 1
++4 0 1
++5 0 1
++28 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(1954)
+0x2a2a4 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++46 0 1
++4 0 1
++3 0 1
++3 0 1
++44 0 1
++4 0 1
++7 0 1
++4 0 1
++8 0 1
++4 0 1
++8 0 1
++4 0 1
++4 0 1
++1 0 1
++1 0 1
+
+fn=(1956) seal::MemoryPoolHandle::operator seal::util::MemoryPool&() const
+0x29f3c 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(1958) std::__shared_ptr<seal::util::MemoryPool, (__gnu_cxx::_Lock_policy)2>::operator bool() const
+calls=1 0x2f010 0 
+* 0 10
++5 0 1
++3 0 1
++2 0 1
++61 0 1
++4 0 1
++3 0 1
+cfn=(1960) std::__shared_ptr<seal::util::MemoryPool, (__gnu_cxx::_Lock_policy)2>::get() const
+calls=1 0x2f02c 0 
+* 0 8
++5 0 1
++28 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(2080) ckks_performance_test(seal::SEALContext)
+0x2408b 0 1
++3 0 1
++7 0 1
++7 0 1
++7 0 1
++3 0 1
+cfn=(1618) seal::MemoryManager::GetPool()
+calls=1 0x2a103 0 
+* 0 404
++5 0 1
++7 0 1
++7 0 1
++7 0 1
++7 0 1
++3 0 1
+cfn=(3144) seal::Evaluator::multiply_inplace(seal::Ciphertext&, seal::Ciphertext const&, seal::MemoryPoolHandle) const
+calls=1 0x6bb50 0 
+* 0 2198730
++5 0 1
++7 0 1
++3 0 1
+cfn=(2078) seal::MemoryPoolHandle::~MemoryPoolHandle()
+calls=1 0x29d4a 0 
+* 0 102
+
+fn=(2088)
+0x33174 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++9 0 1
++4 0 1
++2 0 1
++4 0 1
++3 0 1
+cfn=(2090) std::_Hashtable<std::array<unsigned long, 4ul>, std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, std::allocator<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > >, std::__detail::_Select1st, std::equal_to<std::array<unsigned long, 4ul> >, std::hash<std::array<unsigned long, 4ul> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::size() const
+calls=1 0x374e0 0 
+* 0 8
++5 0 1
++3 0 1
+cfn=(2092) std::_Hashtable<std::array<unsigned long, 4ul>, std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, std::allocator<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > >, std::__detail::_Select1st, std::equal_to<std::array<unsigned long, 4ul> >, std::hash<std::array<unsigned long, 4ul> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::__small_size_threshold()
+calls=1 0x374f6 0 
+* 0 12
++5 0 1
++3 0 1
++3 0 1
++2 0 1
+0x33231 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2096) std::__detail::_Hash_code_base<std::array<unsigned long, 4ul>, std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, std::__detail::_Select1st, std::hash<std::array<unsigned long, 4ul> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, true>::_M_hash_code(std::array<unsigned long, 4ul> const&) const
+calls=1 0x37614 0 
+* 0 137
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2106) std::_Hashtable<std::array<unsigned long, 4ul>, std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, std::allocator<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > >, std::__detail::_Select1st, std::equal_to<std::array<unsigned long, 4ul> >, std::hash<std::array<unsigned long, 4ul> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_bucket_index(unsigned long) const
+calls=1 0x37648 0 
+* 0 48
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2112)
+calls=1 0x3767a 0 
+* 0 420
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2158) std::__detail::_Node_const_iterator<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, false, true>::_Node_const_iterator(std::__detail::_Hash_node<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, true>*)
+calls=1 0x376ca 0 
+* 0 25
++5 0 1
++4 0 1
++4 0 1
++9 0 1
++7 0 1
++4 0 1
++1 0 1
+
+fn=(2280)
+0x422c0 0 3
++3 0 3
++3 0 3
++4 0 3
++3 0 3
++6 0 3
++3 0 3
++4 0 3
++3 0 3
++4 0 3
++3 0 3
++4 0 3
++3 0 3
++4 0 3
++2 0 3
++3 0 3
++4 0 3
++3 0 3
++4 0 3
++3 0 3
++3 0 3
++3 0 3
++4 0 3
++3 0 3
++3 0 3
++2 0 3
++3 0 3
++4 0 3
++36 0 3
++3 0 3
++2 0 3
++3 0 3
++4 0 3
++4 0 3
++4 0 3
++3 0 3
++2 0 3
++4 0 3
++4 0 3
++4 0 3
++4 0 3
++3 0 3
++2 0 3
++3 0 3
++3 0 3
+0x5f5f0 0 1
++3 0 1
++3 0 1
++4 0 1
++3 0 1
++6 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++2 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++2 0 1
++3 0 1
++4 0 1
++36 0 1
++3 0 1
++2 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++2 0 1
++3 0 1
++3 0 1
+0x80620 0 12
++3 0 12
++3 0 12
++4 0 12
++3 0 12
++6 0 12
++3 0 12
++4 0 12
++3 0 12
++4 0 12
++3 0 12
++4 0 12
++3 0 12
++4 0 12
++2 0 12
++3 0 12
++4 0 12
++3 0 12
++4 0 12
++3 0 12
++3 0 12
++3 0 12
++4 0 12
++3 0 12
++3 0 12
++2 0 12
++3 0 12
++4 0 12
++36 0 12
++3 0 12
++2 0 12
++3 0 12
++4 0 12
++4 0 12
++4 0 12
++3 0 12
++2 0 12
++4 0 12
++4 0 12
++4 0 12
++4 0 12
++3 0 12
++2 0 12
++3 0 12
++3 0 12
+
+fn=(3140) seal::Ciphertext::is_transparent() const
+0x73fe0 0 1
++4 0 1
++4 0 1
++5 0 1
++3 0 1
++2 0 1
++5 0 1
++9 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++6 0 1
++4 0 1
++3 0 1
++54 0 1
++4 0 1
++2 0 1
++3 0 1
++3 0 1
++2 0 1
++8 0 1
++3 0 1
++4 0 1
++6 0 1
++4 0 1
++3 0 1
++5 0 1
++4 0 1
+
+fn=(1662)
+0x327fc 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(1664) std::unique_ptr<seal::MMProf, std::default_delete<seal::MMProf> >::get() const
+calls=1 +7 0 
+* 0 58
++5 0 1
++1 0 1
+
+fn=(1666) std::__uniq_ptr_impl<seal::MMProf, std::default_delete<seal::MMProf> >::_M_ptr() const
+0x36e82 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(1668) std::tuple_element<0ul, std::tuple<seal::MMProf*, std::default_delete<seal::MMProf> > >::type const& std::get<0ul, seal::MMProf*, std::default_delete<seal::MMProf> >(std::tuple<seal::MMProf*, std::default_delete<seal::MMProf> > const&)
+calls=1 0x3ab39 0 
+* 0 37
++5 0 1
++3 0 1
++1 0 1
+
+fn=(1684)
+0x2ef36 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
++4 0 2
++3 0 2
++4 0 2
++3 0 2
++3 0 2
++2 0 2
++4 0 2
++3 0 2
++3 0 2
+cfn=(1686)
+calls=2 0x325e6 0 
+* 0 56
++5 0 2
++1 0 2
++1 0 2
+
+fn=(1694)
+0x3258a 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(1696) std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count()
+calls=1 0x36d4e 0 
+* 0 9
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(1698) std::__shared_count<(__gnu_cxx::_Lock_policy)2>::_M_swap(std::__shared_count<(__gnu_cxx::_Lock_policy)2>&)
+calls=1 0x36d68 0 
+* 0 18
++5 0 1
++4 0 1
++7 0 1
++1 0 1
++1 0 1
+
+fn=(1704)
+0x2ee06 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
++3 0 2
++2 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2030)
+calls=1 0x2964e 0 
+* 0 52
++5 0 2
++1 0 2
++1 0 2
+
+fn=(1958)
+0x2f010 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
++1 0 1
+
+fn=(2094) std::__detail::_Hashtable_hash_traits<std::hash<std::array<unsigned long, 4ul> > >::__small_size_threshold()
+0x3afb0 0 1
++4 0 1
++1 0 1
++3 0 1
++5 0 1
++1 0 1
+
+fn=(2096)
+0x37614 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2098) std::__detail::_Hash_code_base<std::array<unsigned long, 4ul>, std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, std::__detail::_Select1st, std::hash<std::array<unsigned long, 4ul> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, true>::_M_hash() const
+calls=1 0x3b058 0 
+* 0 17
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2102)
+calls=1 0x2ae06 0 
+* 0 104
++5 0 1
++1 0 1
+
+fn=(2106)
+0x37648 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2108)
+calls=1 0x3b076 0 
+* 0 33
++5 0 1
++1 0 1
+
+fn=(2142) std::array<unsigned long, 4ul>::end() const
+0x32fae 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2140)
+calls=1 0x3733c 0 
+* 0 7
++5 0 1
++4 0 1
++1 0 1
+
+fn=(2158)
+0x376ca 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
++3 0 2
+cfn=(2160) std::__detail::_Node_iterator_base<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, true>::_Node_iterator_base(std::__detail::_Hash_node<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, true>*)
+calls=2 0x3b1a8 0 
+* 0 22
++5 0 2
++1 0 2
++1 0 2
+
+fn=(2168) std::__detail::_Node_const_iterator<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, false, true>::operator->() const
+0x3048e 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2170) __gnu_cxx::__aligned_buffer<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > >::_M_ptr()
+calls=1 0x376f4 0 
+* 0 17
++5 0 1
++1 0 1
++1 0 1
+
+fn=(2536)
+0x2f7b6 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(2318)
+calls=2 0x2f4da 0 
+* 0 16
++5 0 2
++1 0 2
+
+fn=(2558) seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>)
+0x90dd0 0 128
++4 0 128
++3 0 128
++6 0 128
++2 0 128
++4 0 128
++3 0 128
++2 0 128
++4 0 128
++3 0 128
++2 0 128
++2 0 128
++1 0 128
++3 0 128
++4 0 128
++1 0 128
++3 0 128
++4 0 128
++3 0 128
++3 0 128
++5 0 128
++3 0 128
++3 0 128
++3 0 128
++5 0 128
++2 0 128
++11 0 128
++4 0 128
++3 0 128
++3 0 128
++9 0 128
++4 0 128
++5 0 128
++3 0 128
++3 0 128
++3 0 128
++5 0 128
++3 0 128
++10 0 128
++3 0 128
++2 0 128
++4 0 128
++3 0 128
++5 0 128
++5 0 128
++3 0 128
++5 0 128
++3 0 128
++5 0 128
++4 0 128
++3 0 128
++5 0 128
++3 0 128
++4 0 128
++3 0 128
++4 0 128
++5 0 128
++3 0 128
++3 0 128
++3 0 128
++2 0 128
++3 0 128
++3 0 128
++5 0 128
++3 0 128
++3 0 128
++4 0 128
++3 0 128
++3 0 128
++3 0 128
++3 0 128
++3 0 128
++3 0 128
++5 0 128
++3 0 128
++3 0 128
++4 0 128
++4 0 128
++5 0 128
++3 0 128
++3 0 128
++3 0 128
++3 0 128
++3 0 128
++4 0 128
++3 0 128
+0x90e60 0 32640
++3 0 32640
++2 0 32640
++4 0 32640
++3 0 32640
++5 0 32640
++5 0 32640
++3 0 32640
++5 0 32640
++3 0 32640
++5 0 32640
++4 0 32640
++3 0 32640
++5 0 32640
++3 0 32640
++4 0 32640
++3 0 32640
++4 0 32640
++5 0 32640
++3 0 32640
++3 0 32640
++3 0 32640
++2 0 32640
++3 0 32640
++3 0 32640
++5 0 32640
++3 0 32640
++3 0 32640
++4 0 32640
++3 0 32640
++3 0 32640
++3 0 32640
++3 0 32640
++3 0 32640
++3 0 32640
++5 0 32640
++3 0 32640
++3 0 32640
++4 0 32640
++4 0 32640
++5 0 32640
++3 0 32640
++3 0 32640
++3 0 32640
++3 0 32640
++3 0 32640
++4 0 32640
++3 0 32640
++3 0 32640
++3 0 32640
++3 0 32640
++4 0 32640
++4 0 32640
++4 0 32640
++4 0 32640
++4 0 32640
++3 0 32640
++3 0 32640
++5 0 32640
++3 0 32640
+-40 0 128
++3 0 128
++3 0 128
++4 0 128
++4 0 128
++4 0 128
++4 0 128
++4 0 128
++3 0 128
++3 0 128
++5 0 128
++3 0 128
++2 0 128
+* 0 32640
++6 0 128
++5 0 128
++6 0 128
++1 0 128
++1 0 128
++2 0 128
++2 0 128
++2 0 128
++2 0 128
+
+fn=(2878) seal::SEALContext::get_context_data(std::array<unsigned long, 4ul>) const
+0x2b43a 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++9 0 1
++4 0 1
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2086)
+calls=1 0x30420 0 
+* 0 712
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2162)
+calls=1 0x3044a 0 
+* 0 53
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2166) std::__detail::operator!=(std::__detail::_Node_iterator_base<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, true> const&, std::__detail::_Node_iterator_base<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, true> const&)
+calls=1 0x30468 0 
+* 0 13
++5 0 1
++5 0 1
++2 0 1
++2 0 1
++4 0 1
++3 0 1
+cfn=(2168)
+calls=1 0x3048e 0 
+* 0 32
++5 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2174) std::shared_ptr<seal::SEALContext::ContextData const>::shared_ptr(std::shared_ptr<seal::SEALContext::ContextData const> const&)
+calls=1 0x2b14a 0 
+* 0 83
++5 0 1
++43 0 1
++2 0 1
++14 0 1
++1 0 1
++4 0 1
++9 0 1
++7 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(3144)
+0x6bb50 0 1
++4 0 1
++2 0 1
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++3 0 1
++3 0 1
++3 0 1
++4 0 1
++9 0 1
++5 0 1
++2 0 1
+cfn=(2742)
+calls=1 0x81910 0 
+* 0 533
++5 0 1
++2 0 1
++6 0 1
++3 0 1
+cfn=(2736) seal::is_buffer_valid(seal::Ciphertext const&)
+calls=1 0x806f0 0 
+* 0 25
++5 0 1
++2 0 1
++6 0 1
++2 0 1
++3 0 1
++3 0 1
+cfn=(2742)
+calls=1 0x81910 0 
+* 0 533
++5 0 1
++2 0 1
++6 0 1
++3 0 1
+cfn=(2736)
+calls=1 0x806f0 0 
+* 0 25
++5 0 1
++2 0 1
++6 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++40 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++2 0 1
++9 0 1
++5 0 1
++89 0 1
++4 0 1
++4 0 1
++3 0 1
++2 0 1
++7 0 1
++3 0 1
++6 0 1
++5 0 1
++4 0 1
++2 0 1
++73 0 1
++5 0 1
++3 0 1
++2 0 1
+cfn=(2030)
+calls=1 0x2964e 0 
+* 0 52
++5 0 1
++3 0 1
+cfn=(3140)
+calls=1 0x73fe0 0 
+* 0 36
++5 0 1
++2 0 1
++6 0 1
++3 0 1
++2 0 1
++5 0 1
++9 0 1
++6 0 1
++4 0 1
++3 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
+cfn=(2030)
+calls=1 0x2964e 0 
+* 0 52
+0x6bda0 0 1
++4 0 1
++4 0 1
++5 0 1
++3 0 1
++9 0 1
++4 0 1
+cfn=(2028)
+calls=1 0x61d10 0 
+* 0 19
++5 0 1
++3 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(3146) seal::Evaluator::ckks_multiply(seal::Ciphertext&, seal::Ciphertext const&, seal::MemoryPoolHandle) const
+calls=1 0x6a1e0 0 
+* 0 2197310
++5 0 1
++5 0 1
++5 0 1
++3 0 1
+cfn=(2280)
+calls=1 0x5f5f0 0 
+* 0 45
++5 0 1
++3 0 1
++3 0 1
+
+fn=(3146)
+0x6a1e0 0 1
++4 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++1 0 1
++1 0 1
++7 0 1
++8 0 1
++8 0 1
++5 0 1
++9 0 1
++8 0 1
++2 0 1
++4 0 1
++6 0 1
++4 0 1
++6 0 1
++3 0 1
++8 0 1
++4 0 1
++5 0 1
++8 0 1
++3 0 1
++4 0 1
++4 0 1
++5 0 1
++5 0 1
++5 0 1
+cfn=(2878)
+calls=1 0x2b43a 0 
+* 0 941
++5 0 1
++8 0 1
++8 0 1
++8 0 1
++4 0 1
++3 0 1
++2 0 1
+cfn=(2030)
+calls=1 0x2964e 0 
+* 0 52
++5 0 1
++8 0 1
++10 0 1
++4 0 1
++4 0 1
++5 0 1
++4 0 1
++3 0 1
++5 0 1
++2 0 1
++3 0 1
++8 0 1
++4 0 1
++4 0 1
++8 0 1
++8 0 1
++4 0 1
++8 0 1
++4 0 1
++3 0 1
++3 0 1
++4 0 1
++8 0 1
++6 0 1
++3 0 1
++6 0 1
++4 0 1
++8 0 1
++6 0 1
++5 0 1
++8 0 1
++6 0 1
++3 0 1
++2 0 1
++8 0 1
++6 0 1
++4 0 1
++3 0 1
++8 0 1
++8 0 1
++8 0 1
++8 0 1
++3 0 1
++3 0 1
++4 0 1
++8 0 1
++5 0 1
++5 0 1
+cfn=(2550)
+calls=1 0x43340 0 
+* 0 57810
++5 0 1
++4 0 1
++3 0 1
++8 0 1
+cfn=(2620)
+calls=1 0x8d9e0 0 
+* 0 16
++5 0 1
++8 0 1
++8 0 1
+cfn=(3138) seal::util::ConstPolyIter::ConstPolyIter(seal::Ciphertext&)
+calls=1 0x8da50 0 
+* 0 16
++5 0 1
++4 0 1
++6 0 1
++5 0 1
++5 0 1
++5 0 1
++8 0 1
++8 0 1
++3 0 1
++8 0 1
++8 0 1
++4 0 1
+cfn=(1956)
+calls=1 0x29f3c 0 
+* 0 40
++5 0 1
++5 0 1
++3 0 1
++3 0 1
+cfn=(1942) auto seal::util::allocate<unsigned long, , void>(unsigned long, seal::util::MemoryPool&)
+calls=1 0x2a371 0 
+* 0 418
++5 0 1
++8 0 1
++9 0 1
++5 0 1
++6 0 1
++8 0 1
++5 0 1
++3 0 1
++6 0 1
++5 0 1
++2 0 1
++5 0 1
++8 0 1
++3 0 1
++5 0 1
++4 0 1
++4 0 1
++4 0 1
++5 0 1
++4 0 1
++8 0 1
++5 0 1
++7 0 1
++5 0 1
++4 0 1
++8 0 1
++5 0 1
++8 0 1
++5 0 1
++4 0 1
++8 0 1
++8 0 1
++5 0 1
++5 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(2558)
+calls=1 0x90dd0 0 
+* 0 15663
+-74 0 1
++5 0 1
++4 0 1
++8 0 1
++5 0 1
++8 0 1
++5 0 1
++4 0 1
++8 0 1
++8 0 1
++5 0 1
++5 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(2558)
+calls=1 0x90dd0 0 
+* 0 15663
+-19 0 30
++5 0 30
++5 0 30
++3 0 30
++3 0 30
++3 0 30
+cfn=(2558)
+calls=30 0x90dd0 0 
+* 0 469890
++5 0 32
++5 0 32
++3 0 32
++3 0 32
++3 0 32
++3 0 32
+cfn=(2558)
+calls=32 0x90dd0 0 
+* 0 501216
++5 0 32
++5 0 32
++3 0 32
++3 0 32
++3 0 32
++3 0 32
+cfn=(2558)
+calls=32 0x90dd0 0 
+* 0 501216
++5 0 32
++5 0 32
++3 0 32
++3 0 32
++3 0 32
++3 0 32
+cfn=(2560) seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>)
+calls=32 0x90b60 0 
+* 0 131648
++5 0 32
++3 0 32
++3 0 32
++3 0 32
++3 0 32
++3 0 32
+cfn=(2558)
+calls=32 0x90dd0 0 
+* 0 501216
++5 0 32
++5 0 32
++3 0 32
++4 0 32
++3 0 32
++5 0 32
++3 0 32
++5 0 32
++5 0 32
++6 0 2
++6 0 2
++5 0 2
++5 0 2
++6 0 1
++5 0 1
+cfn=(1968)
+calls=1 0x32916 0 
+* 0 53
++5 0 1
++8 0 1
++8 0 1
++5 0 1
++5 0 1
++5 0 1
++8 0 1
++4 0 1
++2 0 1
++32 0 1
++4 0 1
++4 0 1
++6 0 1
+cob=(4)
+cfi=(173)
+cfn=(2888) 0x000000000010fe50
+calls=1 0x10fe50 0 
+* 0 16
++5 0 1
++4 0 1
++2 0 1
++6 0 1
++8 0 1
++9 0 1
++6 0 1
++7 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
+0x6abdc 0 1
++8 0 1
++6 0 1
+
+fn=(1618)
+0x2a103 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++9 0 1
++4 0 1
++2 0 1
++4 0 1
++5 0 1
++3 0 1
+cfn=(1620)
+calls=1 0x2f0bc 0 
+* 0 386
++5 0 1
++4 0 1
++9 0 1
++7 0 1
++4 0 1
++1 0 1
+
+fn=(1680) std::shared_ptr<seal::util::MemoryPool>::shared_ptr(std::shared_ptr<seal::util::MemoryPool> const&)
+0x29d20 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(1682)
+calls=1 -98 0 
+* 0 69
++5 0 1
++1 0 1
++1 0 1
+
+fn=(1698)
+0x36d68 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++1 0 1
++1 0 1
+
+fn=(1700) std::shared_ptr<seal::util::MemoryPool>::~shared_ptr()
+0x29b2e 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(1702)
+calls=2 -59 0 
+* 0 104
++5 0 2
++1 0 2
++1 0 2
+
+fn=(2104)
+0x2fec6 0 4
++4 0 4
++1 0 4
++3 0 4
++4 0 4
++4 0 4
++4 0 4
++8 0 4
++4 0 4
++3 0 4
++1 0 4
+
+fn=(2122) std::__detail::_Hashtable_base<std::array<unsigned long, 4ul>, std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, std::__detail::_Select1st, std::equal_to<std::array<unsigned long, 4ul> >, std::hash<std::array<unsigned long, 4ul> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, false, true> >::_M_eq() const
+0x3afea 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2124)
+calls=1 0x3c566 0 
+* 0 7
++5 0 1
++1 0 1
+
+fn=(2134) std::equal_to<std::array<unsigned long, 4ul> >::operator()(std::array<unsigned long, 4ul> const&, std::array<unsigned long, 4ul> const&) const
+0x3b02a 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2136) bool std::operator==<unsigned long, 4ul>(std::array<unsigned long, 4ul> const&, std::array<unsigned long, 4ul> const&)
+calls=1 0x2fe14 0 
+* 0 220
++5 0 1
++1 0 1
+
+fn=(2150)
+0x3ac24 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2152) bool std::__equal<true>::equal<unsigned long>(unsigned long const*, unsigned long const*, unsigned long const*)
+calls=1 0x3c19e 0 
+* 0 59
++5 0 1
++1 0 1
+
+fn=(2154) int std::__memcmp<unsigned long, unsigned long>(unsigned long const*, unsigned long const*, unsigned long)
+0x3ccb7 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++8 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(2156) 0x000000000010f900
+calls=1 0x10f900 0 
+* 0 19
++5 0 1
++1 0 1
+
+fn=(2172) __gnu_cxx::__aligned_buffer<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> > >::_M_addr()
+0x3b1c6 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(1664)
+0x3281a 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(1666)
+calls=1 0x36e82 0 
+* 0 48
++5 0 1
++1 0 1
+
+fn=(1668)
+0x3ab39 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(1670) seal::MMProf* const& std::__get_helper<0ul, seal::MMProf*, std::default_delete<seal::MMProf> >(std::_Tuple_impl<0ul, seal::MMProf*, std::default_delete<seal::MMProf> > const&)
+calls=1 0x3c128 0 
+* 0 27
++5 0 1
++1 0 1
+
+fn=(1960)
+0x2f02c 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++1 0 1
+
+fn=(2098)
+0x3b058 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2100) std::__detail::_Hashtable_ebo_helper<1, std::hash<std::array<unsigned long, 4ul> >, true>::_M_cget() const
+calls=1 0x3c58a 0 
+* 0 7
++5 0 1
++1 0 1
+
+fn=(2100)
+0x3c58a 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(2120) std::__detail::_Hashtable_base<std::array<unsigned long, 4ul>, std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, std::__detail::_Select1st, std::equal_to<std::array<unsigned long, 4ul> >, std::hash<std::array<unsigned long, 4ul> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, false, true> >::_M_key_equals(std::array<unsigned long, 4ul> const&, std::__detail::_Hash_node_value<std::pair<std::array<unsigned long, 4ul> const, std::shared_ptr<seal::SEALContext::ContextData const> >, true> const&) const
+0x37580 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++9 0 1
++4 0 1
++2 0 1
++4 0 1
++3 0 1
+cfn=(2122)
+calls=1 0x3afea 0 
+* 0 17
++5 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2126)
+calls=1 0x3d064 0 
+* 0 17
++5 0 1
++3 0 1
++1 0 1
++1 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2130)
+calls=1 0x3b008 0 
+* 0 18
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2134)
+calls=1 0x3b02a 0 
+* 0 234
++5 0 1
++4 0 1
++9 0 1
++7 0 1
++4 0 1
++1 0 1
+
+fn=(2132)
+0x3c578 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(2148)
+0x37014 0 3
++4 0 3
++1 0 3
++3 0 3
++4 0 3
++4 0 3
++1 0 3
+
+fn=(2152)
+0x3c19e 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++5 0 1
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2154)
+calls=1 0x3ccb7 0 
+* 0 35
++5 0 1
++2 0 1
++3 0 1
++7 0 1
++1 0 1
+
+fn=(2160)
+0x3b1a8 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
++1 0 2
++1 0 2
+
+fn=(2164)
+0x332a8 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++9 0 1
++4 0 1
++2 0 1
++4 0 1
++5 0 1
++3 0 1
+cfn=(2158)
+calls=1 0x376ca 0 
+* 0 25
++5 0 1
++4 0 1
++4 0 1
++9 0 1
++7 0 1
++1 0 1
+
+fn=(2342) void std::__fill_a<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&)
+0x32a65 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2344) __gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&)
+calls=1 0x36f1f 0 
+* 0 57361
++5 0 1
++1 0 1
++1 0 1
+
+fn=(2344)
+0x36f1f 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++2 0 8192
++4 0 8192
++4 0 8192
++3 0 8192
++5 0 8192
++4 0 8192
++4 0 8192
+-8 0 1
++4 0 1
++4 0 1
++2 0 1
++1 0 1
++1 0 1
++1 0 1
+
+fn=(1754)
+0x8e580 0 1
++4 0 1
++2 0 1
++4 0 1
++5 0 1
++2 0 1
++2 0 1
++1 0 1
++1 0 1
++3 0 1
++4 0 1
++9 0 1
++5 0 1
++2 0 1
++2 0 1
++5 0 1
++4 0 1
++2 0 1
++4 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
++8 0 1
++4 0 1
++5 0 1
++9 0 1
++6 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
+
+fn=(1942)
+0x2a371 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++9 0 1
++4 0 1
++2 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++5 0 1
++3 0 1
+cfn=(1944)
+calls=1 0x2f299 0 
+* 0 32
++5 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(1726)
+calls=1 0x8e840 0 
+* 0 247
++2 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(1948) seal::util::Pointer<unsigned long, void>::Pointer(seal::util::Pointer<std::byte, void>&&)
+calls=1 0x2f344 0 
+* 0 64
++5 0 1
++4 0 1
++3 0 1
+cfn=(1952)
+calls=1 0x2a352 0 
+* 0 35
++5 0 1
++4 0 1
++9 0 1
++59 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(2078)
+0x29d4a 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(1700)
+calls=1 0x29b2e 0 
+* 0 91
++5 0 1
++1 0 1
++1 0 1
+
+fn=(2090)
+0x374e0 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(2092)
+0x374f6 0 1
++4 0 1
++1 0 1
++3 0 1
+cfn=(2094)
+calls=1 0x3afb0 0 
+* 0 6
++5 0 1
++1 0 1
+
+fn=(2176) std::__shared_ptr<seal::SEALContext::ContextData const, (__gnu_cxx::_Lock_policy)2>::__shared_ptr(std::__shared_ptr<seal::SEALContext::ContextData const, (__gnu_cxx::_Lock_policy)2> const&)
+0x2b10a 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(1684)
+calls=1 0x2ef36 0 
+* 0 49
++5 0 1
++1 0 1
++1 0 1
+
+fn=(2560)
+0x90b60 0 32
++4 0 32
++3 0 32
++2 0 32
++4 0 32
++4 0 32
++4 0 32
++3 0 32
++4 0 32
++3 0 32
++3 0 32
++3 0 32
++2 0 32
++7 0 32
++3 0 32
++7 0 32
++3 0 32
++3 0 32
++3 0 32
++3 0 32
++3 0 32
++4 0 32
++4 0 32
++4 0 32
++4 0 32
++4 0 32
++3 0 32
++3 0 32
++3 0 32
++3 0 32
++2 0 32
+-49 0 8160
++3 0 8160
++3 0 8160
++3 0 8160
++3 0 8160
++3 0 8160
++4 0 8160
++4 0 8160
++4 0 8160
++4 0 8160
++4 0 8160
++3 0 8160
++3 0 8160
++3 0 8160
++3 0 8160
++2 0 8160
++2 0 32
++3 0 32
++2 0 32
+
+fn=(3138)
+0x8da50 0 1
++4 0 1
++5 0 1
++4 0 1
++3 0 1
++5 0 1
++4 0 1
++5 0 1
++4 0 1
++3 0 1
++2 0 1
++3 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
+
+fn=(1622)
+0x2a17b 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++7 0 1
++2 0 1
++3 0 1
++2 0 1
+0x2a20d 0 1
++7 0 1
++40 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(1670)
+0x3c128 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(1672)
+calls=1 0x3cc3c 0 
+* 0 17
++5 0 1
++1 0 1
+
+fn=(1674)
+0x3d5fe 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(1676)
+0x2a098 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++9 0 1
++4 0 1
++2 0 1
++4 0 1
++3 0 1
+cfn=(1678) seal::MemoryPoolHandle::Global()
+calls=1 0x29d69 0 
+* 0 248
++5 0 1
++4 0 1
++9 0 1
++7 0 1
++4 0 1
++1 0 1
+
+fn=(1678)
+0x29d69 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++9 0 1
++4 0 1
++2 0 1
++4 0 1
++7 0 1
++3 0 1
++3 0 1
+cfn=(1680)
+calls=1 0x29d20 0 
+* 0 83
++5 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(1688) seal::MemoryPoolHandle::MemoryPoolHandle(std::shared_ptr<seal::util::MemoryPool>)
+calls=1 0x29b4e 0 
+* 0 103
++5 0 1
++4 0 1
++3 0 1
+cfn=(1700)
+calls=1 0x29b2e 0 
+* 0 35
++5 0 1
++4 0 1
++9 0 1
++7 0 1
++4 0 1
++1 0 1
+
+fn=(1688)
+0x29b4e 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(1690)
+calls=1 0x2ee34 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
+cfn=(1692)
+calls=1 0x2ee46 0 
+* 0 78
++5 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(1696)
+0x36d4e 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++7 0 1
++1 0 1
++1 0 1
+
+fn=(1946)
+0x297c3 0 1
++4 0 1
++1 0 1
++3 0 1
++7 0 1
++1 0 1
+
+fn=(1948)
+0x2f344 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++7 0 1
++4 0 1
++8 0 1
++4 0 1
++8 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++73 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(1950)
+calls=1 0x299aa 0 
+* 0 8
++5 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++7 0 1
++4 0 1
++8 0 1
++4 0 1
++8 0 1
++4 0 1
++4 0 1
++28 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(2116)
+0x3c59c 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2118)
+calls=1 0x3d082 0 
+* 0 11
++5 0 1
++2 0 1
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2120)
+calls=1 0x37580 0 
+* 0 326
++5 0 1
++2 0 1
++2 0 1
++5 0 1
++7 0 1
++1 0 1
+
+fn=(2136)
+0x2fe14 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2138)
+calls=1 0x32f90 0 
+* 0 17
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(2142)
+calls=1 0x32fae 0 
+* 0 18
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(2138)
+calls=1 0x32f90 0 
+* 0 17
++5 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(2144)
+calls=1 0x32abc 0 
+* 0 140
++5 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(2166)
+0x30468 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
++1 0 1
+
+fn=(2170)
+0x376f4 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(2172)
+calls=1 0x3b1c6 0 
+* 0 7
++5 0 1
++1 0 1
+
+fn=(2174)
+0x2b14a 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2176)
+calls=1 -98 0 
+* 0 69
++5 0 1
++1 0 1
++1 0 1
+
+fn=(2340)
+0x2f5bb 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(2342)
+calls=1 0x32a65 0 
+* 0 57377
++5 0 1
++1 0 1
++1 0 1
+
+fn=(2736)
+0x806f0 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
++2 0 2
++1 0 2
++3 0 2
++1 0 2
++4 0 2
++4 0 2
++4 0 2
++2 0 2
++3 0 2
++3 0 2
++2 0 2
++3 0 2
++3 0 2
++2 0 2
++3 0 2
++3 0 2
++3 0 2
++4 0 2
++1 0 2
++1 0 2
+
+ob=(2) /usr/lib/x86_64-linux-gnu/libc.so.6
+fl=(233) ./nptl/./nptl/pthread_rwlock_unlock.c
+fn=(1736) pthread_rwlock_unlock@@GLIBC_2.34
+0xa3060 30 1
++4 * 1
++1 * 1
++3 * 1
++3 * 1
++2 * 1
++1 +1 1
++1 +7 1
++3 +1 1
++8 -1 1
++2 * 1
+fi=(232) ./nptl/./nptl/pthread_rwlock_common.c
++6 221 1
++3 * 1
++2 * 1
++2 +11 1
++2 -11 1
++4 * 1
++3 * 1
++3 +15 1
++4 +4 1
++3 * 1
++3 * 1
++2 +14 1
++5 * 1
++2 * 1
++2 +5 1
++4 * 1
++2 +16 1
++3 * 1
++4 * 1
+fe=(233)
++39 44 1
++1 * 1
++2 * 1
++2 * 1
++1 * 1
+fi=(232)
++4 243 1
++3 * 1
++3 * 1
++4 * 1
++4 +1 1
++4 * 1
+fe=(233)
+
+fl=(198) ./string/../sysdeps/x86_64/multiarch/memcmp-avx2-movbe.S
+fn=(820) __memcmp_avx2_movbe
+0x1882a0 73 1
++4 +7 1
++4 +1 1
++6 +3 1
++4 +1 1
++4 +1 1
++4 +4 1
++2 +1 1
++6 +2 1
++4 +1 1
+0x188504 337 1
++6 +1 1
++6 +1 1
++4 +1 1
++2 +1 1
++2 +1 1
++3 * 1
+
+fl=(231) ./nptl/./nptl/pthread_rwlock_rdlock.c
+fn=(1730) pthread_rwlock_rdlock@@GLIBC_2.34
+0xa26d0 23 1
++4 * 1
++1 * 1
++3 * 1
++2 * 1
++2 * 1
++1 * 1
++3 * 1
++4 +1 1
+fi=(232)
++1 298 1
++3 * 1
++8 * 1
++2 * 1
++6 +12 1
++4 * 1
++2 +43 1
++5 * 1
++4 * 1
++3 +17 1
++2 * 1
++6 +20 1
++2 * 1
++2 +1 1
+fe=(231)
++2 27 1
++1 +2 1
++4 * 1
++2 * 1
++1 * 1
++2 * 1
++2 * 1
++1 * 1
+
+ob=(3) /usr/lib/x86_64-linux-gnu/libm.so.6
+fl=(250) ./math/../sysdeps/ieee754/dbl-64/e_log2.c
+fn=(2890) __log2_fma
+0x79f90 44 1
++4 +12 1
+fi=(267) ./math/../sysdeps/ieee754/dbl-64/math_config.h
++10 +29 1
+fe=(250)
++5 -29 1
++10 -17 1
++3 +17 1
++3 -17 1
++4 +17 1
++3 * 1
+0x7a0b0 +4 1
++10 * 1
++3 * 1
+0x7a1c0 +1 1
++4 +80 1
+
+ob=(4)
+fl=(173)
+fn=(1734)
+0x10fc50 0 1
++4 0 1
+cob=(2)
+cfi=(233)
+cfn=(1736)
+calls=1 0xa3060 30 
+* 0 41
+
+fn=(2888)
+0x10fe50 0 1
++4 0 1
+cob=(3)
+cfi=(250)
+cfn=(2890)
+calls=1 0x79f90 44 
+* 0 14
+
+fn=(2156)
+0x10f900 0 1
++4 0 1
+cob=(2)
+cfi=(198)
+cfn=(820)
+calls=1 0x1882a0 73 
+* 0 17
+
+fn=(1728)
+0x10fb10 0 1
++4 0 1
+cob=(2)
+cfi=(231)
+cfn=(1730)
+calls=1 0xa26d0 23 
+* 0 31
+
+totals: 2199251

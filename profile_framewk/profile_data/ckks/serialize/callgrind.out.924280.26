@@ -1,0 +1,3561 @@
+# callgrind format
+version: 1
+creator: callgrind-3.22.0
+pid: 924280
+cmd:  ../../build/profile_framewk 3
+part: 26
+
+
+desc: I1 cache: 
+desc: D1 cache: 
+desc: LL cache: 
+
+desc: Timerange: Basic block 61005521 - 61010733
+desc: Trigger: Client Request
+
+positions: instr line
+events: Ir
+summary: 0
+
+
+ob=(8) /home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk
+fl=(210) ???
+fn=(2081) ckks_performance_test(seal::SEALContext)'2
+0x246c9 0 1
++3 0 1
++7 0 1
++7 0 1
++7 0 1
++3 0 1
+cfn=(3232) std::vector<std::byte, std::allocator<std::byte> >::data()
+calls=1 0x31dd8 0 
+* 0 21
++5 0 1
++3 0 1
++7 0 1
++7 0 1
++5 0 1
++3 0 1
+cfn=(3236) seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const
+calls=1 0x2c290 0 
+* 0 186304
+
+fn=(3232)
+0x31dd8 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3234) std::byte* std::vector<std::byte, std::allocator<std::byte> >::_M_data_ptr<std::byte>(std::byte*) const
+calls=1 0x35920 0 
+* 0 8
++5 0 1
++1 0 1
+
+fn=(3236)
+0x2c290 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++2 0 1
++1 0 1
++7 0 1
++7 0 1
++7 0 1
++7 0 1
++2 0 1
++6 0 1
++9 0 1
++4 0 1
++2 0 1
++7 0 1
++5 0 1
++3 0 1
+cfn=(3188) seal::Ciphertext::save_size(seal::compr_mode_type) const
+calls=1 0x43880 0 
+* 0 89
++5 0 1
++3 0 1
++7 0 1
++7 0 1
++7 0 1
++3 0 1
++6 0 1
++4 0 1
++4 0 1
++4 0 1
++7 0 1
++4 0 1
++7 0 1
++3 0 1
+cfn=(3238) std::_Bind_helper<std::__or_<std::is_integral<std::decay<void (seal::Ciphertext::*)(std::ostream&) const>::type>, std::is_enum<std::decay<void (seal::Ciphertext::*)(std::ostream&) const>::type> >::value, void (seal::Ciphertext::*)(std::ostream&) const, seal::Ciphertext const*, std::_Placeholder<1> const&>::type std::bind<void (seal::Ciphertext::*)(std::ostream&) const, seal::Ciphertext const*, std::_Placeholder<1> const&>(void (seal::Ciphertext::*&&)(std::ostream&) const, seal::Ciphertext const*&&, std::_Placeholder<1> const&)
+calls=1 0x30e8b 0 
+* 0 238
++5 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3260) std::function<void (std::ostream&)>::function<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>, void>(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&)
+calls=1 0x30ef6 0 
+* 0 265
++5 0 1
++7 0 1
++7 0 1
++7 0 1
++4 0 1
++6 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(3284) seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool)
+calls=1 0x800e0 0 
+* 0 185447
++5 0 1
++3 0 1
++1 0 1
++4 0 1
++3 0 1
+cfn=(3420) std::function<void (std::ostream&)>::~function()
+calls=1 0x2a7b2 0 
+* 0 203
++5 0 1
++3 0 1
++4 0 1
++9 0 1
++59 0 1
++7 0 1
++1 0 1
++2 0 1
++2 0 1
++1 0 1
+
+fn=(3246) std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::_Bind<seal::Ciphertext const*, std::_Placeholder<1> const&>(void (seal::Ciphertext::*&&)(std::ostream&) const, seal::Ciphertext const*&&, std::_Placeholder<1> const&)
+0x336a0 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3248) std::remove_reference<void (seal::Ciphertext::*&)(std::ostream&) const>::type&& std::move<void (seal::Ciphertext::*&)(std::ostream&) const>(void (seal::Ciphertext::*&)(std::ostream&) const)
+calls=1 0x3793c 0 
+* 0 7
++5 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3240) std::_Placeholder<1> const& std::forward<std::_Placeholder<1> const&>(std::remove_reference<std::_Placeholder<1> const&>::type&)
+calls=1 0x32a97 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3242) seal::Ciphertext const*&& std::forward<seal::Ciphertext const*>(std::remove_reference<seal::Ciphertext const*>::type&)
+calls=1 0x3368d 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(3250) std::tuple<seal::Ciphertext const*, std::_Placeholder<1> >::tuple<seal::Ciphertext const*, std::_Placeholder<1> const&, true>(seal::Ciphertext const*&&, std::_Placeholder<1> const&)
+calls=1 0x3794e 0 
+* 0 126
++5 0 1
++1 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(3258) std::_Head_base<0ul, seal::Ciphertext const*, false>::_Head_base<seal::Ciphertext const*>(seal::Ciphertext const*&&)
+0x3c688 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3242)
+calls=1 0x3368d 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++1 0 1
++1 0 1
+
+fn=(3262) std::_Function_base::_Function_base()
+0x2f600 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++7 0 1
++8 0 1
++4 0 1
++8 0 1
++1 0 1
++1 0 1
+
+fn=(3320) seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode)
+0xa3980 0 4
++4 0 4
++1 0 4
++1 0 4
++4 0 4
++3 0 4
++83 0 4
++4 0 4
++4 0 4
++3 0 4
++24 0 4
++4 0 4
++3 0 4
++2 0 4
++1 0 4
++1 0 4
+cfn=(3322) seal::util::ArrayPutBuffer::seekpos(std::fpos<__mbstate_t>, std::_Ios_Openmode)
+calls=4 0xa3820 0 
+* 0 48
++42 0 4
+
+fn=(3330) seal::util::ArrayPutBuffer::xsputn(char const*, long)
+0xa37b0 0 11
++4 0 11
++1 0 11
++3 0 11
++1 0 11
++4 0 11
++4 0 11
++4 0 11
++3 0 11
++3 0 11
++4 0 11
++3 0 11
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++1 0 1
++1 0 1
++5 0 11
++4 0 11
++2 0 10
++3 0 10
+cob=(4) ???
+cfi=(173) ???
+cfn=(1936) 0x000000000010fd90
+calls=10 0x10fd90 0 
+* 0 181793
++5 0 10
++4 0 10
++3 0 10
++3 0 10
++4 0 10
++4 0 10
++1 0 10
++1 0 10
++6 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
+
+fn=(3336) std::enable_if<is_invocable_r_v<void, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&, std::ostream&>, void>::type std::__invoke_r<void, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&, std::ostream&>(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&, std::ostream&)
+0x37aba 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3334) std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3338) std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>& std::forward<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&>(std::remove_reference<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&>::type&)
+calls=1 0x3b492 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
+cfn=(3340) void std::__invoke_impl<void, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&, std::ostream&>(std::__invoke_other, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&, std::ostream&)
+calls=1 0x3b4a4 0 
+* 0 183952
++5 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(3356) std::_Placeholder<1>& std::__get_helper<1ul, std::_Placeholder<1>>(std::_Tuple_impl<1ul, std::_Placeholder<1>>&)
+0x3d96e 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3358) std::_Tuple_impl<1ul, std::_Placeholder<1> >::_M_head(std::_Tuple_impl<1ul, std::_Placeholder<1> >&)
+calls=1 0x3db70 0 
+* 0 17
++5 0 1
++1 0 1
+
+fn=(3362) std::enable_if<(0ul)<std::tuple_size<std::tuple<std::ostream&> >::value, std::tuple_element<0ul, std::tuple<std::ostream&> > >::type::type&& std::_Mu<std::_Placeholder<1>, false, true>::operator()<std::tuple<std::ostream&> >(std::_Placeholder<1> const volatile&, std::tuple<std::ostream&>&) const volatile
+0x3d63a 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3364) std::remove_reference<std::tuple<std::ostream&>&>::type&& std::move<std::tuple<std::ostream&>&>(std::tuple<std::ostream&>&)
+calls=1 0x3d98c 0 
+* 0 7
++5 0 1
++3 0 1
+cfn=(3366) std::tuple_element<0ul, std::tuple<std::ostream&> >::type&& std::get<0ul, std::ostream&>(std::tuple<std::ostream&>&&)
+calls=1 0x3d99e 0 
+* 0 47
++5 0 1
++1 0 1
+
+fn=(3382) seal::Ciphertext const*& std::_Mu<seal::Ciphertext const*, false, false>::operator()<seal::Ciphertext const*&, std::tuple<std::ostream&> >(seal::Ciphertext const*&, std::tuple<std::ostream&>&) const volatile
+0x3d7aa 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3384) seal::Ciphertext const*& std::forward<seal::Ciphertext const*&>(std::remove_reference<seal::Ciphertext const*&>::type&)
+calls=1 0x3d9f4 0 
+* 0 7
++5 0 1
++1 0 1
+
+fn=(3394) std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::DynArray<unsigned long>::*(seal::DynArray<unsigned long> const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_invoke(std::_Any_data const&, std::ostream&)
+0x45a60 0 1
++4 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++2 0 1
++10 0 1
+cfn=(3396) seal::DynArray<unsigned long>::save_members(std::ostream&) const
+calls=1 0x45cf0 0 
+* 0 181936
+
+fn=(3256) std::_Head_base<1ul, std::_Placeholder<1>, true>::_Head_base(std::_Placeholder<1> const&)
+0x3cc6c 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
++1 0 1
+
+fn=(3350) std::_Head_base<0ul, std::ostream&, false>::_Head_base(std::ostream&)
+0x3db52 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++1 0 1
++1 0 1
+
+fn=(3358)
+0x3db70 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3360) std::_Head_base<1ul, std::_Placeholder<1>, true>::_M_head(std::_Head_base<1ul, std::_Placeholder<1>, true>&)
+calls=1 0x3dc5c 0 
+* 0 7
++5 0 1
++1 0 1
+
+fn=(3370) std::_Tuple_impl<0ul, std::ostream&>::_M_head(std::_Tuple_impl<0ul, std::ostream&>&)
+0x3dc6e 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3372) std::_Head_base<0ul, std::ostream&, false>::_M_head(std::_Head_base<0ul, std::ostream&, false>&)
+calls=1 0x3dd0d 0 
+* 0 8
++5 0 1
++1 0 1
+
+fn=(3374) std::tuple_element<0ul, std::tuple<seal::Ciphertext const*, std::_Placeholder<1> > >::type& std::get<0ul, seal::Ciphertext const*, std::_Placeholder<1> >(std::tuple<seal::Ciphertext const*, std::_Placeholder<1> >&)
+0x3d78c 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3376) seal::Ciphertext const*& std::__get_helper<0ul, seal::Ciphertext const*, std::_Placeholder<1> >(std::_Tuple_impl<0ul, seal::Ciphertext const*, std::_Placeholder<1> >&)
+calls=1 0x3d9d6 0 
+* 0 27
++5 0 1
++1 0 1
+
+fn=(3386) std::__invoke_result<void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&>::type std::__invoke<void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&>(void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&)
+0x3d7ee 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3334)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3384)
+calls=1 0x3d9f4 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3388) void (seal::Ciphertext::*&std::forward<void (seal::Ciphertext::*&)(std::ostream&) const>(std::remove_reference<void (seal::Ciphertext::*&)(std::ostream&) const>::type&))(std::ostream&) const
+calls=1 0x3da06 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(3390) void std::__invoke_impl<void, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&>(std::__invoke_memfun_deref, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&)
+calls=1 0x3da18 0 
+* 0 183563
++5 0 1
++1 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(3188)
+0x43880 0 1
++4 0 1
++2 0 1
++2 0 1
++1 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++9 0 1
++5 0 1
++2 0 1
++3 0 1
++2 0 1
++5 0 1
++3 0 1
++6 0 1
++3 0 1
++4 0 1
++6 0 1
++4 0 1
++4 0 1
++6 0 1
++4 0 1
++15 0 1
++2 0 1
+cfn=(2548) seal::Serialization::ComprSizeEstimate(unsigned long, seal::compr_mode_type)
+calls=1 0x7daf0 0 
+* 0 15
++5 0 1
++3 0 1
++4 0 1
++6 0 1
++4 0 1
++3 0 1
++6 0 1
++5 0 1
++2 0 1
+cfn=(2548)
+calls=1 0x7daf0 0 
+* 0 15
++5 0 1
++4 0 1
++6 0 1
++4 0 1
++6 0 1
++5 0 1
++9 0 1
++6 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++4 0 1
++5 0 1
+
+fn=(3244) void (seal::Ciphertext::*&&std::forward<void (seal::Ciphertext::*)(std::ostream&) const>(std::remove_reference<void (seal::Ciphertext::*)(std::ostream&) const>::type&))(std::ostream&) const
+0x3367b 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(3252) std::_Tuple_impl<0ul, seal::Ciphertext const*, std::_Placeholder<1> >::_Tuple_impl<seal::Ciphertext const*, std::_Placeholder<1> const&, void>(seal::Ciphertext const*&&, std::_Placeholder<1> const&)
+0x3b41a 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3240)
+calls=1 0x32a97 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3254) std::_Tuple_impl<1ul, std::_Placeholder<1> >::_Tuple_impl(std::_Placeholder<1> const&)
+calls=1 0x3c174 0 
+* 0 22
++5 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3242)
+calls=1 0x3368d 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
+cfn=(3258)
+calls=1 0x3c688 0 
+* 0 22
++5 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(3260)
+0x30ef6 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++5 0 1
++4 0 1
++3 0 1
+cfn=(3262)
+calls=1 0x2f600 0 
+* 0 12
++5 0 1
++4 0 1
++8 0 1
++4 0 1
++3 0 1
+cfn=(3264) bool std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_not_empty_function<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const&)
+calls=1 0x33718 0 
+* 0 7
++5 0 1
++2 0 1
++2 0 1
++4 0 1
++3 0 1
+cfn=(3266) std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&& std::forward<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >(std::remove_reference<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::type&)
+calls=1 0x3372b 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3268) void std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_init_functor<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >(std::_Any_data&, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&)
+calls=1 0x3373d 0 
+* 0 199
++5 0 1
++4 0 1
++7 0 1
++4 0 1
++4 0 1
++7 0 1
++4 0 1
++32 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(3284)
+0x800e0 0 1
++4 0 1
++2 0 1
++2 0 1
++3 0 1
++3 0 1
++3 0 1
++2 0 1
++2 0 1
++1 0 1
++1 0 1
++7 0 1
++9 0 1
++8 0 1
++7 0 1
++4 0 1
++4 0 1
++5 0 1
++5 0 1
++4 0 1
++4 0 1
++3 0 1
++6 0 1
++4 0 1
++6 0 1
++3 0 1
++6 0 1
++5 0 1
++3 0 1
++5 0 1
++3 0 1
++3 0 1
++8 0 1
++3 0 1
+cfn=(3286) seal::util::ArrayPutBuffer::ArrayPutBuffer(char*, long)
+calls=1 0xa3f00 0 
+* 0 73
++5 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3290) 0x000000000010f850
+calls=1 0x10f850 0 
+* 0 94
++5 0 1
++6 0 1
++2 0 1
++3 0 1
++4 0 1
++3 0 1
++12 0 1
++8 0 1
++8 0 1
++8 0 1
++8 0 1
+cob=(4)
+cfi=(173)
+cfn=(3292) 0x000000000010fc80
+calls=1 0x10fc80 0 
+* 0 185
++5 0 1
++4 0 1
++4 0 1
++12 0 1
++3 0 1
++8 0 1
++8 0 1
++12 0 1
++3 0 1
++2 0 1
++5 0 1
++3 0 1
++3 0 1
+cfn=(3294) std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+calls=1 0x337b4 0 
+* 0 221
++2 0 1
++5 0 1
++8 0 1
++3 0 1
++3 0 1
++3 0 1
++3 0 1
++8 0 1
+cfn=(3310) seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)
+calls=1 0x7ee50 0 
+* 0 184510
++5 0 1
++3 0 1
++7 0 1
++5 0 1
++4 0 1
++5 0 1
++8 0 1
++4 0 1
++3 0 1
++2 0 1
++4 0 1
++5 0 1
++3 0 1
++3 0 1
+cfn=(3294)
+calls=1 0x337b4 0 
+* 0 172
++2 0 1
++5 0 1
++3 0 1
++8 0 1
+cob=(4)
+cfi=(173)
+cfn=(3402) 0x000000000010f880
+calls=1 0x10f880 0 
+* 0 75
++5 0 1
++7 0 1
++5 0 1
++4 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(3418) 0x000000000010fcd0
+calls=1 0x10fcd0 0 
+* 0 14
++5 0 1
++8 0 1
++9 0 1
++2 0 1
++7 0 1
++3 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
+
+fn=(3338)
+0x3b492 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++1 0 2
+
+fn=(3354) std::tuple_element<1ul, std::tuple<seal::Ciphertext const*, std::_Placeholder<1> > >::type& std::get<1ul, seal::Ciphertext const*, std::_Placeholder<1> >(std::tuple<seal::Ciphertext const*, std::_Placeholder<1> >&)
+0x3d7d0 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3356)
+calls=1 0x3d96e 0 
+* 0 27
++5 0 1
++1 0 1
+
+fn=(3234)
+0x35920 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(3250)
+0x3794e 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3240)
+calls=1 0x32a97 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3242)
+calls=1 0x3368d 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(3252)
+calls=1 0x3b41a 0 
+* 0 85
++5 0 1
++1 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(3268)
+0x3373d 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3266)
+calls=1 -45 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3270) void std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_create<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >(std::_Any_data&, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&, std::integral_constant<bool, false>)
+calls=1 0x37a4a 0 
+* 0 175
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3276) std::_Tuple_impl<0ul, seal::Ciphertext const*, std::_Placeholder<1> >::_Tuple_impl(std::_Tuple_impl<0ul, seal::Ciphertext const*, std::_Placeholder<1> >&&)
+0x379a0 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3278) std::_Tuple_impl<1ul, std::_Placeholder<1> >::_Tuple_impl(std::_Tuple_impl<1ul, std::_Placeholder<1> >&&)
+calls=1 0x3abfe 0 
+* 0 8
++5 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++1 0 1
++1 0 1
+
+fn=(3278)
+0x3abfe 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
++1 0 1
+
+fn=(3294)
+0x337b4 0 3
++4 0 3
++1 0 3
++3 0 3
++1 0 3
++4 0 3
++4 0 3
++4 0 3
++3 0 3
++3 0 3
++2 0 3
++2 0 3
++3 0 3
++2 0 3
++58 0 3
++3 0 3
++4 0 3
++4 0 3
++3 0 3
++3 0 3
+cfn=(3296) std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+calls=3 0x37b1a 0 
+* 0 493
++5 0 3
++5 0 3
++4 0 3
++1 0 3
+
+fn=(3322)
+0xa3820 0 4
++4 0 4
++3 0 4
++17 0 4
++3 0 4
++2 0 4
++4 0 4
++2 0 4
++4 0 4
++3 0 4
++4 0 4
++3 0 4
+
+fn=(3332) std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_invoke(std::_Any_data const&, std::ostream&)
+0x33772 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3334)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3298) std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_get_pointer(std::_Any_data const&)
+calls=1 0x37a99 0 
+* 0 28
++5 0 1
++3 0 1
++3 0 1
+cfn=(3336)
+calls=1 0x37aba 0 
+* 0 183987
++5 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(3340)
+0x3b4a4 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3338)
+calls=1 -46 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3334)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
+cfn=(3342) void std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::operator()<std::ostream&, void>(std::ostream&)
+calls=1 0x3c6b6 0 
+* 0 183917
++5 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(3342)
+0x3c6b6 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++9 0 1
++4 0 1
++2 0 1
++4 0 1
++3 0 1
+cfn=(3334)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3344) std::tuple<std::ostream&> std::forward_as_tuple<std::ostream&>(std::ostream&)
+calls=1 0x3cc7f 0 
+* 0 63
++5 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3352) void std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::__call<void, std::ostream&, 0ul, 1ul>(std::tuple<std::ostream&>&&, std::_Index_tuple<0ul, 1ul>)
+calls=1 0x3d0fa 0 
+* 0 183819
++5 0 1
++1 0 1
++4 0 1
++9 0 1
++7 0 1
++1 0 1
+
+fn=(3344)
+0x3cc7f 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3334)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3346) std::tuple<std::ostream&>::tuple<true, true>(std::ostream&)
+calls=1 0x3d610 0 
+* 0 39
++5 0 1
++4 0 1
++1 0 1
+
+fn=(3372)
+0x3dd0d 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++1 0 1
+
+fn=(3378) std::_Tuple_impl<0ul, seal::Ciphertext const*, std::_Placeholder<1> >::_M_head(std::_Tuple_impl<0ul, seal::Ciphertext const*, std::_Placeholder<1> >&)
+0x3dbac 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3380) std::_Head_base<0ul, seal::Ciphertext const*, false>::_M_head(std::_Head_base<0ul, seal::Ciphertext const*, false>&)
+calls=1 0x3dc8c 0 
+* 0 7
++5 0 1
++1 0 1
+
+fn=(3240)
+0x32a97 0 4
++4 0 4
++1 0 4
++3 0 4
++4 0 4
++4 0 4
++1 0 4
+
+fn=(3270)
+0x37a4a 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(1316) 0x000000000010fb50
+calls=1 0x10fb50 0 
+* 0 65
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3266)
+calls=1 0x3372b 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
+cfn=(3272) std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::_Bind(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&)
+calls=1 0x37a02 0 
+* 0 62
++5 0 1
++4 0 1
++3 0 1
+cfn=(3280) std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*& std::_Any_data::_M_access<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*>()
+calls=1 0x37afc 0 
+* 0 17
++5 0 1
++3 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(3274) std::tuple<seal::Ciphertext const*, std::_Placeholder<1> >::tuple(std::tuple<seal::Ciphertext const*, std::_Placeholder<1> >&&)
+0x379d8 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3276)
+calls=1 -90 0 
+* 0 26
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3310)
+0x7ee50 0 1
++4 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++1 0 1
++1 0 1
++7 0 1
++9 0 1
++8 0 1
++2 0 1
++5 0 1
++6 0 1
++3 0 1
++4 0 1
++6 0 1
++3 0 1
++3 0 1
++6 0 1
++3 0 1
++3 0 1
++3 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
++7 0 1
++4 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312) 0x000000000010fdf0
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3316) 0x000000000010fad0
+calls=1 0x10fad0 0 
+* 0 107
++5 0 1
++5 0 1
++7 0 1
++9 0 1
++7 0 1
++4 0 1
++4 0 1
++5 0 1
++5 0 1
++10 0 1
++4 0 1
++5 0 1
++5 0 1
++4 0 1
++6 0 1
++4 0 1
++6 0 1
++5 0 1
++3 0 1
++5 0 1
+cfn=(3324) seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&)
+calls=1 0x7dbe0 0 
+* 0 154
++5 0 1
++5 0 1
++6 0 1
++3 0 1
++3 0 1
+cfn=(3332)
+calls=1 0x33772 0 
+* 0 184043
++3 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3316)
+calls=1 0x10fad0 0 
+* 0 107
++5 0 1
++5 0 1
++3 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++8 0 1
++9 0 1
++6 0 1
++7 0 1
++3 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
+
+fn=(3311) seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2
+0x7ee50 0 1
++4 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++1 0 1
++1 0 1
++7 0 1
++9 0 1
++8 0 1
++2 0 1
++5 0 1
++6 0 1
++3 0 1
++4 0 1
++6 0 1
++3 0 1
++3 0 1
++6 0 1
++3 0 1
++3 0 1
++3 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
++7 0 1
++4 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3316)
+calls=1 0x10fad0 0 
+* 0 107
++5 0 1
++5 0 1
++7 0 1
++9 0 1
++7 0 1
++4 0 1
++4 0 1
++5 0 1
++5 0 1
++10 0 1
++4 0 1
++5 0 1
++5 0 1
++4 0 1
++6 0 1
++4 0 1
++6 0 1
++5 0 1
++3 0 1
++5 0 1
+cfn=(3324)
+calls=1 0x7dbe0 0 
+* 0 154
++5 0 1
++5 0 1
++6 0 1
++3 0 1
++3 0 1
+cfn=(3394)
+calls=1 0x45a60 0 
+* 0 181944
++3 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3316)
+calls=1 0x10fad0 0 
+* 0 107
++5 0 1
++5 0 1
++3 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++8 0 1
++9 0 1
++6 0 1
++7 0 1
++3 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
+
+fn=(3324)
+0x7dbe0 0 2
++4 0 2
++2 0 2
++1 0 2
++3 0 2
++1 0 2
++3 0 2
++3 0 2
++4 0 2
++3 0 2
++4 0 2
++3 0 2
++7 0 2
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=2 0x10fdf0 0 
+* 0 18
++5 0 2
++5 0 2
++3 0 2
++3 0 2
+cob=(4)
+cfi=(173)
+cfn=(3326) 0x000000000010fc40
+calls=2 0x10fc40 0 
+* 0 216
++5 0 2
++3 0 2
++4 0 2
++4 0 2
++3 0 2
++3 0 2
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=2 0x10fdf0 0 
+* 0 18
++5 0 2
++1 0 2
++5 0 2
++1 0 2
++2 0 2
+
+fn=(3346)
+0x3d610 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3348) std::_Tuple_impl<0ul, std::ostream&>::_Tuple_impl(std::ostream&)
+calls=1 0x3d944 0 
+* 0 25
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3352)
+0x3d0fa 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++9 0 1
++4 0 1
++2 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3354)
+calls=1 0x3d7d0 0 
+* 0 37
++5 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3362)
+calls=1 0x3d63a 0 
+* 0 68
++5 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3374)
+calls=1 0x3d78c 0 
+* 0 37
++5 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3382)
+calls=1 0x3d7aa 0 
+* 0 19
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(3386)
+calls=1 0x3d7ee 0 
+* 0 183614
++5 0 1
++1 0 1
++4 0 1
++9 0 1
++7 0 1
++4 0 1
++1 0 1
+
+fn=(3380)
+0x3dc8c 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(3384)
+0x3d9f4 0 3
++4 0 3
++1 0 3
++3 0 3
++4 0 3
++4 0 3
++1 0 3
+
+fn=(3392) seal::Ciphertext::save_members(std::ostream&) const
+0x43c70 0 1
++4 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
++1 0 1
++3 0 1
++1 0 1
++3 0 1
++7 0 1
++9 0 1
++8 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++7 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++5 0 1
++3 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 109
++5 0 1
++4 0 1
++5 0 1
++5 0 1
++3 0 1
++4 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 96
++5 0 1
++4 0 1
++5 0 1
++5 0 1
++3 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 110
++5 0 1
++4 0 1
++5 0 1
++5 0 1
++3 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 110
++5 0 1
++4 0 1
++5 0 1
++5 0 1
++3 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 110
++5 0 1
++4 0 1
++5 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 110
++5 0 1
++4 0 1
++5 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 110
++5 0 1
++4 0 1
++3 0 1
++15 0 1
++2 0 1
+cfn=(2548)
+calls=1 0x7daf0 0 
+* 0 15
++5 0 1
++3 0 1
++4 0 1
++6 0 1
++4 0 1
++6 0 1
++4 0 1
++5 0 1
++12 0 1
++12 0 1
++8 0 1
+cob=(4)
+cfi=(173)
+cfn=(1316)
+calls=1 0x10fb50 0 
+* 0 65
++5 0 1
++7 0 1
++4 0 1
++3 0 1
++2 0 1
++8 0 1
++8 0 1
++3 0 1
++8 0 1
++3 0 1
++3 0 1
++3 0 1
++7 0 1
++8 0 1
++8 0 1
+cfn=(3311)
+calls=1 0x7ee50 0 
+* 0 182411
++5 0 1
++8 0 1
++3 0 1
++2 0 1
++5 0 1
++3 0 1
++3 0 1
+cfn=(3398) std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::DynArray<unsigned long>::*(seal::DynArray<unsigned long> const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+calls=1 0x45b40 0 
+* 0 119
++2 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++8 0 1
++9 0 1
++6 0 1
++3 0 1
++7 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
++2 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++5 0 1
++2 0 1
++3 0 1
++4 0 1
++6 0 1
++4 0 1
++4 0 1
++20 0 1
++4 0 1
++4 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++4 0 1
++5 0 1
+0x4444b 0 1
++4 0 1
++4 0 1
+
+fn=(3420)
+0x2a7b2 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3422) std::_Function_base::~_Function_base()
+calls=1 0x2a266 0 
+* 0 192
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3242)
+0x3368d 0 5
++4 0 5
++1 0 5
++3 0 5
++4 0 5
++4 0 5
++1 0 5
+
+fn=(3300) std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>* const& std::_Any_data::_M_access<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*>() const
+0x3b474 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(3302) std::_Any_data::_M_access() const
+calls=2 0x2a254 0 
+* 0 14
++5 0 2
++1 0 2
+
+fn=(3348)
+0x3d944 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3350)
+calls=1 0x3db52 0 
+* 0 11
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3364)
+0x3d98c 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(3396)
+0x45cf0 0 1
++4 0 1
++2 0 1
++2 0 1
++2 0 1
++1 0 1
++3 0 1
++1 0 1
++3 0 1
++4 0 1
++9 0 1
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++3 0 1
++7 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
++5 0 1
++4 0 1
++3 0 1
++5 0 1
++3 0 1
++4 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 110
++5 0 1
++4 0 1
++3 0 1
++2 0 1
++3 0 1
++4 0 1
++6 0 1
++4 0 1
++6 0 1
++4 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3326)
+calls=1 0x10fc40 0 
+* 0 181758
++5 0 1
++3 0 1
++4 0 1
++4 0 1
++3 0 1
++5 0 1
++9 0 1
++2 0 1
++3 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
+cob=(4)
+cfi=(173)
+cfn=(3312)
+calls=1 0x10fdf0 0 
+* 0 9
+
+fn=(3398)
+0x45b40 0 1
++4 0 1
++1 0 1
++1 0 1
++3 0 1
++4 0 1
++2 0 1
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++3 0 1
++2 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(1784) 0x000000000010fb60
+calls=1 0x10fb60 0 
+* 0 95
++5 0 1
++12 0 1
++4 0 1
++2 0 1
++1 0 1
++1 0 1
+
+fn=(3400) std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_destroy(std::_Any_data&, std::integral_constant<bool, false>)
+0x3b51b 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(3280)
+calls=2 0x37afc 0 
+* 0 34
++5 0 2
++3 0 2
++3 0 2
++2 0 2
++5 0 2
++3 0 2
+cob=(4)
+cfi=(173)
+cfn=(1784)
+calls=2 0x10fb60 0 
+* 0 190
++5 0 2
++1 0 2
++1 0 2
+
+fn=(3238)
+0x30e8b 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3240)
+calls=1 0x32a97 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3242)
+calls=1 0x3368d 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3244)
+calls=1 0x3367b 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
+cfn=(3246)
+calls=1 0x336a0 0 
+* 0 184
++5 0 1
++4 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(3248)
+0x3793c 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(3282) std::_Any_data::_M_access()
+0x2a242 0 4
++4 0 4
++1 0 4
++3 0 4
++4 0 4
++4 0 4
++1 0 4
+
+fn=(3298)
+0x37a99 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++4 0 2
++3 0 2
+cfn=(3300)
+calls=2 0x3b474 0 
+* 0 34
++5 0 2
++3 0 2
++1 0 2
+
+fn=(3304) void std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_init_functor<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const&>(std::_Any_data&, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const&)
+0x3b4e6 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3306) std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const& std::forward<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const&>(std::remove_reference<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const&>::type&)
+calls=1 0x3c721 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3308) void std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_create<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const&>(std::_Any_data&, std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> const&, std::integral_constant<bool, false>)
+calls=1 0x3c733 0 
+* 0 117
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3422)
+0x2a266 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++2 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++5 0 1
++3 0 1
++3 0 1
+cfn=(3294)
+calls=1 0x337b4 0 
+* 0 172
++3 0 1
++1 0 1
++1 0 1
+
+fn=(3266)
+0x3372b 0 3
++4 0 3
++1 0 3
++3 0 3
++4 0 3
++4 0 3
++1 0 3
+
+fn=(3296)
+0x37b1a 0 3
++4 0 3
++1 0 3
++3 0 3
++1 0 3
++4 0 3
++4 0 3
++4 0 3
++3 0 3
++3 0 3
++3 0 3
++2 0 1
++3 0 1
++2 0 1
++3 0 1
++74 0 1
++4 0 1
++3 0 1
+cfn=(3298)
+calls=1 0x37a99 0 
+* 0 28
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3304)
+calls=1 0x3b4e6 0 
+* 0 141
++5 0 1
++2 0 2
++4 0 2
++3 0 2
+cfn=(3400)
+calls=2 0x3b51b 0 
+* 0 258
++5 0 2
++1 0 2
++5 0 2
++4 0 2
++1 0 2
+-10 0 1
++5 0 1
++4 0 1
++1 0 1
+
+fn=(3302)
+0x2a254 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++1 0 2
+
+fn=(3334)
+0x36f5e 0 8
++4 0 8
++1 0 8
++3 0 8
++4 0 8
++4 0 8
++1 0 8
+
+fn=(3366)
+0x3d99e 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3368) std::ostream& std::__get_helper<0ul, std::ostream&>(std::_Tuple_impl<0ul, std::ostream&>&)
+calls=1 0x3db8e 0 
+* 0 28
++5 0 1
++3 0 1
+cfn=(3334)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++1 0 1
+
+fn=(2548)
+0x7daf0 0 3
++4 0 3
++1 0 3
++1 0 3
++4 0 3
++4 0 3
++6 0 3
++4 0 3
++2 0 3
++4 0 3
++2 0 3
++4 0 3
++3 0 3
++1 0 3
++1 0 3
+
+fn=(3254)
+0x3c174 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3256)
+calls=1 0x3cc6c 0 
+* 0 8
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3264)
+0x33718 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++5 0 1
++1 0 1
+
+fn=(3272)
+0x37a02 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
++3 0 1
+cfn=(3274)
+calls=1 0x379d8 0 
+* 0 40
++5 0 1
++1 0 1
++1 0 1
+
+fn=(3280)
+0x37afc 0 4
++4 0 4
++1 0 4
++3 0 4
++4 0 4
++4 0 4
++4 0 4
++3 0 4
+cfn=(3282)
+calls=4 0x2a242 0 
+* 0 28
++5 0 4
++1 0 4
+
+fn=(3286)
+0xa3f00 0 1
++4 0 1
++2 0 1
++7 0 1
++2 0 1
++4 0 1
++4 0 1
++2 0 1
++3 0 1
++1 0 1
++3 0 1
++1 0 1
++3 0 1
++3 0 1
++8 0 1
++8 0 1
++8 0 1
++8 0 1
++8 0 1
++8 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3288) 0x000000000010fef0
+calls=1 0x10fef0 0 
+* 0 32
++5 0 1
++7 0 1
++4 0 1
++4 0 1
++4 0 1
++7 0 1
++3 0 1
++3 0 1
++6 0 1
++3 0 1
++6 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++1 0 1
++1 0 1
++2 0 1
++2 0 1
++2 0 1
+
+fn=(3306)
+0x3c721 0 2
++4 0 2
++1 0 2
++3 0 2
++4 0 2
++4 0 2
++1 0 2
+
+fn=(3308)
+0x3c733 0 1
++4 0 1
++1 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++5 0 1
+cob=(4)
+cfi=(173)
+cfn=(1316)
+calls=1 0x10fb50 0 
+* 0 65
++5 0 1
++3 0 1
++4 0 1
++3 0 1
+cfn=(3306)
+calls=1 -59 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3280)
+calls=1 0x37afc 0 
+* 0 17
++5 0 1
++3 0 1
++1 0 1
++4 0 1
++1 0 1
+
+fn=(3360)
+0x3dc5c 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(3368)
+0x3db8e 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3370)
+calls=1 0x3dc6e 0 
+* 0 18
++5 0 1
++1 0 1
+
+fn=(3376)
+0x3d9d6 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3378)
+calls=1 0x3dbac 0 
+* 0 17
++5 0 1
++1 0 1
+
+fn=(3388)
+0x3da06 0 1
++4 0 1
++1 0 1
++3 0 1
++4 0 1
++4 0 1
++1 0 1
+
+fn=(3390)
+0x3da18 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3384)
+calls=1 -70 0 
+* 0 7
++5 0 1
++3 0 1
++4 0 1
++3 0 1
++3 0 1
++3 0 1
++35 0 1
++4 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++4 0 1
++3 0 1
+cfn=(3334)
+calls=1 0x36f5e 0 
+* 0 7
++5 0 1
++3 0 1
++3 0 1
+cfn=(3392)
+calls=1 0x43c70 0 
+* 0 183514
++2 0 1
++1 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+ob=(7) /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33
+fl=(184) ???
+fn=(1042) std::locale::operator=(std::locale const&)
+0xd0c10 0 1
++4 0 1
++1 0 1
++3 0 1
++3 0 1
++2 0 1
++1 0 1
++3 0 1
++4 0 1
++3 0 1
++7 0 1
++3 0 1
++3 0 1
++41 0 1
++3 0 1
++3 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
++11 0 1
++3 0 1
++3 0 1
+
+fn=(1054) std::basic_ios<char, std::char_traits<char> >::_M_cache_locale(std::locale const&)
+0x134260 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++3 0 1
++1 0 1
++3 0 1
++7 0 1
+cob=(4)
+cfi=(173)
+cfn=(720) 0x00000000048e3800
+calls=1 0x48e3800 0 
+* 0 8
++5 0 1
++7 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++7 0 1
+cob=(4)
+cfi=(173)
+cfn=(720)
+calls=1 0x48e3800 0 
+* 0 8
++5 0 1
++7 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++7 0 1
+cob=(4)
+cfi=(173)
+cfn=(720)
+calls=1 0x48e3800 0 
+* 0 8
++5 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1
++7 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(1446) operator delete(void*)
+0xb98a0 0 3
++4 0 3
+cob=(4)
+cfi=(173)
+cfn=(1448) 0x00000000048e3c60
+calls=3 0x48e3c60 0 
+* 0 261
+
+fn=(3318) std::ostream::tellp()
+0x156640 0 4
++4 0 4
++1 0 4
++3 0 4
++3 0 4
++2 0 4
++2 0 4
++1 0 4
++4 0 4
++4 0 4
++9 0 4
++4 0 4
++3 0 4
++3 0 4
+cob=(4)
+cfi=(173)
+cfn=(1524) 0x00000000048e6360
+calls=4 0x48e6360 0 
+* 0 96
++5 0 4
++4 0 4
++4 0 4
++6 0 4
++6 0 4
++8 0 4
++5 0 4
++5 0 4
++2 0 4
++3 0 4
+cob=(8)
+cfi=(210)
+cfn=(3320)
+calls=4 0xa3980 0 
+* 0 116
++3 0 4
++2 0 4
++4 0 4
++3 0 4
++2 0 4
++4 0 4
++10 0 4
++3 0 4
++3 0 4
++2 0 4
++3 0 4
++3 0 4
++4 0 4
++3 0 4
++4 0 4
++3 0 4
++4 0 4
++11 0 4
++4 0 4
++9 0 4
++2 0 4
++4 0 4
++3 0 4
++3 0 4
++1 0 4
++2 0 4
++2 0 4
++1 0 4
+
+fn=(1318) operator new(unsigned long)
+0xbb8e0 0 3
++4 0 3
++1 0 3
++5 0 3
++3 0 3
++1 0 3
++4 0 3
++3 0 3
++4 0 3
++3 0 3
++3 0 3
+cob=(4)
+cfi=(173)
+cfn=(1130) 0x00000000048e3210
+calls=3 0x48e3210 0 
+* 0 141
++5 0 3
++3 0 3
++2 0 3
++4 0 3
++1 0 3
+
+fn=(1048) std::locale::~locale()
+0xd0cd0 0 3
++4 0 3
++1 0 3
++3 0 3
++1 0 3
++4 0 3
++7 0 3
++3 0 3
++3 0 3
++26 0 3
++4 0 3
++1 0 3
+
+fn=(1528) std::ostream::sentry::sentry(std::ostream&)
+0x1560a0 0 15
++4 0 15
++1 0 15
++3 0 15
++2 0 15
++3 0 15
++1 0 15
++3 0 15
++3 0 15
++4 0 15
++4 0 15
++3 0 15
++7 0 15
++3 0 15
++41 0 15
++3 0 15
++2 0 15
++2 0 15
++5 0 15
++1 0 15
++2 0 15
++1 0 15
+
+fn=(650) 0x00000000000e98b0
+0xe98b0 0 3
++4 0 3
++7 0 3
++3 0 3
++2 0 3
++7 0 3
++4 0 3
++2 0 3
+
+fn=(1030) std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)
+0x1343e0 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++3 0 1
++1 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(1032) 0x00000000048e5780
+calls=1 0x48e5780 0 
+* 0 101
++5 0 1
++7 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(1050) 0x00000000048e5920
+calls=1 0x48e5920 0 
+* 0 58
++5 0 1
++2 0 1
++11 0 1
++7 0 1
++2 0 1
++3 0 1
++3 0 1
++7 0 1
++7 0 1
++3 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(1786) operator delete(void*, unsigned long)
+0xb98b0 0 3
++4 0 3
+cob=(4)
+cfi=(173)
+cfn=(1442) 0x00000000048e3430
+calls=3 0x48e3430 0 
+* 0 273
+
+fn=(3328) std::ostream::write(char const*, long)
+0x1564a0 0 11
++4 0 11
++1 0 11
++3 0 11
++2 0 11
++2 0 11
++4 0 11
++3 0 11
++3 0 11
++2 0 11
++1 0 11
++3 0 11
++3 0 11
++4 0 11
++9 0 11
++4 0 11
++3 0 11
+cob=(4)
+cfi=(173)
+cfn=(1524)
+calls=11 0x48e6360 0 
+* 0 264
++5 0 11
++4 0 11
++2 0 11
++3 0 11
++3 0 11
++3 0 11
++4 0 11
++8 0 11
++3 0 11
+cob=(8)
+cfi=(210)
+cfn=(3330)
+calls=11 0xa37b0 0 
+* 0 182058
++3 0 11
++3 0 11
++2 0 11
++4 0 11
++3 0 11
++4 0 11
++3 0 11
++4 0 11
++11 0 11
++4 0 11
++9 0 11
++6 0 11
++4 0 11
++3 0 11
++1 0 11
++2 0 11
++2 0 11
++2 0 11
++1 0 11
+
+fn=(3410) std::ios_base::_M_call_callbacks(std::ios_base::event)
+0xe8420 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++3 0 1
++28 0 1
++4 0 1
++1 0 1
++2 0 1
++2 0 1
++1 0 1
+
+fn=(3416) std::ios_base::_M_dispose_callbacks()
+0xe8470 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++2 0 1
++3 0 1
++1 0 1
++4 0 1
++4 0 1
++3 0 1
++69 0 1
++9 0 1
++4 0 1
++1 0 1
++2 0 1
++2 0 1
++1 0 1
+
+fn=(724) std::locale::id::_M_id() const
+0xd0f20 0 3
++4 0 3
++3 0 3
++3 0 3
++33 0 3
++4 0 3
+
+fn=(648) std::locale::locale()
+0xe9910 0 3
++4 0 3
++1 0 3
++3 0 3
++2 0 3
++2 0 3
++1 0 3
++3 0 3
++4 0 3
++7 0 3
+cfn=(650)
+calls=3 0xe98b0 0 
+* 0 24
++5 0 3
++7 0 3
++7 0 3
++4 0 3
++3 0 3
++3 0 3
++74 0 3
++4 0 3
++1 0 3
++2 0 3
++2 0 3
++1 0 3
+
+fn=(3314) std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate)
+0x133eb0 0 12
++4 0 12
++8 0 12
++2 0 12
++3 0 12
++3 0 12
++2 0 12
+
+fn=(3404) std::ios_base::~ios_base()
+0xe84f0 0 1
++4 0 1
++1 0 1
++2 0 1
++3 0 1
++1 0 1
++3 0 1
++4 0 1
++7 0 1
++4 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3406) 0x00000000048e44d0
+calls=1 0x48e44d0 0 
+* 0 18
++5 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(3412) 0x00000000048e2870
+calls=1 0x48e2870 0 
+* 0 20
++5 0 1
++7 0 1
++4 0 1
++3 0 1
++23 0 1
++7 0 1
++4 0 1
++1 0 1
+cob=(4)
+cfi=(173)
+cfn=(1044) 0x00000000048e4ea0
+calls=1 0x48e4ea0 0 
+* 0 14
+
+fn=(1036) std::ios_base::_M_init()
+0xcfcf0 0 1
++4 0 1
++1 0 1
++3 0 1
++2 0 1
++1 0 1
++4 0 1
++4 0 1
++8 0 1
++9 0 1
++4 0 1
++3 0 1
++7 0 1
++4 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(644) 0x00000000048e38d0
+calls=1 0x48e38d0 0 
+* 0 32
++5 0 1
++3 0 1
++7 0 1
+cob=(4)
+cfi=(173)
+cfn=(1038) 0x00000000048e49c0
+calls=1 0x48e49c0 0 
+* 0 25
++5 0 1
++3 0 1
+cob=(4)
+cfi=(173)
+cfn=(1044)
+calls=1 0x48e4ea0 0 
+* 0 14
++5 0 1
++4 0 1
++9 0 1
++2 0 1
++4 0 1
++1 0 1
++2 0 1
++1 0 1
+
+fn=(1024) std::ios_base::ios_base()
+0xe8160 0 1
++4 0 1
++7 0 1
++4 0 1
++4 0 1
++8 0 1
++7 0 1
++7 0 1
++8 0 1
++4 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++11 0 1
++11 0 1
++7 0 1
++7 0 1
++4 0 1
++8 0 1
++3 0 1
+-22 0 7
++7 0 7
++4 0 7
++8 0 7
++3 0 7
++2 0 1
++7 0 1
++7 0 1
++7 0 1
+cob=(4)
+cfi=(173)
+cfn=(644)
+calls=1 0x48e38d0 0 
+* 0 32
+
+ob=(2) /usr/lib/x86_64-linux-gnu/libc.so.6
+fl=(203) ./malloc/./malloc/malloc.c
+fn=(1452) free
+0xadd30 3359 3
++4 +4 3
++3 * 3
++6 -4 3
++1 * 3
++3 * 3
++2 +14 3
++4 -14 3
++2 * 3
++1 * 3
++4 +12 3
++7 +4 3
++4 -4 3
++4 +4 3
++2 * 3
++2 +17 3
++7 * 3
++5 * 3
+fi=(204) ./malloc/./malloc/arena.c
++6 153 3
++7 * 3
++2 * 3
+fe=(203)
++40 3398 3
++3 * 3
++2 * 3
+cfn=(1456) _int_free
+calls=3 0xab170 4495 
+* * 162
++5 +3 3
++4 +1 3
++4 * 3
++1 * 3
++2 * 3
++2 * 3
++1 * 3
+
+fn=(1134) malloc
+0xad650 3294 3
++4 * 3
++1 * 3
++3 * 3
++2 * 3
++2 * 3
++1 * 3
++3 * 3
++4 +7 3
++7 * 3
++6 1326 3
++3 * 3
++6 +19 3
++4 * 3
++3 * 3
++4 * 3
++2 * 3
++4 3311 3
++4 * 3
++4 +2 3
++7 * 3
++5 * 3
++3 * 3
++6 +3 3
++7 * 3
+0xad798 +2 3
++5 * 3
++3 * 3
++6 3178 3
++5 * 3
++4 +4 3
++2 * 3
++6 +4 3
++3 +4 3
++3 -4 3
++4 * 3
++3 * 3
++4 +4 3
++5 +1 3
++8 3354 3
++4 * 3
++1 * 3
++2 * 3
++2 * 3
++1 * 3
+
+fn=(1456)
+0xab170 4495 3
++1 * 3
++3 * 3
++2 * 3
++2 * 3
++3 * 3
++1 * 3
++4 +4 3
++4 * 3
++3 * 3
++4 +6 3
++3 * 3
++3 * 3
++3 * 3
++6 +1 3
++4 * 3
++6 +4 3
++4 * 3
++6 * 3
++3 * 3
++6 * 3
++3 +8 3
++7 * 3
++4 * 3
++3 * 3
++2 -1 3
++4 * 3
++4 +1 3
++7 * 3
++2 +29 3
++7 -20 3
++7 -6 3
++4 +6 3
++4 * 3
++6 +20 3
++5 * 3
++3 * 3
++3 * 3
+0xab29d 4658 3
++4 * 3
++1 * 3
++2 * 3
++2 * 3
++1 * 3
+0xab348 3163 3
++7 +4 3
++3 -4 3
++4 +2 3
++3 * 3
++4 * 3
++8 * 3
++4 +1 3
++8 +1 3
++5 4550 3
+
+fl=(217) ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+fn=(1386) __memcpy_avx_unaligned_erms
+0x188a00 255 10
++4 +1 10
++3 +6 10
++4 +1 10
++2 +2 2
++4 +1 2
++4 +1 2
++6 +3 1
++6 +1 1
++4 +1 1
++6 +3 1
++3 * 1
++2 +30 8
++3 +1 8
++2 +2 6
++3 +1 6
++42 +33 2
++4 +1 2
++6 +1 2
++4 +1 2
++6 +2 2
++10 +17 6
++5 +1 6
++3 +1 6
++3 +1 6
++5 +1 6
++48 +18 1
++7 +1 1
+0x188cc0 601 1
++3 +1 1
++3 +4 1
++3 +2 1
++6 +3 1
++3 +4 1
++7 +1 1
++71 +68 1
++7 +1 1
++3 +1 1
++6 +5 1
++3 +1 1
++3 +1 1
++6 +7 1
++5 +6 1
++4 +2 1
++5 +8 1
++3 +1 1
++4 +2 1
++4 +2 1
++3 +2 1
++3 +2 1
++3 +8 1
++2 +1 1
++3 +1 1
++6 +1 1
+0x188ef0 +78 1
++6 +2 1
++4 * 1
++6 +5 1
++5 +4 1
++7 * 1
++7 +1 1
++7 * 1
++7 +1 1
++7 * 1
++7 +1 1
++7 * 1
++7 +2 1
++4 * 1
++5 * 1
++5 * 1
++5 +1 1
++8 * 1
++8 * 1
++8 * 1
++8 +1 1
++8 * 1
++8 * 1
++8 * 1
++8 +1 1
++8 * 1
++8 * 1
++8 * 1
++8 +1 1
++4 +2 1
++4 * 1
++5 * 1
++5 * 1
++5 +1 1
++8 * 1
++8 * 1
++8 * 1
++8 +1 1
++8 * 1
++8 * 1
++8 * 1
++8 +1 1
++8 * 1
++8 * 1
++8 * 1
++8 +1 1
++4 +1 1
++2 +1 1
+0x188f00 -21 126
++5 +4 126
++7 * 126
++7 +1 126
++7 * 126
++7 +1 126
++7 * 126
++7 +1 126
++7 * 126
++7 +2 126
++4 * 126
++5 * 126
++5 * 126
++5 +1 126
++8 * 126
++8 * 126
++8 * 126
++8 +1 126
++8 * 126
++8 * 126
++8 * 126
++8 +1 126
++8 * 126
++8 * 126
++8 * 126
++8 +1 126
++4 +2 126
++4 * 126
++5 * 126
++5 * 126
++5 +1 126
++8 * 126
++8 * 126
++8 * 126
++8 +1 126
++8 * 126
++8 * 126
++8 * 126
++8 +1 126
++8 * 126
++8 * 126
++8 * 126
++8 +1 126
++4 +1 126
++2 +1 126
+0x188f05 -17 3937
++7 * 3937
++7 +1 3937
++7 * 3937
++7 +1 3937
++7 * 3937
++7 +1 3937
++7 * 3937
++7 +2 3937
++4 * 3937
++5 * 3937
++5 * 3937
++5 +1 3937
++8 * 3937
++8 * 3937
++8 * 3937
++8 +1 3937
++8 * 3937
++8 * 3937
++8 * 3937
++8 +1 3937
++8 * 3937
++8 * 3937
++8 * 3937
++8 +1 3937
++4 +2 3937
++4 * 3937
++5 * 3937
++5 * 3937
++5 +1 3937
++8 * 3937
++8 * 3937
++8 * 3937
++8 +1 3937
++8 * 3937
++8 * 3937
++8 * 3937
++8 +1 3937
++8 * 3937
++8 * 3937
++8 * 3937
++8 +1 3937
++4 +1 3937
++2 +1 3937
++6 +1 127
++7 +1 127
++7 +1 127
++3 +1 127
++6 +1 1
++3 +2 1
++6 +1 1
++2 +5 127
++7 * 127
++7 +1 127
++7 * 127
++7 +1 127
++4 +1 127
++5 +1 127
++5 +1 127
++5 +1 127
++4 +1 127
++3 +1 127
++4 +1 127
++5 +1 127
++5 +1 127
++5 +1 127
++4 +1 127
++6 +1 127
++2 +4 1
++6 +1 1
++6 +1 1
++6 +1 1
++6 +2 1
++6 +1 1
++6 +1 1
++6 +1 1
++6 +1 1
++3 * 1
+
+ob=(4)
+fl=(173)
+fn=(1050)
+0x48e5920 0 1
++4 0 1
+cob=(7)
+cfi=(184)
+cfn=(1054)
+calls=1 0x134260 0 
+* 0 56
+
+fn=(1448)
+0x48e3c60 0 3
++4 0 3
+cob=(2)
+cfi=(203)
+cfn=(1452)
+calls=3 0xadd30 3359 
+* 0 255
+
+fn=(3290)
+0x10f850 0 1
++4 0 1
+cob=(7)
+cfi=(184)
+cfn=(1024)
+calls=1 0xe8160 0 
+* 0 92
+
+fn=(3316)
+0x10fad0 0 4
++4 0 4
+cob=(7)
+cfi=(184)
+cfn=(3318)
+calls=4 0x156640 0 
+* 0 420
+
+fn=(3288)
+0x10fef0 0 1
++4 0 1
+cob=(7)
+cfi=(184)
+cfn=(648)
+calls=1 0xe9910 0 
+* 0 30
+
+fn=(1316)
+0x10fb50 0 3
++4 0 3
+cob=(7)
+cfi=(184)
+cfn=(1318)
+calls=3 0xbb8e0 0 
+* 0 189
+
+fn=(1442)
+0x48e3430 0 3
++4 0 3
+cob=(7)
+cfi=(184)
+cfn=(1446)
+calls=3 0xb98a0 0 
+* 0 267
+
+fn=(3418)
+0x10fcd0 0 1
++4 0 1
+cob=(7)
+cfi=(184)
+cfn=(1048)
+calls=1 0xd0cd0 0 
+* 0 12
+
+fn=(1524)
+0x48e6360 0 15
++4 0 15
+cob=(7)
+cfi=(184)
+cfn=(1528)
+calls=15 0x1560a0 0 
+* 0 330
+
+fn=(1784)
+0x10fb60 0 3
++4 0 3
+cob=(7)
+cfi=(184)
+cfn=(1786)
+calls=3 0xb98b0 0 
+* 0 279
+
+fn=(1936)
+0x10fd90 0 10
++4 0 10
+cob=(2)
+cfi=(217)
+cfn=(1386)
+calls=10 0x188a00 255 
+* 0 181773
+
+fn=(3406)
+0x48e44d0 0 1
++4 0 1
+cob=(7)
+cfi=(184)
+cfn=(3410)
+calls=1 0xe8420 0 
+* 0 16
+
+fn=(720)
+0x48e3800 0 3
++4 0 3
+cob=(7)
+cfi=(184)
+cfn=(724)
+calls=3 0xd0f20 0 
+* 0 18
+
+fn=(1032)
+0x48e5780 0 1
++4 0 1
+cob=(7)
+cfi=(184)
+cfn=(1036)
+calls=1 0xcfcf0 0 
+* 0 99
+
+fn=(1044)
+0x48e4ea0 0 2
++4 0 2
+cob=(7)
+cfi=(184)
+cfn=(1048)
+calls=2 0xd0cd0 0 
+* 0 24
+
+fn=(1130)
+0x48e3210 0 3
++4 0 3
+cob=(2)
+cfi=(203)
+cfn=(1134)
+calls=3 0xad650 3294 
+* 0 135
+
+fn=(644)
+0x48e38d0 0 2
++4 0 2
+cob=(7)
+cfi=(184)
+cfn=(648)
+calls=2 0xe9910 0 
+* 0 60
+
+fn=(3292)
+0x10fc80 0 1
++4 0 1
+cob=(7)
+cfi=(184)
+cfn=(1030)
+calls=1 0x1343e0 0 
+* 0 183
+
+fn=(3412)
+0x48e2870 0 1
++4 0 1
+cob=(7)
+cfi=(184)
+cfn=(3416)
+calls=1 0xe8470 0 
+* 0 18
+
+fn=(3312)
+0x10fdf0 0 12
++4 0 12
+cob=(7)
+cfi=(184)
+cfn=(3314)
+calls=12 0x133eb0 0 
+* 0 84
+
+fn=(3326)
+0x10fc40 0 11
++4 0 11
+cob=(7)
+cfi=(184)
+cfn=(3328)
+calls=11 0x1564a0 0 
+* 0 182817
+
+fn=(1038)
+0x48e49c0 0 1
++4 0 1
+cob=(7)
+cfi=(184)
+cfn=(1042)
+calls=1 0xd0c10 0 
+* 0 23
+
+fn=(3402)
+0x10f880 0 1
++4 0 1
+cob=(7)
+cfi=(184)
+cfn=(3404)
+calls=1 0xe84f0 0 
+* 0 73
+
+totals: 186337
