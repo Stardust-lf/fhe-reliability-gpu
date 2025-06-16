@@ -1,0 +1,1513 @@
+=== callgrind.out.823088.10 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.10' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 57555451 - 57687401
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 10)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+135,765 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+131,201 (96.64%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.36%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.24%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.20%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.15%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.12%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.10%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.10%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.08%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.06%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.06%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.05%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.05%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.05%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.04%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.04%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     50 ( 0.04%)  ???:seal::DynArray<unsigned long>::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     48 ( 0.04%)  ???:operator new(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     48 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekpos(std::fpos<__mbstate_t>, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     45 ( 0.03%)  ???:seal::Serialization::ComprSizeEstimate(unsigned long, seal::compr_mode_type) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     44 ( 0.03%)  ???:void std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::__call<void, std::ostream&, 0ul, 1ul>(std::tuple<std::ostream&>&&, std::_Index_tuple<0ul, 1ul>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     41 ( 0.03%)  ???:seal::util::ArrayPutBuffer::ArrayPutBuffer(char*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*& std::_Any_data::_M_access<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*>() [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::function<void (std::ostream&)>::function<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>, void>(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     37 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::_Bind<seal::Ciphertext const*, std::_Placeholder<1> const&>(void (seal::Ciphertext::*&&)(std::ostream&) const, seal::Ciphertext const*&&, std::_Placeholder<1> const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     36 ( 0.03%)  ???:std::locale::~locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     35 ( 0.03%)  ???:seal::Ciphertext const*&& std::forward<seal::Ciphertext const*>(std::remove_reference<seal::Ciphertext const*>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     35 ( 0.03%)  ???:void std::__invoke_impl<void, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&>(std::__invoke_memfun_deref, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.11 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.11' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 57687401 - 58212621
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 11)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+529,363 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+524,368 (99.06%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.12 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.12' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 58212621 - 58737738
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 12)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+528,932 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+524,368 (99.14%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.13 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.13' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 58737738 - 59262855
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 13)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+528,932 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+524,368 (99.14%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.14 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.14' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 59262855 - 59787972
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 14)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+528,932 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+524,368 (99.14%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.15 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.15' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 59787972 - 60313089
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 15)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+528,932 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+524,368 (99.14%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.16 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.16' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 60313089 - 60838206
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 16)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+528,932 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+524,368 (99.14%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.17 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.17' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 60838206 - 61363323
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 17)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+528,932 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+524,368 (99.14%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.18 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.18' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 61363323 - 61888440
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 18)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+528,932 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+524,368 (99.14%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.19 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.19' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 61888440 - 62413557
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 19)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+528,932 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+524,368 (99.14%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.2 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.2' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 56499995 - 56631897
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 2)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+135,717 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+131,153 (96.64%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.36%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.24%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.20%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.15%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.12%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.10%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.10%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.08%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.06%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.06%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.05%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.05%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.05%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.04%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.04%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     50 ( 0.04%)  ???:seal::DynArray<unsigned long>::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     48 ( 0.04%)  ???:operator new(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     48 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekpos(std::fpos<__mbstate_t>, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     45 ( 0.03%)  ???:seal::Serialization::ComprSizeEstimate(unsigned long, seal::compr_mode_type) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     44 ( 0.03%)  ???:void std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::__call<void, std::ostream&, 0ul, 1ul>(std::tuple<std::ostream&>&&, std::_Index_tuple<0ul, 1ul>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     41 ( 0.03%)  ???:seal::util::ArrayPutBuffer::ArrayPutBuffer(char*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*& std::_Any_data::_M_access<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*>() [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::function<void (std::ostream&)>::function<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>, void>(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     37 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::_Bind<seal::Ciphertext const*, std::_Placeholder<1> const&>(void (seal::Ciphertext::*&&)(std::ostream&) const, seal::Ciphertext const*&&, std::_Placeholder<1> const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     36 ( 0.03%)  ???:std::locale::~locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     35 ( 0.03%)  ???:seal::Ciphertext const*&& std::forward<seal::Ciphertext const*>(std::remove_reference<seal::Ciphertext const*>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     35 ( 0.03%)  ???:void std::__invoke_impl<void, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&>(std::__invoke_memfun_deref, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.20 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.20' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 62413557 - 62938674
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 20)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+528,932 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+524,368 (99.14%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.21 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.21' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 62938674 - 62943921
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 21)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+186,495 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+181,773 (97.47%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.27%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.18%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.14%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.11%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    181 ( 0.10%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.07%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.07%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    116 ( 0.06%)  ./malloc/./malloc/malloc.c:_int_malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    103 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.05%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.05%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.04%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.03%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.03%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.03%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.22 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.22' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 62943921 - 62949133
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 22)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+186,337 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+181,773 (97.55%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.27%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.18%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.14%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.11%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.09%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.07%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.07%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.05%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.05%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.04%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.03%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.03%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.03%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.23 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.23' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 62949133 - 62954345
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 23)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+186,337 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+181,773 (97.55%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.27%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.18%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.14%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.11%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.09%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.07%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.07%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.05%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.05%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.04%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.03%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.03%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.03%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.24 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.24' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 62954345 - 62959557
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 24)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+186,337 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+181,773 (97.55%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.27%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.18%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.14%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.11%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.09%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.07%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.07%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.05%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.05%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.04%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.03%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.03%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.03%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.25 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.25' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 62959557 - 62964769
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 25)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+186,337 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+181,773 (97.55%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.27%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.18%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.14%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.11%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.09%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.07%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.07%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.05%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.05%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.04%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.03%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.03%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.03%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.26 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.26' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 62964769 - 62969981
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 26)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+186,337 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+181,773 (97.55%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.27%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.18%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.14%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.11%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.09%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.07%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.07%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.05%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.05%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.04%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.03%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.03%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.03%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.27 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.27' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 62969981 - 62975193
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 27)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+186,337 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+181,773 (97.55%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.27%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.18%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.14%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.11%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.09%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.07%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.07%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.05%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.05%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.04%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.03%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.03%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.03%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.28 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.28' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 62975193 - 62980405
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 28)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+186,337 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+181,773 (97.55%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.27%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.18%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.14%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.11%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.09%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.07%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.07%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.05%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.05%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.04%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.03%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.03%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.03%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.29 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.29' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 62980405 - 62985617
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 29)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+186,337 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+181,773 (97.55%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.27%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.18%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.14%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.11%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.09%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.07%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.07%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.05%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.05%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.04%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.03%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.03%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.03%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.3 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.3' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 56631897 - 56763799
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 3)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+135,717 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+131,153 (96.64%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.36%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.24%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.20%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.15%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.12%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.10%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.10%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.08%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.06%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.06%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.05%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.05%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.05%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.04%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.04%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     50 ( 0.04%)  ???:seal::DynArray<unsigned long>::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     48 ( 0.04%)  ???:operator new(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     48 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekpos(std::fpos<__mbstate_t>, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     45 ( 0.03%)  ???:seal::Serialization::ComprSizeEstimate(unsigned long, seal::compr_mode_type) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     44 ( 0.03%)  ???:void std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::__call<void, std::ostream&, 0ul, 1ul>(std::tuple<std::ostream&>&&, std::_Index_tuple<0ul, 1ul>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     41 ( 0.03%)  ???:seal::util::ArrayPutBuffer::ArrayPutBuffer(char*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*& std::_Any_data::_M_access<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*>() [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::function<void (std::ostream&)>::function<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>, void>(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     37 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::_Bind<seal::Ciphertext const*, std::_Placeholder<1> const&>(void (seal::Ciphertext::*&&)(std::ostream&) const, seal::Ciphertext const*&&, std::_Placeholder<1> const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     36 ( 0.03%)  ???:std::locale::~locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     35 ( 0.03%)  ???:seal::Ciphertext const*&& std::forward<seal::Ciphertext const*>(std::remove_reference<seal::Ciphertext const*>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     35 ( 0.03%)  ???:void std::__invoke_impl<void, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&>(std::__invoke_memfun_deref, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.30 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.30' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 62985617 - 62990829
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 30)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+186,337 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+181,773 (97.55%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.27%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.18%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.14%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.11%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.09%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.07%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.07%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.05%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.05%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.04%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.04%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.04%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.03%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.03%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.03%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.03%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.4 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.4' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 56763799 - 56895701
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 4)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+135,717 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+131,153 (96.64%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.36%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.24%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.20%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.15%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.12%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.10%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.10%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.08%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.06%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.06%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.05%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.05%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.05%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.04%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.04%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     50 ( 0.04%)  ???:seal::DynArray<unsigned long>::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     48 ( 0.04%)  ???:operator new(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     48 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekpos(std::fpos<__mbstate_t>, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     45 ( 0.03%)  ???:seal::Serialization::ComprSizeEstimate(unsigned long, seal::compr_mode_type) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     44 ( 0.03%)  ???:void std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::__call<void, std::ostream&, 0ul, 1ul>(std::tuple<std::ostream&>&&, std::_Index_tuple<0ul, 1ul>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     41 ( 0.03%)  ???:seal::util::ArrayPutBuffer::ArrayPutBuffer(char*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*& std::_Any_data::_M_access<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*>() [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::function<void (std::ostream&)>::function<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>, void>(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     37 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::_Bind<seal::Ciphertext const*, std::_Placeholder<1> const&>(void (seal::Ciphertext::*&&)(std::ostream&) const, seal::Ciphertext const*&&, std::_Placeholder<1> const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     36 ( 0.03%)  ???:std::locale::~locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     35 ( 0.03%)  ???:seal::Ciphertext const*&& std::forward<seal::Ciphertext const*>(std::remove_reference<seal::Ciphertext const*>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     35 ( 0.03%)  ???:void std::__invoke_impl<void, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&>(std::__invoke_memfun_deref, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.5 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.5' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 56895701 - 57027651
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 5)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+135,765 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+131,201 (96.64%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.36%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.24%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.20%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.15%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.12%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.10%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.10%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.08%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.06%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.06%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.05%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.05%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.05%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.04%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.04%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     50 ( 0.04%)  ???:seal::DynArray<unsigned long>::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     48 ( 0.04%)  ???:operator new(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     48 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekpos(std::fpos<__mbstate_t>, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     45 ( 0.03%)  ???:seal::Serialization::ComprSizeEstimate(unsigned long, seal::compr_mode_type) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     44 ( 0.03%)  ???:void std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::__call<void, std::ostream&, 0ul, 1ul>(std::tuple<std::ostream&>&&, std::_Index_tuple<0ul, 1ul>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     41 ( 0.03%)  ???:seal::util::ArrayPutBuffer::ArrayPutBuffer(char*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*& std::_Any_data::_M_access<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*>() [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::function<void (std::ostream&)>::function<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>, void>(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     37 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::_Bind<seal::Ciphertext const*, std::_Placeholder<1> const&>(void (seal::Ciphertext::*&&)(std::ostream&) const, seal::Ciphertext const*&&, std::_Placeholder<1> const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     36 ( 0.03%)  ???:std::locale::~locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     35 ( 0.03%)  ???:seal::Ciphertext const*&& std::forward<seal::Ciphertext const*>(std::remove_reference<seal::Ciphertext const*>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     35 ( 0.03%)  ???:void std::__invoke_impl<void, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&>(std::__invoke_memfun_deref, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.6 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.6' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 57027651 - 57159601
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 6)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+135,765 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+131,201 (96.64%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.36%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.24%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.20%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.15%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.12%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.10%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.10%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.08%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.06%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.06%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.05%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.05%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.05%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.04%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.04%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     50 ( 0.04%)  ???:seal::DynArray<unsigned long>::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     48 ( 0.04%)  ???:operator new(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     48 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekpos(std::fpos<__mbstate_t>, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     45 ( 0.03%)  ???:seal::Serialization::ComprSizeEstimate(unsigned long, seal::compr_mode_type) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     44 ( 0.03%)  ???:void std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::__call<void, std::ostream&, 0ul, 1ul>(std::tuple<std::ostream&>&&, std::_Index_tuple<0ul, 1ul>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     41 ( 0.03%)  ???:seal::util::ArrayPutBuffer::ArrayPutBuffer(char*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*& std::_Any_data::_M_access<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*>() [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::function<void (std::ostream&)>::function<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>, void>(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     37 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::_Bind<seal::Ciphertext const*, std::_Placeholder<1> const&>(void (seal::Ciphertext::*&&)(std::ostream&) const, seal::Ciphertext const*&&, std::_Placeholder<1> const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     36 ( 0.03%)  ???:std::locale::~locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     35 ( 0.03%)  ???:seal::Ciphertext const*&& std::forward<seal::Ciphertext const*>(std::remove_reference<seal::Ciphertext const*>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     35 ( 0.03%)  ???:void std::__invoke_impl<void, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&>(std::__invoke_memfun_deref, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.7 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.7' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 57159601 - 57291551
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 7)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+135,765 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+131,201 (96.64%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.36%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.24%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.20%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.15%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.12%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.10%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.10%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.08%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.06%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.06%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.05%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.05%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.05%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.04%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.04%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     50 ( 0.04%)  ???:seal::DynArray<unsigned long>::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     48 ( 0.04%)  ???:operator new(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     48 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekpos(std::fpos<__mbstate_t>, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     45 ( 0.03%)  ???:seal::Serialization::ComprSizeEstimate(unsigned long, seal::compr_mode_type) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     44 ( 0.03%)  ???:void std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::__call<void, std::ostream&, 0ul, 1ul>(std::tuple<std::ostream&>&&, std::_Index_tuple<0ul, 1ul>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     41 ( 0.03%)  ???:seal::util::ArrayPutBuffer::ArrayPutBuffer(char*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*& std::_Any_data::_M_access<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*>() [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::function<void (std::ostream&)>::function<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>, void>(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     37 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::_Bind<seal::Ciphertext const*, std::_Placeholder<1> const&>(void (seal::Ciphertext::*&&)(std::ostream&) const, seal::Ciphertext const*&&, std::_Placeholder<1> const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     36 ( 0.03%)  ???:std::locale::~locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     35 ( 0.03%)  ???:seal::Ciphertext const*&& std::forward<seal::Ciphertext const*>(std::remove_reference<seal::Ciphertext const*>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     35 ( 0.03%)  ???:void std::__invoke_impl<void, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&>(std::__invoke_memfun_deref, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.8 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.8' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 57291551 - 57423501
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 8)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+135,765 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+131,201 (96.64%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.36%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.24%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.20%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.15%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.12%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.10%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.10%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.08%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.06%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.06%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.05%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.05%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.05%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.04%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.04%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     50 ( 0.04%)  ???:seal::DynArray<unsigned long>::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     48 ( 0.04%)  ???:operator new(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     48 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekpos(std::fpos<__mbstate_t>, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     45 ( 0.03%)  ???:seal::Serialization::ComprSizeEstimate(unsigned long, seal::compr_mode_type) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     44 ( 0.03%)  ???:void std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::__call<void, std::ostream&, 0ul, 1ul>(std::tuple<std::ostream&>&&, std::_Index_tuple<0ul, 1ul>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     41 ( 0.03%)  ???:seal::util::ArrayPutBuffer::ArrayPutBuffer(char*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*& std::_Any_data::_M_access<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*>() [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::function<void (std::ostream&)>::function<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>, void>(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     37 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::_Bind<seal::Ciphertext const*, std::_Placeholder<1> const&>(void (seal::Ciphertext::*&&)(std::ostream&) const, seal::Ciphertext const*&&, std::_Placeholder<1> const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     36 ( 0.03%)  ???:std::locale::~locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     35 ( 0.03%)  ???:seal::Ciphertext const*&& std::forward<seal::Ciphertext const*>(std::remove_reference<seal::Ciphertext const*>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     35 ( 0.03%)  ???:void std::__invoke_impl<void, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&>(std::__invoke_memfun_deref, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
+=== callgrind.out.823088.9 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/serialize//callgrind.out.823088.9' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 57423501 - 57555451
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 823088, part 9)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+135,765 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+131,201 (96.64%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    495 ( 0.36%)  ???:std::ostream::write(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    330 ( 0.24%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    265 ( 0.20%)  ???:seal::util::ArrayPutBuffer::xsputn(char const*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    208 ( 0.15%)  ???:std::ostream::tellp() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    162 ( 0.12%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    135 ( 0.10%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    131 ( 0.10%)  ???:seal::Ciphertext::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+    103 ( 0.08%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::byte*, unsigned long, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     84 ( 0.06%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+     84 ( 0.06%)  ???:std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     81 ( 0.06%)  ???:seal::Serialization::Save(std::function<void (std::ostream&)>, long, std::ostream&, seal::compr_mode_type, bool)'2 [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     72 ( 0.05%)  ???:std::_Function_handler<void (std::ostream&), std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     68 ( 0.05%)  ???:seal::util::ArrayPutBuffer::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::_Function_base::_Base_manager<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     66 ( 0.05%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     62 ( 0.05%)  ???:seal::Ciphertext::save(std::byte*, unsigned long, seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     60 ( 0.04%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     59 ( 0.04%)  ???:seal::Ciphertext::save_size(seal::compr_mode_type) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:seal::Serialization::SaveHeader(seal::Serialization::SEALHeader const&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     56 ( 0.04%)  ???:std::ostream& std::forward<std::ostream&>(std::remove_reference<std::ostream&>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     50 ( 0.04%)  ???:seal::DynArray<unsigned long>::save_members(std::ostream&) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     48 ( 0.04%)  ???:operator new(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     48 ( 0.04%)  ???:seal::util::ArrayPutBuffer::seekpos(std::fpos<__mbstate_t>, std::_Ios_Openmode) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     45 ( 0.03%)  ???:seal::Serialization::ComprSizeEstimate(unsigned long, seal::compr_mode_type) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     44 ( 0.03%)  ???:void std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::__call<void, std::ostream&, 0ul, 1ul>(std::tuple<std::ostream&>&&, std::_Index_tuple<0ul, 1ul>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     41 ( 0.03%)  ???:seal::util::ArrayPutBuffer::ArrayPutBuffer(char*, long) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*& std::_Any_data::_M_access<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>*>() [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     40 ( 0.03%)  ???:std::function<void (std::ostream&)>::function<std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>, void>(std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>&&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     37 ( 0.03%)  ???:std::_Bind<void (seal::Ciphertext::*(seal::Ciphertext const*, std::_Placeholder<1>))(std::ostream&) const>::_Bind<seal::Ciphertext const*, std::_Placeholder<1> const&>(void (seal::Ciphertext::*&&)(std::ostream&) const, seal::Ciphertext const*&&, std::_Placeholder<1> const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     36 ( 0.03%)  ???:std::locale::~locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+     35 ( 0.03%)  ???:seal::Ciphertext const*&& std::forward<seal::Ciphertext const*>(std::remove_reference<seal::Ciphertext const*>::type&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+     35 ( 0.03%)  ???:void std::__invoke_impl<void, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&>(std::__invoke_memfun_deref, void (seal::Ciphertext::*&)(std::ostream&) const, seal::Ciphertext const*&, std::ostream&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+
