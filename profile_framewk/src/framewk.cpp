@@ -2,7 +2,11 @@
 // Licensed under the MIT license.
 
 #include "examples.h"
+#include <unistd.h>
 #include <valgrind/callgrind.h>
+#include <iostream>
+#include <seal/util/globals.h>
+#include <seal/seal.h>
 
 using namespace std;
 using namespace seal;
@@ -20,6 +24,7 @@ void bfv_performance_test(SEALContext context)
 
     cout << "Generating secret/public keys: ";
     KeyGenerator keygen(context);
+
     cout << "Done" << endl;
 
     auto secret_key = keygen.secret_key();
@@ -176,8 +181,9 @@ void bfv_performance_test(SEALContext context)
         evaluator.add_inplace(encrypted1, encrypted1);
         evaluator.add_inplace(encrypted2, encrypted2);
         evaluator.add_inplace(encrypted1, encrypted2);
-        // CALLGRIND_STOP_INSTRUMENTATION;
         // CALLGRIND_DUMP_STATS;
+        // CALLGRIND_STOP_INSTRUMENTATION;
+        // rename_last_dump("add", ++dump);
         time_end = chrono::high_resolution_clock::now();
         time_add_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -267,6 +273,7 @@ void bfv_performance_test(SEALContext context)
             evaluator.rotate_rows_inplace(encrypted, random_rotation, gal_keys);
             // CALLGRIND_STOP_INSTRUMENTATION;
             // CALLGRIND_DUMP_STATS;
+            // rename_last_dump("rotate", ++dump);
             time_end = chrono::high_resolution_clock::now();
             time_rotate_rows_random_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
 
@@ -956,9 +963,6 @@ void bgv_performance_test(SEALContext context)
             time_start = chrono::high_resolution_clock::now();
             // CALLGRIND_START_INSTRUMENTATION;
             evaluator.rotate_rows_inplace(encrypted, 1, gal_keys);
-            evaluator.rotate_rows_inplace(encrypted, -1, gal_keys);
-            // CALLGRIND_STOP_INSTRUMENTATION;
-            // CALLGRIND_DUMP_STATS;
             time_end = chrono::high_resolution_clock::now();
             time_rotate_rows_one_step_sum += chrono::duration_cast<chrono::microseconds>(time_end - time_start);
             ;
@@ -1094,22 +1098,31 @@ void example_bfv_performance_default()
     size_t poly_modulus_degree = 4096;
     parms.set_poly_modulus_degree(poly_modulus_degree);
     parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
+    // parms.set_coeff_modulus(default_coeff_modulus_128(poly_modulus_degree));
+    // parms.set_coeff_modulus(coeff_modulus_128(poly_modulus_degree));
+    // parms.set_coeff_modulus(
+    //     CoeffModulus::Create(
+    //         poly_modulus_degree,
+    //         { 37, 37, 37, 
+    //            }          
+    //     )
+    // );
     parms.set_plain_modulus(786433);
     bfv_performance_test(parms);
 
-    cout << endl;
-    poly_modulus_degree = 8192;
-    parms.set_poly_modulus_degree(poly_modulus_degree);
-    parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
-    parms.set_plain_modulus(786433);
-    bfv_performance_test(parms);
+    // cout << endl;
+    // poly_modulus_degree = 8192;
+    // parms.set_poly_modulus_degree(poly_modulus_degree);
+    // parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
+    // parms.set_plain_modulus(786433);
+    // bfv_performance_test(parms);
 
-    cout << endl;
-    poly_modulus_degree = 16384;
-    parms.set_poly_modulus_degree(poly_modulus_degree);
-    parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
-    parms.set_plain_modulus(786433);
-    bfv_performance_test(parms);
+    // cout << endl;
+    // poly_modulus_degree = 16384;
+    // parms.set_poly_modulus_degree(poly_modulus_degree);
+    // parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
+    // parms.set_plain_modulus(786433);
+    // bfv_performance_test(parms);
 
     /*
     Comment out the following to run the biggest example.
@@ -1169,17 +1182,17 @@ void example_ckks_performance_default()
     parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
     ckks_performance_test(parms);
 
-    cout << endl;
-    poly_modulus_degree = 8192;
-    parms.set_poly_modulus_degree(poly_modulus_degree);
-    parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
-    ckks_performance_test(parms);
+    // cout << endl;
+    // poly_modulus_degree = 8192;
+    // parms.set_poly_modulus_degree(poly_modulus_degree);
+    // parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
+    // ckks_performance_test(parms);
 
-    cout << endl;
-    poly_modulus_degree = 16384;
-    parms.set_poly_modulus_degree(poly_modulus_degree);
-    parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
-    ckks_performance_test(parms);
+    // cout << endl;
+    // poly_modulus_degree = 16384;
+    // parms.set_poly_modulus_degree(poly_modulus_degree);
+    // parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
+    // ckks_performance_test(parms);
 
     /*
     Comment out the following to run the biggest example.
@@ -1229,19 +1242,19 @@ void example_bgv_performance_default()
     parms.set_plain_modulus(786433);
     bgv_performance_test(parms);
 
-    cout << endl;
-    poly_modulus_degree = 8192;
-    parms.set_poly_modulus_degree(poly_modulus_degree);
-    parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
-    parms.set_plain_modulus(786433);
-    bgv_performance_test(parms);
+    // cout << endl;
+    // poly_modulus_degree = 8192;
+    // parms.set_poly_modulus_degree(poly_modulus_degree);
+    // parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
+    // parms.set_plain_modulus(786433);
+    // bgv_performance_test(parms);
 
-    cout << endl;
-    poly_modulus_degree = 16384;
-    parms.set_poly_modulus_degree(poly_modulus_degree);
-    parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
-    parms.set_plain_modulus(786433);
-    bgv_performance_test(parms);
+    // cout << endl;
+    // poly_modulus_degree = 16384;
+    // parms.set_poly_modulus_degree(poly_modulus_degree);
+    // parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
+    // parms.set_plain_modulus(786433);
+    // bgv_performance_test(parms);
 
     /*
     Comment out the following to run the biggest example.
@@ -1289,11 +1302,14 @@ void example_bgv_performance_custom()
     bgv_performance_test(parms);
 }
 
+
+
 /*
 Prints a sub-menu to select the performance test.
 */
 int main(int argc, char *argv[])
 {
+    // CALLGRIND_START_INSTRUMENTATION;
     print_example_banner("Example: Performance Test");
 
     if (argc != 2)

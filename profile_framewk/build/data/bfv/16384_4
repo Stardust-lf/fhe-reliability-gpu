@@ -1,0 +1,7 @@
+/
+| Encryption parameters :
+|   scheme: BFV
+|   poly_modulus_degree: 16384
+|   coeff_modulus size: 160 (40 + 40 + 40 + 40) bits
+|   plain_modulus: 0
+\

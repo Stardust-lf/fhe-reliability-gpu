@@ -1,3 +1,251 @@
+=== callgrind.out.816890.2 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.2' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 42732080 - 42815528
+Trigger: Client Request
+Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 2)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,199,238 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+
+=== callgrind.out.816890.3 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.3' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 42815528 - 42898976
+Trigger: Client Request
+Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 3)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,199,238 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+
+=== callgrind.out.816890.4 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.4' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 42898976 - 42982424
+Trigger: Client Request
+Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 4)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,199,238 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+
+=== callgrind.out.816890.5 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.5' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 42982424 - 43065872
+Trigger: Client Request
+Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 5)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,199,238 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+
+=== callgrind.out.816890.6 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.6' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 43065872 - 43149320
+Trigger: Client Request
+Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 6)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,199,238 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+
+=== callgrind.out.816890.7 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.7' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 43149320 - 43232768
+Trigger: Client Request
+Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 7)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,199,238 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+
+=== callgrind.out.816890.8 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.8' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 43232768 - 43316216
+Trigger: Client Request
+Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 8)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,199,238 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+
+=== callgrind.out.816890.9 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.9' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 43316216 - 43399664
+Trigger: Client Request
+Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 9)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,199,238 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+
 === callgrind.out.816890.10 ===
 --------------------------------------------------------------------------------
 Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.10' (creator: callgrind-3.22.0)
@@ -306,37 +554,6 @@ Ir                  file:function
 8,019,456 (91.29%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
   526,592 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
   229,393 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
-
-=== callgrind.out.816890.2 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.2' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 42732080 - 42815528
-Trigger: Client Request
-Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 2)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,199,238 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
 
 
 === callgrind.out.816890.20 ===
@@ -649,37 +866,6 @@ Ir                   file:function
    917,521 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
 
 
-=== callgrind.out.816890.3 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.3' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 42815528 - 42898976
-Trigger: Client Request
-Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 3)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,199,238 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
-
 === callgrind.out.816890.30 ===
 --------------------------------------------------------------------------------
 Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.30' (creator: callgrind-3.22.0)
@@ -709,191 +895,5 @@ Ir                   file:function
 32,077,824 (91.32%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
  2,106,368 ( 6.00%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
    917,521 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
-
-=== callgrind.out.816890.4 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.4' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 42898976 - 42982424
-Trigger: Client Request
-Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 4)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,199,238 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
-
-=== callgrind.out.816890.5 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.5' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 42982424 - 43065872
-Trigger: Client Request
-Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 5)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,199,238 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
-
-=== callgrind.out.816890.6 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.6' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 43065872 - 43149320
-Trigger: Client Request
-Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 6)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,199,238 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
-
-=== callgrind.out.816890.7 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.7' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 43149320 - 43232768
-Trigger: Client Request
-Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 7)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,199,238 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
-
-=== callgrind.out.816890.8 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.8' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 43232768 - 43316216
-Trigger: Client Request
-Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 8)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,199,238 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
-
-=== callgrind.out.816890.9 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply//callgrind.out.816890.9' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 43316216 - 43399664
-Trigger: Client Request
-Profiled target:  ../../../build/profile_framewk 5 (PID 816890, part 9)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,199,238 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-2,004,864 (91.16%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  131,648 ( 5.99%)  ???:seal::util::add_poly_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   57,361 ( 2.61%)  ???:__gnu_cxx::__enable_if<std::__is_scalar<unsigned long>::__value, void>::__type std::__fill_a1<unsigned long*, unsigned long>(unsigned long*, unsigned long*, unsigned long const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
 
 

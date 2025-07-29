@@ -1,0 +1,1436 @@
+/
+| Encryption parameters :
+|   scheme: CKKS
+|   poly_modulus_degree: 16384
+|   coeff_modulus size: 160 (40 + 40 + 40 + 40) bits
+\
+dwthandler: NTT[95 microseconds]
+dwthandler: NTT[95 microseconds]
+dwthandler: NTT[95 microseconds]
+dwthandler: NTT[95 microseconds]
+dwthandler: NTT[95 microseconds]
+dwthandler: NTT[95 microseconds]
+dwthandler: NTT[95 microseconds]
+dwthandler: NTT[93 microseconds]
+dwthandler: NTT[112 microseconds]
+dwthandler: NTT[113 microseconds]
+dwthandler: NTT[110 microseconds]
+dwthandler: NTT[103 microseconds]
+dwthandler: NTT[95 microseconds]
+dwthandler: NTT[94 microseconds]
+dwthandler: NTT[94 microseconds]
+dwthandler: NTT[94 microseconds]
+dwthandler: NTT[94 microseconds]
+dwthandler: NTT[95 microseconds]
+dwthandler: NTT[95 microseconds]
+dwthandler: NTT[94 microseconds]
+dwthandler: NTT[92 microseconds]
+dwthandler: NTT[94 microseconds]
+dwthandler: NTT[95 microseconds]
+dwthandler: NTT[93 microseconds]
+dwthandler: NTT[94 microseconds]
+dwthandler: NTT[94 microseconds]
+dwthandler: NTT[95 microseconds]
+dwthandler: NTT[92 microseconds]
+dwthandler: NTT[94 microseconds]
+dwthandler: NTT[95 microseconds]
+dwthandler: NTT[89 microseconds]
+dwthandler: NTT[86 microseconds]
+dwthandler: NTT[89 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[89 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[89 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[90 microseconds]
+dwthandler: NTT[90 microseconds]
+dwthandler: NTT[87 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[90 microseconds]
+dwthandler: NTT[89 microseconds]
+dwthandler: NTT[86 microseconds]
+dwthandler: NTT[93 microseconds]
+dwthandler: NTT[93 microseconds]
+dwthandler: NTT[97 microseconds]
+dwthandler: NTT[87 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[90 microseconds]
+dwthandler: NTT[86 microseconds]
+dwthandler: NTT[90 microseconds]
+dwthandler: NTT[89 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[87 microseconds]
+dwthandler: NTT[90 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[87 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[87 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[86 microseconds]
+dwthandler: NTT[86 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[89 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[87 microseconds]
+dwthandler: NTT[93 microseconds]
+dwthandler: NTT[87 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[87 microseconds]
+dwthandler: NTT[92 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[93 microseconds]
+dwthandler: NTT[89 microseconds]
+dwthandler: NTT[94 microseconds]
+dwthandler: NTT[94 microseconds]
+dwthandler: NTT[92 microseconds]
+dwthandler: NTT[95 microseconds]
+dwthandler: NTT[94 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[86 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[86 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[89 microseconds]
+dwthandler: NTT[92 microseconds]
+dwthandler: NTT[87 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[90 microseconds]
+dwthandler: NTT[86 microseconds]
+dwthandler: NTT[86 microseconds]
+dwthandler: NTT[92 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[90 microseconds]
+dwthandler: NTT[92 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[89 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[87 microseconds]
+dwthandler: NTT[86 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[89 microseconds]
+dwthandler: NTT[89 microseconds]
+dwthandler: NTT[90 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[89 microseconds]
+dwthandler: NTT[91 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[84 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[85 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[88 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[104 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[84 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[85 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[84 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[84 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[86 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[84 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[84 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[99 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[84 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: INTT[1771 microseconds]
+dwthandler: NTT[86 microseconds]
+dwthandler: NTT[85 microseconds]
+dwthandler: NTT[86 microseconds]
+dwthandler: INTT[1760 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: INTT[77 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: INTT[74 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[85 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[79 microseconds]
+function: DOTPRODUCT
+frontend: MULTIPLY_CKKS
+frontend: MULTIPLY_CKKS[919 microseconds]
+frontend: RELIN
+evaluator: RELIN
+evaluator: KEYSWITCH
+dwthandler: INTT[78 microseconds]
+dwthandler: INTT[77 microseconds]
+dwthandler: INTT[77 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[84 microseconds]
+evaluator: MODREDUCTION[94 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[91 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[85 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[88 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[82 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[83 microseconds]
+evaluator: MODREDUCTION[86 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: KEYSWITCH[1713 microseconds]
+evaluator: MODSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+evaluator: MODSWITCH[854 microseconds]
+evaluator: RELIN[2569 microseconds]
+frontend: RELIN[2570 microseconds]
+frontend: ROTATE
+evaluator: KEYSWITCH
+dwthandler: INTT[77 microseconds]
+dwthandler: INTT[77 microseconds]
+dwthandler: INTT[76 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[26 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[84 microseconds]
+evaluator: MODREDUCTION[92 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[44 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[82 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[82 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[81 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: KEYSWITCH[1619 microseconds]
+evaluator: MODSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[84 microseconds]
+dwthandler: INTT[74 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[79 microseconds]
+evaluator: MODSWITCH[828 microseconds]
+frontend: ROTATE[2543 microseconds]
+frontend: ROTATE
+evaluator: KEYSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[74 microseconds]
+dwthandler: INTT[74 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[27 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[83 microseconds]
+evaluator: MODREDUCTION[91 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[82 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[88 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[82 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[26 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: KEYSWITCH[1535 microseconds]
+evaluator: MODSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+evaluator: MODSWITCH[820 microseconds]
+frontend: ROTATE[2446 microseconds]
+frontend: ROTATE
+evaluator: KEYSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[82 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[91 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[49 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[82 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: KEYSWITCH[1534 microseconds]
+evaluator: MODSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: INTT[75 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[80 microseconds]
+evaluator: MODSWITCH[818 microseconds]
+frontend: ROTATE[2443 microseconds]
+frontend: ROTATE
+evaluator: KEYSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[27 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[87 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[82 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[82 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: KEYSWITCH[1504 microseconds]
+evaluator: MODSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: INTT[75 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[85 microseconds]
+evaluator: MODSWITCH[832 microseconds]
+frontend: ROTATE[2427 microseconds]
+frontend: ROTATE
+evaluator: KEYSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[90 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[26 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: KEYSWITCH[1509 microseconds]
+evaluator: MODSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+evaluator: MODSWITCH[825 microseconds]
+frontend: ROTATE[2428 microseconds]
+frontend: ROTATE
+evaluator: KEYSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[84 microseconds]
+evaluator: MODREDUCTION[92 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[36 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[90 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[87 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[85 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[85 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[84 microseconds]
+evaluator: MODREDUCTION[87 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[86 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[49 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[27 microseconds]
+evaluator: KEYSWITCH[1563 microseconds]
+evaluator: MODSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[85 microseconds]
+evaluator: MODSWITCH[833 microseconds]
+frontend: ROTATE[2488 microseconds]
+frontend: ROTATE
+evaluator: KEYSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[83 microseconds]
+evaluator: MODREDUCTION[86 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[82 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: KEYSWITCH[1508 microseconds]
+evaluator: MODSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: INTT[75 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: NTT[80 microseconds]
+evaluator: MODSWITCH[828 microseconds]
+frontend: ROTATE[2428 microseconds]
+frontend: ROTATE
+evaluator: KEYSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[83 microseconds]
+evaluator: MODREDUCTION[92 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[38 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[83 microseconds]
+evaluator: MODREDUCTION[91 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[88 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[85 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[84 microseconds]
+evaluator: MODREDUCTION[87 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: KEYSWITCH[1527 microseconds]
+evaluator: MODSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[82 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[81 microseconds]
+evaluator: MODSWITCH[821 microseconds]
+frontend: ROTATE[2441 microseconds]
+frontend: ROTATE
+evaluator: KEYSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[90 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[85 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[83 microseconds]
+evaluator: MODREDUCTION[85 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: KEYSWITCH[1512 microseconds]
+evaluator: MODSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[83 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+evaluator: MODSWITCH[823 microseconds]
+frontend: ROTATE[2428 microseconds]
+frontend: ROTATE
+evaluator: KEYSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[83 microseconds]
+evaluator: MODREDUCTION[91 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[87 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[87 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[85 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: KEYSWITCH[1507 microseconds]
+evaluator: MODSWITCH
+dwthandler: INTT[75 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[79 microseconds]
+evaluator: MODSWITCH[814 microseconds]
+frontend: ROTATE[2414 microseconds]
+frontend: ROTATE
+evaluator: KEYSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[87 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[87 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[83 microseconds]
+evaluator: MODREDUCTION[86 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[49 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[82 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[79 microseconds]
+evaluator: MODREDUCTION[82 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: KEYSWITCH[1527 microseconds]
+evaluator: MODSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[87 microseconds]
+dwthandler: INTT[75 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+evaluator: MODSWITCH[834 microseconds]
+frontend: ROTATE[2465 microseconds]
+frontend: ROTATE
+evaluator: KEYSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[90 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[22 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[82 microseconds]
+evaluator: MODREDUCTION[85 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[83 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[85 microseconds]
+evaluator: MODREDUCTION[88 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[37 microseconds]
+evaluator: KEYSWITCH[1522 microseconds]
+evaluator: MODSWITCH
+dwthandler: INTT[75 microseconds]
+dwthandler: NTT[79 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[82 microseconds]
+evaluator: MODSWITCH[818 microseconds]
+frontend: ROTATE[2434 microseconds]
+frontend: ROTATE
+evaluator: KEYSWITCH
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: INTT[73 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[89 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[84 microseconds]
+evaluator: MODREDUCTION[88 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[25 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[84 microseconds]
+evaluator: MODREDUCTION[86 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+evaluator: MODREDUCTION[0 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[24 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[80 microseconds]
+evaluator: MODREDUCTION[82 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[23 microseconds]
+evaluator: MODREDUCTION
+dwthandler: NTT[81 microseconds]
+evaluator: MODREDUCTION[84 microseconds]
+evaluator: MULTEVALK
+evaluator: MULTEVALK[22 microseconds]
+evaluator: KEYSWITCH[1510 microseconds]
+evaluator: MODSWITCH
+dwthandler: INTT[75 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[84 microseconds]
+dwthandler: INTT[73 microseconds]
+dwthandler: NTT[81 microseconds]
+dwthandler: NTT[80 microseconds]
+dwthandler: NTT[80 microseconds]
+evaluator: MODSWITCH[825 microseconds]
+frontend: ROTATE[2468 microseconds]
+function: DOTPRODUCT[35925 microseconds]
+Encrypted dot product time: 35927 microseconds
+dwthandler: INTT[76 microseconds]
+dwthandler: INTT[77 microseconds]
+dwthandler: INTT[77 microseconds]
+dwthandler: NTT[1805 microseconds]
+Encrypted dot (slot 0) = 454436.867898
+Expected dot           = 454436.718750
+Difference (enc - exp) = 0.149148

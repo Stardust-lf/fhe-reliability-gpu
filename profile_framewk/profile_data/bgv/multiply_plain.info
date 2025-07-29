@@ -1,3 +1,331 @@
+=== callgrind.out.818259.2 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.2' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 42950384 - 43166322
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 2)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,445,080 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
+=== callgrind.out.818259.3 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.3' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 43166322 - 43382260
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 3)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,445,080 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
+=== callgrind.out.818259.4 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.4' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 43382260 - 43598198
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 4)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,445,080 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
+=== callgrind.out.818259.5 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.5' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 43598198 - 43814136
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 5)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,445,080 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
+=== callgrind.out.818259.6 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.6' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 43814136 - 44030074
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 6)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,445,080 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
+=== callgrind.out.818259.7 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.7' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 44030074 - 44246012
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 7)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,445,080 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
+=== callgrind.out.818259.8 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.8' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 44246012 - 44461950
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 8)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,445,080 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
+=== callgrind.out.818259.9 ===
+--------------------------------------------------------------------------------
+Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.9' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 44461950 - 44677888
+Trigger: Client Request
+Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 9)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,445,080 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+
 === callgrind.out.818259.10 ===
 --------------------------------------------------------------------------------
 Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.10' (creator: callgrind-3.22.0)
@@ -399,47 +727,6 @@ The following files chosen for auto-annotation could not be found:
   ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
 
 
-=== callgrind.out.818259.2 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.2' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 42950384 - 43166322
-Trigger: Client Request
-Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 2)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,445,080 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
---------------------------------------------------------------------------------
-The following files chosen for auto-annotation could not be found:
---------------------------------------------------------------------------------
-  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
-  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
-
-
 === callgrind.out.818259.20 ===
 --------------------------------------------------------------------------------
 Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.20' (creator: callgrind-3.22.0)
@@ -822,47 +1109,6 @@ The following files chosen for auto-annotation could not be found:
   ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
 
 
-=== callgrind.out.818259.3 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.3' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 43166322 - 43382260
-Trigger: Client Request
-Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 3)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,445,080 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
---------------------------------------------------------------------------------
-The following files chosen for auto-annotation could not be found:
---------------------------------------------------------------------------------
-  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
-  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
-
-
 === callgrind.out.818259.30 ===
 --------------------------------------------------------------------------------
 Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.30' (creator: callgrind-3.22.0)
@@ -898,252 +1144,6 @@ Ir                   file:function
 --------------------------------------------------------------------------------
 The following files chosen for auto-annotation could not be found:
 --------------------------------------------------------------------------------
-  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
-
-
-=== callgrind.out.818259.4 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.4' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 43382260 - 43598198
-Trigger: Client Request
-Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 4)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,445,080 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
---------------------------------------------------------------------------------
-The following files chosen for auto-annotation could not be found:
---------------------------------------------------------------------------------
-  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
-  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
-
-
-=== callgrind.out.818259.5 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.5' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 43598198 - 43814136
-Trigger: Client Request
-Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 5)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,445,080 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
---------------------------------------------------------------------------------
-The following files chosen for auto-annotation could not be found:
---------------------------------------------------------------------------------
-  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
-  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
-
-
-=== callgrind.out.818259.6 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.6' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 43814136 - 44030074
-Trigger: Client Request
-Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 6)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,445,080 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
---------------------------------------------------------------------------------
-The following files chosen for auto-annotation could not be found:
---------------------------------------------------------------------------------
-  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
-  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
-
-
-=== callgrind.out.818259.7 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.7' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 44030074 - 44246012
-Trigger: Client Request
-Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 7)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,445,080 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
---------------------------------------------------------------------------------
-The following files chosen for auto-annotation could not be found:
---------------------------------------------------------------------------------
-  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
-  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
-
-
-=== callgrind.out.818259.8 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.8' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 44246012 - 44461950
-Trigger: Client Request
-Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 8)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,445,080 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
---------------------------------------------------------------------------------
-The following files chosen for auto-annotation could not be found:
---------------------------------------------------------------------------------
-  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
-  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
-
-
-=== callgrind.out.818259.9 ===
---------------------------------------------------------------------------------
-Profile data file '/home/fann/projects/fhe-reliability-gpu/profile_framewk/profile_data/bgv/multiply_plain//callgrind.out.818259.9' (creator: callgrind-3.22.0)
---------------------------------------------------------------------------------
-I1 cache: 
-D1 cache: 
-LL cache: 
-Timerange: Basic block 44461950 - 44677888
-Trigger: Client Request
-Profiled target:  ../../build/profile_framewk 5 (PID 818259, part 9)
-Events recorded:  Ir
-Events shown:     Ir
-Event sort order: Ir
-Thresholds:       99
-Include dirs:     
-User annotated:   
-Auto-annotation:  on
-
---------------------------------------------------------------------------------
-Ir                 
---------------------------------------------------------------------------------
-2,445,080 (100.0%)  PROGRAM TOTALS
-
---------------------------------------------------------------------------------
-Ir                  file:function
---------------------------------------------------------------------------------
-1,170,016 (47.85%)  ???:seal::util::ntt_negacyclic_harvey_lazy(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-  999,612 (40.88%)  ???:seal::util::dyadic_product_coeffmod(seal::util::PtrIter<unsigned long const*>, seal::util::PtrIter<unsigned long const*>, unsigned long, seal::Modulus const&, seal::util::PtrIter<unsigned long*>) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   81,818 ( 3.35%)  ???:seal::util::ntt_negacyclic_harvey(seal::util::PtrIter<unsigned long*>, seal::util::NTTTables const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   69,912 ( 2.86%)  ???:seal::Evaluator::transform_to_ntt_inplace(seal::Plaintext&, std::array<unsigned long, 4ul>, seal::MemoryPoolHandle) const [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-   65,536 ( 2.68%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   32,785 ( 1.34%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
-   20,559 ( 0.84%)  ???:seal::is_data_valid_for(seal::Plaintext const&, seal::SEALContext const&) [/home/fann/projects/fhe-reliability-gpu/profile_framewk/build/profile_framewk]
-
---------------------------------------------------------------------------------
-The following files chosen for auto-annotation could not be found:
---------------------------------------------------------------------------------
-  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
   ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
 
 
