@@ -32,7 +32,6 @@ void pack_diagonals(
         {
             for (size_t i = 0; i < dim; i++)
             {
-                // 每个区块都放一次 diag[k][i]
                 diag[b*dim + i] = mat[i][(i + k) % dim];
             }
         }
@@ -40,11 +39,10 @@ void pack_diagonals(
     }
 }
 
-
 // ----------------------------------------------------------------------------
-// 同态矩阵×向量：对角线 + 旋转 + 乘法（不即时重缩放）+ 累加 + 最后一次重缩放
+// BSGS 同态矩阵×向量：分块旋转 + 逐槽乘 + 累加
 // ----------------------------------------------------------------------------
-Ciphertext compute_matvec(
+Ciphertext compute_matvec_bsgs(
     Evaluator                   &evaluator,
     const Ciphertext            &enc_vec,
     const vector<Plaintext>     &diags,
@@ -52,37 +50,65 @@ Ciphertext compute_matvec(
     const GaloisKeys            &gal_keys,
     size_t                       dim)
 {
+    // BSGS 参数：块大小 B 和块数 G
+    size_t B = static_cast<size_t>(ceil(sqrt(static_cast<double>(dim))));
+    size_t G = static_cast<size_t>((dim + B - 1) / B);
+
     Ciphertext sum;
     bool first = true;
 
-    for (size_t k = 0; k < dim; k++)
+    for (size_t g = 0; g < G; g++)
     {
-        // 1) 旋转
-        Ciphertext rot;
-        if (k == 0) rot = enc_vec;
-        else        evaluator.rotate_vector(enc_vec, int(k), gal_keys, rot);
-
-        // 2) 乘以第 k 条对角线（scale 将变成原 scale^2）
-        Ciphertext tmp;
-        evaluator.multiply_plain(rot, diags[k], tmp);
-        evaluator.relinearize_inplace(tmp, relin_keys);
-        // 不在此处 rescale_to_next
-
-        // 3) 累加到 sum
-        if (first)
+        // 1) "巨步"旋转：g * B
+        Ciphertext c_g;
+        if (g == 0)
         {
-            sum = move(tmp);
-            first = false;
+            c_g = enc_vec;
         }
         else
         {
-            evaluator.mod_switch_to_inplace(sum, tmp.parms_id());
-            evaluator.add_inplace(sum, tmp);
+            evaluator.rotate_vector(enc_vec, int(g * B), gal_keys, c_g);
+        }
+
+        // 2) "细步"旋转 + 乘法 + 重缩放 + 累加
+        for (size_t b = 0; b < B; b++)
+        {
+            size_t k = g * B + b;
+            if (k >= dim) break;
+
+            // 2.1) 在巨步结果上再旋转 b
+            Ciphertext c_gb;
+            if (b == 0)
+            {
+                c_gb = c_g;
+            }
+            else
+            {
+                evaluator.rotate_vector(c_g, int(b), gal_keys, c_gb);
+            }
+
+            // 2.2) 与第 k 条对角线相乘
+            Ciphertext tmp;
+            evaluator.multiply_plain(c_gb, diags[k], tmp);
+            evaluator.relinearize_inplace(tmp, relin_keys);
+
+            // 2.3) 立即重缩放到下一层
+            evaluator.rescale_to_next_inplace(tmp);
+
+            // 2.4) 累加
+            if (first)
+            {
+                sum = std::move(tmp);
+                first = false;
+            }
+            else
+            {
+                evaluator.mod_switch_to_inplace(sum, tmp.parms_id());
+                evaluator.add_inplace(sum, tmp);
+            }
         }
     }
 
-    // 4) 最后一次重缩放，将 scale^2 → scale
-    evaluator.rescale_to_next_inplace(sum);
     return sum;
 }
 
@@ -90,10 +116,19 @@ int main()
 {
     // 1) CKKS 参数 & 上下文
     EncryptionParameters parms(scheme_type::ckks);
-    size_t poly_modulus_degree = 8192;
+    size_t poly_modulus_degree = 16384;
     parms.set_poly_modulus_degree(poly_modulus_degree);
+    // parms.set_coeff_modulus(
+    //     CoeffModulus::Create(poly_modulus_degree, {60, 40, 40, 60})
+    // );
     parms.set_coeff_modulus(
-        CoeffModulus::Create(poly_modulus_degree, {60, 40, 40, 60})
+        CoeffModulus::Create(
+            poly_modulus_degree,
+            {
+                31,31,31,31,31,31,31,31,31,31,   // 10 × 31 位
+                // 30,30,30,30,30,30,30,30,30,30,30  // 11 × 30 位
+            }
+        )
     );
     print_parameters(parms);
     SEALContext context(parms);
@@ -111,10 +146,9 @@ int main()
     CKKSEncoder encoder(context);
 
     // ============ 随机测试 dim×dim 矩阵 × dim 向量 ============
-
     const size_t dim = 5;
     mt19937_64 rnd(random_device{}());
-    uniform_real_distribution<double> dist(-1.0, 1.0);
+    uniform_real_distribution<double> dist(-100.0, 100.0);
 
     // 3) 随机生成矩阵 W 和向量 x
     vector<vector<double>> W(dim, vector<double>(dim));
@@ -123,9 +157,7 @@ int main()
     {
         x[i] = dist(rnd);
         for (size_t j = 0; j < dim; j++)
-        {
             W[i][j] = dist(rnd);
-        }
     }
 
     // 离线计算期望结果
@@ -147,13 +179,13 @@ int main()
     vector<Plaintext> diags;
     pack_diagonals(W, dim, encoder, scale, diags);
 
-    // 6) 同态矩阵×向量
+    // 6) BSGS 同态矩阵×向量
     auto t1 = chrono::high_resolution_clock::now();
-    Ciphertext c_y = compute_matvec(
+    Ciphertext c_y = compute_matvec_bsgs(
         evaluator, c_x, diags, relin_keys, gal_keys, dim);
     auto t2 = chrono::high_resolution_clock::now();
     auto tm = chrono::duration_cast<chrono::microseconds>(t2 - t1);
-    cout << "Encrypted matmul time: " << tm.count() 
+    cout << "Encrypted matmul (BSGS) time: " << tm.count()
          << " microseconds" << endl;
 
     // 7) 解密 & 解码
@@ -165,8 +197,8 @@ int main()
     cout << fixed << setprecision(6);
     for (size_t i = 0; i < dim; i++)
     {
-        cout << "row " << i << ": enc = " 
-             << y_enc[i] << ", plain = " 
+        cerr << "row " << i << ": enc = "
+             << y_enc[i] << ", plain = "
              << y_plain[i] << endl;
     }
 

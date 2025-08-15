@@ -1,6 +1,9 @@
+from tqdm import tqdm
 import random
 import math
+import argparse
 
+FLIP_ELEMENT, FLIP_BIT_PER_ELEMENT = 2, 1
 # 生成权重函数（必须为完全平方数长度）
 def generate_weights(length):
     assert int(math.sqrt(length))**2 == length, "Length must be a perfect square"
@@ -20,17 +23,17 @@ def bit_reverse(x, bits):
 def modinv(a, mod):
     return pow(a, mod - 2, mod)
 
-def flip_bits(x, rbit, max_bits=None):
+def flip_bits(x: int, rbit: int):
     """
-    Flip `rbit` random bits in the integer `x`.
-    `max_bits` bounds the bit positions (if None, use x.bit_length()).
+    Flip `rbit` random bits in x, return (new_x, bit_positions, original_x).
     """
-    if max_bits is None or max_bits == 0:
-        max_bits = max(1, x.bit_length())
+    original = x
+    bit_positions = []
     for _ in range(rbit):
-        pos = random.randrange(0, max_bits)
+        pos = random.randrange(0, x.bit_length())
         x ^= (1 << pos)
-    return x
+        bit_positions.append(pos)
+    return x, bit_positions, original
 
 def ntt(a, root, mod):
     n = len(a)
@@ -59,15 +62,17 @@ def ntt_with_flip(a, root, mod, t, rbit):
     by flipping `rbit` bits in each selected element.
     """
     n = len(a)
-    # Copy a to avoid in-place changes
     a_pert = a.copy()
-    # Choose t distinct indices to perturb
+    flips = []
     for idx in random.sample(range(n), min(t, n)):
-        # Flip rbit bits within the bit-width of mod
-        a_pert[idx] = flip_bits(a_pert[idx] % mod, rbit, max_bits=mod.bit_length())
-        a_pert[idx] %= mod
+        orig = a_pert[idx] % mod
+        new_val, bits, original = flip_bits(orig, rbit)
+        new_val %= mod
+        a_pert[idx] = new_val
+        flips.append((idx, original, new_val, bits))
     # Now perform standard NTT on the perturbed array
-    return ntt(a_pert, root, mod)
+    transformed = ntt(a_pert, root, mod)
+    return transformed, flips
 
 def intt(a, root, mod):
     # 逆变换也用相同的指数形式
@@ -92,7 +97,7 @@ def negacyclic_ntt_with_flip(a, psi, mod):
     a_pw = [(a[i] * pow(psi, i, mod)) % mod for i in range(n)]
     # 2) 标准 NTT，用 psi^2
     root = pow(psi, 2, mod)
-    return ntt_with_flip(a_pw, root, mod, 1, 1)
+    return ntt_with_flip(a_pw, root, mod, FLIP_ELEMENT, FLIP_BIT_PER_ELEMENT)
 
 def negacyclic_intt(A, psi, mod):
     n = len(A)
@@ -132,27 +137,140 @@ def ecc_check(a, psi, mod):
     root = pow(psi, 2, mod)
     w_hat = intt(w_pre, root, mod)
     # 计算 a_hat
-    a_hat = negacyclic_ntt_with_flip(a, psi, mod)
+    a_hat, flips = negacyclic_ntt_with_flip(a, psi, mod)
+    # a_hat = negacyclic_ntt_with_flip(a, psi, mod)
     # 原始和变换后校验和
     checksum      = sum(w[i]     * a[i]     for i in range(n)) % mod
     checksum_hat  = sum(w_hat[i] * a_hat[i] for i in range(n)) % mod
+    if checksum == checksum_hat:
+        
+        print("checksum:", sum(w[i]     * a[i]     for i in range(n)), "checksum_hat:", sum(w_hat[i] * a_hat[i] for i in range(n)), "Modulus:", mod)
+        print("Flip IDX:", flips)
     return checksum, checksum_hat, checksum == checksum_hat
+
+
+def is_prime(n: int, k: int = 10) -> bool:
+    """Miller-Rabin primality test."""
+    if n < 2:
+        return False
+    # small primes check
+    small_primes = [2, 3, 5, 7, 11, 13, 17, 19, 23]
+    for sp in small_primes:
+        if n == sp:
+            return True
+        if n % sp == 0:
+            return False
+    # write n-1 as d*2^s
+    d, s = n - 1, 0
+    while d & 1 == 0:
+        d >>= 1
+        s += 1
+    def trial(a: int) -> bool:
+        x = pow(a, d, n)
+        if x == 1 or x == n - 1:
+            return True
+        for _ in range(s - 1):
+            x = (x * x) % n
+            if x == n - 1:
+                return True
+        return False
+    for _ in range(k):
+        a = random.randrange(2, n - 2)
+        if not trial(a):
+            return False
+    return True
+
+def find_prime_with_divisor(bits: int, divisor: int) -> int:
+    """Find a random prime of `bits` length with (prime-1) divisible by `divisor`."""
+    while True:
+        # ensure high bit set and odd
+        p = random.getrandbits(bits) | (1 << (bits - 1)) | 1
+        if not is_prime(p):
+            continue
+        if (p - 1) % divisor == 0:
+            return p
+
+def factor(n: int):
+    """
+    Return the list of distinct prime factors of n using trial division.
+    """
+    primes = []
+    d = 2
+    temp = n
+    while d * d <= temp:
+        if temp % d == 0:
+            primes.append(d)
+            while temp % d == 0:
+                temp //= d
+        d += 1
+    if temp > 1:
+        primes.append(temp)
+    return primes
+
+def find_primitive_root(mod: int) -> int:
+    """
+    Find a primitive root modulo 'mod' (prime).
+    Returns g such that g is a generator of the multiplicative group Z_mod*.
+    """
+    phi = mod - 1
+    factors = factor(phi)
+    for g in range(2, mod):
+        if all(pow(g, phi // q, mod) != 1 for q in factors):
+            return g
+    raise ValueError(f"No primitive root found for modulus {mod}")
+
+def find_primitive_kth_root(mod: int, k: int) -> int:
+    """
+    Find a primitive k-th root of unity modulo 'mod' (prime).
+    Requires that k divides mod-1.
+    """
+    phi = mod - 1
+    if phi % k != 0:
+        raise ValueError(f"k={k} does not divide mod-1={phi}")
+    g = find_primitive_root(mod)
+    # candidate for primitive k-th root
+    psi = pow(g, phi // k, mod)
+    # validate order exactly k
+    if pow(psi, k, mod) != 1:
+        raise AssertionError("psi^k != 1")
+    # check no smaller divisor yields 1
+    for d in factor(k):
+        if d < k and pow(psi, d, mod) == 1:
+            raise AssertionError(f"psi has smaller order divisor {d}")
+    return psi
 
 # 主测试
 if __name__ == "__main__":
-    # 参数：n 为完全平方数且为 2 的幂
-    n   = 16
-    mod = 97
-    psi = 19  # 9 是 mod=17 下的原 8 次单位根
+    parser = argparse.ArgumentParser(description="ECC NTT Test Harness")
+    parser.add_argument("n", type=int, help="Length (power-of-two perfect square)")
+    parser.add_argument("mod_bits", type=int, help="Desired bit-length of prime modulus")
+    args = parser.parse_args()
 
-    # n   = 64
-    # mod = 257
-    # psi = 9   # 原 128 次单位根 mod 257
-    epoches = 1000
+    n = args.n
+    mod_bits = args.mod_bits
+
+    # Validate n
+    if int(math.isqrt(n))**2 != n or (n & (n - 1)) != 0:
+        raise ValueError("n must be a power-of-two perfect square")
+
+    sqrt_n = int(math.isqrt(n))
+    k = 2 * sqrt_n  # order of psi
+
+    # Find a prime modulus of desired bit length
+    mod = find_prime_with_divisor(mod_bits, k)
+
+    # Compute psi = primitive (2*sqrt(n))-th root of unity
+    psi = find_primitive_kth_root(mod, k)
+
+    print(f"n         = {n}")
+    print(f"mod       = {mod} ({mod.bit_length()} bits)")
+    print(f"psi (ord {k}) = {psi}")
+    # epoches = 100000
+
 
     collusion = 0
     success = 0
-    for _ in range(20000):
+    for _ in tqdm(range(1000000), desc="ECC checking"):
         # 随机生成两个多项式 a, b
         a = [random.randint(0, mod-1) for _ in range(n)]
         # b = [random.randint(0, mod-1) for _ in range(n)]
@@ -164,7 +282,7 @@ if __name__ == "__main__":
     
         # —— 校验二：NTT 过程 ECC 校验 ——
         checksum_a, checksum_hat_a, ok_a = ecc_check(a, psi, mod)
-        if checksum_a == checksum_hat_a:
+        if ok_a:
             collusion += 1
         else:
             success += 1

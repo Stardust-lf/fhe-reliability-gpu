@@ -1,130 +1,93 @@
 #!/usr/bin/env python3
 import re
 import sys
-from collections import defaultdict
 
-class Node:
-    def __init__(self, level, name):
-        self.level    = level
-        self.name     = name.strip()
-        self.time     = 0
-        self.children = []
-
-    def add_child(self, child):
-        self.children.append(child)
-
-    def __str__(self, indent=0):
-        s  = "  " * indent + f"{self.level}:{self.name} — {self.time} µs\n"
-        for c in self.children:
-            s += c.__str__(indent + 1)
-        return s
-
-def parse_trace(filename):
-    """
-    将原始 trace 解析为一棵或者多棵原始调用树
-    """
-    pat = re.compile(
-        r'^(?P<level>function|frontend|evaluator|dwthandler):\s*'
-        r'(?P<name>[^\[]+?)'
-        r'(?:\[(?P<time>\d+)\s+microseconds\])?$'
-    )
-
-    roots = []
-    stack = []
-
-    with open(filename) as f:
-        for line in f:
-            line = line.strip()
-            m = pat.match(line)
-            if not m:
-                continue
-
-            lvl  = m.group("level")
-            name = m.group("name")
-            t    = m.group("time")
-
-            if t is None:
-                # 开始一个新节点
-                node = Node(lvl, name)
-                if stack:
-                    stack[-1].add_child(node)
-                else:
-                    roots.append(node)
-                stack.append(node)
-
-            else:
-                # 结束一个节点，记录耗时
-                elapsed = int(t)
-                # 在 stack 里向上查找匹配的 start
-                for i in range(len(stack)-1, -1, -1):
-                    if stack[i].level == lvl and stack[i].name == name.strip():
-                        node = stack.pop(i)
-                        node.time = elapsed
-                        break
-                else:
-                    # 找不到就当作孤立节点插入
-                    node = Node(lvl, name)
-                    node.time = elapsed
-                    if stack:
-                        stack[-1].add_child(node)
-                    else:
-                        roots.append(node)
-
-    return roots
-
-def aggregate_node(node):
-    """
-    对同级同名的 children 做归并：累加耗时、合并它们的子节点
-    然后对子节点递归
-    """
-    buckets = defaultdict(list)
-    for c in node.children:
-        buckets[(c.level, c.name)].append(c)
-
-    new_children = []
-    for (lvl, name), group in buckets.items():
-        merged = Node(lvl, name)
-        # 累加所有同名节点的时间
-        merged.time = sum(g.time for g in group)
-        # 收集它们的所有子节点，放到一个列表里
-        for g in group:
-            merged.children.extend(g.children)
-        # 递归合并
-        merged = aggregate_node(merged)
-        new_children.append(merged)
-
-    node.children = new_children
-    return node
+def usage():
+    print(f"Usage: {sys.argv[0]} <logfile>")
+    sys.exit(1)
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: python analyze_trace.py <trace_file>")
-        sys.exit(1)
+        usage()
+    logfile = sys.argv[1]
 
-    roots = parse_trace(sys.argv[1])
-    # 只保留顶层的 function: 节点
-    funcs = [r for r in roots if r.level == "function"]
-    if not funcs:
-        print("Error: no function: blocks found in trace.")
-        sys.exit(1)
+    # 正则
+    start_re     = re.compile(r'^frontend: ROTATE$')
+    end_re       = re.compile(r'^frontend: ROTATE\[\d+ microseconds\]$')
+    ntt_re       = re.compile(r'^\[NTT\] total cost\s+(\d+)\s+µs$')
+    cost_line_re = re.compile(r'^(.*total cost\s+)(\d+)(\s+µs.*)$')
 
-    # 将同名的 function 根节点归并（通常只有一个）
-    buckets = defaultdict(list)
-    for f in funcs:
-        buckets[(f.level, f.name)].append(f)
+    in_block   = False
+    start_line = ""
+    end_line   = ""
+    out_lines  = []
+    seq_sum    = 0
+    in_seq     = False
 
-    # 假设只有一个函数名，否则可改为 ROOT 包裹
-    lvl, name = next(iter(buckets))
-    merged = Node(lvl, name)
-    merged.time = sum(f.time for f in buckets[(lvl,name)])
-    for f in buckets[(lvl,name)]:
-        merged.children.extend(f.children)
+    with open(logfile, 'r', encoding='utf-8') as f:
+        for raw in f:
+            line = raw.rstrip('\n')
 
-    # 递归合并子节点
-    merged = aggregate_node(merged)
+            # 区块开始
+            if start_re.match(line):
+                in_block = True
+                start_line = line
+                out_lines.clear()
+                in_seq = False
+                seq_sum = 0
+                continue
 
-    # 打印最终树
-    print(merged)
+            # 区块结束
+            if in_block and end_re.match(line):
+                # 如果正处于 NTT 序列中，先输出合并行
+                if in_seq:
+                    out_lines.append(f"[NTT] total cost {seq_sum} µs")
+                    in_seq = False
+                    seq_sum = 0
+                end_line = line
+                # 打印整个区块
+                print(start_line)
+                for l in out_lines:
+                    print(l)
+                print(end_line)
+                in_block = False
+                continue
 
-if __name__ == "__main__":
+            # 区块内处理
+            if in_block:
+                m_ntt = ntt_re.match(line)
+                if m_ntt:
+                    # 累加 NTT 耗时，不输出
+                    cost = int(m_ntt.group(1))
+                    if not in_seq:
+                        in_seq = True
+                        seq_sum = cost
+                    else:
+                        seq_sum += cost
+                else:
+                    # 碰到非 NTT 行
+                    if in_seq:
+                        # 先输出合并后的 NTT 行
+                        out_lines.append(f"[NTT] total cost {seq_sum} µs")
+                        # 再调整当前行的 cost
+                        m_cost = cost_line_re.match(line)
+                        if m_cost:
+                            prefix, val, suffix = m_cost.group(1), int(m_cost.group(2)), m_cost.group(3)
+                            adjusted = val - seq_sum
+                            line = f"{prefix}{adjusted}{suffix}"
+                        in_seq = False
+                        seq_sum = 0
+                    # 输出当前非 NTT 行
+                    out_lines.append(line)
+
+    # 如果文件结束还在区块中，则同样处理一次
+    if in_block:
+        if in_seq:
+            out_lines.append(f"[NTT] total cost {seq_sum} µs")
+        print(start_line)
+        for l in out_lines:
+            print(l)
+        print(end_line)
+
+if __name__ == '__main__':
     main()

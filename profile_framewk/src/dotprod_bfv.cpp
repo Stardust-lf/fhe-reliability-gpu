@@ -1,4 +1,5 @@
 #include "examples.h"
+#include "seal/modulus.h"
 #include <seal/seal.h>
 #include <iostream>
 #include <vector>
@@ -78,13 +79,25 @@ int main()
 {
     // —— 1. SEAL 参数 & 上下文 —— 
     EncryptionParameters parms(scheme_type::bfv);
-    size_t poly_modulus_degree = 8192;
+    size_t poly_modulus_degree = 32768;
+    // size_t poly_modulus_degree = 16384;
     parms.set_poly_modulus_degree(poly_modulus_degree);
-    parms.set_plain_modulus(786433);  // 支持批量的素数
-    parms.set_coeff_modulus(
-        CoeffModulus::Create(poly_modulus_degree, {60, 60, 40})
+    // parms.set_plain_modulus(786433);  // 支持批量的素数
+    parms.set_plain_modulus(
+        PlainModulus::Batching(poly_modulus_degree, 32)
     );
+    parms.set_coeff_modulus(
+    CoeffModulus::Create(
+        poly_modulus_degree,
+        {
+            31,31,31,31,31,31,31,31,31,31,   // 10 × 31 位
+            30,30,30,30,30,30,30,30,30,30,30  // 11 × 30 位
+        }
+        )
+    );
+
     // size_t poly_modulus_degree = 4096;  // N = 2^17 = 131072
+    // 
     // parms.set_poly_modulus_degree(poly_modulus_degree);
     // parms.set_coeff_modulus(
     //     CoeffModulus::Create(poly_modulus_degree, {60, 60, 60, 60, 60})
@@ -150,12 +163,12 @@ int main()
 
     // —— 8. 输出 & 验证 —— 
     uint64_t encrypted_dot = result[0];
-    cout << "Encrypted dot product (slot 0) = " << encrypted_dot << endl;
-    cout << "Expected dot product           = " << expected_dot << endl;
+    cerr << "Encrypted dot product (slot 0) = " << encrypted_dot << endl;
+    cerr << "Expected dot product           = " << expected_dot << endl;
     if (encrypted_dot == expected_dot)
-        cout << "✔ Verification passed." << endl;
+        cerr << "✔ Verification passed." << endl;
     else
-        cout << "✘ Verification failed!" << endl;
+        cerr << "✘ Verification failed!" << endl;
 
     return 0;
 }

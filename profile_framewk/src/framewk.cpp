@@ -196,7 +196,10 @@ void bfv_performance_test(SEALContext context)
         encrypted1.reserve(3);
         time_start = chrono::high_resolution_clock::now();
         // CALLGRIND_START_INSTRUMENTATION;
+        std::cout << "MULTIPLY_INPLACE START" << std::endl;
         evaluator.multiply_inplace(encrypted1, encrypted2);
+        std::cout << "MULTIPLY_INPLACE END" << std::endl;
+
         // CALLGRIND_STOP_INSTRUMENTATION;
         // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
@@ -210,7 +213,9 @@ void bfv_performance_test(SEALContext context)
         */
         time_start = chrono::high_resolution_clock::now();
         // CALLGRIND_START_INSTRUMENTATION;
+        std::cout << "MULTIPLY_PLAIN START" << std::endl;
         evaluator.multiply_plain_inplace(encrypted2, plain);
+        std::cout << "MULTIPLY_PLAIN END" << std::endl;
         // CALLGRIND_STOP_INSTRUMENTATION;
         // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
@@ -252,7 +257,9 @@ void bfv_performance_test(SEALContext context)
             */
             time_start = chrono::high_resolution_clock::now();
             // CALLGRIND_START_INSTRUMENTATION;
+            std::cout << "ROTATE_INPLACE START" << std::endl;
             evaluator.rotate_rows_inplace(encrypted, 1, gal_keys);
+            std::cout << "ROTATE_INPLACE END" << std::endl;
             evaluator.rotate_rows_inplace(encrypted, -1, gal_keys);
             // CALLGRIND_STOP_INSTRUMENTATION;
             // CALLGRIND_DUMP_STATS;
@@ -270,7 +277,9 @@ void bfv_performance_test(SEALContext context)
             int random_rotation = static_cast<int>(rd() & (row_size - 1));
             time_start = chrono::high_resolution_clock::now();
             // CALLGRIND_START_INSTRUMENTATION;
+            std::cout << "ROTATE_RANDOM START" << std::endl;
             evaluator.rotate_rows_inplace(encrypted, random_rotation, gal_keys);
+            std::cout << "ROTATE_RANDOM END" << std::endl;
             // CALLGRIND_STOP_INSTRUMENTATION;
             // CALLGRIND_DUMP_STATS;
             // rename_last_dump("rotate", ++dump);
@@ -283,7 +292,9 @@ void bfv_performance_test(SEALContext context)
             */
             time_start = chrono::high_resolution_clock::now();
             // CALLGRIND_START_INSTRUMENTATION;
+            std::cout << "ROTATE_COLUMN START" << std::endl;
             evaluator.rotate_columns_inplace(encrypted, gal_keys);
+            std::cout << "ROTATE_COLUMN END" << std::endl;
             // CALLGRIND_STOP_INSTRUMENTATION;
             // CALLGRIND_DUMP_STATS;
             time_end = chrono::high_resolution_clock::now();
@@ -538,7 +549,9 @@ void ckks_performance_test(SEALContext context)
         encrypted1.reserve(3);
         time_start = chrono::high_resolution_clock::now();
         // CALLGRIND_START_INSTRUMENTATION;
+        std::cout << "MULTIPLY_INPLACE START" << std::endl;
         evaluator.multiply_inplace(encrypted1, encrypted2);
+        std::cout << "MULTIPLY_INPLACE END" << std::endl;
         // CALLGRIND_STOP_INSTRUMENTATION;
         // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
@@ -549,7 +562,9 @@ void ckks_performance_test(SEALContext context)
         */
         time_start = chrono::high_resolution_clock::now();
         // CALLGRIND_START_INSTRUMENTATION;
+        std::cout << "MULTIPLY_PLAIN START" << std::endl;
         evaluator.multiply_plain_inplace(encrypted2, plain);
+        std::cout << "MULTIPLY_PLAIN END" << std::endl;
         // CALLGRIND_STOP_INSTRUMENTATION;
         // CALLGRIND_DUMP_STATS;
         time_end = chrono::high_resolution_clock::now();
@@ -595,7 +610,9 @@ void ckks_performance_test(SEALContext context)
             */
             time_start = chrono::high_resolution_clock::now();
             // CALLGRIND_START_INSTRUMENTATION;
+            std::cout << "ROTATE_INPLACE START" << std::endl;
             evaluator.rotate_vector_inplace(encrypted, 1, gal_keys);
+            std::cout << "ROTATE_INPLACE END" << std::endl;
             evaluator.rotate_vector_inplace(encrypted, -1, gal_keys);
             // CALLGRIND_STOP_INSTRUMENTATION;
             // CALLGRIND_DUMP_STATS;
@@ -609,7 +626,9 @@ void ckks_performance_test(SEALContext context)
             int random_rotation = static_cast<int>(rd() & (ckks_encoder.slot_count() - 1));
             time_start = chrono::high_resolution_clock::now();
             // CALLGRIND_START_INSTRUMENTATION;
+            std::cout << "ROTATE_RANDOM START" << std::endl;
             evaluator.rotate_vector_inplace(encrypted, random_rotation, gal_keys);
+            std::cout << "ROTATE_RANDOM END" << std::endl;
             // CALLGRIND_STOP_INSTRUMENTATION;
             // CALLGRIND_DUMP_STATS;
             time_end = chrono::high_resolution_clock::now();
@@ -1095,9 +1114,21 @@ void example_bfv_performance_default()
     print_example_banner("BFV Performance Test with Degrees: 4096, 8192, and 16384");
 
     EncryptionParameters parms(scheme_type::bfv);
-    size_t poly_modulus_degree = 4096;
+    size_t poly_modulus_degree = 32768;
     parms.set_poly_modulus_degree(poly_modulus_degree);
     parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
+    parms.set_plain_modulus(
+        PlainModulus::Batching(poly_modulus_degree, 32)
+    );
+    parms.set_coeff_modulus(
+    CoeffModulus::Create(
+        poly_modulus_degree,
+        {
+            31,31,31,31,31,31,31,31,31,31,   // 10 × 31 位
+            30,30,30,30,30,30,30,30,30,30,30  // 11 × 30 位
+        }
+        )
+    );
     // parms.set_coeff_modulus(default_coeff_modulus_128(poly_modulus_degree));
     // parms.set_coeff_modulus(coeff_modulus_128(poly_modulus_degree));
     // parms.set_coeff_modulus(
@@ -1107,7 +1138,7 @@ void example_bfv_performance_default()
     //            }          
     //     )
     // );
-    parms.set_plain_modulus(786433);
+    // parms.set_plain_modulus(786433);
     bfv_performance_test(parms);
 
     // cout << endl;
@@ -1177,9 +1208,17 @@ void example_ckks_performance_default()
     // It is not recommended to use BFVDefault primes in CKKS. However, for performance
     // test, BFVDefault primes are good enough.
     EncryptionParameters parms(scheme_type::ckks);
-    size_t poly_modulus_degree = 4096;
+    size_t poly_modulus_degree = 32768;
     parms.set_poly_modulus_degree(poly_modulus_degree);
-    parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
+    parms.set_coeff_modulus(
+    CoeffModulus::Create(
+        poly_modulus_degree,
+        {
+            31,31,31,31,31,31,31,31,31,31,   // 10 × 31 位
+            30,30,30,30,30,30,30,30,30,30,30  // 11 × 30 位
+        }
+        )
+    );
     ckks_performance_test(parms);
 
     // cout << endl;

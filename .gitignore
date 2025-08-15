@@ -11,7 +11,12 @@ CTestTestfile.cmake
 _deps
 CMakeUserPresets.json
 .clang-format
-.csv
+# .csv
+libOPENFHEpke.so.1.3.0
+pke_tests
+.tar.gz
+.pack
+.th
 
 # CLion
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
