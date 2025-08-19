@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 plt.rcParams["font.family"] = "Gill Sans"
 plt.rcParams["font.weight"] = "bold"
-plt.rcParams["font.size"] = 15
+plt.rcParams["font.size"] = 20
 
 def plot_breakdown(ax, df, categories, colors):
     bar_width = 0.3
@@ -35,13 +35,14 @@ def plot_breakdown(ax, df, categories, colors):
         label="RFHE overhead"
     )
     ax2.set_ylim(0,10)
-    ax2.set_ylabel("RFHE overhead (%)")
+    if ax== axes[-1]:
+        ax2.set_ylabel("RFHE overhead (%)")
     ax2.tick_params(axis='y')
 
     # X 轴设置
     ax.set_xticks(list(x))
     ax.set_ylim(0, 115)
-    ax.set_xticklabels(df["Polydim"], rotation=30)
+    ax.set_xticklabels(df["Polydim"], rotation=45, ha='right')
     ax.set_xlabel("Polynominal dimension")
     ax.grid(True, which="major", ls="--", lw=0.5)
 
@@ -99,7 +100,7 @@ df3 = pd.DataFrame(data_rot)
 categories = ["NTT", "BaseConv", "Modmul", "Others"]
 colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728"]
 
-fig, axes = plt.subplots(1, 3, figsize=(12, 4), dpi=300, sharey=True)
+fig, axes = plt.subplots(1, 3, figsize=(14, 6), dpi=300, sharey=True)
 
 line1 = plot_breakdown(axes[0], df1, categories, colors)
 line2 = plot_breakdown(axes[1], df2, categories, colors)
@@ -110,15 +111,15 @@ handles = [plt.Rectangle((0,0),1,1, facecolor=colors[i], edgecolor="black", labe
 handles.append(plt.Rectangle((0,0),1,1, facecolor="white", edgecolor="black", label="Baseline"))
 handles.append(plt.Rectangle((0,0),1,1, facecolor="white", edgecolor="black", hatch='//', label="RFHE"))
 handles.append(line1)  # RFHE overhead 折线
-fig.legend(handles=handles, loc="lower center", ncol=8)
+fig.legend(handles=handles, loc="lower center", ncol=4, frameon=False)
 axes[0].set_ylabel("Relative complexity")
 
 labels = ['(a)', '(b)', '(c)']
 for ax, label in zip(axes, labels):
-    ax.text(- 0.1, 1, label, transform=ax.transAxes,
-            fontsize=16, va='top', ha='left')
+    ax.text(- 0.12, 1.1, label, transform=ax.transAxes,
+            fontsize=25, va='top', ha='left')
 
-plt.tight_layout(rect=[0, 0.08, 1, 1])
+plt.tight_layout(rect=[0, 0.12, 1, 1])
 plt.savefig("eva_5_mult_polydim.jpg")
 # plt.show()
 # plt.savefig("three_polydim_breakdown.png", dpi=300)

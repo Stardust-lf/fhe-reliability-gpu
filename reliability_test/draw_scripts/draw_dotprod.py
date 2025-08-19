@@ -1,13 +1,199 @@
 import re
+from collections import defaultdict
+
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from scipy.stats import gaussian_kde
+
+data_resnet = [(1024, 6.0),
+ (1024, 8.173205382760385),
+ (1024, 8.241812291278775),
+ (1024, 8.178290525685737),
+ (1024, 8.158198897845523),
+ (2048, 6.0397569563748705),
+ (2048, 9.381722622648224),
+ (2048, 9.23461208090798),
+ (2048, 9.385137292480938),
+ (2048, 9.396168134925254),
+ (4096, 13.633131643885411),
+ (4096, 9.336244480672157),
+ (4096, 9.300053704326817),
+ (4096, 9.372846794813823),
+ (4096, 9.3397493297435),
+ (8192, 9.233939740348413),
+ (8192, 9.317223527520952),
+ (8192, 13.537669900629016),
+ (8192, 9.239931536939807),
+ (8192, 9.220735015190797),
+ (16384, 9.218962015475006),
+ (16384, 9.215214796148706),
+ (16384, 13.553095110606655),
+ (16384, 9.235688101556606),
+ (16384, 9.272455104891375),
+ (32768, 9.284112797659601),
+ (32768, 11.403703831503933),
+ (32768, 9.19486734471826),
+ (32768, 9.268625579043231),
+ (32768, 9.262356889928643),
+ (65536, 9.302410868281786),
+ (65536, 9.242572925581769),
+ (65536, 9.28547036796006),
+ (65536, 6.039402629751354),
+ (65536, 9.297098010249458),
+ (131072, 12.507209365953798),
+ (131072, 10.36062813721953),
+ (131072, 15.75972061038529),
+ (131072, 12.521557774050645),
+ (131072, 12.520185091505606),
+ (262144, 16.7668010199055),
+ (262144, 16.792678157604207),
+ (262144, 13.568607699001696),
+ (262144, 16.78454413435171),
+ (262144, 16.783295325697676),
+ (524288, 35.10072653709297),
+ (524288, 31.91172906594591),
+ (524288, 35.21971613378339),
+ (524288, 41.6728668391922),
+ (524288, 35.1360925106),
+ (1048576, 52.424675377399815),
+ (1048576, 42.679093105818446),
+ (1048576, 42.7594240041364),
+ (1048576, 42.73659558471534),
+ (1048576, 42.7605756302773),
+ (2097152, 75.04558287804791),
+ (2097152, 64.31507906420453),
+ (2097152, 74.0439694362853),
+ (2097152, 64.3248052673914),
+ (2097152, 68.58413623876437),
+ (4194304, 83.69646411145557),
+ (4194304, 78.35989977665209),
+ (4194304, 83.76668565469625),
+ (4194304, 83.69128114238103),
+ (4194304, 83.71790653877012),
+ (8388608, 88.00094644428464),
+ (8388608, 89.04579733569778),
+ (8388608, 88.023311926955),
+ (8388608, 88.06237314465922),
+ (8388608, 87.98907065024139),
+ (16777216, 90.139402276873),
+ (16777216, 90.17931829891184),
+ (16777216, 90.13217921180976),
+ (16777216, 88.03936740387348),
+ (16777216, 90.19131646851363),
+ (33554432, 90.80636793421442),
+ (33554432, 90.86115699667268),
+ (33554432, 90.83155168264467),
+ (33554432, 90.82055466981232),
+ (33554432, 93.0),
+ (67108864, 91.45101884185313),
+ (67108864, 91.43034076526422),
+ (67108864, 91.45285944009598),
+ (67108864, 91.43915101786911),
+ (67108864, 92.49722069580962),
+ (134217728, 91.67477690214396),
+ (134217728, 91.6663568960546),
+ (134217728, 91.6699269670602),
+ (134217728, 91.66114463180521),
+ (134217728, 92.75812401974326)]
+
+data_resnet_baseline =[(1024, 85.64229944436931),
+ (1024, 85.10989187085029),
+ (1024, 85.0),
+ (1024, 85.0),
+ (1024, 85.58774304654833),
+ (2048, 86.65038050660951),
+ (2048, 85.51584835399197),
+ (2048, 85.74442598217964),
+ (2048, 85.78338720274064),
+ (2048, 85.71078025180078),
+ (4096, 86.97038623423002),
+ (4096, 86.18277185612912),
+ (4096, 85.93233992331842),
+ (4096, 87.40234279380698),
+ (4096, 87.53500674599773),
+ (8192, 86.91225462920487),
+ (8192, 87.84420785444729),
+ (8192, 87.41869146811693),
+ (8192, 86.82679754522901),
+ (8192, 86.59302115255008),
+ (16384, 88.53044811588563),
+ (16384, 87.89076766705863),
+ (16384, 87.82228950725595),
+ (16384, 87.10996417967029),
+ (16384, 87.15151518472207),
+ (32768, 88.58303352365107),
+ (32768, 87.27354106570274),
+ (32768, 87.4447883009034),
+ (32768, 88.24207936606265),
+ (32768, 87.8288677130644),
+ (65536, 88.20213043555698),
+ (65536, 88.73395440364882),
+ (65536, 88.1626773975607),
+ (65536, 88.34918800864908),
+ (65536, 88.10878457822069),
+ (131072, 88.92024214893992),
+ (131072, 89.09402239015151),
+ (131072, 88.36048535759295),
+ (131072, 87.59792123533313),
+ (131072, 87.59233901846451),
+ (262144, 87.96747679164963),
+ (262144, 87.8322418176358),
+ (262144, 87.90857278295572),
+ (262144, 88.27248581143425),
+ (262144, 87.9189284842322),
+ (524288, 87.72810804765686),
+ (524288, 89.22972022930111),
+ (524288, 88.01844446864145),
+ (524288, 88.69964741529492),
+ (524288, 88.65633496097259),
+ (1048576, 90.08516836326342),
+ (1048576, 91.36430035592468),
+ (1048576, 89.97581953927212),
+ (1048576, 91.1195863199127),
+ (1048576, 90.49648718764557),
+ (2097152, 91.35647225735667),
+ (2097152, 91.95496303270455),
+ (2097152, 91.56840221693),
+ (2097152, 91.57309872485752),
+ (2097152, 92.28488647320471),
+ (4194304, 92.14970550874749),
+ (4194304, 91.18097981568607),
+ (4194304, 90.94416491589296),
+ (4194304, 91.244871667877),
+ (4194304, 91.62954293610701),
+ (8388608, 92.47766332302928),
+ (8388608, 92.56780065684447),
+ (8388608, 92.47991508608008),
+ (8388608, 91.4665852811777),
+ (8388608, 91.15014990075495),
+ (16777216, 92.50566582196865),
+ (16777216, 93.2772595702379),
+ (16777216, 92.11210338081897),
+ (16777216, 93.4),
+ (16777216, 92.37718722697144),
+ (33554432, 93.4),
+ (33554432, 92.84705330526918),
+ (33554432, 92.25516644159154),
+ (33554432, 92.14563666978252),
+ (33554432, 91.89061697077712),
+ (67108864, 93.4),
+ (67108864, 93.0023045595725),
+ (67108864, 93.37251843758483),
+ (67108864, 92.89171222708381),
+ (67108864, 93.26187981467658),
+ (134217728, 93.4),
+ (134217728, 93.4),
+ (134217728, 92.56377881619457),
+ (134217728, 93.02291051790948),
+ (134217728, 93.10131434199126)]
 
 # Plot styling
 plt.rcParams['font.family'] = 'Gill Sans'
 plt.rcParams['font.weight'] = 'bold'
-plt.rcParams['font.size'] = 16
+plt.rcParams['font.size'] = 20
 
-# 1) 读文件，提取百分比数字
+# 1) Read file and extract percentage numbers
 values = []
 with open("data/dotprod_16bits_50.txt", "r") as f:
     for line in f:
@@ -15,21 +201,128 @@ with open("data/dotprod_16bits_50.txt", "r") as f:
         if m:
             values.append(float(m.group(1)))
 
-# 2) 构造 DataFrame，x 从 1 到 len(values)
+# 2) Build DataFrame
 df = pd.DataFrame({
-    "x": list(range(1, len(values) + 1)),
-    "bit_error": values
+    "x": np.arange(1, len(values) + 1, dtype=float),
+    "bit_error": np.array(values, dtype=float)
 })
 
-# 3) 绘图
-fig, ax = plt.subplots(figsize=(8, 6), dpi=150)
-ax.scatter(df["x"], df["bit_error"], alpha=0.5)
-ax.set_title("Error Sensitivity vs Bit Flips per Symbol")
-ax.set_xlabel("Bit Flips per Symbol (run index)")
-ax.set_ylabel("Percentage Error (%)")
-ax.grid(True)
-ax.set_yscale('log')
+# 3) KDE over grid for background
+x = df["x"].values
+y = df["bit_error"].values
+xy = np.vstack([x, y])
+kde = gaussian_kde(xy)
 
+# Grid for background
+xmin, xmax = x.min(), x.max()
+ymin, ymax = y.min(), y.max()
+X, Y = np.meshgrid(
+    np.linspace(xmin, xmax, 200),
+    np.linspace(ymin, ymax, 200)
+)
+grid_coords = np.vstack([X.ravel(), Y.ravel()])
+Z = kde(grid_coords).reshape(X.shape)
+
+# 4) Plot background + scatter points
+fig, axes = plt.subplots(1, 3, figsize=(12, 6), dpi=300)
+
+ax = axes[0]
+# background heatmap, cmap=Oranges
+im = ax.imshow(
+    Z, origin='lower',
+    extent=[xmin, xmax, ymin, ymax],
+    cmap="YlOrRd", aspect='auto', alpha=0.3
+    # cmap="Greys", aspect='auto', alpha=0.7
+)
+
+
+# scatter points
+ax.scatter(x, y, c="crimson", s=15, alpha=0.3)
+
+# ax.set_title("Error Sensitivity vs Bit Flips per Symbol")
+ax.set_xlabel("Trial")
+ax.set_ylabel("Relative Error(%)")
+ax.set_yscale("log")
+ax.grid(True, alpha=0.3)
+
+# colorbar for background density
+# fig.colorbar(im, ax=ax, label="Estimated density")
+
+ax = axes[1]
+
+colors = ['red','navy']
+legends = ['CKKS', 'Baseline']
+for idx, data in enumerate([data_resnet, data_resnet_baseline]):
+    probs_raw, accs_raw = zip(*data)
+    inv_probs_raw = [1 / p for p in probs_raw]
+
+    # 按 prob 分组，计算均值和标准差
+    grouped = defaultdict(list)
+    for prob, acc in data:
+        grouped[prob].append(acc)
+
+    probs_unique = sorted(grouped.keys())
+    inv_probs_unique = [1 / p for p in probs_unique]
+    means = [np.mean(grouped[p]) for p in probs_unique]
+    stds = [np.std(grouped[p], ddof=0) for p in probs_unique]  # ddof=0 计算总体标准差
+    # plot
+    ax.errorbar(
+        inv_probs_unique,
+        means,
+        yerr=stds,
+        fmt="-o",
+        color=colors[idx],
+        label = legends[idx],
+        ecolor="black",
+        capsize=5,
+        # label=workloads[idx],
+    )
+    ax.set_ylim(0,100)
+
+
+# ax.plot(error_rate, accuracy_pct, marker="o", label="accuracy")
+
+ax.set_xlabel("Error Rate")
+ax.set_ylabel("Accuracy (%)")
+ax.set_xscale('log')
+# ax.set_title("ResNet Accuracy vs Batch Size")
+ax.legend(loc='lower left', fontsize=16, frameon=False)
+ax.grid(True)
+
+
+ax = axes[2]
+dnum = [1, 2, 3, 4, 6, 8, 12, '24\n(max)']
+NTT = [36.6, 42.6, 48.2, 58.6, 62.6, 69.2, 72.1, 73]
+BaseConv = [55, 48, 42, 31.2, 26, 18, 14, 11.835]
+Modmul = [7.3, 8.3, 8.7, 9.1, 10.3, 11.7, 12.8, 14.065]
+Others = [1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1]
+
+bar_width = 0.6
+x = np.arange(len(dnum))
+
+# 创建fig, ax
+# fig, ax = plt.subplots(figsize=(8, 5))
+
+# 堆叠柱状图
+ax.bar(x, NTT, width=bar_width, label='NTT', alpha=0.6)
+ax.bar(x, BaseConv, width=bar_width, bottom=NTT, label='BaseConv')
+ax.bar(x, Modmul, width=bar_width, bottom=np.array(NTT)+np.array(BaseConv), label='Modmul', alpha=0.8)
+ax.bar(x, Others, width=bar_width, bottom=np.array(NTT)+np.array(BaseConv)+np.array(Modmul), label='Others')
+
+# 设置坐标轴
+ax.set_xticks(x)
+ax.set_xticklabels(dnum)
+ax.set_xlabel('dnum')
+ax.set_ylabel('Compuational Complexity')
+# ax.set_title('Breakdown by dnum')
+ax.legend(loc="lower right", fontsize=16)
+labels = ['(a)', '(b)', '(c)']
+for ax, label in zip(axes, labels):
+    ax.text(-0.1, 1.12, label, transform=ax.transAxes,
+            fontsize=25, va='top', ha='left')
 plt.tight_layout()
-plt.savefig("figures/flipimpact_scatter.png")
-plt.show()
+plt.subplots_adjust(wspace=0.3)
+plt.savefig("figures/eva_0_motivation.jpg", pad_inches=0)
+# plt.savefig("figures/flipimpact_kde_bg_oranges.png")
+# plt.show()
+
