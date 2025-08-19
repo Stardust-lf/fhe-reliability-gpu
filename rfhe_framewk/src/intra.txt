@@ -1,0 +1,110 @@
+q=68719476767 (bits=37), N=8192
+s,model,trials,miss_rate,det_intra_only,det_sum_only,det_both,undetected
+Fold s=4 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.059100 | Det(IntraOnly)=9409 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=591
+Fold s=4 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.003800 | Det(IntraOnly)=9962 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=38
+Fold s=4 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.119000 | Det(IntraOnly)=8810 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=1190
+Fold s=4 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=5 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.031100 | Det(IntraOnly)=9689 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=311
+Fold s=5 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.001600 | Det(IntraOnly)=9984 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=16
+Fold s=5 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.091600 | Det(IntraOnly)=9084 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=916
+Fold s=5 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=6 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.017500 | Det(IntraOnly)=9825 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=175
+Fold s=6 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000100 | Det(IntraOnly)=9999 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=1
+Fold s=6 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.074900 | Det(IntraOnly)=9251 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=749
+Fold s=6 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=7 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.007400 | Det(IntraOnly)=9926 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=74
+Fold s=7 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000100 | Det(IntraOnly)=9999 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=1
+Fold s=7 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.066900 | Det(IntraOnly)=9331 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=669
+Fold s=7 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=8 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.004400 | Det(IntraOnly)=9956 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=44
+Fold s=8 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=8 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.055800 | Det(IntraOnly)=9442 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=558
+Fold s=8 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=9 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.002400 | Det(IntraOnly)=9976 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=24
+Fold s=9 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=9 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.048600 | Det(IntraOnly)=9514 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=486
+Fold s=9 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=10 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.001300 | Det(IntraOnly)=9987 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=13
+Fold s=10 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=10 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.043500 | Det(IntraOnly)=9565 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=435
+Fold s=10 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=11 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000800 | Det(IntraOnly)=9992 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=8
+Fold s=11 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=11 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.042300 | Det(IntraOnly)=9577 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=423
+Fold s=11 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=12 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000200 | Det(IntraOnly)=9998 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=2
+Fold s=12 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=12 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.033800 | Det(IntraOnly)=9662 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=338
+Fold s=12 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=13 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000100 | Det(IntraOnly)=9999 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=1
+Fold s=13 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=13 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.032300 | Det(IntraOnly)=9677 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=323
+Fold s=13 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=14 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000200 | Det(IntraOnly)=9998 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=2
+Fold s=14 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=14 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.026900 | Det(IntraOnly)=9731 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=269
+Fold s=14 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=15 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=15 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=15 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.023600 | Det(IntraOnly)=9764 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=236
+Fold s=15 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=16 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=16 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=16 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.024100 | Det(IntraOnly)=9759 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=241
+Fold s=16 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=17 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=17 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=17 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.021800 | Det(IntraOnly)=9782 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=218
+Fold s=17 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=18 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=18 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=18 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.021000 | Det(IntraOnly)=9790 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=210
+Fold s=18 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=19 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=19 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=19 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.019600 | Det(IntraOnly)=9804 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=196
+Fold s=19 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=20 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=20 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=20 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.017500 | Det(IntraOnly)=9825 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=175
+Fold s=20 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=21 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=21 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=21 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.017300 | Det(IntraOnly)=9827 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=173
+Fold s=21 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=22 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=22 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=22 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.017800 | Det(IntraOnly)=9822 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=178
+Fold s=22 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=23 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=23 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=23 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.015400 | Det(IntraOnly)=9846 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=154
+Fold s=23 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=24 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=24 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=24 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.013400 | Det(IntraOnly)=9866 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=134
+Fold s=24 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=25 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=25 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=25 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.014300 | Det(IntraOnly)=9857 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=143
+Fold s=25 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=26 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=26 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=26 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.011900 | Det(IntraOnly)=9881 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=119
+Fold s=26 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=27 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=27 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=27 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.012500 | Det(IntraOnly)=9875 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=125
+Fold s=27 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=28 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=28 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=28 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.013600 | Det(IntraOnly)=9864 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=136
+Fold s=28 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=29 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=29 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=29 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.010200 | Det(IntraOnly)=9898 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=102
+Fold s=29 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=30 | Protection={Intra } | Fault=Type1: randomize one element | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=30 | Protection={Intra } | Fault=Type2: randomize two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0
+Fold s=30 | Protection={Intra } | Fault=Type3: flip two bits in one element | Trials=10000 | MissRate=0.009400 | Det(IntraOnly)=9906 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=94
+Fold s=30 | Protection={Intra } | Fault=Type4: flip one bit in two elements | Trials=10000 | MissRate=0.000000 | Det(IntraOnly)=10000 | Det(SumOnly)=0 | Det(Both)=0 | Undetected=0

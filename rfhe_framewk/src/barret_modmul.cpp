@@ -11,9 +11,9 @@ using boost::multiprecision::cpp_int;
 // -------------------- Hyperparameters --------------------
 static constexpr uint32_t BITWIDTH_PRIME   = 37;
 static constexpr size_t   VECTOR_LEN       = 8192;
-static constexpr int      TRIALS           = 100000;
+static constexpr int      TRIALS           = 10000;
 static const vector<int>  FOLD_WIDTHS      = []{
-    vector<int> v; for(int w=2; w<=32; w+=2) v.push_back(w); return v;
+    vector<int> v; for(int w=2; w<=32; w+=1) v.push_back(w); return v;
 }();
 struct Scheme { bool use_t, use_sn, use_final; };
 static const vector<Scheme> SCHEMES = {
@@ -22,8 +22,8 @@ static const vector<Scheme> SCHEMES = {
     {false, false, true},
 };
 // Fault injection in two dimensions
-static constexpr int INJECT_ELEM_COUNT = 1;   // how many elements corrupted per trial
-static constexpr int BITFLIPS_PER_ELEM = 2;   // distinct bit flips per corrupted element
+static constexpr int INJECT_ELEM_COUNT = 2;   // how many elements corrupted per trial
+static constexpr int BITFLIPS_PER_ELEM = 1;   // distinct bit flips per corrupted element
 // ---------------------------------------------------------
 
 // -------------------- Utilities --------------------

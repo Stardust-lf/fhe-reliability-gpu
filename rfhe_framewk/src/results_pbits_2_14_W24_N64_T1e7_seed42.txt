@@ -1,0 +1,76 @@
+### pbits=2 | 2025-08-16T20:08:35-04:00
+[config] Pbits=2, P=3
+[config] W=24, M=2^W-1=16777215
+[config] N=64 => S=8, trials=1000000, seed=42
+[SCF-BF - storage_single_bit]
+  stage1: injected=333831, undetected=0, collision_prob=0.000000
+  stage2: injected=331874, undetected=0, collision_prob=0.000000
+  stage3: injected=334295, undetected=0, collision_prob=0.000000
+[SCF-MBU - storage_multi_bit]
+  stage1: injected=333481, undetected=111637, collision_prob=0.334763
+  stage2: injected=332941, undetected=0, collision_prob=0.000000
+  stage3: injected=333578, undetected=113008, collision_prob=0.338775
+[MCF-PPE - mul_partial_product]
+  stage1: injected=333831, undetected=0, collision_prob=0.000000
+  stage2: injected=331874, undetected=0, collision_prob=0.000000
+  stage3: injected=334295, undetected=0, collision_prob=0.000000
+[MCF-CTE - mul_carry_tree]
+  stage1: injected=333831, undetected=0, collision_prob=0.000000
+  stage2: injected=331874, undetected=0, collision_prob=0.000000
+  stage3: injected=334295, undetected=0, collision_prob=0.000000
+[MCF-CLE - mul_control_logic]
+  stage1: injected=333677, undetected=184785, collision_prob=0.553784
+  stage2: injected=333294, undetected=110898, collision_prob=0.332733
+  stage3: injected=333029, undetected=183136, collision_prob=0.549910
+
+### pbits=3 | 2025-08-16T20:08:36-04:00
+[config] Pbits=3, P=7
+[config] W=24, M=2^W-1=16777215
+[config] N=64 => S=8, trials=1000000, seed=42
+[SCF-BF - storage_single_bit]
+  stage1: injected=333831, undetected=0, collision_prob=0.000000
+  stage2: injected=331874, undetected=0, collision_prob=0.000000
+  stage3: injected=334295, undetected=0, collision_prob=0.000000
+[SCF-MBU - storage_multi_bit]
+  stage1: injected=333481, undetected=0, collision_prob=0.000000
+  stage2: injected=332941, undetected=0, collision_prob=0.000000
+  stage3: injected=333578, undetected=0, collision_prob=0.000000
+[MCF-PPE - mul_partial_product]
+  stage1: injected=333831, undetected=0, collision_prob=0.000000
+  stage2: injected=331874, undetected=0, collision_prob=0.000000
+  stage3: injected=334295, undetected=0, collision_prob=0.000000
+[MCF-CTE - mul_carry_tree]
+  stage1: injected=333831, undetected=0, collision_prob=0.000000
+  stage2: injected=331874, undetected=0, collision_prob=0.000000
+  stage3: injected=334295, undetected=0, collision_prob=0.000000
+[MCF-CLE - mul_control_logic]
+  stage1: injected=333677, undetected=88299, collision_prob=0.264624
+  stage2: injected=333294, undetected=47784, collision_prob=0.143369
+  stage3: injected=333029, undetected=88462, collision_prob=0.265629
+
+### pbits=4 | 2025-08-16T20:08:37-04:00
+[config] Pbits=4, P=13
+[config] W=24, M=2^W-1=16777215
+[config] N=64 => S=8, trials=1000000, seed=42
+[SCF-BF - storage_single_bit]
+  stage1: injected=333831, undetected=0, collision_prob=0.000000
+  stage2: injected=331874, undetected=0, collision_prob=0.000000
+  stage3: injected=334295, undetected=0, collision_prob=0.000000
+[SCF-MBU - storage_multi_bit]
+  stage1: injected=333980, undetected=8589, collision_prob=0.025717
+  stage2: injected=333355, undetected=0, collision_prob=0.000000
+  stage3: injected=332665, undetected=8527, collision_prob=0.025632
+[MCF-PPE - mul_partial_product]
+  stage1: injected=333831, undetected=0, collision_prob=0.000000
+  stage2: injected=331874, undetected=0, collision_prob=0.000000
+  stage3: injected=334295, undetected=0, collision_prob=0.000000
+[MCF-CTE - mul_carry_tree]
+  stage1: injected=333831, undetected=0, collision_prob=0.000000
+  stage2: injected=331874, undetected=0, collision_prob=0.000000
+  stage3: injected=334295, undetected=0, collision_prob=0.000000
+[MCF-CLE - mul_control_logic]
+  stage1: injected=333677, undetected=49158, collision_prob=0.147322
+  stage2: injected=333294, undetected=25478, collision_prob=0.076443
+  stage3: injected=333029, undetected=49497, collision_prob=0.148627
+
+### pbits=5 | 2025-08-16T20:08:39-04:00
