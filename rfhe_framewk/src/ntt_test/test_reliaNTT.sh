@@ -1,0 +1,22 @@
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 10 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 11 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 12 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 13 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 14 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 15 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 16 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 17 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 18 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 19 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 20 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 21 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 22 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 23 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 24 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 25 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 26 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 27 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 28 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 29 --trials 1000000
+nice -n 19 ./reliaNTT --N 64 --fold-bits 24 --q-bits 30 --trials 1000000
+

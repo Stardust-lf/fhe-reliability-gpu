@@ -1,11 +1,50 @@
+# -*- coding: utf-8 -*-
+import copy
 import re
 from collections import defaultdict
 
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from scipy.stats import gaussian_kde
+from matplotlib.gridspec import GridSpec
 
+# ------------------- NTT Function -------------------
+def ntt(a, mod, root):
+    n = len(a)
+    j = 0
+    for i in range(1, n):
+        bit = n >> 1
+        while j & bit:
+            j ^= bit
+            bit >>= 1
+        j ^= bit
+        if i < j:
+            a[i], a[j] = a[j], a[i]
+    length = 2
+    while length <= n:
+        wlen = pow(root, (mod - 1) // length, mod)
+        for i in range(0, n, length):
+            w = 1
+            for j in range(length // 2):
+                u = a[i + j]
+                v = a[i + j + length // 2] * w % mod
+                a[i + j] = (u + v) % mod
+                a[i + j + length // 2] = (u - v + mod) % mod
+                w = w * wlen % mod
+        length *= 2
+    return a
+
+# ------------------- NTT Data -------------------
+n = 1024
+mod = 15728641
+root = 3
+a = [(i % 16) for i in range(n)]
+A = ntt(copy.deepcopy(a), mod, root)
+a_noisy = copy.deepcopy(a)
+a_noisy[10] = (a_noisy[10] + 1) % mod
+A_noisy = ntt(copy.deepcopy(a_noisy), mod, root)
+
+# ------------------- ResNet Data -------------------
 data_resnet = [(1024, 6.0),
  (1024, 8.173205382760385),
  (1024, 8.241812291278775),
@@ -188,75 +227,58 @@ data_resnet_baseline =[(1024, 85.64229944436931),
  (134217728, 93.02291051790948),
  (134217728, 93.10131434199126)]
 
-# Plot styling
+# ------------------- Plot Styling -------------------
 plt.rcParams['font.family'] = 'Gill Sans'
 plt.rcParams['font.weight'] = 'bold'
 plt.rcParams['font.size'] = 20
 
-# 1) Read file and extract percentage numbers
-values = []
-with open("data/dotprod_16bits_50.txt", "r") as f:
-    for line in f:
-        m = re.search(r"=\s*([\d\.]+)%", line)
-        if m:
-            values.append(float(m.group(1)))
+# ------------------- Create Figure with Custom Layout -------------------
+fig = plt.figure(figsize=(15, 4), dpi=300)
+gs = GridSpec(2, 3, figure=fig, height_ratios=[1, 1], width_ratios=[1, 1.1, 1.1], hspace=0.45)
 
-# 2) Build DataFrame
-df = pd.DataFrame({
-    "x": np.arange(1, len(values) + 1, dtype=float),
-    "bit_error": np.array(values, dtype=float)
-})
-
-# 3) KDE over grid for background
-x = df["x"].values
-y = df["bit_error"].values
-xy = np.vstack([x, y])
-kde = gaussian_kde(xy)
-
-# Grid for background
-xmin, xmax = x.min(), x.max()
-ymin, ymax = y.min(), y.max()
-X, Y = np.meshgrid(
-    np.linspace(xmin, xmax, 200),
-    np.linspace(ymin, ymax, 200)
-)
-grid_coords = np.vstack([X.ravel(), Y.ravel()])
-Z = kde(grid_coords).reshape(X.shape)
-
-# 4) Plot background + scatter points
-fig, axes = plt.subplots(1, 3, figsize=(12, 6), dpi=300)
-
-ax = axes[0]
-# background heatmap, cmap=Oranges
-im = ax.imshow(
-    Z, origin='lower',
-    extent=[xmin, xmax, ymin, ymax],
-    cmap="YlOrRd", aspect='auto', alpha=0.3
-    # cmap="Greys", aspect='auto', alpha=0.7
-)
+# Left column: Two stacked NTT subplots (a)
+ax0_top = fig.add_subplot(gs[0, 0])
+ax0_bottom = fig.add_subplot(gs[1, 0])
 
 
-# scatter points
-ax.scatter(x, y, c="crimson", s=15, alpha=0.3)
+# Middle column: ResNet accuracy plot (b)
+ax1 = fig.add_subplot(gs[:, 1])
 
-# ax.set_title("Error Sensitivity vs Bit Flips per Symbol")
-ax.set_xlabel("Trial")
-ax.set_ylabel("Relative Error(%)")
-ax.set_yscale("log")
-ax.grid(True, alpha=0.3)
+# Right column: Stacked bar chart (c)
+ax2 = fig.add_subplot(gs[:, 2])
 
-# colorbar for background density
-# fig.colorbar(im, ax=ax, label="Estimated density")
+# ------------------- Plot (a) Top: NTT Input -------------------
+ax0_top.plot(a[:128], '-', label='Original Input', color="dimgrey", lw=2)
+# ax0_top.plot(a_noisy[:128], '--', label='Original Input', color="red", lw=1)
+noisy_index = 10
+if noisy_index < 128:
+    ax0_top.scatter(noisy_index, a[noisy_index], color='red', s=30, zorder=5, marker='^')
+# ax0_top.set_title("NTT Input", fontsize=14, pad=5)
+# ax0_top.set_xlabel("Index", fontsize=12)
+# ax0_top.set_ylabel("Value", fontsize=16)
+ax0_top.tick_params(axis='both', labelsize=16)
+ax0_top.grid(True, alpha=0.3)
 
-ax = axes[1]
+# ------------------- Plot (a) Bottom: NTT Output -------------------
+ax0_bottom.plot(A_noisy[:128], '-', label='Noisy NTT', color='orange')
+ax0_bottom.plot(A[:128], '-', label='Original NTT', lw=2, color="blue")
+# ax0_bottom.set_title("NTT Output", fontsize=14, pad=5)
+ax0_bottom.set_xlabel("Index", fontsize=23)
+# ax0_bottom.set_ylabel("Value", fontsize=23)
+# ax0_bottom.legend(loc="upper left", fontsize=15,)
+ax0_bottom.tick_params(axis='both', labelsize=23)
+ax0_bottom.grid(True, alpha=0.3)
 
-colors = ['red','navy']
+ax0_bottom.set_yticklabels([])
+ax0_top.set_yticklabels([])
+ax0_top.set_xticklabels([])
+# ------------------- Plot (b): ResNet Accuracy -------------------
+colors = ['red', 'navy']
 legends = ['CKKS', 'Baseline']
 for idx, data in enumerate([data_resnet, data_resnet_baseline]):
     probs_raw, accs_raw = zip(*data)
     inv_probs_raw = [1 / p for p in probs_raw]
 
-    # 按 prob 分组，计算均值和标准差
     grouped = defaultdict(list)
     for prob, acc in data:
         grouped[prob].append(acc)
@@ -264,33 +286,37 @@ for idx, data in enumerate([data_resnet, data_resnet_baseline]):
     probs_unique = sorted(grouped.keys())
     inv_probs_unique = [1 / p for p in probs_unique]
     means = [np.mean(grouped[p]) for p in probs_unique]
-    stds = [np.std(grouped[p], ddof=0) for p in probs_unique]  # ddof=0 计算总体标准差
-    # plot
-    ax.errorbar(
+    stds = [np.std(grouped[p], ddof=0) for p in probs_unique]
+    
+    # ax1.errorbar(
+    #     inv_probs_unique,
+    #     means,
+    #     yerr=stds,
+    #     fmt="-o",
+    #     color=colors[idx],
+    #     label=legends[idx],
+    #     ecolor="black",
+    #     capsize=5,
+    # )
+    ax1.plot(inv_probs_unique, means, "-o", color=colors[idx], label=legends[idx])
+
+    # 绘制阴影区域（均值 ± 标准差）
+    ax1.fill_between(
         inv_probs_unique,
-        means,
-        yerr=stds,
-        fmt="-o",
+        [m - s for m, s in zip(means, stds)],
+        [m + s for m, s in zip(means, stds)],
         color=colors[idx],
-        label = legends[idx],
-        ecolor="black",
-        capsize=5,
-        # label=workloads[idx],
+        alpha=0.2  # 透明度，可调
     )
-    ax.set_ylim(0,100)
+    ax1.set_ylim(0, 100)
 
+ax1.set_xlabel("Error Rate")
+ax1.set_ylabel("Accuracy (%)")
+ax1.set_xscale('log')
+ax1.legend(loc='lower left', fontsize=16, frameon=False)
+ax1.grid(True, alpha=0.3)
 
-# ax.plot(error_rate, accuracy_pct, marker="o", label="accuracy")
-
-ax.set_xlabel("Error Rate")
-ax.set_ylabel("Accuracy (%)")
-ax.set_xscale('log')
-# ax.set_title("ResNet Accuracy vs Batch Size")
-ax.legend(loc='lower left', fontsize=16, frameon=False)
-ax.grid(True)
-
-
-ax = axes[2]
+# ------------------- Plot (c): Stacked Bar Chart -------------------
 dnum = [1, 2, 3, 4, 6, 8, 12, '24\n(max)']
 NTT = [36.6, 42.6, 48.2, 58.6, 62.6, 69.2, 72.1, 73]
 BaseConv = [55, 48, 42, 31.2, 26, 18, 14, 11.835]
@@ -300,29 +326,26 @@ Others = [1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1]
 bar_width = 0.6
 x = np.arange(len(dnum))
 
-# 创建fig, ax
-# fig, ax = plt.subplots(figsize=(8, 5))
+ax2.bar(x, NTT, width=bar_width, label='NTT', alpha=0.5, color="blue")
+ax2.bar(x, BaseConv, width=bar_width, bottom=NTT, label='BaseConv', alpha=0.6,color="orange")
+ax2.bar(x, Modmul, width=bar_width, bottom=np.array(NTT)+np.array(BaseConv), label='Modmul', alpha=0.8, color="red")
+ax2.bar(x, Others, width=bar_width, bottom=np.array(NTT)+np.array(BaseConv)+np.array(Modmul), label='Others', color='black')
 
-# 堆叠柱状图
-ax.bar(x, NTT, width=bar_width, label='NTT', alpha=0.6)
-ax.bar(x, BaseConv, width=bar_width, bottom=NTT, label='BaseConv')
-ax.bar(x, Modmul, width=bar_width, bottom=np.array(NTT)+np.array(BaseConv), label='Modmul', alpha=0.8)
-ax.bar(x, Others, width=bar_width, bottom=np.array(NTT)+np.array(BaseConv)+np.array(Modmul), label='Others')
+ax2.set_xticks(x)
+ax2.set_xticklabels(dnum)
+ax2.set_xlabel('dnum')
+ax2.set_ylabel('Computational Complexity')
+ax2.legend(loc="lower right", fontsize=16)
 
-# 设置坐标轴
-ax.set_xticks(x)
-ax.set_xticklabels(dnum)
-ax.set_xlabel('dnum')
-ax.set_ylabel('Compuational Complexity')
-# ax.set_title('Breakdown by dnum')
-ax.legend(loc="lower right", fontsize=16)
-labels = ['(a)', '(b)', '(c)']
-for ax, label in zip(axes, labels):
-    ax.text(-0.1, 1.12, label, transform=ax.transAxes,
-            fontsize=25, va='top', ha='left')
+# ------------------- Add Labels (a), (b), (c) -------------------
+# ax0_top.text(-0.12, 1.08, '(a)', transform=ax0_top.transAxes,
+#              fontsize=25, va='top', ha='left')
+# ax1.text(-0.12, 1.08, '(b)', transform=ax1.transAxes,
+#          fontsize=25, va='top', ha='left')
+# ax2.text(-0.12, 1.08, '(c)', transform=ax2.transAxes,
+#          fontsize=25, va='top', ha='left')
+
 plt.tight_layout()
-plt.subplots_adjust(wspace=0.3)
-plt.savefig("figures/eva_0_motivation.jpg", pad_inches=0)
-# plt.savefig("figures/flipimpact_kde_bg_oranges.png")
-# plt.show()
-
+plt.subplots_adjust(wspace=0.4, hspace=0.5, top=0.92)
+plt.savefig("./figures/eva_0_motivation.jpg", pad_inches=0.1, bbox_inches='tight')
+print("Figure saved to eva_0_motivation.jpg")
